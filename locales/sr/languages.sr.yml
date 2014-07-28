@@ -1,0 +1,479 @@
+---
+sr:
+  languages:
+    iso_codes:
+      _no: Norveški
+      aa: Afar
+      ab: Abhaski
+      af: Afrikans
+      af-ZA: Afrikans (Južna Afrika)
+      ak: Akan
+      am: Amharski
+      an: Aragonski
+      ar: Arapski
+      ar-AE: Arapski (Ujedinjeni Arapski Emirati)
+      ar-AR: Arapski (Arapski)
+      ar-BH: Arapski (Bahrein)
+      ar-DJ: Arapski (Džibuti)
+      ar-DZ: Arapski (Alžir)
+      ar-EG: Arapski (Egipat)
+      ar-EH: Arapski (Zapadna Sahara)
+      ar-ER: Arapski (Eritreja)
+      ar-IL: Arapski (Izrael)
+      ar-IQ: Arapski (Irak)
+      ar-JO: Arapski (Jordan)
+      ar-KM: Arapski (Komorski)
+      ar-KW: Arapski (Kuvajt)
+      ar-LB: Arapski (Liban)
+      ar-LY: Arapski (Libija)
+      ar-MA: Arapski (Maroko)
+      ar-MR: Arapski (Mauritanija)
+      ar-OM: Arapski (Oman)
+      ar-PS: Arapski (Pojas Gaze i Zapadna Obala)
+      ar-QA: Arapski (Katar)
+      ar-SA: Arapski (Saudijska Arabija)
+      ar-SD: Arapski (Sudan)
+      ar-SO: Arapski (Somalija)
+      ar-SY: Arapski (Sirija)
+      ar-TD: Arapski (Čad)
+      ar-TN: Arapski (Tunis)
+      ar-YE: Arapski (Jemen)
+      as: Asamski
+      av: Avarski
+      ay: Ajmara
+      az: Azerski
+      az-AZ: Azerbejdžanski (Azerbejdžan)
+      ba: Baškirski
+      be: Beloruski
+      be-BY: Beloruski (Belorusija)
+      bg: Bugarski
+      bg-BG: Bugarski (Bugarska)
+      bh: Bihari
+      bi: Bislama
+      bm: Bambara
+      bn: Bengalski
+      bn-IN: Bengalski (Indija)
+      bo: Tibetanski
+      br: Bretonski
+      bs: Bosanski
+      bs-BA: Bosanski (Bosna i Hercegovina)
+      ca: Katalonski
+      ca-AD: Katalonski (Andora)
+      ca-ES: Katalonski (Španija)
+      ce: Čečenski
+      ch: Čamoro
+      co: Korzikanski
+      cr: Kri
+      cs: Češki
+      cs-CZ: Češki (Češka Republika)
+      cs-SK: Češki (Slovačka Republika)
+      cv: Čuvaški
+      cy: Velški
+      cy-GB: Velški (Ujedinjeno Kraljevstvo)
+      da: Danski
+      da-DK: Danski (Danska)
+      da-FO: Danski (Faro Ostrva)
+      da-GL: Danski (Grenland)
+      de: Nemački
+      de-AT: Nemački (Austrija)
+      de-BE: Nemački (Belgija)
+      de-CH: Nemački (Švajcarska)
+      de-DE: Nemački (Nemačka)
+      de-LI: Nemački (Lihtenštajn)
+      de-LU: Nemački (Luksemburg)
+      de-NA: Nemački (Namibija)
+      dv: Divehi
+      dz: Džongka
+      ee: Iv
+      el: Grčki
+      el-CY: Grčki (Kipar)
+      el-GR: Grčki (Grčka)
+      en: Engleski
+      en-AG: Engleski (Antigva i Barbuda)
+      en-AI: Engleski (Angvila)
+      en-AS: Engleski (Američka Samoa)
+      en-AU: Engleski (Australija)
+      en-BB: Engleski (Barbados)
+      en-BD: Engleski (Bangladeš)
+      en-BM: Engleski (Bermuda)
+      en-BS: Engleski (Bahami)
+      en-BW: Engleski (Bocvana)
+      en-BZ: Engleski (Belize)
+      en-CA: Engleski (Kanada)
+      en-CK: Engleski (Kukova Ostrva)
+      en-CM: Engleski (Kamerun)
+      en-CW: Engleski (Kurasao)
+      en-DM: Engleski (Dominika)
+      en-ER: Engleski (Eritreja)
+      en-FJ: Engleski (Fidži)
+      en-FK: Engleski (Folklandska Ostrva)
+      en-FM: Engleski (Mikronezija)
+      en-GB: Engleski (Ujedinjeno Kraljevstvo)
+      en-GD: Engleski (Grenada)
+      en-GG: Engleski (Gernzi)
+      en-GH: Engleski (Gana)
+      en-GI: Engleski (Gibraltar)
+      en-GM: Engleski (Gambija)
+      en-GU: Engleski (Gvam)
+      en-GY: Engleski (Gvajana)
+      en-HK: Engleski (Hong Kong)
+      en-IE: Engleski (Irska)
+      en-IM: Engleski (Ostrvo Men)
+      en-IN: Engleski (Indija)
+      en-JE: Engleski (Džerzi)
+      en-JM: Engleski (Jamajka)
+      en-KE: Engleski (Kenija)
+      en-KI: Engleski (Kiribati)
+      en-KN: Engleski (Sent Kits i Nevis)
+      en-KY: Engleski (Kajmanska Ostrva)
+      en-LC: Engleski (Sveta Lucija)
+      en-LK: Engleski (Šri Lanka)
+      en-LR: Engleski (Liberija)
+      en-LS: Engleski (Lesoto)
+      en-MH: Engleski (Maršalska Ostrva)
+      en-MP: Engleski (Severna Marijanska Ostrva)
+      en-MS: Engleski (Montserat)
+      en-MT: Engleski (Malta)
+      en-MU: Engleski (Mauricijus)
+      en-MW: Engleski (Malavi)
+      en-MY: Engleski (Malezija)
+      en-NA: Engleski (Namibija)
+      en-NG: Engleski (Nigerija)
+      en-NR: Engleski (Nauru)
+      en-NU: Engleski (Nijue)
+      en-NZ: Engleski (Novi Zeland)
+      en-PG: Engleski (Papua Nova Gvineja)
+      en-PH: Engleski (Filipini)
+      en-PI: Engleski (Pirat)
+      en-PK: Engleski (Pakistan)
+      en-PN: Engleski (Ostrva Pitkern)
+      en-PR: Engleski (Portoriko)
+      en-PW: Engleski (Palau)
+      en-RW: Engleski (Ruanda)
+      en-SB: Engleski (Solomonova Ostrva)
+      en-SC: Engleski (Sejšeli)
+      en-SD: Engleski (Sudan)
+      en-SG: Engleski (Singapur)
+      en-SH: Engleski (Sveta Jelena)
+      en-SL: Engleski (Sijera Leone)
+      en-SO: Engleski (Somalija)
+      en-SS: Engleski (Južni Sudan)
+      en-SZ: Engleski (Svazilend)
+      en-TC: Engleski (Ostrva Turks i Kajkos)
+      en-TO: Engleski (Tonga)
+      en-TT: Engleski (Trinidad i Tobago)
+      en-TV: Engleski (Tuvalu)
+      en-TZ: Engleski (Tanzanija)
+      en-UD: Engleski (Upside Down)
+      en-UG: Engleski (Uganda)
+      en-US: Engleski (Ujedinjene Nacije)
+      en-VC: Engleski (Sent Vinsent i Grenadini)
+      en-VG: Engleski (Britanska Devičanska Ostrva)
+      en-VI: Engleski (Američka Devičanska Ostrva)
+      en-VU: Engleski (Vanuatu)
+      en-WS: Engleski (Samoa)
+      en-ZA: Engleski (Južnoafrička Republika)
+      en-ZM: Engleski (Zambija)
+      en-ZW: Engleski (Zimbabve)
+      eo-EO: Esperanto (Esperanto)
+      es: Španski
+      es-AR: Španski (Argentina)
+      es-BO: Španski (Bolivija)
+      es-CL: Španski (Čile)
+      es-CO: Španski (Kolumbija)
+      es-CR: Španski (Kostarika)
+      es-CU: Španski (Kuba)
+      es-DO: Španski (Dominikanska Republika)
+      es-EC: Španski (Ekvador)
+      es-ES: Španski (Španija)
+      es-GI: Španski (Gibraltar)
+      es-GQ: Španski (Ekvatorijalna Gvineja)
+      es-GT: Španski (Gvatemala)
+      es-HN: Španski (Honduras)
+      es-LA: Španski (Španski)
+      es-MX: Španski (Meksiko)
+      es-NI: Španski (Nikaragva)
+      es-PA: Španski (Panama)
+      es-PE: Španski (Peru)
+      es-PR: Španski (Portoriko)
+      es-PY: Španski (Paragvaj)
+      es-SV: Španski (Salvador)
+      es-US: Španski (Ujedinjene Nacije)
+      es-UY: Španski (Urugvaj)
+      es-VE: Španski (Venecuela)
+      et: Estonski
+      et-EE: Estonski (Estonija)
+      eu: Baskijski
+      eu-ES: Baskijski (Španija)
+      fa: Persijski
+      fa-IR: Persijski (Iran)
+      fb-LT: Leet Speak
+      ff: Fula
+      fi: Finski
+      fi-FI: Finski (Finska)
+      fj: Fidžijski
+      fo: Farski
+      fo-FO: Farski (Farska Ostrva)
+      fr: Francuski
+      fr-BE: Francuski (Belgija)
+      fr-BF: Francuski (Burkina Faso)
+      fr-BI: Francuski (Burundi)
+      fr-BJ: Francuski (Benin)
+      fr-CA: Francuski (Kanada)
+      fr-CD: Francuski (Dem. Republika Kongo)
+      fr-CF: Francuski (Centralnoafrička Republika)
+      fr-CG: Francuski (Kongo)
+      fr-CH: Francuski (Švajcarska)
+      fr-CI: Francuski (Obala Slonovače)
+      fr-CM: Francuski (Kamerun)
+      fr-DJ: Francuski (Džibuti)
+      fr-FR: Francuski (Francuska)
+      fr-GA: Francuski (Gabon)
+      fr-GD: Francuski (Grenada)
+      fr-GF: Francuski (Francuska Gvajana)
+      fr-GN: Francuski (Gvineja)
+      fr-GP: Francuski (Gvadalupe)
+      fr-GQ: Francuski (Ekvatorijalna Gvineja)
+      fr-HT: Francuski (Haiti)
+      fr-KM: Francuski (Komori)
+      fr-LC: Francuski (Sveta Lucija)
+      fr-LU: Francuski (Luksemburg)
+      fr-MC: Francuski (Monako)
+      fr-MF: Francuski (Sveti Martin (francuski deo))
+      fr-MG: Francuski (Madagaskar)
+      fr-ML: Francuski (Mali)
+      fr-MQ: Francuski (Martinik)
+      fr-MU: Francuski (Mauricijus)
+      fr-NC: Francuski (Nova Kaledonija)
+      fr-NE: Francuski (Niger)
+      fr-PF: Francuski (Francuska Polinezija)
+      fr-PM: Francuski (Sen Pjer i Mikelon)
+      fr-RE: Francuski (Reinion)
+      fr-RW: Francuski (Ruanda)
+      fr-SC: Francuski (Sejšeli)
+      fr-SN: Francuski (Senegal)
+      fr-TD: Francuski (Čad)
+      fr-TG: Francuski (Togo)
+      fr-VU: Francuski (Vanuatu)
+      fr-WF: Francuski (Valis i Futuna)
+      fr-YT: Francuski (Majot)
+      fy: Zapadno-frizijski
+      fy-NL: Frizijski (Holandija)
+      ga: Irski
+      ga-GB: Irski (Ujedinjeno Kraljevstvo)
+      ga-IE: Irski (Irska)
+      gd: Škotski gelski
+      gl: Galicijski
+      gl-ES: Galicijski (Španija)
+      gn: Gvarani
+      gu: Gudžarati
+      gv: Manski
+      ha: Hausa
+      he: Hebrejski
+      he-IL: Hebrejski (Izrael)
+      hi: Hindi
+      hi-FJ: Hindi (Fidži)
+      hi-IN: Hindi (Indija)
+      hi-PK: Hindi (Pakistan)
+      ho: Hiri motu
+      hr: Hrvatski
+      hr-BA: Hrvatski (Bosna i Hercegovina)
+      hr-HR: Hrvatski (Hrvatska)
+      ht: Haićanski
+      hu: Mađarski
+      hu-HU: Mađarski (Mađarska)
+      hy: Jermenski
+      hy-AM: Jermenski (Jermenija)
+      hz: Herero
+      id: Indonežanski
+      id-ID: Indonežanski (Indonezija)
+      ig: Igbo
+      ii: Nuosu
+      ik: Inuitski
+      io: Ido
+      is: Islandski
+      is-IS: Islandski (Island)
+      it: Italijanski
+      it-CH: Italijanski (Švajcarska)
+      it-IT: Italijanski (Italija)
+      it-SM: Italijanski (San Marino)
+      it-VA: Italijanski (Vatikan)
+      iu: Inuktitut
+      ja: Japanski
+      ja-JP: Japanski (Japan)
+      ja-PW: Japanski (Palau)
+      jv: Javanski
+      ka: Gruzijski
+      ka-GE: Gruzijski (Gruzija)
+      kg: Kongo
+      ki: Kikuju
+      kj: Kvanjama
+      kk: Kazaški
+      kl: Grenlandski
+      km: Kmerski
+      km-KH: Kmerski (Kambodža)
+      kn: Kanada
+      ko: Korejski
+      ko-KP: Koreski (DNRK)
+      ko-KR: Korejski (Južna Koreja)
+      kr: Kanuri
+      ks: Kašmiri
+      ku: Kurdski
+      ku-TR: Kurdski (Turska)
+      kv: Komi
+      kw: Kornvalski
+      ky: Kirgiski
+      la-VA: Latinski (Vatikan)
+      lb: Luksemburški
+      lg: Ganda
+      li: Limburški
+      ln: Lingala
+      lo: Laoski
+      lt: Litvanski
+      lt-LT: Litvanski (Litvanija)
+      lu: Luba-Katanga
+      lv: Letonski
+      lv-LV: Letonski (Letonija)
+      mg: Malgaški
+      mh: Maršalski
+      mi: Maorski
+      mk: Makedonski
+      mk-MK: Makedonski (Makedonija)
+      ml: Malajalam
+      ml-IN: Malajalam (Indija)
+      mn: Mongolski
+      mr: Marathi
+      ms: Malajski
+      ms-BN: Malajski (Bruneji)
+      ms-ID: Malajski (Indonezija)
+      ms-MY: Malajski (Malezija)
+      ms-SG: Malajski (Singapur)
+      mt: Malteški
+      mt-MT: Malteški (Malta)
+      my: Burmanski
+      na: Nauru
+      nb: Književni norveški
+      nb-NO: Književni norveški (Norveška)
+      nd: Severni ndebele
+      ne: Nepalski
+      ne-NP: Nepalski (Nepal)
+      ng: Ndonga
+      nl: Holandski
+      nl-AN: Holandski (Holandski Antili)
+      nl-AW: Holandski (Aruba)
+      nl-BE: Holandski (Belgija)
+      nl-CW: Holandski (Kurasao)
+      nl-NL: Holandski (Holandija)
+      nl-SR: Holandski (Surinam)
+      nl-SX: Holandski (Sveti Martin (holandski deo))
+      nn: Novonorveški
+      nn-NO: Novonorveški (Norveška)
+      no-NO: Norveški (Norveška)
+      nr: Južni Ndebele
+      nv: Navaho
+      ny: Nijandža
+      oc: Oksitanski
+      oj: Ojibve
+      om: Oromo
+      or: Orija
+      os: Osetinski
+      pa: Pandžabi
+      pa-IN: Pandžabi (Indija)
+      pl: Poljski
+      pl-PL: Poljski (Poljska)
+      ps: Paštunski
+      ps-AF: Paštunski (Afganistan)
+      pt: Portugalski
+      pt-AO: Portugalski (Angola)
+      pt-BR: Portugalski (Brazil)
+      pt-CV: Portugalski (Zelenortska Ostrva)
+      pt-GQ: Portugalski (Ekvatorijalna Gvineja)
+      pt-GW: Portugalski (Gvineja Bisao)
+      pt-MO: Portugalski (Makao)
+      pt-MZ: Portugalski (Mozambik)
+      pt-PT: Portugalski (Portugal)
+      pt-ST: Portugalski (Sao Tome i Prinsipe)
+      pt-TL: Portugalski (Istočni Timor)
+      qu: Kečua
+      rm: Romanš
+      rn: Kirundi
+      ro: Rumunski
+      ro-MD: Rumunski (Moldavija)
+      ro-RO: Rumunski (Rumunija)
+      ru: Ruski
+      ru-BY: Ruski (Belorusija)
+      ru-KG: Ruski (Kirgistan)
+      ru-KZ: Ruski (Kazahstan)
+      ru-RU: Ruski (Rusija)
+      ru-TJ: Ruski (Tadžikistan)
+      rw: Kinjarvanda
+      sa: Sanskrit
+      sc: Sardinski
+      sd: Sindi
+      se: Severnolaponski
+      sg: Sango
+      si: Sinhala
+      sk: Slovački
+      sk-CZ: Slovački (Češka Republika)
+      sk-SK: Slovački (Slovačka)
+      sl: Slovenački
+      sl-SI: Slovenački (Slovenija)
+      sm: Samoanski
+      sn: Šona
+      so: Somalski
+      sq: Albanski
+      sq-AL: Albanski (Albanija)
+      sq-KS: Albanski (Kosovo)
+      sr: српски
+      sr-BA: Srpski (Bosna i Hercegovina)
+      sr-ME: Srpski (Crna Gora)
+      sr-RS: Srpski (Srbija)
+      ss: Svati
+      st: Južni Soto
+      su: Sundski
+      sv: Švedski
+      sv-FI: Švedski (Finska)
+      sv-SE: Švedski (Švedska)
+      sw: Svahili
+      sw-KE: Svahili (Kenija)
+      ta: Tamilski
+      ta-IN: Tamilski (Indija)
+      te: Telugu
+      te-IN: Telugu (Indija)
+      tg: Tadžički
+      th: Tajlandski
+      th-TH: Tajlandski (Tajland)
+      ti: Tigrinja
+      tk: Turkmenski
+      tl: Tagalog
+      tl-PH: Filipinski (Filipini)
+      tn: Tsvana
+      to: Tonga
+      tr: Turski
+      tr-CY: Turski (Kipar)
+      tr-TR: Turski (Turska)
+      ts: Tsonga
+      tt: Tatarski
+      tw: Tvi
+      ty: Tahićanski
+      ug: Ujgurski
+      uk: Ukrajinski
+      uk-UA: Ukrajinski (Ukrajina)
+      ur: Urdu
+      uz: Uzbečki
+      ve: Venda
+      vi: Vijetnamski
+      vi-VN: Vijetnamski (Vijetnam)
+      wa: Valonski
+      wo: Volof
+      xh: Kosa
+      yi: Jidiš
+      yo: Joruba
+      za: Džuang
+      zh: Kineski
+      zh-CN: Kineski (Kina)
+      zh-HK: Kineski (Hong Kong)
+      zh-MO: Kineski (Makao)
+      zh-SG: Kineski (Singapur)
+      zh-TW: Kineski (Tajvan)
+      zu: Zulu

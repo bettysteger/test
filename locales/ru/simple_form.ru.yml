@@ -1,0 +1,10 @@
+---
+ru:
+  simple_form:
+    error_notification:
+      default_message: 'Были обнаружены некоторые ошибки, пожалуйста, взгляните на:'
+    'no': Нет
+    required:
+      mark: '*'
+      text: обязательно
+    'yes': Да

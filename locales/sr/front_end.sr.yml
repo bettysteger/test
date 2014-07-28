@@ -1,0 +1,452 @@
+---
+sr:
+  audits:
+    invitation_accepted:
+      category: Poziv prihvaćen
+      text: '{{invitee}} je prihvatio pozivnicu za projekat "{{project}}"'
+    invitation_created:
+      # to tell the user a new invitation was created
+      category: Kreiran nov poziv
+      text: '{{user}} je pozvao {{invitee}} na projekat "{{project}}".'
+    invitation_declined:
+      category: Poziv odbijen
+      text: '{{invitee}} je odbio pozivnicu za projekat "{{project}}"'
+    invitation_destroyed:
+      category: Poziv opozvan
+      text: '{{user}} je opozvao pozivnicu za {{invitee}} za projekat "{{project}}".'
+    invitation_resend:
+      category: Ponovo poslat email poziv
+      text: '{{user}} je ponovo poslao pozivnicu za {{invitee}} za projekat "{{project}}".'
+    project_created:
+      category: Kreiran nov projekat
+      text: '{{user}} je kreirao novi projekat {{project}}'
+    project_destroyed:
+      category: Projekat izbrisan
+      text: '{{user}} je izbrisao projekat "{{project}}"'
+    project_locale_created:
+      category: Nov jezik dodat
+      text: '{{project_locale}} je dodat projektu "{{project_name}}"'
+    project_locale_destroyed:
+      category: Jezik uklonjen
+      text: '{{project_locale}} uklonjen sa projekta {{project_name}} '
+    project_renamed:
+      category: Projekat je preimenovan
+      text: '{{user}} je promenio ime projekta "{{old_name}}" u "{{new_name}}".'
+    resource_export_all_files_push_back:
+      category: Gurni pozadi sve podatke
+      text: '{{provider}} reklamiran od strane {{user}} : SVE DADOTEKE (Commit <a
+        href="{{commit_url}}">{{commit_identifier}}</a>)'
+    resource_export_push_back:
+      category: Gurni pozadi
+      text: 'Pomeren ka {{provider}} od strane {{user}}: {{filename}} {{commit_url}}
+        {{commit_identifier}} '
+    resource_file_deactivated:
+      category: Izvor dadoteke deaktiviran
+      text: '{{user}} je deaktivirao izvornu datoteku ''{{title}}'''
+    resource_file_reactivated:
+      category: Izvor dadoteke reaktiviran
+      text: '{{user}} je ponovo aktivirao izvornu datoteku ''{{title}}'''
+    resource_import_auto_synchronization:
+      category: Dodat je izvor podataka 
+      text: 'Automatski {{provider}} Harmonizovati (Commit <ahref="{{commit_url}}">{{commit_identifier}}
+        </a>): {{files_count}} dadoteke promenjene, {{created_translations_count}}
+        Prevodi Kreirani, {{deactivated_translations_count}} Deaktiviran, {{updated_translations_count}}
+        Promenjen, ''<a href="{{url}}">{{filename}}</a>'''
+    resource_import_error:
+      category: Neuspeo uvoz izvora podataka
+      text: Uvoz "{{filename}}" od strane {{user}} je bilo neuspešno
+    resource_import_file_uploaded:
+      text: 'Dadoteka ubačena od strane {{user}}: {{created_translations_count}} kreiran,
+        {{deactivated_translations_count}} deaktiviran, {{updated_translations_count}}
+        promenjen, ''<ahref="{{url}}">{{filename}}</a>'''
+    resource_import_success:
+      category: Izvor podataka uvezen
+      text: '"{{filename}}" je uvezen od strane {{user}}'
+    translation_comment_created:
+      category: Dodat komentar
+      text: '{{user}} je prokomentarisao "{{translation_title}}"'
+    translation_comment_deleted:
+      category: Komentar izbrisan
+      text: '{{user}} izbrisao komentar sa {{translation_title}} '
+    translation_comment_edited:
+      text: '{{user}} ažurirao komentar u {{translation_title}} '
+    translation_deactivated:
+      category: Prevod deaktiviran
+      text: '{{user}} je deaktivirao Prevod "{{title}}"'
+    translation_phrase_content_changed:
+      category: Promenjena fraza
+      text: '{{user}} je promenio ''<i>{{old_content}}</i>'' u ''<i>{{new_content}}</i>''
+        za jezik ''{{locale_slug}}''; Status podešen na ''{{status}}''.'
+    translation_phrase_status_changed:
+      text: '{{user}} promenio status {{content}} sa {{old_status}} na {{new_status}}
+        za prostor {{locale_slug}} '
+    translation_reactivated:
+      category: Prevod reaktiviran
+      text: '{{user}} je ponovo aktivirao Prevod "{{title}}"'
+    translation_title_renamed:
+      category: Prevod preimenovan
+      text: Prevod "{{old_title}}" je preimenovan u "{{new_title}}"
+    wysiwyt_created:
+      text: '{{user}} dodao WYSIWYT informaciju na {{project_title}} '
+    wysiwyt_deleted:
+      text: '{{user}} uklonio WYSIWYT informaciju sa {{project_title}} '
+  billing_infos:
+    show:
+      action: Promeniti
+      invoices:
+        h2: Tvoji Računi
+  collaborators:
+    add: Dodati jednog sada
+    delete_collaborator: Otkloniti saradnika
+    delete_confirm: Da li stvarno želite da otklonite '{{korisničko ime}}' iz ovog projekta?
+    delete_from_language_confirm: Otkloniti za ovaj jezik samo
+    delete_language: Izbrisati jezik
+    find: Pronađi saradnike
+    invite:
+      accept_btn: Poslati pozivnice
+      add_languages: Dodaj jezik(e)
+      decline_btn: Odbiti pozivnice
+      email: Unesite adresu poznatog
+      link: Pozovi saradnike
+      no_more_languages: Ne dodati više jezike
+      reviewer_rights: Pregled prava
+      select_locale: Prevešće u
+    joined_on: 'Pridružiti se:'
+    none: Nema prevodioca i pregleda dodatih za ovaj jezik
+    role:
+      developer: Programer
+      owner: Vlasnik
+      project_admin: Administraror projekta
+      reviewer: Nadzornik
+      translator: Prevodioc
+    role_description:
+      developer: Programer je odgovoran za upravljanje lokalizacijom. Dozvole uključuju modifikovanje ili ažuriranje prevoda fraze. 
+      project_admin: Administrator može da menja skoro sve aspekte projekta. Samo vlasnik ima obavezu da ga zatvori ili da upravlja obračunima.
+      translator: Prevodilac nema administrativnih dozvola, ali je dodeljen jednom ili većem broju lokaliteta. Dodeljivanjem nadzorniku ulogu dodaje se dodatna dozvola da se promeni pregledan prevod. 
+    search_query: Pokaži saradnike za
+    title: Saradnici
+  editor:
+    actions:
+      select: Izaberi ovaj prevod
+      star: Obeleži zvezdom ovaj prevod
+    add_description: dodaj opis
+    add_second_language: Dodajte drugi jezik
+    at_the_end: Na kraju si svih prevoda. Opa, da li si završio?!
+    comments:
+      action: Dodaj komentar...
+      destroy:
+        confirm: Jesi li siguran da želiš da izbrišeš ovaj komentar?
+      placeholder: Komentariši ovaj prevod
+      submit: Pošalji komentar
+      text: na
+      update_submit: Ažuriraj komentar
+    context:
+      link: Kontekst
+    edit_link: klikni da dopuniš
+    go_back_to_current: vrati se trenutnom prevodu
+    history:
+      back_link: Sakrij istoriju
+      link: Pogledaj istoriju
+      not_available: Istorija nije dostupna
+      restore: Vrati
+    images:
+      action: Dodaj sliku
+    last_modified: Poslednji promenjen
+    lingochecks:
+      button_disabled_tooltip: Nije moguće sačuvati prevod jer LingoProvere otkazuju.
+      chars_hint: 'Definiše granice rasporeda za prevedene tekstove. Može biti ofset
+        ili fiksna granica. Primer: Procenat ofseta ''10%'' omogućava deset odsto
+        više znakova nego u originalnom tekstu; osnovni ofset ''+20'' dozvoljava 20
+        karaktera više nego u originalnom tekstu ili fiksni rok ''45'' koji omogućava
+        maksimalno 45 karaktera. Odstupanja se primenjuju samo na prevedenim tekstovima,
+        fisknim limiti se primenjuju na sve tekstove, uključujući i originale. '
+      failing: Neuspeli Lingočekovi 
+      length: Dužina fraze mora biti
+      linebreaks: redovi
+      linebreaks_hint: Proverava da li je broj redova u izvornom tekstu i broj tekstova u prevedenim tekstovima isti.
+      no_saving_possible: Nije moguće sačuvati prevod dok Lingočekovi ne rade.
+      placeholder_hint: Proverava da li se plejsholderi koriste u izvornom tekstu i da li postoje u prevedenim tekstovima.
+      placeholders: Plejsholder(i) se proveravaju
+      terms: Termin(i) se proveravaju
+    lingochecks_confirm:
+      btn: Sačuvaj svejedno
+      text: LinhoČek nije uspeo za ovu frazu 
+    loading: Učitavanje prevoda...
+    mass_btn:
+      not_starred: Označiti kao nevažno
+      starred: Označiti kao važno
+      starring: Izmena istaknutih prevoda
+      status: Promena Statusa
+    multiple_machine_translation:
+      confirm: Ova akcija će mašinski prevesti sve izabrane prevode i zameniti trenutni sadržaj!
+      tooltip: Mašinski Prevod
+    reviewed:
+      add_comment_link: |
+        dodaj komentar
+      segment_html: |
+        Ovaj prevedeni segment je pregledao <jak>{{nadzornik}}</jak>
+      suggestions_html: Da biste prijavili problem ili predložili poboljšanje, molimo vas {{veza}}
+    search:
+      translations: Prevodi
+    second_language_empty: Još nije prevedeno
+    selector:
+      all: Sve ({{count}})
+      none: Nijedan
+      starred: Označeno
+      unstarred: Neoznačeno
+    settings:
+      activate: Aktiviraj 
+      deactivate: Deaktiviraj
+      deactivate_confirm: Da li stvarno želite da deaktivirate ovaj segment? 
+      link: Podešavanja
+      project_default: Podrazmevan projekat: 
+      use_project_settings: Koristi projektna podešavanja
+    shortcuts:
+      close_and_save: Zatvori i sačuvaj
+      close_without_saving: Zatvori bez čuvanja
+      focus: Fokus
+      preselect: Unapred
+      save_and_next: Sačuvaj i pređi na sledeće
+      save_and_prev: Sačuvaj i vrati se na prethodno
+      save_as:
+        draft: Sačuvaj kao nacrt
+        reviewed: Sačuvaj kao pregledano
+        translated: Sačuvaj kao prevod
+      select: Izaberi
+      toggleTitle: Prebaci naslov
+    status:
+      deactivated: Deaktivirano
+      draft: Skica
+      machine_translated: Prevedeno od strane mašine
+      not_translated: Nije prevedeno
+      reviewed: Pregledan
+      translated: Prevedeno
+  global:
+    add: Dodati
+    back: Nazad
+    cancel: Otkazati
+    content: Sadržaj
+    date: Datum
+    edit_link: Kliknite za uređivanje
+    for: Za
+    inplace_info:
+      close: zatvori
+      what_is_this: Šta je ovo?
+    n: Ne
+    ok: U redu
+    or: ili
+    save: Sačuvati
+    server_errors:
+      general: Nešto je pošlo po zlu. Mi smo već dobili obaveštenje, ako imate dodatne informacije, molimo vas {{link}} javite nam zašto je došlo do problema. Hvala! 
+      link: kontaktiraj nas
+      unauthorized: Niste ovlašćeni da pristupite ovoj stranici. Bićete automatski preusmereni. 
+    status: Status
+    support: Podrška
+    user: Korisnik
+    y: Da
+  invitations:
+    add_message_question: Da li bi želeli da povežete sa pozivničkom  adresom?
+    add_name: Dodaj ime
+    add_personal_message: dodaj ličnu poruku
+    delete: Izbriši
+    flash:
+      info:
+        different_user: Ne možeš prihvatiti ili odbiti pozovnicu ukoliko si ulogovan kao drugi korisnik.
+    invite_errors:
+      collaborator_exists: Ova osoba je vec član tima projekta. Ti možeš da promeniš dozvole saradnikove uloge ispod.
+      invitation_exists: Ova osoba je već pozvana za vaš projekat, možete da pošaljete pozivnicu iznad.
+      is_owner: Nije moguće pozvati vlasnika projekta. Probaj drugu email adresu.
+    invited_as: Pozvati kao
+    resend: Ponovo pošalji
+    title: Pozivnice na čekanju
+    what_role: 'Dodaj ovom saradniku posebnu ulogu u svom projektu sada:'
+    will_be_invited_as: 'biće pozvan da se pridruži ovom projektu kao:'
+  invoices:
+    table:
+      empty: Nema još računa
+      th:
+        amount: Iznos
+        date: Datum
+        description: Opis
+        number: Broj
+        pdf: PDF
+  projects:
+    edit:
+      activate:
+        h2: Aktiviraj Svoj Projekat
+        note: Ovaj projekat je zaključan i deaktiviran. Ne možeš uraditi nijednu operaciju na njemu pre nego što ga ponovo ne aktiviraš.
+        note_plural: Ovi projekti su zaključani i ne mogu biti korišćeni ili popravljani pre reaktiviranja.
+        submit: Aktivirati
+      add_locale_title: Dodaj više jezika
+      deactivate:
+        confirm: Da li stvarno želiš da deaktiviraš projekat?
+        h2: Deaktiviraj Svoj Projekat
+        note: Možeš da deaktiviraš svoj projekat bilo kada. Molimo te da budeš svestan toga da će biti deaktivirano i sve ostalo što je povezano sa projektom (datoteke, prevodi itd.) i da neće biti vidljivi. Možeš ponovo aktivirati svoj projekat kad god poželiš.
+        submit: Deaktiviraj Projekat
+      delete_image:
+        confirm: Brisanje slike projekta?
+        label: Izbriši
+      delete_locale:
+        confirm: Da li stvarno želite da izbrišete ovaj jezik?
+        label: Izbriši jezik
+      flash:
+        success: Projekat je uspešno ažuriran.
+      form:
+        description:
+          label: Opis
+          placeholder: Opis
+        image:
+          label: Da biste promenili avatar projekta, prevuci i spusti ili 
+        opensource:
+          hint_content: 'Hvala za vaš doprinos. Naš jedini uslov: navedite URL adresu
+            veb sajta svog projekta.'
+          hint_title: Open source projekat 
+          label: Open source
+        title:
+          label: Naslov 
+          placeholder: Odličan projekat 
+        update_submit: Ažuriraj Projekat 
+        website:
+          label: Vebsajt 
+          placeholder: Vebsajt
+      h3: Izmeni projekat
+      hint:
+        content: Izaberi jedan ili više jezika na koje treba prevesti tvoj projekat. Po pravilu, stavili smo engleski da je "glavni jezik". Glavni jezik predstavlja "originalni" jezik aplikacije. Slobodno promeni glavni jezik ili izbriši jezik koji nećeš trebati za svoj projekat.
+        title: Kako da dodam jezike?
+      lingohub_shield:
+        # lh-check { terms: Shield }
+        current: Vaš Lingohub štit je
+        description: Lingohub štit pruža informaciju tačnog vremena o lokalizaciji vašeg projekta tačno unutar vašeg spremišta Github. Ya svaki prostor trenutno u procesu prevoda, boja statusa informiše vašu zajednicuo trenutnom stanju projekta. Zelena znači da su pregledani svi tekstovi za ovaj lokalitet, žuta znači da su pregledani više od 95%, a crvena manje od 95% do sada.
+        h2: Lingohub štit
+        hint_html: Ubacite označeni kod u opisu vašeg javnog spremišta GitHuba. To će prikazati trenutni status vaših prevoda. <a href='{{url}}'>Clickhere</a> da pročitate više o funkcionalnosti i implementaciji.
+        hint_title: Kako koristim štit za Github?
+        img_alt: Lingohub štit 
+        status: Prikazani pregledani status vašeg trenutnog projekta je
+      locale: Jezik
+      locales: Jezici
+      select_locale: Izaberite jezik
+      set_source_locale: Postavi kao maternji jezik 
+      source_locale: Maternji jezik
+      token:
+        current: Znak tvog projekta je
+        h2: Znak projekta
+        hint_html: Ovo je vaš znak potvrde za upotrebu Lingohub REST API. <a href='{{url}}'>Click here</a> da pročitate više u našoj dokumentaciji.
+        hint_title: Čemu služi znak?
+      update_submit: Ažurirati projekat
+    lingochecks:
+      hint:
+        linebreaks_html: '<b> Linije pauze:</b> Kada se aktivira, proverava da li
+          je broj linija u izvornom tekstu jednak broju linija u ostalim prevedenim
+          tekstovima. Uobičajeno je: nije aktiviran. '
+        min_max_html: '<b> Min/Max:</b> Definiše granice karaktera za prevedene tekstove.
+          Može biti ofset ili fiksna granica. <i>Primer</i>: Procenat protivteže ''10%''
+          omogućava deset procenata više znakova nego u originalnom tekstu,  основнa
+          protivteža ''+20'' dozvoljava 20 karaktera više nego u originalnom tekstu
+          ili osnovnog ograničenja ''45'' koje dozvoljava najviše 45 znakova. Odstupanja
+          se primenjuju samo na prevedene tekstove, osnovna ograničenja se primenjuju
+          na sve tekstove, uključujući originale.'
+        placeholders_html: <b> Čuvar mesta:</b> Kada se aktivira, proverava da li je čuvar mesta korisćen u originalnom tekstu takođe prisutan u prevedenom tekstu. Uobičajeno je aktiviran. 
+        terms_html: '<b>Uslovi:</b> Definiše uslove koji bi trebalo da se koriste
+          u prevedenim tekstovima kao što se javljaju u originalnom tekstu. Primer:
+          originalni tekst je "Dobrodošli u Lingohub!", definisanjem pojma ''Lingohub''
+          bi se obezbedilo da se takođe koristi u prevedenim tekstovima.  Ova provera
+          je osetljiva.'
+        title: Lingočekovi su objašnjeni 
+      label:
+        check_for_characters: Proverite karaktere
+        check_linebreaks: Proverite prelome redova 
+        check_max_chars: макs.
+        check_min_chars: min.
+        check_placeholders: Proverite čuvare mesta 
+        check_terms: Proverite uslove
+      submit: Sačuvaj
+      translation_saving_setting:
+        confirmation: Potvrda potrebna 
+        label: Ponašanje pri čuvanju prevoda 
+        no_check: bez provere 
+        strict: nedozvoljeno je sačuvati 
+  resource_imports:
+    index:
+      file_info: Detalji o datoteci
+      file_status: Status datoteke
+      h2: Svi uvozi
+      no_imports:
+        file_upload:
+          advantages:
+            item1: Otpremi svoju izvornu datoteku jednim klikom
+            item2: spoji se sa prevodiocima i uživaj u procesu lokalizacije
+            item3: izvezi svoje jezike i spreman si
+          btn: Otpremi izvornu datoteku
+          files_title: ! 'Mogući tipovi i formati datoteka:'
+          p1: preporučeno za početak
+          p2: Lingohub će analizirati datoteku koju si otpremio i otkriti kom jeziku pripada.  Međutim, ako želiš da preskočiš ovu akciju, možeš izabrati koji jezik želiš Lingohub da koristi.
+          subtitle: Otpremi datoteke sa svog kompjutera.
+          subtitle1: Mogući tipovi datoteka
+          title: Koristeći otpremanje datoteke
+        h2: Uvozi
+        p1: Nije uvezena nijedna izvorna datoteka.
+        p2_html: ! '%{user}, Lingohub ti nudi 2 načina kako da uvezeš svoje izvorne datoteke i započneš lokalizaciju svog proizvoda.'
+        repository_import:
+          advantages:
+            item1: inegriši svoj repozitorijum
+            item2: Sinhronizacija izvorne datoteke
+            item3: sarađuj sa prevodiocima i uživaj u procesu lokalizacije
+          btn: Povezivanje sa repozitorijumom
+          p1: preporučeno za jače integracije
+          sidebar_title: Uvoz repozitorijuma
+          subtitle: ! 'Podrška repozitorijuma:'
+          title: koristeći uvoz repozitorijuma
+  users:
+    edit:
+      api:
+        h2: API pristup
+        reset_auth_token: regenerisati
+        text_html: <strong>Tvoj API token je</strong> <p class='authentication_token'><code id='api-token' class='authentication-token'>{{token}}</code></p>Ovaj token omogućava pristup tvom Lingohub nalogu, molimo te da ga tretiraš <strong>poverljivim</strong>! Klikni {{link}} da kreiraš novi token.
+      authentication_providers:
+        authenticated:
+          title: Ovlašćeni Operateri
+        hint: 'Možeš jednostavno da klikneš na Autentikaciju kako bi  konektovao svoj
+          nalog sa Lingohub-om ili otkazao povezivanje. '
+        not_authenticated:
+          title: Neovlašćeni Operateri
+        title: Povezivanje sa Lingohub-om
+      form:
+        company: Kompanija
+        email: Email
+        first_name: Ime
+        last_name: Prezime
+        list_newsletter: Generalna ažuriranja
+        locale: Jezik
+        name: Ime
+        old_password: Stara šifra
+        password: Šifra
+        password_confirmation: Potvrda šifre
+        subscriptions: Pretplate
+        time_zone: Vremenska zona
+        username: Korisničko ime
+      password:
+        h2: Promeni svoju lozinku
+        submit: Promeniti Lozinku
+      settings:
+        account:
+          activated:
+            button: Deaktiviraj svoj nalog
+            text: 'Ukoliko ti ikad zatreba: deaktivirani nalozi se ne naplaćuju, niti
+              bivaju kontaktirani od strane Lingohub-a. Po deaktivaciji, sve informacije
+              naloga su sačuvane i nekorišćene. Ukoliko odlučiš da se vratiš, neće
+              biti potrebe da ih ponovo upisuješ.'
+            title: Tvoj nalog je trenutno aktivan. Uživaj u Lingohub-u!
+          deactivated:
+            button: Aktiviranje naloga
+            text: Svi tvoji podaci su arhivirani. Ukoliko ponovo aktiviraš svoj nalog, biće spreman za upotrebu za minut. Uživaj u prednostima lokalizacije sa Lingohub-om! Ukoliko imaš pitanja, slobodno nas kontaktiraj.
+            title: Tvoj nalog je deaktiviran!
+          status: Status naloga
+        email_preferences:
+          title: Obaveštenja e-mail - om
+        h2: Promeni podešavanja svog naloga
+        submit: Sačuvati izmene
+    global:
+      navigation:
+        authentication: Autentifikacija
+        edit: Podešavanja profila
+        profile_picture: Slika profila

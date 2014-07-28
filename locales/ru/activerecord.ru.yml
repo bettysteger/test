@@ -1,0 +1,55 @@
+---
+ru:
+  activerecord:
+    attributes:
+      translation_comment:
+        content: Коментарий
+    errors:
+      format: '%{attribute} %{message}'
+      full_messages:
+        format: '%{message}'
+      messages:
+        accepted: должно быть принято
+        billing_info:
+          attributes:
+            vat_number:
+              invalid: недействительный
+        blank: это поле должно быть заполнено
+        confirmation: не соответствует подтверждению
+        date_greater_than: Должно быть больше %{date_from}
+        empty: это поле не может быть пустым
+        equal_to: должно равняться %{count}
+        even: значение должно быть четной цифрой
+        exclusion: резервный
+        greater_than: значение должно быть больше %{count}
+        greater_than_or_equal_to: значение должно быть больше или равно %{count}
+        inclusion: нет в списке
+        invalid: недействительно
+        invalid_regex: недействительное простое выражение
+        invalid_url: URL должен быть действительным
+        less_than: значение должно быть меньше %{count}
+        less_than_or_equal_to: значение должно быть меньше или равно %{count}
+        not_a_number: это не авляется цифрой
+        not_an_integer: число должно быть целым
+        odd: число должно быть нечетным
+        record_invalid: 'Проверка не удалась: %{errors}'
+        single_current_residence: только одно местожительство может быть текущим
+        single_origin_residence: только одно местожительство может быть источником
+        taken: Уже взято
+        too_long: слишком длинное (максимум %{count} символов)
+        too_short: слишком короткое (минимум %{count} символов)
+        user:
+          attributes:
+            old_password:
+              invalid: неправильный
+        wrong_length: длина не соответствует стандарту (должно составлять %{count} символов)
+      models:
+        project_user_setting:
+          attributes:
+            user:
+              no_collaborator: не является сотрудником проекта
+      template:
+        body: 'Возникли проблемы со следующими полями:'
+        header:
+          one: 1 ошибка не позволила сохранить данную модель%{model}
+          other: '%{count} ошибки не позволили сохранить данную %{model}'

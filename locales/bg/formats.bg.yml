@@ -1,0 +1,65 @@
+---
+bg:
+  number:
+    currency:
+      format:
+        delimiter: ','
+        format: '%u %n'
+        precision: 2
+        separator: .
+        significant: грешно
+        strip_insignificant_zeros: грешно
+        unit: USD
+    format:
+      delimiter: ','
+      precision: 3
+      separator: .
+      significant: грешно
+      strip_insignificant_zeros: грешно
+    human:
+      decimal_units:
+        format: '%n %u'
+        units:
+          billion:
+            one: Милиард
+            other: Милиард
+          million:
+            one: Милион
+            other: Милион
+          quadrillion:
+            one: Квадрилиона
+            other: Квадрилиона
+          thousand:
+            one: Хиляда
+            other: Хиляда
+          trillion:
+            one: Трилион
+            other: Трилион
+      format:
+        precision: 3
+        significant: вярно
+        strip_insignificant_zeros: вярно
+      storage_units:
+        format: '%n %u'
+        units:
+          byte:
+            one: Байт
+            other: Бита
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+  support:
+    array:
+      last_word_connector: и
+      select:
+        prompt: Моля изберете
+      two_words_connector: и
+      words_connector: ','
+  time:
+    am: преди обяд
+    formats:
+      default: '%a, %d %b %Y %H:%M:%S %z'
+      long: '%B %d, %Y %H:%M'
+      short: '%d %b %H:%M'
+    pm: следобед

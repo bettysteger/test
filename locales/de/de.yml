@@ -1,0 +1,1043 @@
+---
+de:
+  # to trigger automatic import into lingohub
+  add: Hinzufügen
+  api:
+    index:
+      # this must not be translated keep it as it is.
+      # lh-check { placeholders: false, terms: REST API }
+      title: REST API
+  cancel: Abbrechen
+  close: Schließen
+  collaborators:
+    delete:
+      flash:
+        success: Mitarbeiter '%{email}' entfernt.
+      tooltip: Lösche Mitarbeiter
+    edit:
+      destroy:
+        # lh-check { min: -5, max: +5, placeholders: false }
+        confirm: Willst Du den Mitarbeiter wirklich von dem Projekt entfernen?
+    index:
+      # lh-check { min: -20, max: +20, placeholders: false }
+      content: 'Du kannst neue Mitarbeiter (Übersetzer oder Entwickler) zum Projekt
+        einladen. Berechtigungen werden anhand deren ausgewählter Rollen vergeben.
+        Dies hilft dem Mitarbeiter, sich auf das Relevante zu fokussieren und schützt
+        Dein Projekt vor unberechtigtem Zugriff. <i>Beispielsweise</i> sieht ein Spanisch-Übersetzer
+        nur die Ausgangssprache sowie Spanisch, jedoch kann dieser keine Projekteinstellungen
+        vornehmen. Die vier Rollen sind:'
+      description:
+        developer:
+          content: Der Entwickler ist für das Managen der Übersetzungen verantwortlich. Daher kann der Entwickler neue erstellen und bestehende löschen.
+          title: Entwickler
+        owner:
+          content: Der Projektinhaber hat das Projekt erstellt und daher alle Berechtigungen. Dies beinhaltet Up/Download von Dateien, Ändern von Übersetzungen und Verwaltung der Teammitglieder. Nur der Projektbesitzer darf ein Projekt archivieren.
+          title: Projektinhaber
+        project_administrator:
+          content: Der Administrator hat die selben Rechte wie ein Projektinhaber, außer das Projekt zu archivieren.
+          title: Projekt Administrator
+        reviewer:
+          content: Ein Reviewer kann den Status einer Übersetzung auf "korrekturgelesen" setzen. Danach kann sie nicht mehr von Übersetzern bearbeitet werden.
+          title: Reviewer
+        translator:
+          content: Der Übersetzer hat keine Administrationsrechte, aber kann eine oder mehrere zugeordnete Sprachen bearbeiten.
+          title: Übersetzer
+      developer: Entwickler
+      h2: Mitarbeiter
+      hint:
+        content: Du kannst Übersetzer und Entwickler hinzufügen indem Du deren Emailadressen angibst. Lingohub verschickt dann Einladungen mit Kurzanleitung. Sobald die Einladung angenommen ist, haben die Mitarbeiter Zugriff auf das Projekt.
+        title: Wer arbeitet mit mir?
+      invitations:
+        delete: Lösche Einladung
+        email_placeholder: E-Mail Einladung
+        h2: Einladungen
+        personal_message: Klicken hier um eine persönliche Nachricht zur Einladung hinzuzufügen.
+        resend: Email erneut senden
+        submit: Einladung verschicken
+      no_role: Noch nichts zugeteilt.
+      owner: Projektinhaber
+      permissions_header: Zugriffsrechte
+      project_admin: Projektadministrator
+      reviewer: Reviewer
+      title: Mitarbeiter - %{project_title} 
+      translator: Übersetzer
+  control_panel:
+    navigation:
+      sub:
+        lingohubbers: Lingohubber
+        projects: Projekte
+        reports: Berichte
+        sidekiq_web: Sidekiq
+        users: Benutzer
+  edit: Bearbeiten
+  errors:
+    messages:
+      extension_white_list_error: 'Du kannst keine %{extension} Dateien hochladen,
+        erlaubte Typen sind:  %{allowed_types}'
+      size_too_big: ist zu groß (sollte höchstens %{file_size} sein)
+      size_too_small: ist zu klein (sollte mindestens %{file_size} sein)
+      wrong_size: hat die falsche Größe (sollte %{file_size} sein)
+    routing_public:
+      back_link: zurück zu Lingohub.com
+      email_link: Schreibe uns eine Email wenn wir helfen können
+      # lh-check { placeholders: false, terms: 404 }
+      h1: 404 - Seite nicht gefunden
+      item1: Lingohub Produktdokumentation
+      item2: der Lingohub Blog
+      item3: unser Twitter Kanal
+      p1: 'Es tut uns leid, aber wir konnten unter dieser Addresse keine Seite finden.
+        Keine Sorge, vielleicht helfen diese Links weiter:'
+      p3: oder %{link}
+      p4: Du bist für alle Lokalisierungsbedürfnisse bei uns in guten Händen. Melde Dich an um auf Deine Projekte zuzugreifen.  %{link}!
+  global:
+    and: und
+    authentication:
+      omni_auth_failure: Es tut uns leid, aber wir konnten dich nicht autorisieren. Bitte melde dich mit deiner Email Adresse und Passwort an.
+      provider:
+        bitbucket: Bitbucket
+        facebook: Facebook
+        # lh-check { placeholders: false, terms: Github }
+        github: Github
+        google_oauth2: Google
+        linkedin: LinkedIn
+        twitter: Twitter
+        xing: Xing
+    authorization:
+      not_authorized: Du hast keine Berechtigung die Seite anzuzeigen.
+    colors:
+      black: schwarz
+      grey: Grau
+      red: rot
+      white: Weiß
+    confirmation_needed: Bitte bestätige Deine Email Adresse. Falls Du die Email nicht erhalten hast, sieh bitte in den "Spam" Ordner oder fordere die Bestätigung hier  %{resend_link}  erneut an.
+    create: erstellen
+    delete_link: Löschen
+    documentation_page: Dokumentationsseite
+    email:
+      signature:
+        helmut:
+          l1: Grüße,
+          l2: Helmut, CEO
+        lingohub:
+          l1: Beste Grüße,
+          l2: Dein Lingohub Team.
+    error:
+      unexpected_error: Leider ist ein Fehler aufgetreten. Keine Sorge, wir haben alles gespeichert und werden den Fehler umgehend beheben.
+    filename: Dateiname
+    knowledge_base: Nützliches Wissen
+    locale: Sprache
+    locale_deactivated: Die unten angeführten Sprachen sind deaktiviert
+    message:
+      trial_ends:
+        days_ago: Testphase abgelaufen. Wähle jetzt ein Paket!
+        days_since:
+          one: Deine Testphase endet morgen. Jetzt ein Paket wählen!
+          other: Testphase endet in %{count} Tagen. Jetzt ein Paket wählen!
+    myself: Du
+    no_phrase: Nein
+    phrase: Übersetzung
+    privacy_policy: Datenschutz
+    project: Projekt
+    reload: neu laden
+    resend: erneut senden
+    sign_in: Einloggen
+    sign_up: Registrieren
+    submit: Abschicken
+    submit_processing: Verarbeite ...
+    support_page: Hilfeseite
+    terms_of_service: Allgemeine Geschäftsbedingungen
+    this_link: dieser Link
+    translations: Übersetzungen
+    using: verwenden
+    view_more: Mehr
+    yes_phrase: Ja
+  invitations:
+    accept:
+      flash:
+        error: Leider wurde Deine Einladung gelöscht bevor Du sie akzeptieren konntest.
+    create:
+      flash:
+        not_invite_oneself_error: Du kannst Dich nicht selbst einladen!
+    decline:
+      flash:
+        success: Einladung abgelehnt.
+  invoices:
+    document:
+      address:
+        from: Von
+        to: An
+      cc_statement_information: Der Rechnungsbetrag wird auf Ihrer Kreditkartenrechnung mit "%{cc_charge_description}" aufgeführt sein.
+      charged_information: Deine %{cc_type} Karte, Endziffern %{cc_last_four}, wurde belastet.
+      currencies:
+        usd: USD
+      currency: Währung
+      date: Datum
+      invoice: Rechnung
+      invoice_number: Rechnungsnummer
+      paid: Bezahlt
+      payment: Bezahlung
+      table:
+        description: Beschreibung
+        price: Preis
+        total: Gesamt
+        vat:
+          item:
+            description: '%{vat_percent}% USt.'
+      vat: USt.
+  landing:
+    description: Lingohub macht Übersetzung reibungslos für alle Beteiligten, erhöht die Produktivität und senkt Kosten.
+    developers:
+      description: Mache Dir endlich keine Sorgen mehr und rolle Dein Produkt global aus, mit der intelligentesten Lösung zur Verwaltung von Lokalisierung. Hochwertige Übersetzung ohne Kopfschmerzen, von Profis rund um den Globus.
+      features:
+        feature1:
+          text: Mit Lingohub hat Dein Team Übersetzungen schneller fertig zur Hand - das bringt echten Business Mehrwert durch weniger Fixkosten und mehr freie Ressourcen. Konzentriere Dich auf das Produkt, wir lösen die Kopfschmerzen. Für Übersetzer funktioniert das ähnlich, Win-Win für alle Beteiligten!
+          title: Echter Mehrwert
+        feature2:
+          text: Komplette SSL Verschlüsselung und Infrastukture auf Enterprise-Niveau machen Lingohub zum sichersten Ort für Deine Übersetzungsprojekte. Alle Dateien sind automatisch gesichert und immer abrufbereit. Ein Rechte-System erlaubt granulare Kontrolle darüber wer was in Deinem Projekt editieren darf.
+          title: Sicherheit
+        feature3:
+          text: Arbeite in globalen Teams zusammen vom Browser aus - kein Download notwendig. Lingohub beinhaltet Kommentierung und Benachrichtigungen, Payment und Bearbeitungs-Workflows.
+          title: Zusammenarbeit in der Cloud
+        feature4:
+          text: 'Du brauchst ein Schweizer Taschenmesser? Lingohub hat einen CLI Client,
+            eine flexible REST API, und unterstützt Dein favorisiertes Entwicklerwerkzeug
+            (inklusive vielseitige Github-Integration). Noch besser: Open Source Projekte
+            kannst Du mit Lingohub gratis verwalten!'
+          title: Neueste Werkzeuge
+        feature5:
+          text: Lingohubs Plattform erlaubt Übersetzung auf die Du vertrauen kannst. Füge bewertete und zertifizierte Übersetzer und Korrektoren zu einem Projekt hinzu und baue langfristige Beziehungen zu Profis auf. Unsere Übersetzungsumgebung ermöglicht die hochwertigsten Übersetzungen, und Lokalisierung war noch nie so reibungslos.
+          title: Vertrauen durch Beziehungen
+        h3: Deine Vorteile
+      index:
+        h2: <small>für</small> Entwickler
+        tab1: Warum Lingohub
+        tab2: Kerntechnologien
+        tab3: Loslegen
+        tabs:
+          learn_more: mehr erfahren
+          more: Genieße die 30-Tage Testphase um Lingohub zu entdecken oder  %{plan_link} der am besten passt.
+          or: oder
+          pick: wähle jetzt ein flexibles Paket
+          sign_up: Jetzt anmelden!
+      is_for: Lingohub ist für Entwickler
+      main:
+        compare: Pakete und Preise vergleichen
+        feature1:
+          h2: Erreiche Milliarden mit Deinen Apps!
+          p: Unterstütze jetzt mehr Sprachen und erreiche sofort neue Kunden rund um den Globus durch hochwertige Lokalisierung.
+        feature2:
+          h2: Android, iOS & Co!
+          p: 'Lokalisiere Dein Produkt für iOS, Android oder jede andere Plattform.
+            Wir unterstützen alle Dateien und Formate: reibungslos und einheitlich.'
+        feature3:
+          h2: Clevere Integration mit Github!
+          p: Lingohub verbindet sich mit Deinem Repository und synchronisiert wie Du es willst - oder benutze die flexible %{api_link} und den %{cli_client_link} für spezielle Anwendungsfälle.
+        learn_more: Mehr erfahren
+        more: Genieße eine 30-Tage Testphase um Lingohub zu entdecken oder wähle ein flexibles Paket dass zu Deinen Anforderungen passt. Open Source Projekte sind auf Lingohub gratis
+        or: oder
+        sign_up: Jetzt anmelden!
+        text: Entwickler
+        title: Für Kreative
+      plans_and_pricing:
+        text: Lingohub versteht Deine Anforderungen an Software-Lokalisierung. Unsere Pakete sind verschieden gestaffelt um unterschiedlichen Projektvorhaben zu genügen. Wenn Dein Projekt skaliert, skalieren wir mit - immer mit allen Features.
+      sign_up:
+        compare: Pakete vergleichen und & FAQ
+        h2: Erstelle noch heute Dein Lingohub Konto, völlig risikofrei.
+        li1: Pakete können jederzeit gewechselt werden - und es gibt eine 30 Tage Testphase.
+        li2: Zahlungsinformationen müssen erst bei finaler Auswahl eines Pakets angegeben werden.
+        li3: <strong>Dein Projekt ist Open Source?</strong> Wir hosten es gratis, jetzt anmelden und das Projekt anlegen!
+      technologies:
+        feature1:
+          h2: Die Welt ist mobil
+          p: Deine Kunden nutzen verschiedenste mobile Plattformen - wir unterstützen sie alle. Lokalisiere einfach für iOS, Android, Windows 8 oder HTML5 Oberflächen (Web-Apps, FirefoxOS)
+        feature2:
+          h2: 'Plattformübergreifende Kompatibilität '
+          p: Lingohub verwaltet Quelldateien über ein intelligentes Upload/Export-System, inklusive Meta-Informationen, Kommentare und Formatierung, z.B. als .yml, properties, .ini, .xml, strings, .resx, .resjson, .resw oder .po Datei
+        feature3:
+          h2: Die Neuesten Frameworks
+          p: Ob auf Rails oder mit anderen Entwicklungs-Frameworks, Lingohub fühlt sich dort zuhause und stärkt Deinen Entwicklungsprozess - einen vollständigen Ruby CLI-Client und eine API legen wir außerdem als Werkzeuge bei.
+        feature4:
+          h2: Mächtige API
+          p: Zur vollständigen Automatisierung und für völlige Kontrolle über den Ablauf, nutze die mächtige %{rest_api_link} die alle Funktionen der Web-Oberfläche bietet. Die API ist ausführlich dokumentiert, Du wirst es lieben!
+      why_lingohub:
+        feature1:
+          h2: Mehr Effizienz
+          p: Reduziere Fixkosten bei Lokalisierung und verwalte Deine Übersetzungen mit Lingohub. Warum Zeit verschwenden, die Dir bei der Produktentwicklung fehlt?
+        feature2:
+          h2: Neue Märkte
+          p: Erreiche neue Kunden in Ländern rund um den Globus mit mehrsprachigen Produkten. Es gibt keinen guten Grund warum man sich milliarden von Kunden entgehen lassen sollte!
+        feature3:
+          h2: Clevere Integration mit Github!
+          p: Lingohub arbeitet perfekt mit Deiner Entwicklungsumgebung zusammen. Eine vollständige zwei-Wege Synchronisierung mit Deinem Github Repository sowie eine ausgefeilte Update-Kontrolle wie von Dir definiert machen den Prozess agil!
+        feature4:
+          h2: Qualität & Vertrauen
+          p: Füge Deinen Dateien einfach Kontext bei, füge Screenshots hinzu - und lade zusätzliche Übersetzer und Korrektoren zu Deinem Projekt. Kunden lieben ein Produkt dass ihre Sprache perfekt spricht!
+    h1: Grüß Dich!
+    h3: <strong>Machen wir das Internet mehrsprachig.</strong> Wir verbinden Entwickler mit Übersetzern weltweit auf Lingohub für eine phantasisches Lokalisierungs-Erlebnis.
+    more: Weiterlesen
+    translators:
+      benefits:
+        feature1:
+          h2: Dein Editor ist immer mit dabei
+          p: Keine Programme zum herunterladen und installieren, keine Lizenzgebühren, keine Kompatibilitätsprobleme. Dein Übersetzungseditor auf Lingohub ist direkt im Webbrowser (egal welcher) überall da wo Du arbeitest.
+        feature2:
+          h2: Das Endprodukt im Blick
+          p: What-You-See-Is-What-You-Translate (WYSIWYT) bietet ein Höchstmaß an Kontext, mit automatisierten Bildschirmfotos des Endprodukts. Zusätzlich gibt es Meta-Informationen zu den Übersetzungstexten.
+        feature3:
+          h2: Flinke Zusammenarbeit
+          p: Kommentiere Übersetzungen um Mitarbeiter am gleichen Projekt oder Korrekturleser auf Aspekte aufmerksam zu machen, optimiere den Arbeitsprozess durch einfaches Setzen von Statusindikatoren, und erhalte Änderungsbenachrichtungen automatisch.
+        feature4:
+          h2: Dein kostenloses Profil
+          p: Auf Lingohub kannst Du ein gratis Übersetzerprofil anlegen um Deine Sprachen, Zertifikate, Spezialgebiete und Erfahrungen zu präsentieren. Erarbeite Dir einfach eine Reputation als Profiübersetzer im IT Sektor.
+      description: Konzentriere Dich auf die Kernaufgaben ohne von Technik behindert zu werden und arbeite direkt im Browser. Beginne noch heute und erstelle ein öffentliches Profil um Deine Kenntnisse zu vermarkten - kostenlos!
+      features:
+        feature1:
+          text: 'Teure Software, Datei-Management, Importieren und Exportieren: alles
+            nicht notwendig. Lingohub ist Dein wunderbarer Arbeitsplatz direkt im
+            Browser, ohne Installation! Einfach Sprachen anzeigen, Korrekturen verwalten,
+            kommentieren oder durch Übersetzungen suchen. Vom PC, oder am iPad vom
+            Cafe aus.'
+          title: Von CAT zum Webbrowser
+        feature2:
+          text: Kommentiere Übersetzungen die Erläuterung brauchen, arbeite zusammen mit Korrekturlesern und Kollegen gleichzeit an Projekten, und sieh wie es wächst! Da alles in der Wolke ist, braucht niemand Dateien Emailen oder Backups anzufertigen.
+          title: Einfache Zusammenarbeit
+        feature3:
+          text: What you see is what you translate!  Unsere bahnbrechende Kontext-Technologie bringt Dir automatisierten Screenshots des Endprodukts damit Du siehst wie die Übersetzung für den Benutzer aussieht. Deine Kunden können auch Fotos und  Meta-Informationen bereitstellen, z.B. Zeichenlimits oder geschützte Begriffe.
+          title: WYSIWYT
+        h3: Hauptvorteile
+      index:
+        h2: Gratis <small>für</small> Übersetzer
+        tab1: Warum Lingohub
+        tab2: Dein kostenloses Profil
+        tab3: Produktvorteile
+        tab4: Loslegen
+        tabs:
+          join: Jetzt mitmachen!
+          learn_more: mehr erfahren
+          or: oder
+      is_for: Lingohub ist für Übersetzer
+      main:
+        faq: Fragen & Antworten
+        feature1:
+          h2: Die flüssigste Arbeitsumgebung
+          p: Wir haben Übersetzerwerkzeuge entworfen, die sich um alles kümmern, damit Du Dich auf Deine Arbeit konzentrieren kannst. Einfach übersetzen!
+        feature2:
+          h2: Kontext, Kontext, Kontext!
+          p: 'Du hast die volle Kontrolle: den kontextreichsten  Editor den Du je
+            erlebt hast, mit  WYSIWYT<sup>TM</sup>, Vorschau und Meta-Informationen'
+        feature3:
+          h2: Erstelle Dein Profil!
+          p: 'Lokalisierung entsteht durch Profis wie Dich. Präsentiere Deine Kenntnisse
+            und finde neue Aufträge mit Deinem kostenlosen öffentlichen Profil '
+        learn_more: Mehr erfahren
+        more: Gratis! Melde Dich noch heute an und erstelle ein schickes Profil um neue Kunden zu gewinnen!
+        or: oder
+        sign_up: Noch heute anmelden!
+        text: Übersetzer
+        title: Für Übersetzer
+      sign_up:
+        h2: Noch heute gratis anmelden!
+        h4: Für Übersetzer ist Lingohub immer gratis weil...
+        li1: Computertechnik, Verträge und komplizierte Arbeitsprozesse gehören der Vergangenheit an.
+        li2: Einfach anmelden, Übersetzungsaufträge finden, und Lingohub kümmert sich um den Rest.
+        p: Wir wollen, dass Du Dich auf großartige und professionelle Dienstleistung konzentrieren kannst, die Du Kunden weltweit anbieten willst.
+      why_lingohub:
+        feature1:
+          h2: Einfach nur übersetzen
+          p: 'Verabschiede Dich von Dateien, Formatierung, komplizierter Software
+            oder zeitraubende Einarbeitung in Kundenumgebungen. Auf Lingohub kannst
+            Du Dich endlich auf das konzentrieren was zählt: Deine Übersetzungen'
+        feature2:
+          h2: Rundherum Kontext
+          p: Bildschirmfotos, Meta-Informationen (z.B. Zeichenlimits), Kommentare und unsere mächtige WYSIWYT<sup>TM</sup> Technologie stellen Dir ein Höchstmaß an Kontext zur Verfügung
+        feature3:
+          h2: Sorgenfreie Arbeitsprozesse
+          p: Du brauchst Dich nicht um Sicherungskopien sorgen, und Lingohub ist nach Anmeldung bereit. Bewege das Projekt vom ersten Wort an vorwärts und werde benachrichtigt wenn es Änderungen gibt, alles im Browser!
+        feature4:
+          h2: Dein kostenloses Profil
+          p: 'Das Beste zum Schluss: Lingohub ist und wird auch immer für Übersetzer
+            kostenlos sein. Darüber hinaus erstelle Dein eigenes öffentliches Profil
+            um Deine Kenntnisse zu bewerben und neue Kunden zu gewinnen. Jetzt anmelden
+            und noch heute erstellen!'
+        quote: Wir glauben, dass Übersetzung nicht nur ein Job, sondern eine Berufung ist und teilen Deine Leidenschaft für Sprache und Nuancen. Also haben wir eine Umgebung gebaut die einfach zu benutzen ist und alle technischen Dinge abnimmt. Arbeite auf einer kontextreichen Oberfläche, nutze hilfreiche Werkzeuge und sehe das Ergebnis Deiner Arbeit sofort. So einfach ist das. <span>- Helmut, Gründer von Lingohub</span>
+  languages:
+    iso_codes:
+      detect: Sprache ermitteln
+  locale_prompt: Bitte wähle eine Sprache aus
+  models:
+    file_labels:
+      title:
+        default: kein Dateiname
+    invoice_items:
+      description:
+        subscription_plan: '"%{plan_title}" Paket abonniert vom %{from_date} bis %{to_date}'
+    project:
+      owner: Projektinhaber
+    resource_file:
+      generic_locale: -Sprachcode-
+    user_labels:
+      title:
+        starred: Lesezeichen
+        unstarred: Nicht markiert
+  navigation:
+    my_projects: Meine Projekte
+    new_project: Neues Projekt
+  payment:
+    errors:
+      flash:
+        card_expired: Die Kreditkarte ist nicht mehr gültig.
+        cvv_missing: Sicherheitscode fehlt.
+        invalid_cc_number: Ungültige Kreditkartennummer.
+        invalid_expiration_date: Ungültigiges Ablaufdatum.
+        limit_exceeded: Kreditkartenlimit überschritten.
+        other: Ein Fehler trat auf bei der Verarbeitung dieser Kreditkarte (%{error_code})
+        wrong_amount: Die Bezahlsumme ist nicht korrekt.
+  plans_and_prices:
+    index:
+      # this will be displayed as button
+      # to choose a plan
+      choose: Auswählen
+      faqs:
+        collaborator:
+          answer: Hierbei handelt es sich um die Anzahl an Lingohub Nutzern die Du zu Deinen privaten Projekten mit Schreibzugang einladen kannst. Dabei zählt jeder Nutzer nur einmal, egal zu wie vielen Projekten er zugeordnet wurde.
+          question: Was bedeutet der Begriff "Mitarbeiter"?
+        data:
+          answer: Sicherheit und Datenschutz Deiner persönlichen, Zahlungs- und Projektinformationen sind uns sehr wichtig. Lingohub arbeitet in einem SAS70-zertifizierten Datenzentrum auf Enterprise-Niveau, und wir setzen Industrie-übliche Werkzeuge zur Datensicherung ein. Alle Pakete auf Lingohub sind SSL-verschlüsselt.
+          question: Sind meine Daten sicher?
+        decide:
+          answer: Ja, Du kannst jetzt mit einem Paket einsteigen welches Dir zum Start ausreicht, und später upgraden. Wenn Du ein Paketabonnement abgeschlossen hast und zu einem höherwertigen Paket upgraden willst, wird Dir nur die Differenz in Rechnung gestellt. Nicht vergessen, es gibt eine 30-tägige Testphase um Lingohub kennen zu lernen - und für Übersetzer ist Lingohub immer kostenlos.
+          question: Ich bin mir nicht sicher, welches Paket ich benötige, kann ich mich später entscheiden?
+        downgrade:
+          answer: Du kannst jederzeit Dein Paket wechseln oder kündigen zum Monatsende. Wir erstatten kein Geld zurück bei schon geleisteten Zahlungen, daher empfehlen wir mit einem kleineren Paket zu starten und erst bei Bedarf zu einem größeren zu Wechseln wenn sich Deine Anforderungen ändern.
+          question: Was passiert wenn Ich auf ein kleineres Paket wechsle?
+        free:
+          answer: Ja, Lingohub kann als kostenloses Übersetzungswerkzeug genutzt werden. Der kostenlose Benutzerzugang beinhaltet den Übersetzungseditor ohne Einschränkungen. Wenn Du Übersetzer bist, ist Lingohub für Dich immer kostenlos. Nur das Abwickeln kommerzieller Projekte setzt ein Bezahlpaket voraus.
+          question: Kann ich Lingohub kostenlos nutzen?
+        more:
+          answer: Besuche unsere Hilfeseiten oder kontaktiere uns direkt. Das Kleingedruckte findest Du unter <a href='https://lingohub.com/terms'>Nutzungsbedingungen</a>.
+          question: Du hast weitere Fragen?
+        public_projects:
+          answer: Standardmäßig sind alle Lingohub Projekte privat, und nur für eingeladene Nutzer einsehbar. Öffentliche Projekte sind für jedermann einsehbar und gedacht für Open Source Software-Entwicklung, oder Initiativen die keinen Datenschutz oder Geheimhaltung erfordern. Öffentliche Projekte zählen nicht in das Projekte- oder Mitarbeiterlimit Deines Pakets.
+          question: Was sind öffentliche Projekte?
+        title: Fragen und Antworten
+        trial:
+          answer: Wenn Du Dich bei Lingohub anmeldest, bist DU automatisch in der 30-tägigen Testphase (alle Funktionen, unbegrenzte Projekte und Mitarbeiter). Du kannst Dich jederzeit für eines der Pakete entscheiden, auch vor Ende der Testphase. Ansonsten wirst Du automatisch am Ende auf das kostenlose Paket für Übersetzer und Mitarbeiter umgestellt. Alle Funktionen bleiben nutzbar und Du kannst an anderen Projekten mitarbeiten, selbst aber keine erstellen oder verwalten. Wenn Dein Benutzerkonto die Limits erreicht hat, werden zusätzliche Projekte vorerst deaktiviert (nichts geht verloren). Eine Kreditkarte ist während der Testphase nicht notwendig. Du kannst die Testphase immer nutzen, zu dem Zeitpunkt ist es nicht relevant ob Du später nur übersetzen oder eigene Projekte erstellen möchtest.
+          question: Wie funktioniert die 30-tägige Testphase?
+      meta_info:
+        description: Lingohub Leistungspakete, Preise und Sonderangebote
+      p1: Bei Lingohub kennen wir die Anforderungen für Softwarelokalisation. Unsere Abonnements kommen in mehreren Geschmacksrichtungen um unterschiedlichen Projektanforderungen zu genügen. Wenn Dein Projekt skaliert, skalieren wir mit  - immer mit allen Leistungen die Du brauchst. <b>Be Global, Go Local!</b>
+      p2: Du kannst Pakete jederzeit ändern - und genieße eine <strong>kostenlose 30-täge Testphase</strong>!
+      page_title: Preisoptionen - Einfache Web und Mobile App Lokalisierung mit Lingohub
+      plan:
+        basic: Vielleicht baust Du eine innovative neue Mobil-Applikation? Wenn Du <strong>mehr Mitarbeiter und Textvolumen</strong> benötigst, bietet unser <span class='label'>Basic</span> Paket für bis zu drei Projekte die Werkzeuge an die Hand um Dein Produkt global zu  machen.
+        business: Unser <span class='label'>Business</span> Paket für größere Unterfangen hat das beste Preis-Leistungsverhältnis für agile Projekte und bietet noch viel Spielraum für <strong>textintensive Anwendungen oder große Websites</strong>.
+        mini: <strong>Wenn Du ein kleines Projekt betreibst</strong>, ist unser <span class='label'>Mini</span> Paket genau die richtige Wahl.
+        period: mtl.
+        plus: '<strong>Du willst mehr?</strong> Unser <span class=''label''>Plus</span>
+          Paket deckt das ab, und Du kannst jederzeit zum Monatsende up- oder downgraden
+          je nach Bedarf, dazu mehr in unserer <a href=''#faq''>F.A.Q.</a> weiter
+          unten. '
+      prompt: Jetzt anmelden und ein Paket auswählen!
+      title: Pakete und Preise
+      translators:
+        link: Hier klicken
+        p: Werfe einen Blick auf die Vorteile die Lingohub bietet - <strong>völlig kostenlos</strong>!
+        title: '@Übersetzer'
+  projects:
+    form:
+      description:
+        placeholder: Beschreibung
+      opensource:
+        hint: 'Danke für Deinen Beitrag zu Open Source. Unsere einzige Vorraussetzung:
+          Bitte gib die Webseite des Projekts an.'
+        hint_html: Open Source Projekte hosten wir kostenfrei!
+        label: Open Source
+        title: Open Source Projekt
+      title:
+        hint: 'notwendig: Der Name Ihres Projekts.'
+        placeholder: Superprojekt
+      website: Website
+    global:
+      deactivated:
+        flash:
+          info: Dieses Projekt ist deaktiviert und kann nicht benutzt werden. Du kannst das Projekt mit dem "Aktiveren" Schalter wieder aktivieren.
+      navigation:
+        administration: Administration
+        dashboard: Übersicht
+        resources: Dateien
+        sub:
+          collaborators: Mitarbeiter
+          locales: Sprachen
+          settings: Einstellungen
+        translations: Übersetzungen
+    new:
+      form_header: Neues Projekt erstellen
+      open_source:
+        hint:
+          content: Wir bei Lingohub lieben Open Source (ohne hätten wir diesen einmaligen Service nie entworfen), daher sind Open Source Projekte bei uns gratis. Ist Dein Projekt Open Source, dann kreutze einfach die Open Source Option an <b>und</b> teile die Webseite URL zu Deinem Projekt mit.
+          title: Open Source
+      submit: Projekt erstellen
+      what:
+        hint:
+          content: Mit Projekten meinen wir Deine Produkte und Services (Webseite, Mobile App, etc.) die Du auf Lingohub lokalisieren willst.
+          li1: Erstelle Dein Projekt, beginnend mit einem Titel. Optional kannst du auch noch eine Beschreibung für Teammitglieder eingeben.
+          li2: Anschließend können Sprachen und Mitarbeiter hinzugefügt werden.
+          title: Was sind Projekte?
+    show:
+      lingochecks:
+        failing: '%{count} LingoChecks scheitern'
+        ok: LingoChecks sind OK.
+  remove: Entfernen
+  remove_confirmation: Bist Du sicher?
+  repository_setting:
+    complete_setup_wizard:
+      invite_collaborators: Mitarbeiter einladen
+      p1_html: Du kannst jetzt loslegen. Die Verbindung zu Deinem Repository wurde aufgebaut und die Erst-Synchronisation läuft.
+      p2_html: Dieses Projekt ist mit dem Repository  "%{repository}" des Benutzerkontos "%{account}" verbunden
+      p3_html: Finde den Status und die Details von jeder Deiner Quelldateien heraus.
+      p4_html: Wähle eine Importstrategie für Deine Sprachen oder aktiviere die automatische Repository Synchronisation
+      p5_html: Vergrößere Dein Team, indem Du Mitglieder hinzufügst. Wähle für jedes Mitglied eine Rolle (Projektinhaber, Entwickler, Übersetzer oder Reviewer).
+      title: Gut gemacht, %{user}!
+      update_repository_settings: Repository Einstellungen aktualisieren
+      view_all_imports: Alle Imports ansehen
+      what_next_title: Was möchtest Du als Nächstes tun?
+    shared:
+      watch_patterns:
+        adding_watch_pattern: Neue Watch Pattern hinzufügen.
+        no_matches: Mit diesem Watch Pattern stimmen keine Dateien überein.
+        no_watch_patterns_added: Bis jetzt wurden keine Watch Pattern hinzugefügt.
+        removing_watch_pattern: Watch Pattern entfernen.
+        select: Watch Pattern auswählen
+    show:
+      connected:
+        checking_connection_to_provider: Verbindung zum Repository Provider wird überprüft...
+        disconnect_from_provider: Verbindung zu %{provider} unterbrochen
+        start_sync: Synchronisation starten
+        tabs:
+          settings:
+            choose_from_list: Wähle ein Repository aus.
+            title: Einstellungen
+          watch_patterns:
+            title: Watch Pattern
+        title: Repository Anbieter
+        to:
+          p_html: 'Dieses Projekt ist mit dem Repository <a href=''%{connection_url}''><strong>%{connection_info}</strong></a>
+            von "<a href=''%{user_url}''>%{user}</a>" verbunden. '
+          title: Mit %{provider} verbunden
+        view_all_files: Alle importierten Dateien ansehen
+      final_btn: Konfiguriere Verbindung
+      flash:
+        bitbucket:
+          general: Es sind Probleme mit der Verbindung zu Bitbucket aufgetreten. Bitte kontaktiere unseren Support.
+          not_available: Das gespeicherte Repository ist nicht mehr verfügbar. Bitte wähle ein anderes Repository aus oder kontaktiere einen Bitbucket Repository Besitzer.
+          remove_hook_error: Der vorherige Bitbucket Hook konnte nicht entfernt werden.
+        error: Repository Einstellungen konnten nicht aktualisiert werden
+        github:
+          general: Problem beim Verbinden mit Github. Bitte kontaktiere unseren Support.
+          not_available: Das gespeicherte Repository ist nicht mehr verfügbar. Bitte wähle ein anderes oder kontaktiere den Github Repository Inhaber.
+          remove_hook_error: Der vorangegangene Github Hook konnte nicht entfernt werden.
+        not_accessible: Repository nicht erreichbar
+        success: 'Repository Einstellungen korrekt aktualisiert '
+      hints:
+        safe_data:
+          hint:
+            text_html: Lingohub erhält Zugang zu allen Dateien in Deinem Repository, allerdings liest Lingohub nur den Inhalt von Dir gewählter Dateien. Alle anderen Dateien werden einfach ignoriert.
+            title: Ist mein Programmcode sicher?
+        safe_login:
+          hint:
+            text_html: Lingohub verwendet das OAuth Protokoll um eine Verbindung mit Deinem Repository Benutzerkonto herzustellen, so brauchst du nicht die Benutzerdaten bekannt zu geben, sondern gibst Lingohub die Berechtigung, das Repositories zu lesen. Diese Berechtigung kann jederzeit zurückgezogen werden.
+            title: Sind meine Zugangsdaten sicher?
+        setup_hook:
+          hint:
+            text_html: Lingohub bietet die Möglichkeit auf "commits"  zu reagieren, wenn Dein Source Control Management (SCM) dies erlaubt, nach dem Du in Dein Repository eingecheckt haben. Lingohub importiert automatisch alle Dateien, die dem Beobachtungsmuster (watch pattern) entsprechen.<br />Dies ist eine bequeme Art, die Ressource Dateien immer aktuell zu halten.<br />Aktiviere diese Option und Deine Übersetzer werden immer neue und geänderte Übersetzungen sehen.
+            title: Automatische Repository Synchronisation konfigurieren
+        watch_patterns:
+          hint:
+            regexs:
+              text_html: Wir nutzen Ruby <i>regular expressions</i> (reguläre Ausdrücke). Du kannst Deine <i>regular expressions</i> mit %{test_service_link} testen.
+            text_html: Ein Beobachtungsmuster (watch pattern) definiert, welche Dateien mit Lingohub synchronisiert werden sollen. Du kannst jeden gültigen Regulären Ausdruck verwenden um die Dateien einzuschränken.<br />Wir haben bereits einige übliche Beobachtungsmuster für spezielle Programmiersprachen und Frameworks vorbereitet.
+            title: Was sind "Beobachtungsmuster" (watch patterns)?
+      information: Dieses Projekt ist verbunden mit dem Repository '%{repository_name}' des Benutzers '%{user_name}'
+      merge_strategy:
+        inplace_hints: Eine Upload-Strategie bestimmt, wie Lingohub mit neuen und fehlenden Übersetzungen umgeht, wenn eine Quelldatei hochgeladen oder synchronisiert wird. Die "Primärsprache" -Strategie funktioniert in Standardfällen und ist voreingestellt.
+        master_locale_structure: Primärsprache
+        more_strategies: '... oder benötigst Du eine andere Upload Strategy?'
+        override: File-first
+        # internally known as merge strategy
+        title: Standard Import Strategie
+        update_and_create: Platform-first
+      missing_repository_name: Du bist erfolgreich mit Deinem %{provider_name} Benutzerkonto verbunden. Bitte gib nun den Namen des zu synchronisierenden Repositories an.
+      no_repo_text: 'Leg los, indem Du Dein Lingohub Projekt mit einem der unten genannten
+        Anbieter verbindest:'
+      not_connected:
+        connect_to_provider: Mit %{provider} verbinden
+      p1: Lingohub unterstützt momentan Verbindungen zu Github und Bitbucket. Sobald eine Verbindung hergestellt ist, hat Lingohub Zugriff auf Dein Repository und dessen Resource Files. Du kannst wählen, ob du manuell oder mittels Web Hook automatisch synchronisieren willst.
+      page_title: Repository Einstellungen - %{project_title}
+      repository_name:
+        label: 'Repository:'
+        # lh-check { placeholders: false, terms: rails/rails }
+        placeholder: rails/rails
+      select_btn: Auswählen
+      setup_hook:
+        action: Automatische Repository-Synchronisation
+        bitbucket:
+          # lh-check { terms: Bitbucket }
+          administrative_rights_needed: Du benötigst administrative Rechte für das Bitbucket Projekt um die automatische Synchronisation zu aktivieren.
+        flash:
+          success:
+            install: Automatisches Repository-Sync aktiviert
+            uninstall: Automatisches Repository-Sync deaktiviert
+        github:
+          # lh-check { terms: Github }
+          administrative_rights_needed: Du benötigst administrative Rechte für das Github Projekt um die automatische Synchronisation zu aktivieren.
+        inplace_hints:
+          heading: Automatische Repository Synchronisation konfigurieren
+          p1: Lingohub bietet die Möglichkeit auf "commits" zu reagieren, wenn Dein Source Control Management (SCM) dies erlaubt, nachdem Du in Deinem Repository eingecheckt hast. Lingohub importiert automatisch alle Dateien, die dem Watch Pattern entsprechen.
+          p2: Das ist eine tolle Möglichkeit, um Deine Quelldateien mit Lingohub immer aktuell zu halten.
+          p3: Falls ausgewählt, sehen Deine Mitarbeiter immer die neuesten Übersetzungen die zu übersetzen sind.
+        title: Automatische Sychronisation
+      starting_sync:
+        flash:
+          success: Synchronisation mit dem Repository begonnen
+      steps:
+        completed: Du bist fertig!
+        description: 'Wähle ein Repository aus und verbinde Dich damit in nur 3 einfachen
+          Schritten:'
+        step1:
+          no_repositories: Das ausgewählte Benutzerkonto hat keine für %{provider} verfügbaren Repositories.
+          progress_label: 1. Repository auswählen
+          text: Wähle einen Namen für das Repository, um spätere lokale Dateisynchronisationen zu ermöglichen.
+        step2:
+          no_branches: In diesem Repository befinden sich keine vorhandenen Branches.
+          progress_label: 2. Branch auswählen
+          select_branch: Branch auswählen
+          text: Wähle ein Branch für die Synchronisation Deiner Quelldateien aus.
+        step3: 3. Watch Pattern
+      submit: Einstellungen aktualisieren
+      title: Repository Einstellungen
+      title_connect: Mit dem Repository verbinden
+      watch_patterns:
+        hint:
+          only_master_locale_html: Bitte erstelle Watch-Patterns für die <b>master locale</b> Deines Projekts. Neue Versionen anderer Quelldateien entstehen oft in der Lingohub Applikation, diese sollten nicht in Konflikt mit älteren aus dem Repository geraten.
+        inplace_hints:
+        - Ein Watch Pattern definiert, welche Dateien mit Lingohub synchronisiert werden sollen. Du kannst jeden gültigen, regulären Ausdruck verwenden um die Dateien einzuschränken.
+        - 'Wir haben bereits einige übliche Watch Pattern für spezielle Programmiersprachen/Frameworks
+          vorbereitet. '
+        new:
+          submit: Hinzufügen
+        no_defined: Keine Watch-Patterns definiert.
+        predefined:
+          suggestion:
+            text: Teile uns mit was wir hinzufügen sollten. %{support_link}
+            title: Fehlt etwas?
+          title: Vordefinierte Watch-Patterns
+        title: Watch-Patterns
+    wizard:
+      title: Mit deinem %{provider} Repository verbinden
+  resource_imports:
+    commit_details:
+      author: Autor
+      identifier: Commit
+      message: Commit Nachricht
+    status:
+      error: Fehler
+      force_locale: Sprache benötigt
+      merge_error: Merge Fehler
+      new: Nicht übersetzt
+      no_project_locale: Keine Projektsprache
+      pending: Übersetzt
+      running: In Bearbeitung
+      success: Erfolg
+    table:
+      action:
+        error: Die hochgeladene Datei scheint ungültig zu sein und konnte nicht geparst werden. Wenn Du denkst, dass dies ein Fehler ist, kontaktiere bitte unseren %{support_link}.
+        merge_error: Die Dateistruktur funktioniert nicht mit der aktuellen Importstrategie. Eine andere Strategie zu wählen könnte dieses Problem lösen.
+        reload_info: Bitte lade die Seite erneut, um den aktuellen Status anzuzeigen.
+        restart_import: Import neu starten
+        scheduled_info: Dieser Import wurde eingeplant!
+      empty: Keine Importe für dieses Projekt gelistet.
+      misc:
+        by_who: importiert von
+        created: Erstellt
+        deleted: Deaktiviert
+        descriptions_updated: Beschreibungen
+        download_file: Datei herunterladen
+        lingochecks_errors: Fehler
+        lingochecks_imported: LingoChecks importiert
+        lingochecks_processed: verarbeitet
+        on_date: am %{date}
+        reactivated: Reaktiviert
+        show_lingochecks_errors: Zeige LingoChecks Fehler
+        translations_imported: Übersetzungen importiert
+        updated: Aktualisiert
+      th:
+        action: Aktion
+        status: Status
+        type: Typ
+    type:
+      automatic_repository_import: Automatischer Repository Import
+      file_upload: Datei-Upload
+      manual_repository_import: Manueller Repository-Import
+  resources:
+    all_zip:
+      flash:
+        success: Zip Datei mit allen Quelldateien des Projekts wird generiert und in wenigen Momenten an %{email} verschickt.
+    create:
+      download:
+        lingochecks_not_ok_tooltip: '%{count} nicht bestanden'
+        lingochecks_ok_tooltip: Alle in Ordnung
+      flash:
+        error:
+          blank_file_name: Die Datei hat keinen Namen.
+          file_too_large: Die Datei ist zu groß.
+          invalid_file_extension: Die Dateiendung wird nicht unterstützt.
+          missing_locale: Es tut uns leid, aber die Sprache ist nicht valide. Bist Du sicher, dass die Sprache bereits dem Projekt hinzugefügt ist?
+          upload_error: Die Datei wurde nicht korrekt hochgeladen.
+        info: Lingohub konnte die Sprache nicht erkennen. Bitte setze die Sprache manuell und überprüfe, ob sie dem Projekt korrekt hinzugefügt wurde.
+        success: Upload erfolgreich. Das Verarbeiten der Datei kann einen Moment dauern.
+      hint:
+        text: 'Mögliche Dateitypen und Formate:'
+        text2: Lingohub analysiert die hochgeladenen Dateien und versucht die Sprache zu erkennen. Du kannst jedoch die Sprache auch manuell einstellen und dieses Verhalten damit unterbinden.
+        title: Datei-Upload
+      upload:
+        force_locale: Sprache setzen zu
+        h2: Neue Datei mit Übersetzungen hochladen
+        inplace_hints:
+        - Informationen über den Dateiupload
+        merge_strategy:
+          master_locale_structure: Nur Master-locale-Quelle erstellt oder löscht Übersetzungen.
+          override: Übersetzungen, die nicht in dieser Datei sind, in Lingohub deaktivieren.
+          title: Upload-Strategie
+          update_and_create: Übersetzungen in Lingohub beibehalten, die nicht in dieser Datei sind.
+        submit: Datei hochladen
+        title: Dateiupload
+    exports:
+      download_file:
+        title: Datei herunterladen
+      page_title: '%{project_title} exportieren'
+      push_to_repository:
+        all:
+          flash:
+            success: Alle Dateien werden nun im Hintergrund zum Repository gepusht. Dies kann einen Moment dauern.
+          select_branch: Alle Dateien pushen
+        single:
+          flash:
+            error: 'Es ist ein Problem beim Verschieben in das Repository aufgetreten:
+              "%{message}"'
+            success: '"%{filename}" zum Repository gepusht. Commit: "%{commit_identifier}"'
+          select_branch: Branch auswählen
+        title: Datei pushen nach...
+      repository:
+        connection:
+          flash:
+            error: Es ist ein Problem bei der Verbindung mit dem Repository aufgetreten. Bitte versuche in ein paar Minuten die Seite zu aktualisieren.
+      title: Exporte
+    global:
+      navigation:
+        all_files: Alle Dateien
+        exports: Exporte
+        imports: Importe
+        integrations: Integrationen
+    index:
+      export_settings:
+        empty_phrase_handling:
+          blank: Phrase mit leerem Inhalt im Export beibehalten
+          master_locale: Benutze Inhalt der Ausgangssprache statt leerem Inhalt
+          skip: Phrasen mit leeren Inhalten überspringen
+          title: Umgang mit leeren Inhalten
+        encoding:
+          title: Export Enkodierung
+          with_escaping: mit Zeichencode-Maskierung
+        flash:
+          success: Exporteinstellungen des Projekts aktualisiert
+        submit: Einstellungen speichern
+        title: Exporteinstellungen
+      resource_files:
+        archive:
+          confirm: Wenn die Quelldatei archiviert wird, werden auch alle Übersetzungen in dieser Datei archiviert. Möchtest Du fortfahren?
+          link: Archiv
+        no_files:
+          link: Dateien importieren
+          text: Das Projekt beinhaltet noch keine Dateien. Du kannst neue Dateien uploaden oder das Projekt mit dem Repository synchronisieren.
+        reactivate:
+          confirm: Die Reaktivierung der Quelldatei wird auch alle darin vorhandenen Übersetzungen reaktivieren. Willst Du wirklich fortfahren?
+          link: Reaktivieren
+        title: Quelldateien
+      sync:
+        connected:
+          connected_to: Mit %{provider} verbinden
+          p1_html: Dieses Projekt ist über Zugangsdaten von "%{user}" mit dem Repository <strong>%{connection_info}</strong> verbunden.
+          submit: Synchronisation beginnen
+          title: Mit Ihrem Repository synchronisieren
+        not_connected:
+          bitbucket:
+            create_link: Mit dem Repository verbinden
+            p1: 'Lingohub unterstützt momentan Verbindungen zu Bitbucket als Repository
+              Provider. Sobald eine Verbindung zu Deinem Github Benutzerkonto hergestellt
+              ist, hat Lingohub Zugriff auf Dein Repository und dessen Ressource Dateien.
+              Du kannst dann wählen, ob Du manuell oder mittels Web Hook automatisch
+              synchronisieren willst. '
+            # lh-check { terms: Bitbucket }
+            title: Verbinde Dein Bitbucket Repository
+          github:
+            create_link: Mit dem Repository verbinden
+            p1: 'Lingohub unterstützt momentan Verbindungen zu Github als Repository
+              Provider. Sobald eine Verbindung zu Deinem Github Benutzerkonto hergestellt
+              ist, hat Lingohub Zugriff auf Dein Repository und dessen Ressource Dateien.
+              Du kannst dann wählen, ob Du manuell oder mittels Web Hook automatisch
+              synchronisieren willst. '
+            # lh-check { terms: Github }
+            title: Verbinde Dein Github Repository
+      title: Dateien - %{project_title}
+    repository_setting:
+      title: Repository Einstellung
+  simple_form:
+    labels:
+      lingochecks:
+        check_for_characters: Check für Zeichen
+        check_linebreaks: Check nach Zeilenumbrüchen
+        check_max_chars: max.
+        check_min_chars: min.
+        check_placeholders: Check für Platzhalter
+        hint:
+          linebreaks_html: <b>Zeilenumbrüche:</b> Wenn aktiv, wird geprüft ob die Zahl der Zeilenumbrüche im Originaltext der in der Übersetzung entspricht. Standardmäßig deaktiviert.
+          min_max_html: '<b>Min/Max:</b> Definiert Zeichenlimits für den übersetzten
+            Text. Kann relativ oder als feste Grenze definiert sein. Beispiel: Prozentbezug
+            10% erlaubt bis zehn Prozent mehr Zeichen als im Original. Fester Bezug
+            von +20 erlaubt zwanzig Zeichen mehr als im Original, oder ein festes
+            Limit von 45 erlaubt maximal 45 Zeichen insgesamt. Bezüge werden nur auf
+            übersetzte Texte angewendet, fixe Grenzen auf alle Texte, inklusive der
+            Originaltexte.'
+          placeholders_html: <b>Platzhalter:</b> Wenn aktiviert, wird darauf geprüft ob Platzhalter im Ausgangstext auch im übersetzten Text enthalten sind. Standardmäßig aktiv.
+          terms_html: '<b>Begriffe (Terms):</b> Definiert Begriffe die in übersetzten
+            Texten genau wie im Originaltext verwendet werden sollen. Beispiel: das
+            Original lautet "Welcome to Lingohub!", wenn "Lingohub" als LingoCheck
+            Begriff definiert ist, wird geprüft ob er in der Übersetzung genauso lautet.
+            Dieser Check befolgt Groß/Kleinschreibung.'
+          title: LingoChecks erklärt
+        project_default:
+          label: 'Projektstandard:'
+        terms: Check für Begriffe
+        translation_saving_setting:
+          confirmation: Bestätigung nötig
+          label: Verhalten der Übersetzungsspeicherung
+          no_check: kein Check
+          strict: Speichern nicht erlaubt
+        use_project_setting: Benutze Projekteinstellung
+      project:
+        title: Titel
+      user:
+        company_name: Firma
+        first_name: Vorname
+        last_name: Nachname
+        locale: Sprache
+        login: Email / Benutzername
+        name: Name
+        time_zone: Zeitzone
+  subscriptions:
+    edit:
+      title: Dein Paket ändern
+    flash:
+      quota_just_reached: <span id='hide_quota_flash' data-url="%{session_variables_path}">Du hast das Limit Deines Paket Abonnements auf Lingohub erreicht - <a href="%{subscription_href}">Klicke hier</a> um ein Upgrade zu bestellen oder Dich zu informieren</span>
+      quota_nearing: <span id='hide_quota_flash' data-url="%{session_variables_path}">Du hast 90% Deiner Paketkapazität erreicht. <a href="%{subscription_href}">Klicke hier</a>um es zu erweitern, falls notwendig</span>
+      quota_reached_time_ago: <span id='hide_quota_flash' data-url="%{session_variables_path}">Letzte Woche hast Du das Limit Deines Lingohub Pakets erreicht - <a href="%{subscription_href}">Klicke hier</a> um jetzt upzugraden</span>
+    index:
+      choose: Auswählen
+    not_accessible:
+      collaborator:
+        h: Dieses Projekt ist momentan deaktiviert
+        p: Bitte kontaktiere den Projektinhaber. Du erhältst eine E-Mail Benachrichtigung wenn es wieder aktiviert ist.
+      project_owner:
+        h: Dein Projekt ist momentan deaktiviert
+        p_html: Die Kapazität Deines Lingohub Pakets wurde vor mehr als 10 Tagen erreicht.<br />Du kannst das Projekt reaktivieren indem Du auf ein ausreichendes Paket upgradest, <a href="%{subscription_href}">einfach hier klicken</a>.
+    show:
+      change: Dein Paket  ändern
+      characters: Zeichen
+      collaborators: Mitarbeiter
+      current_plan_html: Du nutzt aktuell das <b>%{plan_title}</b> Paket.
+      faq:
+        info: Für mehr Informationen zu unseren Leistungspaketen lies auch unsere %{faq_link}.
+        title: Hast Du noch Fragen?
+      free_plan_html: Wir haben Dein Benutzerkonto auf das kostenlose Paket gewechselt!
+      over_limit: Über Limit
+      page_title: Dein Paket
+      projects:
+        few: Projekte
+        many: Projekte
+        one: Projekt
+        other: Projekte
+      quota_left: übrig
+      quota_over: darüber
+      title: Dein Paket einsehen oder ändern
+      translator_account_info: Dein aktueller Kontotyp ist der kostenlose  Zugang  für Übersetzer.
+      translator_account_link: Wechseln zum kostenlosen Benutzerkonto für Übersetzer
+      translators:
+        title: Für Übersetzer kostenlos
+      trial_period:
+        ended_html: 'Deine <b>Testphase</b> endete am: <b>%{date}</b>.'
+        ends_html: 'Deine <b>Testphase</b> endet am: <b>%{date}</b>.'
+      your_plan: Dein Paket
+    update:
+      flash:
+        error:
+          over_limit: 'Dein Konto ist über der Quote Deines ausgewählten Pakets: <b>%{plan_title}</b>.
+            Wähle ein passendes Paket.'
+        success: Dein Paket wurde zu '<b>%{plan_title}</b>' gewechselt.
+  translation_phrases:
+    checks:
+      linebreaks: Zeilenumbrüche OK
+      linebreaks_invalid: Zeilenumbrüche nicht OK
+      max: maximum drunter
+      max_invalid: maximum drüber
+      min: minimum drüber
+      min_invalid: minimum drunter
+      overall: alle Checks OK
+      overall_invalid: nicht alle Checks OK
+      placeholders: Platzhalter OK
+      placeholders_invalid: Platzhalter nicht OK
+      terms: Begriffe OK
+      terms_invalid: Begriffe nicht OK
+    multiple_update:
+      flash:
+        error:
+          not_allowed: Du hast keine Erlaubnis die Übersetzung für '%{locale_name}' zu aktualisieren.
+        success: Übersetzungen aktualisiert.
+    status:
+      all: Alles
+      draft: Entwurf
+      machine_translated: maschinell übersetzt
+      not_translated: Nicht übersetzt
+      reviewed: Geprüft
+      translated: Übersetzt
+  users:
+    edit:
+      avatar:
+        drop_or_select_html: Neues Profilbild %{link} oder hierher ziehen
+        select_link: auswählen
+      profile_picture:
+        crop_preview:
+          title: Vorschau
+        title: Profilbild
+      sidebar:
+        account:
+          link: Kontoeinstellungen
+      title: Einstellungen
+    global:
+      navigation:
+        billing_infos: Rechnungsinformationen
+        subscription: Paket
+    invitations:
+      accept: Akzeptieren
+      decline: Ablehnen
+      h2: Deine Einladungen
+      p: 'Du hast %{invitations_count} Projekteinladungen:'
+    update:
+      flash:
+        confirmation_success: Du hast Dein Benutzerkonto erfolgreich aktualisiert, aber wir müssen Deine neue E-Mailadresse verifizieren. Bitte klicke auf den Verifizierungslink in der Bestätigungsemail um den Prozess abzuschließen.
+        success: Änderungen gespeichert.
+  views:
+    copyright_html: '&copy;2014 lingohub GmbH. Alle Rechte vorbehalten.'
+    user_info:
+      first_name: Vorname
+      first_native_language: 1. Muttersprache
+      help: Hilfe
+      last_name: Nachname
+      my_account: Mein Benutzerkonto
+      name: Name
+      settings: Einstellungen
+      sign_out: Abmelden
+      support_center: Hilfecenter
+      title: Dein öffentliches Profil erstellen
+      username:
+        label: Benutzername
+        p: Ist Teil der URL, z.B. 'lingohub.com/profiles/maxmustermann', benutze Deinen vollen Namen für beste Ergebnisse in Suchmaschinen
+    welcome:
+      developers:
+        create_a_project:
+          p: Deine zu übersetzende Produkte und Dienste nennen wir "Projekte". Wir unterstüzten eine breite Palette von Dateitypen und Formaten, wie .yml, .properties, .po, .ini, .xml, .strings, .resw, .resx, .resjson, etc...
+          title: Ein Projekt erstellen
+        new_project:
+          add_more_languages: Weitere Sprachen hinzufügen
+          btn: Erstelle ein Projekt
+          in_locale: in
+          invite_collaborators: Mitarbeiter einladen
+          list_of_formats_html: |-
+            Die ganze Liste der <a href='%{url}' data-toggle='modal'>
+            unterstützten Formate</a> einsehen
+          project_name_label: Wie lautet der Name Deines super Projekts?
+          project_name_placeholder: Projektname
+          title: Erstelle Dein eigenes erstes Projekt
+          upload_translations: Übersetzungen hochladen
+        or: oder
+        sample_project:
+          btn: Teste das Demoprojekt!
+          flash:
+            exists: Beispielprojekt existiert bereits.
+            info: Wir haben ein Beispielprojekt für Dich erstellt. Der Import der Quellen kann einen Moment dauern. Bitte werfe einen Blick auf die "Dateien" Sektion um den aktuellen Status einzusehen.
+          new_project_link: Beispielprojekt erstellen
+          p: Wenn Du entdecken willst was Lingohub für Dich tun kann, dann erstelle ein Beispielprojekt und gewinne gleich einen Einblick in die Übersetzung großer Projekte mit Lingohub.
+          prepare: Bereite Beispielprojekt vor
+          project_type:
+            android_xml:
+              description: '**Lingohub** hat für Dich dieses Android-Beispielprojekt
+                erstellt!'
+              title: Android-Beispielprojekt
+              website: www.lingohub.com
+            ini:
+              description: '**Lingohub** hat dieses PHP-Beispielprojekt für Dich erstellt!'
+              title: PHP-Beispielprojekt
+              website: www.lingohub.com
+            ios_strings:
+              description: '**Lingohub** hat dieses iOS-Beispielprojekt für Dich erstellt!'
+              title: iOS-Beispielprojekt
+              website: www.lingohub.com
+            properties:
+              description: '**Lingohub** hat dieses Java-Beispielprojekt für Dich
+                erstellt!'
+              title: Java-Beispielprojekt
+              website: www.lingohub.com
+            resx_xml:
+              description: '**Lingohub** hat dieses .NET-Beispielprojekt für Dich
+                erstellt!'
+              title: .NET-Beispielprojekt
+              website: www.lingohub.com
+            yml:
+              description: |-
+                **Lingohub** hat dieses Beispielprojekt für Dich erstellt! Es ist eine adaptierte Version des Projekts  [rails/i18n] (https://github.com/svenfuchs/rails-i18n).
+                Viel Spaß beim Testen, und erlebe wie Lingohub die Übersetzung Deiner Software vereinfacht.
+              title: Ruby-Beispielprojekt
+              # lh-check { placeholders: false, terms: https://github.com/svenfuchs/rails-i18n }
+              website: https://github.com/svenfuchs/rails-i18n
+          title: Jetzt mit einem Beispielprojekt beginnen
+        title: Lass uns loslegen...
+      links:
+        developers: Lingohub für Entwickler
+        hide: verstecken
+        translators: Lingohub für Übersetzer
+      translators:
+        invited:
+          members:
+            developers: Entwickler
+            role:
+              developer: Entwickler
+              owner: Eigentümer
+              project_admin: Projektadministrator
+              reviewer: Reviewer
+              translator: Übersetzer
+            title: Erst einmal stellen wir Dir die Teamkollegen vor...
+            translators: Übersetzer
+          p: Du wurdest von %{inviter} eingeladen um bei der Lokalisierung des %{project} Projekts zu helfen.
+          start_translating: Jetzt übersetzen
+          title: Gratulation zu Deinem Neuzugang!
+          welcome_title: Willkommen im Team, %{name}!
+        new_user:
+          demo:
+            btn: Versuche die Demo!
+            p1: Du willst den Übersetzungs-Workflow mit Lingohub sofort ausprobieren?
+            p2: Experimentiere mit einem BEISPIEL-Projekt. Dein Feedback ist uns wichtig! Schicke uns Deine Verbesserungsvorschläge und Funktionswünsche.
+            title: Jetzt übersetzen...
+  will_paginate:
+    next_label: 'Nächste <i class=''fa fa-chevron-right''></i> '
+    page_gap: '&hellip;'
+    # to test our github integration
+    previous_label: <i class='fa fa-chevron-left'></i> Vorherige

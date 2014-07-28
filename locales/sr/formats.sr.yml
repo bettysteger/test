@@ -1,0 +1,64 @@
+---
+sr:
+  number:
+    currency:
+      format:
+        delimiter: .
+        format: '%u %n'
+        precision: 2
+        separator: ','
+        significant: lažan
+        strip_insignificant_zeros: lažan
+        unit: USD
+    format:
+      delimiter: ','
+      precision: 3
+      significant: lažan
+      strip_insignificant_zeros: lažan
+    human:
+      decimal_units:
+        format: '%n %u'
+        units:
+          billion:
+            one: Milijarda
+            other: Miljardi
+          million:
+            one: Milion
+            other: Milion
+          quadrillion:
+            one: Kvadrilion
+            other: Kvadrilion
+          thousand:
+            one: Hiljada
+            other: Hiljada
+          trillion:
+            one: Trilion
+            other: Trilion
+      format:
+        precision: 3
+        significant: istina
+        strip_insignificant_zeros: istina
+      storage_units:
+        format: '%n %u'
+        units:
+          byte:
+            one: Bajt
+            other: Bajtova
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+  support:
+    array:
+      last_word_connector: ', i'
+      select:
+        prompt: Molimo te da izabereš
+      two_words_connector: i
+      words_connector: ','
+  time:
+    am: pre podne
+    formats:
+      default: '%a, %d. %b. %Y. %H:%M '
+      long: '%d. %B %Y. %H:%M'
+      short: '%d. %b. %H:%M'
+    pm: posle podne

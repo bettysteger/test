@@ -1,0 +1,483 @@
+---
+es:
+  audits:
+    invitation_accepted:
+      category: Invitación aceptada
+      text: '{{invitee}} acepto la invitación para el proyecto ''{{project}}'''
+    invitation_created:
+      # to tell the user a new invitation was created
+      category: Nueva invitación creada
+      text: '{{user}} invitado {{invitee}} al proyecto ''{{project}}''.'
+    invitation_declined:
+      category: Invitación declinada
+      text: '{{invitee}} declino la invitación para el proyecto ''{{project}}'
+    invitation_destroyed:
+      category: Invitación revocada
+      text: '{{user}} revoco la invitación para {{invitee}} al proyecto ''{{project}}''.'
+    invitation_resend:
+      category: Invitación enviada por correo electrónico
+      text: '{{user}} reenvió la invitación a {{invitee}} para el proyecto ''{{project}}'''
+    project_created:
+      category: Nuevo proyecto creado
+      text: '{{user}} creo el nuevo proyecto {{project}} '
+    project_destroyed:
+      category: Proyecto eliminado
+      text: '{{user}} ha eliminado el proyecto ''{{project}}'''
+    project_locale_created:
+      category: Nuevo idioma agregado
+      text: Nueva ubicación {{project_locale}} agregada al proyecto '{{project_name}}'
+    project_locale_destroyed:
+      category: Idioma eliminado
+      text: '{{project_locale}} borrado de su proyecto ''{{project_name}}'''
+    project_renamed:
+      category: Proyecto renombrado
+      text: '{{user}} proyecto renombrado ''{{old_name}}'' a ''{{new_name}}''.'
+    resource_export_all_files_push_back:
+      category: Push Back a todos los archivos
+      text: 'Enviado de vuelta a {{provider}} por {{user}}: TODOS LOS ARCHIVOS {Commit
+        <a href="{{commit_url}}">{{commit_identifier}}</a>)'
+    resource_export_push_back:
+      category: Push Back
+      text: 'Devuelto por {{provider}} por {{user}}: {{filename}} (Enviado <a href="{{commit_url}}">{{commit_identifier}}</a>'
+    resource_file_deactivated:
+      category: Archivo de recurso desactivado
+      text: '{{user}} desactivo el archivo de recurso ''{{title}}'''
+    resource_file_reactivated:
+      category: Archivo de recurso reactivado
+      text: '{{user}} reactivo el archivo de recurso ''{{title}}'''
+    resource_import_auto_synchronization:
+      category: Archivo de recurso subido
+      text: 'Sincronización Automática {{provider}} (Enviada <a href="{{commit_url}}">{{commit_identifier}}</a>:
+        {{files_count}} archivos cambiados, {{created_translations_count}} traducciones
+        creadas, {{deactivated_translations_count}} desactivadas, {{updated_translations_count}}
+        Cambiadas, ''<a href="{{url}}">{{filename}}</a>'''
+    resource_import_error:
+      category: Ha fallado la importación de archivo de recurso 
+      text: Fallo la importación de '{{filename}}' por {{user}} 
+    resource_import_file_uploaded:
+      category: Archivo de recurso subido
+      text: Archivo importado por {{user}} {{created_translations_count}} creadas, {{deactivated_translations_count}} desactivadas, {{updated_translations_count}} cambiadas, '<a href="{{url}}">{{filename}}</a>'
+    resource_import_success:
+      category: Archivo de recurso importado
+      text: '''{{filename}}'' fue importado por {{user}} '
+    translation_comment_created:
+      category: Comentario agregado
+      text: '{{user}} agregó un comentario a ''{{translation_title}}'''
+    translation_comment_deleted:
+      category: Comentario borrado
+      text: '{{user}} borro un comentario de ''{{translation_title}}'''
+    translation_comment_edited:
+      category: Comentario actualizado
+      text: '{{user}} actualizó un comentario en ''{{translation_title}}'''
+    translation_deactivated:
+      category: Traducción desactivada
+      text: '{{user}} desactivo la traducción ''{{title}}'''
+    translation_phrase_content_changed:
+      category: Frase cambiada
+      text: '{{user}} cambio ''<i>{{old_content}}</i>'' a ''<i>{{new_content}}</i>''
+        ubicación ''{{locale_slug}}''; Estado cambiado a ''{{status}}''.'
+    translation_phrase_status_changed:
+      category: Estado de la frase cambiada
+      text: '{{user}} cambio el estado de ''<i>{{content}}</i>'' de ''<i>{{old_status}}</i>''
+        a ''<i>{{new_status}}</i>'' para ubicar ''{{locale_slug}}'''
+    translation_reactivated:
+      category: Traducción reactivada
+      text:  {{user}} reactivo la traducción '{{title}}'
+    translation_title_renamed:
+      category: Traducción renombrada
+      text: Traducción '{{old_title}}' renombrada a '{{new_title}}'
+    wysiwyt_created:
+      category: Información WYSIWYT agregada
+      text: '{{user}} agregue información WYSIWYT a ''{{project_title}}'''
+    wysiwyt_deleted:
+      category: Información WYSIWYT eliminada
+      text: '{{user}} borro WYSIWYT dentro de ''{{project_title}}'''
+  billing_infos:
+    show:
+      action: Cambiar
+      invoices:
+        h2: Sus facturas
+  collaborators:
+    add: Agregue uno ya
+    delete_collaborator: Quitar colaborador
+    delete_confirm: ¿Está seguro que quiere quitar '{{username}}' de este proyecto?
+    delete_from_language_confirm: Quitar solamente para este idioma
+    delete_language: Borrar idioma
+    find: Encontrar colaboradores
+    invite:
+      accept_btn: Enviar invitación
+      add_languages: Agregar idioma(s)
+      decline_btn: Rechazar invitación
+      email: Introducir el correo electrónico del colaborador
+      link: Invitar colaborador
+      no_more_languages: No hay más idiomas para agregar.
+      reviewer_rights: Derechos del revisor
+      select_locale: será traducido a
+    joined_on: 'Se unió a:'
+    none: No se ha agregado ni Traductor ni Revisor para este idioma.
+    role:
+      developer: Desarrollador
+      owner: Propietario
+      project_admin: Administrador del Proyecto
+      reviewer: Revisor
+      translator: Traductor
+    role_description:
+      developer: Un desarrollador es responsable de administrar la ubicación. Los permisos incluyen modificar o actualizar las frases de traducción.
+      project_admin: Un administrador puede modificar casi todos los elementos de un proyecto. Solo el propietario tiene permisos de cerrarlo o gestionar la facturación
+      translator: Un traductor no tiene permisos administrativos, pero se le asignan una o más ubicaciones. Asignar un rol de revisor agrega permisos adicionales para cambiar las traducciones a revisados.
+    search_query: Mostrar colaboradores para
+    title: Colaboradores
+  editor:
+    actions:
+      select: seleccionar esta traducción
+      star: iniciar esta traducción
+    add_description: agregar una descripción
+    add_second_language: Agregar un segundo idioma
+    at_the_end: He llegado al final de las traducciones. ¡Buen trabajo!
+    comments:
+      action: Agregar un comentario
+      destroy:
+        confirm: ¿Está seguro que quiere borrar este comentario?
+      placeholder: Comentar en esta traducción
+      submit: Escribir un comentario
+      text: en
+      update_submit: Actualizar comentario
+    context:
+      link: Contexto
+    edit_link: clic para editar
+    go_back_to_current: |
+      volver a la traducción actual
+    history:
+      back_link: Ocultar historial
+      not_available: No hay historial disponible
+      restore: restaurar
+    last_modified: Última modificación
+    lingochecks:
+      button_disabled_tooltip: No es posible guardar la traducción mientras los LingoChecks fallan.
+      chars_hint: 'Define los límites de los caracteres para los textos traducidos.
+        Puede ser una compensación o un límite fijo. Ejemplo: Porcentaje de compensación
+        ''10%'' permite diez porciento más de caracteres del texto original, una compensación
+        fija ''+20'' permite 20 caracteres más que el texto original o un límite fijo
+        ''45'' que permite un máximo de 45 caracteres. Las compensaciones solo aplica
+        a los textos traducidos, los límites fijos son aplicados a todos los textos
+        incluidos los originales.'
+      failing: Error con los LingoChecks
+      length: La longitud de la frase debe ser de
+      linebreaks: Salto de líneas
+      linebreaks_hint: Verifica si el número de saltos de línea en el texto de origen y el texto traducido son iguales
+      link: Lingochecks
+      no_saving_possible: Guardar la traducción no es posible mientras hayan errores con los LingoChecks
+      placeholder_hint: Verifica si los marcadores de posición usados en el texto de origen existe en el texto traducido también.
+      placeholders: Los marcadores de posición han sido verificados
+      terms: Los términos han sido verificados
+      terms_hint: 'Definir términos debe ser usados en textos traducidos cuando existan
+        en el origen. Ejemplo: ''¡Bienvenido a Lingohub!, el término ''Lingohub''
+        se asegura que será usado en los textos traducidos. La verificación distingue
+        entre mayúsculas y minúsculas.'
+    lingochecks_confirm:
+      btn: |
+        Guardar de cualquier manera
+      text: |
+        Fallo el LingoChecks para esta frase
+    loading: |
+      Cargando traducciones...
+    mass_btn:
+      not_starred: Marcar como no destacado
+      starring: Marcar destacado
+    multiple_machine_translation:
+      confirm: Esta acción traducirá automáticamente todas las frases seleccionadas y ¡sobreescribirá el contenido existente!
+    reviewed:
+      add_comment_link: agregar un comentario
+      segment_html: |
+        Este segmento de traducción ha sido revisado por <strong>{{reviewer}}</strong>.
+      suggestions_html: |
+        Reporte un problema o sugiera una mejora, por favor {{link}}
+    search:
+      translations: Traducciones
+    second_language_empty: Aún sin traducción
+    selector:
+      all: Todos ({{recuento}})
+      none: Ninguno
+      starred: Destacado
+      unstarred: Sin destacar
+    settings:
+      activate: Activar
+      deactivate: Desactivar
+      deactivate_confirm: ¿Está seguro que desea desactivar este segmento?
+      deactivate_text: 'Nota: Un segmento desactivado no puede ser traducido y solo
+        se mostrará en un búsqueda especial para segmentos desactivados.'
+      link: Configuraciones
+      project_default: 'proyecto predeterminado:'
+      use_project_settings: Usar configuraciones del proyecto
+    shortcuts:
+      close_and_save: |
+        Guardar & cerrar
+      close_without_saving: |
+        Cerrar sin guardar
+      focus: Enfocar
+      preselect: Preseleccionar
+      save_and_next: |
+        Guardar & ir al siguiente
+      save_and_prev: |
+        Guardar & ir a anterior
+      save_as:
+        draft: |
+          Guardar como borrador
+        reviewed: |
+          Guardar como revisado
+        translated: |
+          Guardar como traducido
+      select: Seleccionar
+      toggleTitle: |
+        Longitud del Titulo
+    status:
+      deactivated: desactivado
+      draft: Borrador
+      machine_translated: Traducción-automática
+      not_translated: Sin traducir
+      reviewed: Revisado
+      translated: Traducido
+  global:
+    add: Agregar
+    back: Atrás
+    cancel: Cancelar
+    content: Contenido
+    date: Fecha
+    edit_link: clic para editar
+    for: para
+    inplace_info:
+      close: cerrar
+      what_is_this: ¿Qué es esto?
+    n: 'No'
+    ok: OK
+    or: o
+    save: Guardar
+    server_errors:
+      general: |
+        Algo salio mal. Ya estamos trabajando en este problema, no obstante por favor contactenos a través del Centro de Soporte si ve este error de nuevo.
+      link: contactenos
+      unauthorized: |
+        No está autorizado para acceder a esta página. Será redirigido automáticamente.
+    status: Estado
+    support: Soporte
+    user: Usuario
+    y: Si
+  invitations:
+    accept:
+      success: Invitación aceptada. Será redigirido automáticamente al editor del proyecto.
+    add_message_question: |
+      ¿le gustaría {{link}} la invitación al correo electrónico?
+    add_name: Agregar un nombre
+    add_personal_message: agregue un mensaje personal
+    delete: Borrar
+    flash:
+      info:
+        different_user: No puede aceptar o declinar esta invitación mientras este en el sistema con un usuario distinto.
+    invite_errors:
+      collaborator_exists: |
+        Esta persona ya es parte del equipo de proyecto. Puede cambiar el rol del colaborar aquí abajo.
+      invitation_exists: |
+        Esta persona ya fue invitada a su proyecto, puede reenviar la invitación.
+      is_owner: |
+        No es posible invitar al propietario del proyecto. Intente con otra dirección de correo electrónico.
+    invited_as: |
+      Invitado como
+    resend: Reenviar
+    title: Invitaciones pendientes
+    what_role: 'Asignar a este colaborador a un rol especifico dentro de su proyecto:'
+    will_be_invited_as: 'será invitado a unirse a este proyecto como:'
+  invoices:
+    table:
+      empty: |
+        Todavía sin facturas
+      th:
+        amount: Cantidad
+        date: Fecha
+        description: Descripción
+        number: Número
+        pdf: PDF
+  projects:
+    edit:
+      activate:
+        h2: Activar su proyecto
+        note: Este proyecto está bloqueado y no puede ser usado o editado hasta que sea reactivado
+        note_plural: Estos proyectos están bloqueados y no pueden ser usados o editados hasta que sean reactivados.
+        submit: Activar
+      add_locale_title: |
+        Agregar más idiomas
+      deactivate:
+        confirm: ¿Esta seguro que desea desactivar el proyecto?
+        h2: Desactivar su proyecto
+        note: Puede desactivar sus proyectos en cualquier momento. <strong>Por favor tenga cuidado</strong>, ya que todas sus conexiones serán desactivadas también (archivos, traducciones, etc.) y no estarán visibles. Esto incluye todos los archivos de recursos y traducciones en todas las ubicaciones. <strong>Al desactivar el proyecto quitará a todos los colaboradores del proyecto</strong> - tendrán que ser invitados nuevamente si reactiva su proyecto nuevamente.
+        submit: Desactivar proyecto
+      delete_image:
+        confirm: |
+          ¿Borrar la imagen del proyecto?
+        label: Borrar
+      delete_locale:
+        confirm: ¿Está seguro que desea eliminar el idioma?
+        label: Eliminar idioma
+      flash:
+        success: Proyecto actualizado exitosamente.
+      form:
+        description:
+          label: Descripción
+          placeholder: Descripción
+        image:
+          label: |
+            Para cambiar el avatar del proyecto arrastre y suelte o
+        opensource:
+          hint_content: |
+            Gracias por contribuir en el código libre. Nuestro único requerimiento: por favor proporcione la URL del sitio web de su proyecto.
+          hint_title: |
+            Proyecto de código libre
+          label: |
+            Abrir el origen
+        title:
+          label: Título
+          placeholder: |
+            Proyecto asombroso
+        update_submit: |
+          Actualziar proyecto
+        website:
+          label: |
+            Sitio web
+          placeholder: |
+            Sitio web
+      h3: Editar proyecto
+      hint:
+        content: Elija uno o más idiomas en los que su proyecto debe ser traducido. Por defecto, hemos agregado Inglés como "idioma principal". Un idioma principal representa el idioma original de la aplicación. Sientase libre de configurar otro idioma como el principal o borrar idiomas que no necesitará su proyecto.
+        title: ¿Cómo puedo agregar idiomas?
+      lingohub_shield:
+        # lh-check { terms: Shield }
+        current: Su Escudo Lingohub es
+        description: |
+          El escudo Lingohub provee información en tiempo real acerca de su proyecto de ubicación dentro del repositorio Github. Para cada ubicación que este en progreso de traducción, un color le informa a su comunidad sobre el estado actual del proyecto. Verde significa que todo el texto es revisado para esta ubicación, amarillo significa que más del 95% de las traducciones se han revisado, y rojo significa que menos del 85% de las traducciones han sido revisadas actualmente.
+        h2: Escudo Lingohub
+        hint_html: |
+          Inserte el código de rebajas dentro de la descripción de su repositorio público de Github.  Se mostrará el estado actual de sus traducciones. <a href='{{url}}'>haga clic aquí</a> para leer más sobre la funcionalidad e implementación.
+        hint_title: ¿Cómo uso el Escudo para Github?
+        img_alt: Lingohub Shield
+        status: |
+          El estado actual de su proyecto es
+      locale: Idioma
+      locales: Idiomas
+      select_locale: Seleccione un idioma por favor
+      set_source_locale: Establecer como idioma de origen
+      source_locale: Idioma de origen
+      token:
+        current: |
+          Su autenticación por token REST API para este proyecto es
+        h2: Token del proyecto
+        hint_html: |
+          Este es su token de autenticación para usar la REST API de Lingohub. <a href='{{url}}'>haga clic aquí</a> para leer más sobre nuestra documentación.
+        hint_title: |
+          ¿Para qué es el token?
+      update_submit: Actualizar proyecto
+    lingochecks:
+      hint:
+        linebreaks_html: |
+          <b>Salto de línea:</b> Cuando se activa, verifica si el número de lúneas en el texto original son iguales al número de líneas en el texto traducido. De manera predeterminada no está activada.
+        min_max_html: |
+          <b>Min/Max:</b> Define los límites de los caracteres para los textos traducidos. Puede ser una compensación o un límite fijo. <i>Ejemplo</i>: Porcentaje de compensación '10%' permite diez porciento más de caracteres del texto original, una compensación fija '+20' permite 20 caracteres más que el texto original o un límite fijo '45' que permite un máximo de 45 caracteres. Las compensaciones solo aplica a los textos traducidos, los límites fijos son aplicados a todos los textos incluidos los originales.
+        placeholders_html: |
+          <b>Marcador de posición:</b> Cuando se activa, revisa si los marcadores de posición usados en el texto original también están presentes en los textos traducidos. De manera predeterminada está activada.
+        terms_html: |
+          <b>Términos</b> Define los términos que deberían ser usados en las traducciones si aparecen en el texto original. Ejemplo: el texto original es '¡Bienvenido a Lingohub!, definir el término 'Lingohub' asegurará que también sea usado en los textos traducidos. La revisión distingue entre mayúsculas y minúsculas.
+        title: |
+          LingoChecks explicado
+      label:
+        check_for_characters: |
+          Revisar caracteres
+        check_linebreaks: |
+          Revisar saltos
+        check_max_chars: max.
+        check_min_chars: min.
+        check_placeholders: |
+          Revisar los marcadores de posición
+        check_terms: |
+          Revisar los términos
+      submit: Guardar
+      translation_saving_setting:
+        confirmation: |
+          confirmación requerida
+        label: |
+          Comportamiento de la traducción guardada
+        no_check: |
+          no revisar
+        strict: |
+          no tiene permiso para guardar
+  resource_imports:
+    index:
+      file_info: Información del archivo
+      file_status: Estado del archivo
+      h2: Importar todos
+      no_imports:
+        file_upload:
+          btn: Subir archivo de recurso
+          files_title: Posibles tipos de archivos y formatos
+          p1: recomendado para iniciar
+          p2: Lingohub analizará lo que sube y determinará la ubicación correcta del recurso. No obstante, si desea cancelar este procedimiento, indicar la ubicación que quiere que Lingohub utilice.
+          subtitle: Subir archivo de su computadora
+          subtitle1: Posibles tipos de archivos
+          title: Subir archivo
+        h2: Importaciones
+        p1: Ningún archivo de recurso se ha importado
+        p2_html: '%{user}, hay 2 maneras en Lingohub para obtener sus archivos de
+          origen importados y empezar la ubicación de su producto.'
+        repository_import:
+          btn: Conectar al repositorio
+          p1: recomendado para una mayor integración
+          sidebar_title: Importar repositorio
+          subtitle: 'Repositorio compatible:'
+          title: Importar repositorio
+  users:
+    edit:
+      api:
+        h2: Acceso API
+        reset_auth_token: Regenerar
+        text_html: Su API token es <p class='authentication_token'><code id='api-token' class='authentication-token'>{{token}}</code></p>Este token le permite acceder a su cuenta Lingohub, ¡por favor mantengalo en <strong>secreto</strong>! Haga clic {{link}} para crear un nuevo token.
+      authentication_providers:
+        authenticated:
+          title: Proveedores autenticados
+        hint: Simplemente puede hacer clic en uno de los botones de Proveedores de Autenticación para conectarse con su cuenta en Lingohub o cancelar la conexión.
+        not_authenticated:
+          title: Proveedores no autenticados
+        title: Conectarse con Lingohub
+      form:
+        company: Empresa
+        email: Correo electrónico
+        first_name: Nombre
+        last_name: Apellido
+        list_newsletter: Actualizaciones generales
+        locale: Idioma
+        name: Nombre
+        old_password: Contraseña antigua
+        password: Contraseña
+        password_confirmation: Confirmación de contraseña
+        subscriptions: Suscripciones
+        time_zone: Zona horaria
+        username: Nombre de usuario
+      password:
+        h2: Cambiar su contraseña
+        submit: Cambiar contraseña
+      settings:
+        account:
+          activated:
+            button: Desactivar su cuenta
+            text: ¿Alguna vez necesito hacerlo? a las cuentas desactivadas no se les cobra ni se les contacta en Lingohub. A partir de la desactivación, todos los datos de la cuenta son guardados confidencialmente y permanecen sin uso. Cuando decida volver a Lingohub, no necesitará re-introducir toda la información nuevamente.
+            title: Su cuenta está actualmente activa. ¡Disfrute de Lingohub!
+          deactivated:
+            button: Activar su cuenta
+            text: Todos sus datos se guardaron. Reactive su cuenta y preparese para trabajar de nuevo en un minuto. ¡Disfrute de las ventajas de ubicación con Lingohub! Si tiene preguntas, por favor contactenos.
+            title: ¡Su cuenta está desactivada!
+          status: Estado de la cuenta
+        email_preferences:
+          title: Notificaciones por correo electrónico
+        h2: Editar las configuraciones de su cuenta
+        submit: Guardar cambios
+    global:
+      navigation:
+        authentication: Autenticación
+        edit: Configuraciones de cuenta
+        profile_picture: Foto de perfil

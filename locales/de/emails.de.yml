@@ -1,0 +1,255 @@
+---
+de:
+  administration_notifier:
+    lingohubber_created_email:
+      subject: Ein neues Lingohub Benutzerkonto wurde für Dich erstellt
+    lingohubber_destroyed_email:
+      subject: Dein Lingohub Konto wurde entfernt
+  custom_devise_notifier:
+    confirmation_instructions:
+      link: Bestätige Dein Konto
+      p1: Herzlich willkommen bei Lingohub!
+      p2: 'Du hast Dich bei Lingohub registriert. Gratulation! Bitte bestätige Deine
+        Email Adresse indem Du auf den folgenden Link klickst:'
+      p3: 'falls der Link nicht anklickbar ist, kopiere bitte die folgende URL direkt
+        in die Adresszeile Deines Browsers: %{confirm_link}'
+      subject: Bestätigungs-Anweisungen
+    reset_password_instructions:
+      hello: Hallo
+      link: Mein Passwort ändern
+      p2: Jemand hat einen Link zum Ändern Deines Kennwortes angefordert. Du kannst es mit dem unten stehenden Link ändern.
+      p3: Wenn Du dies nicht angefordert hast, ignoriere diese E-Mail.
+      p4: Dein Passwort wird sich nicht ändern, bis Du auf den Link zugreifst und ein neues erstellst.
+      subject: Anweisungen zum Zurücksetzen des Passworts
+    unlock_instructions:
+      hello: Hallo
+      link: Mein Benutzerkonto entsperren
+      p2: Dein Konto wurde auf Grund von zu vielen erfolglosen Anmeldeversuchen gesperrt.
+      p3: 'Klicke auf den untenstehenden Link, um Dein Konto zu entsperren:'
+      subject: Entsperr-Anleitung
+  internal_notifier:
+    invoice_settled:
+      subject: Rechnung beglichen
+    user_statistics:
+      subject: Deine tägliche Lingohub Statistik
+  invitation_notifier:
+    invitation_mail:
+      head:
+        msg_from_inviter: Persönliche Nachricht von %{display_name}
+        p1: Du wurdest von %{inviter} eingeladen dem Lokalisierungsteam für das Projekt %{project} als %{role} beizutreten.
+      hello: Hallo
+      links:
+        accept: Einladung annehmen
+        decline: Ablehnen
+      p4: Bitte ignoriere dieses E-Mail oder %{decline} falls Du diese Einladung nicht angefordert oder erwartet hast .
+      p5: Bitte kontaktiere uns direkt falls Du irgendwelche Fragen hast.
+      subject: Einladung zu Lingohub
+      subtitle: Beginne "%{project}" zu übersetzen
+    invitation_removed_mail:
+      p1: Lieber Lingohub-Nutzer!
+      p2: Deine Einladung für das Lingohub Projekt %{project_title} wurde von %{remover} gelöscht.
+      p3: Wir hoffen Du hattest Spaß mit Lingohub zu arbeiten und nutzt unseren Dienst auch für das nächste Übersetzungsprojekt.
+      p4: Empfehle uns an Kollegen wenn es Dir gefällt oder lass uns wissen wie wir Lingohub besser machen können.
+      p5_html: Wenn Du Dich für Lokalisierung und Übersetzung interessierts, wirf auch einen Blick auf unseren <a href="http://blog.lingohub.com">Blog</a> und die Social Media Seiten.
+      subject: Von Lingohub Projekt '%{project_title}' entfernt
+  invoice_notifier:
+    invoice_mail:
+      already_paid: Je nach Bezahlmethode wurde der Gesamtbetrag schon korrekt abgebucht wenn Du diese E-Mail erhältst. Du musst nichts weiter tun.
+      contact_with_questions: Bitte kontaktiere uns jederzeit falls Du Fragen hast.
+      introduction: vielen Dank dass Du Lingohub nutzt! Mit dieser E-Mail erhältst Du die aktuelle Rechnung.
+      invoice_amount: '<strong>Betrag: </strong> %{amount} USD'
+      invoice_number: '<strong>Rechnungsnummer: </strong> %{invoice_number}'
+      subject: Dein Lingohub Rechnungsbeleg für die Unterlagen
+    settlement_failure_mail:
+      action_request: Stelle sicher dass Dein Kreditkarte nicht abgelaufen ist, und prüfe alle Details, versuche es dann erneut.
+      contact_request: Kontaktiere uns bitte, wenn die Bezahlinformationen korrekt sind und das Problem nicht anderweitig lösbar ist.
+      first:
+        subject: 'Wichtig: Deine Zahlung an Lingohub schlug fehl - lies hier wie das
+          Probleme behoben werden kann'
+      last:
+        action_1_html: bitte logge Dich auf  <a href="http://lingohub.com" style="color:#006E99">http://lingohub.com</a> ein
+        action_2_html: aktualisiere Deine Zahlungsdaten
+        action_3_html: reaktiviere dann Deine Projekte
+        action_4_html: oder kontaktiere <a href = "%{support_href}" style = "color:# 006E99; ">den Support</a>
+        action_request: Du kannst nun
+        last_note_1_html: Lass uns wissen wenn es ein Problem gibt dass wir gemeinsam lösen können. Wir wollen eine gute Erfahrung bieten in der Softwarelokalisierung. Zahlungsprobleme passieren schon mal.
+        last_note_2_html: Unser Produkt ist noch sehr jung, kontaktiere uns einfach und wir können die Probleme gleich lösen. Wenn es unser Fehler war, geben wir Dir Rabatt auf das nächste Projekt.
+        note_payment_failed_html: Deine Lokalisierungsprojekte auf <a href = 'http://www.lingohub.com' >lingohub.com</a> sind wegen ungelösten Zahlungsproblemen deaktiviert worden. <strong>Keine Sorge, keine Dateien sind weg</strong>.
+        subject: Deine Projekte auf Lingohub sind wegen gescheiterter Zahlung deaktiviert
+      note_inactivity: Bitte beachte dass Dein Benutzerkonto deaktiviert wird, sollte die Zahlung permanent fehlschlagen.
+      note_payment_failed_html: <strong>wir möchten Dich darauf hinweisen, dass Deine Zahlung an Lingohub fehlgeschlagen ist</strong> - bitte prüfe jetzt die Zahlungsdaten in Deinem Benutzerkonto.
+      second:
+        note_payment_failed_html: Bitte beachte , dass Deine Zahlung an Lingohub fehlgeschlagen ist. <strong>Keine Panik</strong>. Bitte beachte , dass Dein Konto deaktiviert wird, wenn die Zahlung endgültig fehlschlägt, öffne also Dein Benutzerkonto und überprüfe die Zahlungsinformationen.
+        subject: 'Erinnerung: Deine Zahlung an Lingohub schlug fehl und steht aus
+          - so behebst Du das Problem'
+      third:
+        final_reminder_note: Dies ist Deine letzte Erinnerung, das System wird Deine Projekte deaktivieren sollte die Zahlung nicht erfolgen.
+        subject: 'Letzte Erinnerung: Bitte lies hier wie Du das Lingohub Zahlungsproblem
+          beheben kannst'
+      update_billing_info_action_html: <a href="%{billing_info_href}" style="color:#006E99;">Hier klicken</a> um Deine Bezahlinformationen zu prüfen und zu aktualisieren.
+  link_not_working_html: 'Falls der oben genannte Link nicht funktioniert, kopiere
+    bitte  folgende URL und füge sie in die Adresszeile deines Webbrowsers ein: <span
+    style="color: #006E99;">%{link}</span> '
+  notifier:
+    global:
+      footer:
+        p1_html: 'Diese E-Mail wurde von <a href="http://lingohub.com" style="color:#a0a0a0;"><span
+          style="color: #a0a0a0;">http://lingohub.com</span></a> versendet um Deinen
+          Arbeitsprozess zu begleiten.'
+        p2_html: 'Was vermisst Du in Lingohub? Schreib uns unter <a href="mailto:support@lingohub.com"
+          style="color: #a0a0a0;"><span style="color:#a0a0a0;">support@lingohub.com</span></a>'
+      having_questions: Bitte kontaktiere  uns, falls Du Fragen hast.
+      new_slogan: Bessere Softwarelokalisierung in kürzerer Zeit
+      payment_methods: 'Wir akzeptieren folgende Bezahlungsweisen: VISA, Mastercard,
+        American Express'
+      question_approach: Wende Dich jederzeit mit Fragen an uns.
+      slogan: Be Global, Go Local!
+      social: folge uns auf
+      support_html: 'Wir freuen uns auf Dein Feedback zum Anmeldeprozess und dem Produkt
+        allgemein. Schreibe uns unter %{support_link} oder gehe auf <a href=''http://docs.lingohub.com''
+        style=''color: #006E99''>http://docs.lingohub.com</a>.'
+      thank_you: Danke dass Du soweit gelesen hast, bitte kontaktiere uns jederzeit mit Fragen oder Verbesserungsvorschlägen.
+      valediction: Dein Lingohub team
+      welcome:
+        with_name: Hallo %{display_name},
+        without_name: Herzlich willkommen,
+      what_does_that_mean: Was bedeutet das für Dich?
+  subscription_notifier:
+    quota_limit:
+      active_project: aktive Projekte
+      active_projects: aktive Projekte
+      character: Zeichen
+      characters: Zeichen
+      collaborator: Mitarbeiter
+      collaborators: Mitarbeiter
+    quota_mail_general:
+      contact_us: Bitte kontaktiere uns bei Fragen. Be Gobal, Go Local!
+      current_plan_html: <em>Aktuelles Paket:</em> %{current_plan}<br />
+      current_quotas_html: <em>Momentane Quote:</em>
+    quota_nearing_mail:
+      quota_nearing_info2_html: <strong>Du nutzt aktuell 90% </strong> Deiner Quote.
+      quota_nearing_info3_html: 'Herzlichen Glückwunsch zum Wachstum Deines Projekts.
+        Keine Panik: Lingohub skaliert mit Dir auf jedem Schritt des Weges. Einfach
+        <a href = "%{subscription_href}"> um ein anderes Paket auszuwählen</a> und
+        weiter das Projektl lokalisieren dass die Welt verändern wird.'
+      quota_nearing_info_html: Du  näherst Dich den LImits deines aktuellen Lingohub Pakets.
+      subject: Dein Lingohub Benutzerkonto nähert sich dem Limit -  jetzt Upgrademöglichkeiten prüfen
+    quota_reached_mail:
+      quota_reached_info2_html: <strong>Keine Panik! </strong> <em>Lingohub</em> skaliert mit Dir, jederzeit. Da Dein Projekt gewachsen ist, <a href="%{subscription_href}">wähle Doch noch heute ein anderes Paket aus <strong>unserem Angebot </strong></a>und fahre  mit der Lokalisierung Deiner Projekte fort, mit denen Du die Welt erobern wirst.
+      quota_reached_info_html: Du hast das %{limits_reached} Limit Deines Pakets auf <em>Lingohub</em> erreicht. Zum weiterarbeiten braucht es kurz Dein Handeln.
+      subject: Die Quote Deines Lingohub Benutzerkontos ist überschritten - es ist Zeit zu skalieren!
+    quota_reached_second_mail:
+      quota_reached_info2_html: Um mit der Arbeit fortfahren, lies bitte weiter und alles passt.
+      quota_reached_info3_html: Es ist natürlich dass Projekte wachsen, und in der Regel ein Zeichen von Erfolg, herzlichen Glückwunsch daher zur Expansion. Es gibt keinen Grund zur Sorge. Lingohub wurde dafür gebaut, mit Dir jeden Schritt des Weges zu skalieren.
+      quota_reached_info4_html: Um loszulegen, einfach <a href = "%{subscription_href}"> ein anderes Abonnement wählen</a>. Dies ist das letzte Mal, dass wir Dich per E-Mail belästigen, künftig wird eine Meldung auf <a erscheinen href = "http :/ / www.lingohub.com">lingohub.com</a> erscheinen wenn Du Dich einloggst.
+      quota_reached_info_html: wir haben Dich schon wegen deines Lingohub Pakets benachrichtigt. Das Limit ist aktuell überschritten und Deine Projekte sind daher momentan inaktiv (nichts ist verloren).
+      subject: 'Erinnerung: Dein Lingohub Paketlimit ist erreicht - Projekte inaktiv'
+    trial_exceeded_mail:
+      action_html: 'Keine Sorge. <a href="%{subscription_href}" style="color: #006E99">Klicke
+        hier</a> um zu vergleichen, und wähle das Paket dass Deinen Anforderungen
+        am besten entspricht. Du kannst das Paket jederzeit ändern.'
+      asking_for_feedback_html: Wir wollen eine großartige Erfahrung in Software-Lokalisierung bieten. Falls die Testphase Dich nicht überzeugt hat, lass uns bitte wissen wie wir es besser machen können.
+      p1: Die Zeit vergeht schnell wenn man Spaß hat! Deine Testphase auf Lingohub.com ist nun zu Ende.
+      p2: Du hast innerhalb der 14 Tage noch kein Paket ausgewählt. Dein Benutzerkonto ist nun auf das Basiskonto zurückgesetzt.
+      subheader1: Was nun?
+      subject: Deine Lingohub Testphase ist abgelaufen - was bedeutet das jetzt für Dich?
+    trial_reminder_mail:
+      action_html: 'Um zu beginnen, wählen ein Paket <a href = "%{subscription_href}"
+        style = "color: # 006E99">unter diesem Link</a>.'
+      first:
+        expiration_info: Deine Testphase auf Lingohub.com wird in sieben Tagen enden. Seh Dir jetzt unsere Paketoptionen an!
+        not_sure: Du bist Dir nicht sicher ob Lingohub das richtige ist? Frag uns jederzeit. Es ist noch eine Woche Zeit zum ausprobieren. Hast Du schon die Github Integration getestet, oder den CLI Client?
+        subject: Deine Lingohub Testphase endet in 7 Tagen - jetzt durchstarten!
+        support_contact_html: 'Du bist Dir nicht sicher ob Lingohub das Richtige ist?
+          Du habst noch eine Woche um Lingohub zu testen, sprich jederzeit mit unserem
+          <a href="%{support_href}" style="color: #006E99">Support Team</a>. Wir diskuttieren
+          gerne Deine Anforderungen und sprechen eine Empfehlung aus. Das Paket kannst
+          Du jederzeit ändern.'
+      second:
+        expiration_info: Deine Lingohub Testphase auf wird in 3 Tagen enden - wenn Du bereit bist zu lokalisieren, wähle eines unserer Pakete.
+        subject: Deine Lingohub Testphase endet in 3 Tagen, es ist noch Zeit zu handeln. Be Global, go local!
+        support_contact_html: 'Wenn Du unsicher bist, welches Paket am besten passt,
+          <a href="%{support_href}" style="color: #006E99">sprich mit uns</a>! Wir  diskuttieren
+          gerne Deine Anforderungen und sprechen dann auf Basis bisheriger Erfahrungen
+          eine Empfehlung aus. Du kannst das Paket jederzeit wechseln!'
+  support_case_notifier:
+    created_mail:
+      email: Email
+      mail_subject: 'Danke dass Du den Lingohub Support kontaktiert hast. Deine Anfrage
+        ist: "%{support_case_subject}"'
+      message: Nachricht
+      p1: Danke für Deine Nachricht an den Lingohub Support. Wir versuchen alle Anfragen innerhalb von acht Geschäftsstunden zu beantworten.
+      p3_html: Du kannst den aktuellen Status Deiner Anfrage unter diesem <a href="%{url}">Link</a> einsehen und Kommentare hinzufügen.
+      p4: Wir melden uns umgehend bei Dir.
+      sent_at: gesendet am  %{date}
+      separator: Bitte nur oberhalb dieser Linie antworten
+      subject: Betreff
+      summary_header: Zusammenfassung Deiner Anfrage
+    inbound_mail_error:
+      main_header: Fehler beim senden der Antwort an die Supportanfrage
+      message_text: Text der Nachricht
+      p1_no_support_case_html: Wir haben von Dir eine Antwort auf eine Supportanfrage bekommen die wir nicht zuordnen können. Versuche bitte über unser Support Center zu posten oder kontaktiere unser Team.
+      p1_not_owner_html: Wir haben eine Antwort von Dir bekommen auf eine Supportanfrage die von einem anderen Nutzer erstellt wurde. Nur der Inhaber der Supportanfrage kann darauf per Email antworten. Bitte kontaktiere diese Person oder erstelle eine neue Supportanfrage.
+      p2_not_owner_html: Antwortest Du vielleicht von einer anderen Emailadresse als von der, die Du bei Lingohub nutzt?
+      subject_no_support_case: '[Lingohub Support] Supportanfrage nicht gefunden'
+      subject_not_owner: '[Lingohub Support] Wir konnten Deine Antwort auf die Supportanfrage
+        nicht zuordnen'
+    reply_waiting_mail:
+      p1_html: Deine Anfrage wurde <a href="%{url}">von unserem Support Team aktualisiert</a>.
+      p2: Antwort
+      p3: Nachricht der Supportanfrage
+      subject: '[Lingohub Support] AW: %{support_case_subject}'
+    shared:
+      greeting: Hallo %{display_name},
+      greeting_no_name: Hallo,
+      main_header: Supportanfrage "%{subject}"
+  translator_invitation_notifier:
+    invitation_request:
+      subject: Dieser Benutzer will als Übersetzer eingeladen werden
+  user_notifier:
+    credit_card_about_to_expire_email:
+      p1_html: 'die Kreditkarte die Du als Zahlungsmethode hinterlegt hast bei Lingohub
+        wird in Kürze ablaufen. Banken und Kreditkartenfirmen verschicken normalerweise
+        rechtzeitig neue Karten, <a href="%{subscription_href}" style="color: #006E99">bitte
+        aktualisiere Deine Kreditkarten Informationen</a> in Deinem <em>Lingohub</em>
+        Benutzerkonto, oder kontaktiere Deine Bank oder Kreditkartenfirma.'
+      p2_html: Bitte aktualisiere jetzt die Kreditkarteninformationen in Deinem Lingohub Benutzerkonto und sprich mit Deiner Bank oder Kreditkartenfirma falls notwendig.
+      p3_html: Du solltest diese Informationen umgehend aktualisieren damit Deine Bank notfalls eine neue Karte ausstellen kann bevor Die alte abläuft.
+      p4_html: Lass uns wissen wenn wir irgendwie helfen können.
+      subject: Kreditkarte läuft bald ab
+    credit_card_info_changed_email:
+      p1_html: Deine Kreditkarteninformationen auf Lingohub wurden erfolgreich aktualisiert. Wir hoffen Deine Projekte schreiten gut voran. Lasse uns wissen, falls wir Dir noch irgendwie helfen können.
+      p2_html: <em>Wenn Du diese E-Mail erhältst obwohl Du Deine Kreditkarteninformationen auf lingohub.com nicht aktualisiert hast, kontaktiere uns bitte umgehend!</em>
+      subject: Kreditkarteninformationen auf Lingohub erfolgreich aktualisiert
+    deactivated_farewell_email:
+      p1: es tut uns Leid, dass Du uns verlässt. Wir arbeiten hart daran, Lingohub zum besten Werkzeug für Lokalisierung zu machen - aber wir konnten Dich nicht überzeugen!
+      p2: Bitte hilf uns zu verstehen wieso Du Dich so entschieden hast. Um uns zu verbessern, sag uns was wir falsch gemacht haben oder was Du vermisst hast.
+      # lh-check { placeholders: true }
+      p3_html: Antworte einfach direkt mit Feedback - oder beantworten einfach diese superkurze, anonyme 30-Sekunden Umfrage ( <a href="%{survey_path}">%{survey_path}</a> )! Deine Kommentare sind sehr willkommen. Vielen Dank für Deine Zeit!
+      subject: Wir schätzen Dein Feedback - Warum kehrst Du Lingohub den Rücken?
+    first_how_are_you_email:
+      p1: Hi %{display_name}
+      p2: Glückwunsch, Du bist nun seit einer Woche ein Lingohubber! Wir hoffen alles funktioniert zu Deiner Zufriedenheit.
+      p3: 'Produktupdates, Lokalisierungstutorials, Branchentrends, neue Dokumentation
+        und Veranstaltungen. Am Ball bleiben mit unseren Kanälen:'
+      p4: Versäume keine Neuigkeiten!
+      subject: Hallo Lingohubber
+    welcome_email:
+      as_developer:
+        create_project: Melde Dich an und %{create_project_link} Dein erstes Projekt
+        invite: Lade Übersetzer und Mitarbeiter zu Deinem Projekt hinzu
+        read: Hier kannst Du Tutorials lesen um Dich mit den Details vertraut zu machen.
+        title: Als Softwareentwickler oder Produktmanager,
+        upload: Eine Übersetzungsdatei hochladen oder mit einem Repository verbinden
+      p1: Willkommen bei Lingohub!
+      p2: Es ist unsere Vision, es ein Kinderspiel für Dich zu machen ein Produkt in so vielen Sprachen wie möglich auszurollen, ohne irgendwelche Kopfschmerzen.
+      p3_html: 'Folgende erste Schritte kannst Du jetzt machen:'
+      p4_html: Kontaktiere jederzeit gerne unsereren <a href = '%{support_cases_url}'>Support </a>. Wir freuen uns auf Dein Feedback!
+      subject: Willkommen bei Lingohub
+      translator_html: '<strong>Wenn Du Übersetzer bist</strong> (oder Team-Mitglied):
+        Lingohub ist für Dich kostenlos. Jeder kann Lingohub einen Monat vollständig
+        testen. Bei Fragen zu unseren Paketen freuen wir uns auf Emails.'
+  zip_file_notifier:
+    zip_file_mail:
+      p1: Zip Datei mit allen Quelldateien für das Projekt "%{project_tile}" ist dieser Email angehängt.
+      subject: 'Archivdatei mit allen Quelldateien für das Projekt: %{project_title}'

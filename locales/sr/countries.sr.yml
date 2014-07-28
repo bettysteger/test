@@ -1,0 +1,240 @@
+---
+sr:
+  countries:
+    AD: Andora
+    AE: Ujedinjeni Arapski Emirati
+    AF: Afganistan
+    AG: Antigva i Barbuda
+    AI: Angvila
+    AL: Albanija
+    AM: Jermenija
+    AN: Holandski Antili
+    AO: Angola
+    AQ: Antartik
+    AR: Argentina
+    AS: Američka Samoa
+    AT: Austrija
+    AU: Australija
+    AW: Aruba
+    AZ: Azerbejdžan
+    BA: Bosna i Hercegovina
+    BB: Barbados
+    BD: Bangladeš
+    BE: Belgija
+    BF: Burkina Faso
+    BG: Bugarska
+    BH: Bahrein
+    BI: Burundi
+    BJ: Benin
+    BM: Bermuda
+    BN: Bruneji
+    BO: Bolivija
+    BR: Brazil
+    BS: Bahami
+    BT: Butan
+    BW: Bocvana
+    BY: Belorusija
+    BZ: Belize
+    CA: Kanada
+    CD: Dem. Rep. Kongo
+    CF: Centralnoafrička Republika
+    CG: Kongo
+    CH: Švajcarska
+    CI: Obala Slonovače
+    CK: Kukova Ostrva
+    CL: Čile
+    CM: Kamerun
+    CN: Kina
+    CO: Kolumbija
+    CR: Kostarika
+    CU: Kuba
+    CV: Zelenortska Ostrva
+    CW: Kurasao
+    CY: Kipar
+    CZ: Češka Republika
+    DE: Nemačka
+    DJ: Džibuti
+    DK: Danska
+    DM: Dominika
+    DO: Dominikanska Republika
+    DZ: Alžir
+    EC: Ekvador
+    EE: Estonija
+    EG: Egipat
+    EH: Zapadna Sahara
+    ER: Eritreja
+    ES: Španija
+    ET: Etiopija
+    FI: Finska
+    FJ: Fidži
+    FK: Foklandska Ostrva
+    FM: Mikronezija
+    FO: Farska Ostrva
+    FR: Francuska
+    GA: Gabon
+    GB: Ujedinjeno Kraljevstvo
+    GD: Grenada
+    GE: Gruzija
+    GF: Francuska Gvajana
+    GG: Gernzi
+    GH: Gana
+    GI: Gibraltar
+    GL: Grenland
+    GM: Gambija
+    GN: Gvineja
+    GP: Gvadalupe
+    GQ: Ekvatorijalna Gvineja
+    GR: Grčka
+    GT: Gvatemala
+    GU: Guam
+    GW: Gvineja Bisao
+    GY: Gvajana
+    HK: Hong Kong SAR, Kina
+    HN: Honduras
+    HR: Hrvatska
+    HT: Haiti
+    HU: Mađarska
+    ID: Indonezija
+    IE: Irska
+    IL: Izrael
+    IM: Ostrvo Man
+    IN: Indija
+    IQ: Irak
+    IR: Iran
+    IS: Island
+    IT: Italija
+    JE: Džerzi
+    JM: Jamajka
+    JO: Jordan
+    JP: Japan
+    KE: Kenija
+    KG: Kirgistan
+    KH: Kambodža
+    KI: Kiribati
+    KM: Komori
+    KN: Sent Kits i Nevis
+    KP: Dem. Rep. Koreja
+    KR: Koreja
+    KS: Kosovo
+    KW: Kuvajt
+    KY: Kajmanska Ostrva
+    KZ: Kazahstan
+    LA: Laos DNRL
+    LB: Liban
+    LC: Sveta Lucija
+    LI: Lihtenštajn
+    LK: Šri Lanka
+    LR: Liberija
+    LS: Lesoto
+    LT: Litvanija
+    LU: Luksemburg
+    LV: Latvija
+    LY: Libija
+    MA: Maroko
+    MC: Monako
+    MD: Moldavija
+    ME: Crna Gora
+    MF: Sveti Martin (francuski deo)
+    MG: Madagaskar
+    MH: Maršalska Ostrva
+    MK: Makedonija
+    ML: Mali
+    MM: Mijanmar
+    MN: Mongolija
+    MO: Makao SAR, Kina
+    MP: Severna Marijanska Ostrva
+    MQ: Martinik
+    MR: Mauritanija
+    MS: Monserat
+    MT: Malta
+    MU: Mauricijus
+    MV: Maldivi
+    MW: Malavi
+    MX: Meksiko
+    MY: Malezija
+    MZ: Mozambik
+    NA: Namibija
+    NC: Nova Kaledonija
+    NE: Niger
+    NG: Nigerija
+    NI: Nikaragva
+    NL: Holandija
+    'NO': Norveška
+    NP: Nepal
+    NR: Nauru
+    NU: Nijue
+    NZ: Novi Zeland
+    OM: Oman
+    PA: Panama
+    PE: Peru
+    PF: Francuska Polinezija
+    PG: Papua Nova Gvineja
+    PH: Filipini
+    PK: Pakistan
+    PL: Poljska
+    PM: Sen Pjer i Mikelon
+    PN: Ostrva Pitkern
+    PR: Portoriko
+    PS: Zapadna Obala i Gaza
+    PT: Portugal
+    PW: Palau
+    PY: Paragvaj
+    QA: Katar
+    RE: Reinion
+    RO: Rumunija
+    RS: Srbija
+    RU: Rusija
+    RW: Ruanda
+    SA: Saudijska Arabija
+    SB: Solomonova Ostrva
+    SC: Sejšeli
+    SD: Sudan
+    SE: Švedska
+    SG: Singapur
+    SH: Sveta Jelena
+    SI: Slovenija
+    SK: Slovačka Republika
+    SL: Sijera Leone
+    SM: San Marino
+    SN: Senegal
+    SO: Somalija
+    SR: Surinam
+    SS: Južni Sudan
+    ST: Sao Tome i Principe
+    SV: El Salvador
+    SX: Sveti Martin (holandski deo)
+    SY: Sirija
+    SZ: Svazilend
+    TC: Ostrva Turks i Kaikos
+    TD: Čad
+    TG: Togo
+    TH: Tajland
+    TJ: Tadžikistan
+    TL: Istočni Timor
+    TM: Turkmenistan
+    TN: Tunis
+    TO: Tonga
+    TR: Turska
+    TT: Trinidad i Tobago
+    TV: Tuvalu
+    TW: Tajvan
+    TZ: Tanzanija
+    UA: Ukrajina
+    UG: Uganda
+    US: Ujedinjene Nacije
+    UY: Urugvaj
+    UZ: Uzbekistan
+    VA: Vatikan
+    VC: Sveti Vinsent i Grenadini
+    VE: Venecuela
+    VG: Britanska Devičanska Ostrva
+    VI: Američka Devičanska ostrva
+    VN: Vijetnam
+    VU: Vanuatu
+    WF: Valis i Futuna
+    WS: Samoa
+    YE: Jemen
+    YT: Majote
+    ZA: Južna Afrika
+    ZM: Zambija
+    ZW: Zimbabve

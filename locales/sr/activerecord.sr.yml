@@ -1,0 +1,56 @@
+---
+sr:
+  activerecord:
+    attributes:
+      translation_comment:
+        content: Komentar
+    errors:
+      format: '%{attribute} %{message}'
+      full_messages:
+        format: '%{message}'
+      messages:
+        accepted: mora biti prihvaćeno
+        billing_info:
+          attributes:
+            vat_number:
+              invalid: nevažeći
+        blank: ne može biti prazno
+        confirmation: ne odgovara potvrdi
+        date_greater_than: mora biti veći od %{date_from}
+        empty: ne može biti prazno
+        equal_to: mora biti jednako %{count}
+        even: mora biti paran
+        exclusion: je rezervisan
+        greater_than: mora biti veće od %{count}
+        greater_than_or_equal_to: mora biti veće ili jednako %{count}
+        inclusion: nije uključeno u listu
+        invalid: je nevažeći
+        invalid_regex: Nevažeći regularni izraz
+        invalid_url: mora biti važeći URL
+        less_than: mora biti manje od %{count}
+        less_than_or_equal_to: mora biti manje ili jednako sa %{count}
+        not_a_number: nije broj
+        not_an_integer: mora biti ceo broj
+        odd: mora biti neparan
+        record_invalid: |
+          Validacija nije uspela: %{errors}
+        single_current_residence: trenutno prebivalište može biti samo jedno mesto
+        single_origin_residence: samo jedno mesto može biti mesto porekla
+        taken: je već zauzet
+        too_long: je predugačak (maksimum je %{count} karaktera)
+        too_short: je prekratak (minimum je %{count} karaktera)
+        user:
+          attributes:
+            old_password:
+              invalid: neispravno
+        wrong_length: je pogrešne dužine (trebalo bi da bude %{count} karaktera)
+      models:
+        project_user_setting:
+          attributes:
+            user:
+              no_collaborator: nije saradnik na projektu
+      template:
+        body: 'Bilo je problema sa sledećim poljima:'
+        header:
+          one: 1 greška je sprečila ovaj %{model} da bude sačuvan
+          other: '%{count} grešaka je sprečilo ovaj %{model} da bude sačuvan'

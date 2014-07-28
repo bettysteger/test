@@ -1,0 +1,1021 @@
+---
+sr:
+  # to trigger automatic import into lingohub
+  add: Dodati
+  api:
+    index:
+      # this must not be translated keep it as it is.
+      # lh-check { placeholders: false, terms: REST API }
+      title: REST API
+  cancel: Otkazati
+  close: Zatvoriti
+  collaborators:
+    delete:
+      flash:
+        success: Saradnik '%{email}' je izbrisan.
+      tooltip: Obriši saradnika
+    edit:
+      destroy:
+        # lh-check { min: -5, max: +5, placeholders: false }
+        confirm: Da li zaista želite da uklonite vaseg saradnika sa projekta?
+    index:
+      # lh-check { min: -20, max: +20, placeholders: false }
+      content: 'Možeš pozvati nove saradnike, npr. prevodioce ili razvijače, kako
+        bi radili sa tobom na projektu. Dodeljivanjem uloge korisniku definišu se
+        njegova ovlašćenja. Ovo pomaže saradniku da se fokusira samo na ono što je
+        relevantno i štiti projekat od neželjenih pristupa. Na primer, španski prevodilac
+        vidi samo glavni jezik i španski u delu za prevođenje i ne može videti ili
+        menjati podešavanja projekta. Četiri uloge su:'
+      description:
+        developer:
+          content: Developer je zadužen za upravljanje prevodom. Dakle, developer može dodati/ukloniti fraze prevoda.
+          title: Developer
+        owner:
+          content: Nosilac projekta je kreirao projekat i ima sva prava. Ova prava uključuju postavljanje/preuzimanje datoteka, promena prevoda, dodavanje/uklanjanje saradnika i tako dalje. Projekat može biti zatvoren samo od strane vlasnika.
+          title: Nosilac
+        project_administrator:
+          content: 'Administrator ima sva prava vlasnika, osim da zatvori projekat. '
+          title: Administrator projekta
+        reviewer:
+          content: Recezent može promeniti status fraze prevoda na "pregledano". Nakon toga, prevodilac je više neće moći menjati.
+          title: Recezent
+        translator:
+          content: Prevodilac nema administrativnih prava, ali može da menja prevode jezika koji su mu dodeljeni.
+          title: Prevodilac
+      developer: Developer
+      h2: Saradnici
+      hint:
+        content: Dodavanjem e-mailova prevodioca ili developera, pozivaš ih da koriste Lingohub. Poslaćemo im e-mail sa kratkim koracima kako da koriste Lingohub i nakon što prihvate pozivnicu, jednostavan prevod može da počne.
+        title: Ko radi sa mnom?
+      invitations:
+        delete: Obriši pozivnicu
+        email_placeholder: Pozivni e-mail
+        h2: Pozivnice
+        personal_message: Klikni ovde ukoliko želiš da dodaš privatnu poruku pozivnici.
+        resend: ponovo poslati e-mail
+        submit: Poslati pozivni e-mail
+      no_role: Ništa još nije dodeljeno
+      owner: Nosilac
+      permissions_header: Dozvole
+      project_admin: Administrator projekta
+      reviewer: Recezent
+      title: Saradnje - %{project_title}
+      translator: Prevodilac
+  control_panel:
+    navigation:
+      sub:
+        lingohubbers: Lingohuberi
+        projects: Projekti
+        reports: Izveštaji
+        sidekiq_web: Sajdkik
+        users: Korisnici
+  edit: Izmeniti
+  errors:
+    messages:
+      extension_white_list_error: 'Nije vam dozvoljeno da ubacite %{extension} dadoteku,
+        dozvoljeni tipovi: %{allowed_types} '
+      size_too_big: je prevelik (treba da bude najviše %{file_size})
+      size_too_small: je previše mali (treba da bude najmanje %{file_size})
+      wrong_size: je pogrešne veličine (treba da bude %{file_size})
+    routing_public:
+      back_link: Idi nazad na Lingohub.com
+      email_link: Pošalji nam email ako možemo da ti pomognemo
+      # lh-check { placeholders: false, terms: 404 }
+      h1: 404 - Stranica nije pronađena
+      item1: Lingohub dokumentacija
+      item2: Lingohub blog
+      item3: Tviter aktivnosti
+      p1: 'Žao nam je, ali čak ni Lingohub ne može da protumači tvoj zahtev. Ne paničite,
+        pogledajte ove linkove:'
+      p3: ili %{link} 
+      p4: U sigurnim si rukama sa nama za sve potrebe lokalizacije. Uloguj se prvo da bi imao pristup svom projektu. %{link}  
+  global:
+    and: i
+    authentication:
+      omni_auth_failure: Žao nam je, ali nisi ovlašćen. Molimo te da se prijaviš sa svojim e-mailom i lozinkom.
+      provider:
+        bitbucket: Bitbucket
+        facebook: Facebook
+        # lh-check { placeholders: false, terms: Github }
+        github: Github
+        google_oauth2: Google
+        linkedin: LinkedIn
+        twitter: Twitter
+        xing: Xing
+    authorization:
+      not_authorized: Nisi ovlašćen da pristupiš ovoj stranici.
+    colors:
+      black: crna
+      grey: Siva
+      red: crvena
+      white: Bela
+    confirmation_needed: Molimo te da potvrdiš svoju e-mail adresu. Ukoliko nisi primio e-mail, proveri nepoželjnu poštu ili klikni ovde %{resend_link} kako bi zahtevao novi e-mail.
+    create: kreiraj
+    delete_link: Izbriši
+    documentation_page: Stranica Dokumentacije
+    email:
+      signature:
+        helmut:
+          l1: Pozdrav
+          l2: Helmut, generalni direktor
+        lingohub:
+          l1: Srdačan pozdrav,
+          l2: tvoj Lingohub Tim.
+    error:
+      unexpected_error: Žao nam je, došlo je do greške. Ne brini, imamo sve sačuvano i rešićemo problem.
+    filename: Ime datoteke
+    knowledge_base: Baza znanja
+    locale: Jezik
+    locale_deactivated: Jezici ispod su deaktivirani
+    message:
+      trial_ends:
+        days_ago: Probni period se završio. Izaberi plan pretplate sada.
+        days_since:
+          one: Probni period završava sutra. Izaberi plan pretplate sada.
+          other: Probni period završava za %{count} dana. Izaberi plan pretplate sada.
+    myself: Ti
+    no_phrase: Ne
+    phrase: Fraza
+    privacy_policy: Politika Privatnosti
+    project: Projekat
+    reload: ponovo učitati
+    resend: ponovo poslati
+    sign_in: Prijavljivanje
+    sign_up: Registrovati se
+    submit: Podneti
+    submit_processing: Obrada...
+    support_page: Stranica Podrške
+    terms_of_service: Uslovi korišćenja Usluge
+    this_link: ovaj link
+    translations: Prevodi
+    using: koristeći
+    view_more: Pogledati više
+    yes_phrase: Da
+  invitations:
+    create:
+      flash:
+        not_invite_oneself_error: Nije moguće pozvati sam sebe!
+    decline:
+      flash:
+        success: Pozivnica odbijena.
+  invoices:
+    document:
+      address:
+        from: Od
+        to: Za
+      cc_statement_information: Ova transakcija će se pojaviti na izvodu tvoje kreditne kartice kao "%{cc_charge_description}".
+      charged_information: Tvoja %{cc_type} kartica, završava sa %{cc_last_four}, je zadužena.
+      currencies:
+        usd: USD
+      currency: Valuta
+      date: Datum
+      invoice: Račun
+      invoice_number: Broj računa
+      paid: Plaćeno
+      payment: Plaćanje
+      table:
+        description: Opis
+        price: Cena
+        total: Ukupno
+        vat:
+          item:
+            description: '%{vat_percent}% PDV'
+      vat: PDV
+  landing:
+    description: Lingohub čini prevođenje vrlo lakim, za sve participante, podižući produktivnost i smanjujući troškove.
+    developers:
+      description: Konačno prestani da brineš i globalno plasiraj svoj proizvod putem najinteligentnijeg upravljačkog rešenja za lokalizaciju. Kvalitetan prevod od strane profesionalaca širom sveta, bez glavobolja!
+      features:
+        feature1:
+          text: Sa Lingohub-om prevodi se isporučuju brže - i dodaju pravu vrednost tvom poslovanju tako što eliminišu operativne troškove prevoda i štede tvoje vreme. Koncentriši se na svoj proizvod, a ostavi nama da se borimo sa glavoboljama. Za prevodioce Lingohub smanjuje operativne troškove na sličan način, tako da je reč o win-win situaciji!
+          title: Prava vrednost
+        feature2:
+          text: Kompletna SSL enkripcija i poslovna infrastruktura čine Lingohub najsigurnijim mestom za prevode tvojih projekata. Sve datoteke su automatski podržane i uvek spremne za tebe. Sistem dozvola ti daje kontrolu nad odlučivanjem ko i šta može da menja na tvojim projektima.
+          title: Sigurnost
+        feature3:
+          text: Radi sa globalnim timovima na svim jezicima, putem svog pretraživača - bez potrebe za instaliranjem programa. Lingohub sadrži komentare i sistem obaveštavanja, obrađuje plaćanje i menja radne procese.
+          title: Saradnja putem Oblaka
+        feature4:
+          text: Potreban ti je švajcarski nož? Lingohub ima CLI klijent, fleksibilni REST API i podršku za tvoj omiljeni razvojni okvir (uključujući i prilagodljivu Github integraciju). Još bolje, upravljaj svojim projektima otvorenog koda na Lingohub-u potpuno besplatno!
+          title: Najnoviji Alati
+        feature5:
+          text: Lingohub platforma dostavlja prevod kojem možeš verovati. Možeš zaposliti kvalifikovane i rangirane prevodioce, dodavati recezente projektima i graditi dugotrajne odnose sa profesionalcima. Naše prevodilačko okruženje omogućava tvojim saradnicima da pruže prevode najvišeg kvaliteta. Lokalizacija nikada nije bila tako jednostavna.
+          title: Poverenje kroz odnose
+        h3: Ključne prednosti
+      index:
+        h2: <small>za</small> Developere
+        tab1: Zašto Lingohub
+        tab2: Glavne Tehnologije
+        tab3: Planovi & Cene
+        tabs:
+          learn_more: vidi više
+          more: Uživaj u 30-dnevnom probnom periodu kako bi istražio Lingohub ili %{plan_link} koji odgovara tvojim potrebama.
+          or: ili
+          pick: izaberi fleksibilan plan danas
+          sign_up: Registruj se danas!
+      is_for: Lingohub je za developere
+      main:
+        compare: Uporedi planove i cene
+        feature1:
+          h2: Dopri do milijardi svojom aplikacijom!
+          p: Počni sa podržavanjem više jezika i osvoji nove kupce širom sveta putem kvalitetne lokalizacije.
+        feature2:
+          h2: Android, iOS & Co!
+          p: Lokalizuj svoj proizvod za platforme kao što su iOS ili Android. Podržavamo sve datoteke i formate, jednostavno i bez muke.
+        feature3:
+          h2: Pametna Github integracija!
+          p: Lingohub se povezuje sa tvojim repozitorijumom i sinhronizuje na način na koji želiš - ili koristi fleksibilne %{api_link} i %{cli_client_link} za specijalnu konfiguraciju.
+        learn_more: Vidi više
+        more: Uživaj u besplatnom 30-dnevnom probnom periodu kako bi otkrio Lingohub ili izabrao fleksibilni plan koji odgovara tvojim potrebama. Upravljaj besplatno javnim projektima sa otvorenim kodovima na Lingohub-u
+        or: ili
+        sign_up: Registruj se danas!
+        text: Developeri
+        title: Za Kreatore
+      plans_and_pricing:
+        text: U Lingohub-u razumemo tvoje zahteve za lokalizacijom softvera. Naši planovi pretplate nude različite mogućnosti kako bi zadovoljili različite potrebe projekata. Kada projekat raste, rastemo i mi sa njim - sa svim opcijama koje su ti potrebne.
+      sign_up:
+        compare: Uporedi planove & Najčešće postavljana pitanja
+        h2: Kreiraj svoj Lingohub nalog danas, bez rizika.
+        li1: Planovi se mogu menjati u svakom trenutku - a tu je i 30-dnevni probni period.
+        li2: Nećeš morati da upisuješ podatke o plaćanju sve dok ne izabereš plan.
+        li3: <strong>Tvoj projekat je projekat sa otvorenim kodom?</strong>Takve projekte hostujemo besplatno, registruj se i odmah napravi svoj projekat!
+      technologies:
+        feature1:
+          h2: Svet je pokretan
+          p: Tvoji korisnici koriste različite mobilne platforme - mi ih sve podržavamo. Jednostavno lokalizuj iOS, Android, Windows 8 ili HTML5 interfejsove (veb aplikacije, FirefoxOS)
+        feature2:
+          h2: Kompatibilnost na svim platformama
+          p: Lingohub barata tvojim izvornim datotekama pomoću pametnog otpremi/izvezi sistema, uključujući meta informacije, komentare i formatiranje, kao što su .yml, properties, .ini, .xml, strings, .resx, .resjson, .resw ili .po datoteke
+        feature3:
+          h2: Najnoviji Okviri
+          p: Bez obzira da li koristite Rails ili neki drugi programski framework, Lingohub teži da 'pogura' Vaš razvojni proces - takođe Vam dajemo na raspolaganje Ruby CLI client i API.
+        feature4:
+          h2: Moćni API
+          p: Za potpunu automatizaciju ili kontrolu nad tvojim projektom, iskoristi naš moćni %{rest_api_link} koji sve karakteristike nudi i na veb-interfejsu. API dolazi sa obimnom dokumentacijom, svideće ti se!
+      why_lingohub:
+        feature1:
+          h2: Više Efikasnosti
+          p: Smanji operativne troškove lokalizacije i koristi Lingohub za upravljanje prevodima. Zašto bi trošio dragoceno vreme razvoja prozvoda na rukovanje datotekama?
+        feature2:
+          h2: Nova Tržišta
+          p: Osvoji nove potrošače širom sveta svojim višejezičnim proizvodom. Nema razloga da propustiš priliku od milijardu potencijalnih korisnika!
+        feature3:
+          h2: Pametna Github integracija
+          p: Lingohub radi fenomenalno sa tvojim razvojnim okruženjem. Potpuna dvosmerna sinhronizacija sa Github repozitorijumom i pametna kontrola razvoja, koju sam definišeš, ti pružaju neverovatnu fleksibilnost.
+        feature4:
+          h2: Poverenje & Kvalitet
+          p: Jednostavno obezbedi kontekst putem svojih datoteka, snimaka ekrana - i dodaj dodatne prevodioce ili recezente za projekte. Tvoji korisnici vole proizvode koji govore njihovim jezikom!
+    h1: Zdravo!
+    h3: <strong>Hajde da napravimo Internet višejezičnim.</strong>U Lingohub-u spajamo developere i prevodioce širom sveta, obezbeđujući fantastično iskustvo lokalizacije.
+    more: Pročitati više
+    translators:
+      benefits:
+        feature1:
+          h2: Tvoje radno okruženje je tamo gde si ti
+          p: Nema programa koje je potrebno instalirati, izdavanja licenci, problema sa kompatibilnošću. Tvoj prevodilački interfejs na Lingohub-u je tačno u pretraživaču, koji god da koristiš, odakle god želiš da radiš.
+        feature2:
+          h2: Pregledati gotov proizvod
+          p: '"To što vidiš, to ćeš i prevesti" (WYSIWYT) te obezbeđuje najdetaljnijim
+            kontekstom koji si do sada video, sa automatskim snimcima ekrana završnog
+            proizvoda. Meta informacije te dodatno snabdevaju potrebnim kontekstom'
+        feature3:
+          h2: Brza Saradnja
+          p: Komentariši prevod kako bi obavestio saradnike ili recezente na istom projektu o problemima, optimizovao proces menjajući status prevoda i automatski bio obavešten ukoliko se desi neka promena.
+        feature4:
+          h2: Tvoj besplatan profil
+          p: Na Lingohub-u možeš kreirati besplatan profil za prevodioce kako bi prikazao svoje jezike, sertifikate, polja ekspertize i iskustvo, zarad građenja profesionalne reputacije u IT prevodilačkom sektoru
+      description: Koncentriši se na svoj osnovni zadatak radeći direktno sa svog veb pretraživača, bez bavljenja tehnikalijama. Počni danas i kreiraj javni profil kako bi promovisao svoje veštine - besplatno!
+      features:
+        feature1:
+          text: Nema potrebe za skupim softverima, rukovanjem datotekama, instalacijama, uvozom ili izvozom. Lingohub je tvoje fenomenalno radno okruženje smešteno u pretraživaču. Možeš da dodaješ jezike, podešavaš faze pregleda, dodaješ komentare i pretražuješ prevode. Sve to sa svog kompjutera ili iPad-a, sedeći u kafiću.
+          title: Od CAT do pretraživača
+        feature2:
+          text: Dodaj komentare prevodima gde je potrebno pojašnjenje, radi na istom projektu zajedno sa recezentima i kolegama - u isto vreme - i gledajte kako isti raste! Kako je sve u oblaku, niko ne mora praviti rezervne kopije ili slati datoteke putem e-maila.
+          title: Jednostavna saradnja
+        feature3:
+          text: To što vidiš, to ćeš i prevesti! Naše revolucionarna tehnologija za kontekst te obezbeđuje automatskim slikama ekrana finalnog proizvoda, tako da direktno možeš da vidiš kako će tvoj prevod izgledati u okviru finalnog proizvoda. Tvoji klijenti takođe mogu dodavati slike i meta informacije, kao što su broj karaktera ili termini koje treba preskočiti.
+          title: WYSIWYT
+        h3: Ključne prednosti
+      index:
+        h2: Besplatno <small>za</small> Prevodioce
+        tab1: Zašto Lingohub
+        tab2: Tvoj besplatni profil
+        tab3: Prednosti Proizvoda
+        tab4: Registracija
+        tabs:
+          join: Pridruži se danas!
+          learn_more: vidi više
+          or: ili
+      is_for: Lingohub je za prevodioce
+      main:
+        faq: Najčešće Postavljana Pitanja
+        feature1:
+          h2: Najjednostavnije radno okruženje
+          p: Izgradili smo alat za prevođenje koji ti omogućava da se koncentrišeš na svoj posao tako što mi brinemo o svemu ostalom. Jednostavno prevodi!
+        feature2:
+          h2: Kontekst, kontekst, kontekst!
+          p: 'Imaš potpunu kontrolu: najbolji editor bogat kontekstom koji si ikada
+            video sa WYSIWYT<sup>TM</sup>, pregledima i meta-informacijama'
+        feature3:
+          h2: Napravi svoj profil!
+          p: Lokalizacija je proces rađen od strane profesionalaca kao što si ti. Prikaži svoje veštine i nađi nove poslovne mogućnosti tako što ćeš besplatno kreirati javni profil
+        learn_more: Vidi više
+        more: Besplatno je! Registruj se danas i napravi odličan profil kako bi osvojio nove klijente.
+        or: ili
+        sign_up: Registruj se danas!
+        text: Prevodioci
+        title: Za Prevodioce
+      sign_up:
+        h2: Registruj se besplatno danas!
+        h4: Lingohub će za prevodioce uvek biti besplatan, jer...
+        li1: Tehnički problemi, ugovori i komplikovani procesi su sada prošlost.
+        li2: Sve što je potrebno da uradiš jeste da se registruješ, pronađeš poslove za prevodioca i ostaviš Lingohub-u da se pobrine oko svega ostalog.
+        p: Želimo da ti omogućimo da se koncentrišeš na svoju odličnu i profesionalnu uslugu koju nudiš kupcima širom sveta.
+      why_lingohub:
+        feature1:
+          h2: Jednostavno prevođenje
+          p: 'Reci zbogom rukovanju datotekama, formatiranju, komplikovanim softverima
+            ili traćenju vremena učeći o procesima svojih korisnika. Sa Lingohub-om
+            se konačno možeš koncentrisati na ono najvažnije: tvoje prevode.'
+        feature2:
+          h2: 360 stepeni Konteksta
+          p: Slike, meta informacije (kao što su limiti za karaktere), komentari i naša moćna WYSIWYT<sup>TM</sup> tehnologija te obezbeđuju najvećim kontekstom koji si ikada imao prilike da vidiš za vreme svog prevođenja
+        feature3:
+          h2: Bezbrižni Procesi
+          p: Ne moraš brinuti o rezervnim kopijama, Lingohub je spreman po prijavljivanju. Sa prvom promenom reči u projektu od strane korisnika bićeš obavešten, sve putem pretraživača.
+        feature4:
+          h2: Tvoj besplatan profil
+          p: 'Sačuvali smo najbolje za kraj: Lingohub će uvek biti besplatan za prevodioce!
+            Možeš napraviti svoj javni profil koji će najbolje prezentovati tvoje
+            veštine i obezbediti ti nove kupce! Registruj se i napravi profil danas!'
+        quote: Verujemo da prevođenje nije posao, nego profesija. Delimo tvoju strast za jezicima i detaljima, zato smo i izgradili okruženje lako za korišćenje, koje te lišava svih tehničkih problema. Možeš prevoditi u interfejsu sa objašnjenim kontekstom i dobiti trenutni fidbek na svoj rad. Toliko je jednostavno.<span>- Helmut, Osnivač Lingohub-a</span>
+  languages:
+    iso_codes:
+      detect: Otkriti
+  locale_prompt: Molimo te da odabereš jezik
+  models:
+    file_labels:
+      title:
+        default: nema imena datoteke
+    invoice_items:
+      description:
+        subscription_plan: '"%{plan_title}" Pretplata od %{from_date} do %{to_date}'
+    project:
+      owner: Nosilac Projekta
+    resource_file:
+      generic_locale: <jezik>
+    user_labels:
+      title:
+        starred: Sa zvezdom
+        unstarred: Nije sa zvezdicom
+  navigation:
+    my_projects: Moji projekti
+    new_project: Novi projekat
+  payment:
+    errors:
+      flash:
+        card_expired: Kreditna Kartica više ne važi.
+        cvv_missing: Nedostaje sigurnosni kod.
+        invalid_cc_number: Nevažeći broj Kreditne Kartice.
+        invalid_expiration_date: Datum isteka važenja kartice je pogrešan.
+        limit_exceeded: Limit Kreditne Kartice je prekoračen.
+        other: Desila se greška prilikom obrade ove Kreditne Kartice (%{error_code})
+        wrong_amount: Iznos za plaćanje je pogrešan.
+  plans_and_prices:
+    index:
+      # this will be displayed as button
+      # to choose a plan
+      choose: Izabrati
+      faqs:
+        collaborator:
+          answer: Ovo je ukupan broj jedinstvenih Lingohub korisnika koje možete pozvati da rade na vašim projektima sa privatnim pristupom. Dati korisnik se računa samo jednom, bez obzira na broj privatnih projekata koji su mu dodeljeni.
+          question: Šta znači termin "saradnik"?
+        data:
+          answer: Sigurnost i privatnost tvojih ličnih i projektnih informacija, kao i informacija o plaćanju su nam veoma značajne. Lingohub radi u SAS70-legitimnom centru podataka na nivou preduzeća, koristeći industrijski standard za zaštitu podataka. Svi planovi u Lingohub-u su SSL-kodirani.
+          question: Da li su moji podaci sigurni?
+        decide:
+          answer: Da, možeš početi sa planom koji ti danas odgovara, a kasnije ga možeš proširiti. Ukoliko si na plaćenom planu, koji bi kasnije nadogradio na veći paket, biće ti naplaćena samo razlika na osnovu preostalog vremena u tekućem obračunskom ciklusu. Nemoj zaboraviti da imaš besplatnu probnu verziju od 30 dana da upoznaš Lingohub - za Lingohub prevodioce je uvek besplatno.
+          question: Nisam siguran koji plan mi treba, da li mogu odlučiti kasnije?
+        downgrade:
+          answer: 'Plaćeni nalozi mogu zameniti svoje planove za manje, ili ih poništiti
+            u bilo koje vreme, i neće im biti ništa naplaćeno. Ne nudimo refundacije
+            za već odrađene naplate, stoga savetujemo da se počne sa planom koji odgovara
+            današnjim potrebama, a da se kasnije nadogradi u skladu sa promenom potreba. '
+          question: Šta se dešava kada zamenim plan za manji?
+        free:
+          answer: Da, Lingohub može biti korišćen kao besplatan alat za prevođenje. Besplatan plan uključuje naše uređivanje prevoda bez ikakvih restrikcija. Prevodioci mogu besplatno da koriste Lingohub - i to uvek. Hostovanje komercijalnih projekata zahteva planove koji se plaćaju.
+          question: Da li mogu koristiti Lingohub besplatno?
+        more:
+          answer: Molimo te da posetiš stranicu naše Podrške, ili da nas direktno kontaktiraš. Nešto možeš da pronađeš i pod <a href='https://lingohub.com/terms'> Uslovima Plaćanja.
+          question: Treba ti više informacija?
+        public_projects:
+          answer: Obično, svi projekti na Lingohub-u su privatni i dostupni samo pozvanim korisnicima. Javni projekti su dostupni svima i namenjeni su razvoju softvera otvorenog koda, ili bilo kojoj inicijativi koja ne zahteva podatke o privatnosti. Ograničenja u vezi sa brojem projekata i saradnika po planu se ne odnose na javne projekte.
+          question: Šta su javni projekti?
+        title: Najčešće postavljana pitanja
+        trial:
+          answer: Kada se prijaviš na Lingohub, tvoj nalog će biti automatski uključen u besplatan 30-dnevni probni period, koji ti omogućava korišćenje svih pogodnosti, kreiranje neograničenog broja projekata i pozivanje onoliko ljudi koliko ti odgovara. Možeš izabrati jedan od planova koji se plaćaju u bilo koje vreme do kraja isteka 30-dnevnog probnog perioda. Na kraju besplatnog probnog perioda, tvoj nalog će biti prebačen na besplatan individualan plan, koji je namenjen saradnicima i prevodiocima. Možeš koristiti sve pogodnosti i učestvovati na drugim projektima, ali nećeš moći da kreiraš svoje projekte. Kada tvoj nalog dostigne svoj limit, tvoji projekti će moći biti samo čitani (sve informacije o projektima će ostati sačuvane). Kreditna kartica nije potrebna za besplatni 30-dnevni probni period. Svi mogu koristiti probni period, bez obzira na to da li se radi o prevodiocima ili o onima koji žele da rade na svojim projektima.
+          question: Kako funkcioniše 30-dnevni probni period?
+      meta_info:
+        description: Lingohub planovi pretplate, cene i specijalne ponude
+      p1: U Lingohub-u razumemo potrebe za lokalizacijom softvera. Naši planovi pretplate dolaze u različitim oblicima kako bi se prilagodili različitim potrebama projekata. Kako ti rasteš, rastemo i mi sa tobom - sa svim karakteristikama koje su ti potrebne. <b>Be Global, Go Local!</b>
+      p2: Uvek možeš zameniti planove - i uživati u <strong>besplatnom 30-dnevnom probnom periodu</strong>!
+      page_title: Cene - Laka lokalizacija veb i mobilnih aplikacija sa Lingohub-om 
+      plan:
+        basic: Možda praviš novu, inovativnu mobilnu aplikaciju? Ukoliko ti je potrebno <strong>više saradnika i veći volumen teksta</strong>, naš tro-projektni <span class='label'>Basic</span> plan ti daje alate koji su ti potrebni da bi tvoj proizvod bio globalan.
+        business: Naš <span class='label'>Business</span> plan za veće napore, nudi najbolju vrednost za agilne projekte i poseduje najveću fleksibilnost za <strong>aplikacije bogate tekstom i veće vebsajtove.</strong>
+        mini: <strong>Ukoliko radiš na malom projektu</strong>, naš <span class='label'>Mini</span> plan je pravo rešenje za tebe.
+        period: /m
+        plus: '<strong>Tražiš više?</strong>Naš <span class=''label''>Plus</span>plan
+          pokriva i to. Shodno svojim zahtevima, možeš proširiti ili smanjiti svoj
+          mesečni plan. Više o tome: <a href=''/plans-and-prices#faq''>F.A.Q.</a>'
+      prompt: Registruj se i izaberi svoj plan pretplate!
+      title: Planovi i Cene
+      translators:
+        link: Proveri ovde
+        p: Isprobaj sve pogodnosti koje ti Lingohub može ponuditi - <strong>potpuno besplatno</strong>!
+        title: '@Prevodioci'
+  projects:
+    form:
+      description:
+        placeholder: Opis
+      opensource:
+        hint: 'Hvala na doprinosu otvorenom kodu. Naš jedini zahtev: molimo te da
+          napišeš URL vebsajta svog projekta.'
+        hint_html: Hostujemo projekte otvorenog koda besplatno!
+        label: Otvoreni kod
+        title: Projekat otvorenog koda
+      title:
+        hint: 'obavezno: Ime tvog projekta'
+        placeholder: Fenomenalan projekat
+      website: Vebsajt
+    global:
+      deactivated:
+        flash:
+          info: Ovaj projekat je deaktiviran i ne može biti izmenjen. Ukoliko želiš da ga ponovo koristiš, klikni na "Aktivirati" dugme.
+      navigation:
+        administration: Administracija
+        dashboard: Kontrolna tabla
+        resources: Izvorne datoteke
+        sub:
+          collaborators: Saradnici
+          locales: Jezici
+          settings: Podešavanja
+        translations: Prevodi
+    new:
+      form_header: Kreiraj novi projekat
+      open_source:
+        hint:
+          content: U Lingohub-u volimo Otvoreni Kod (bez kog nikada ne bismo mogli napraviti ovaj neverovatan servis), stoga hostovanje projekata otvorenog koda ne naplaćujemo. Ukoliko je tvoj projekat F(L)OSS, označi da je u pitanju otvoreni kod <b>i</b> navedi URL vebsajta svog projekta.
+          title: Otvoreni kod
+      submit: Kreiraj Projekat
+      what:
+        hint:
+          content: Pod projektima mislimo na bilo koji proizvod ili servis (vebsajt, mobilne aplikacije itd.) koje želiš da lokalizuješ uz pomoć Lingohub-a.
+          li1: Počni kreiranje svog novog projekta dajući mu ime. Opciono, možeš ga opisati i time snabdeti svoj tim detaljnim informacijama.
+          li2: Dalje, možeš dodati jezike i saradnike.
+          title: Šta su projekti?
+    show:
+      lingochecks:
+        failing: '%{count} nedostaju LingoČekovi'
+        ok: Lingočekovi su uredu
+  remove: Ukloniti
+  remove_confirmation: Jesi li siguran?
+  repository_setting:
+    complete_setup_wizard:
+      invite_collaborators: Pozvati saradnike
+      p1_html: Spreman si za rad. Konekcija do tvog repozitorijuma je uspostavljena i u toku je početna sinhronizacija.
+      p2_html: Projekat je konektovan sa repozitorijumom "%{repository}" koristeći nalog "%{account}".
+      p3_html: Pogledaj status i detalje svih svojih izvornih datoteka
+      p4_html: Izaberi strategiju uvoza za svoje jezike ili podesi automatsku sinhronizaciju repozitorijuma.
+      p5_html: Proširi svoj tim dodavanjem članova sa kojima ćeš sarađivati. Dodeli uloge svim članovima - Vlasnik Projekta, Developer, Prevodilac i Recezent.
+      title: Odličan posao, %{user}!
+      update_repository_settings: Ažuriranje podešavanja repozitorijuma
+      view_all_imports: Pregledate sve uvoze
+      what_next_title: Šta bi voleo sledeće da radiš?
+    shared:
+      watch_patterns:
+        adding_watch_pattern: Dodavanje novog obrasca pregledanja.
+        no_matches: Nijedna datoteka ne odgovara ovom obrascu pregledanja.
+        no_watch_patterns_added: Do sada nije dodat nijedan obrazac pregledanja
+        removing_watch_pattern: Uklanjanje obrasca pregledanja.
+        select: Izabrati obrasce pregledanja
+    show:
+      connected:
+        checking_connection_to_provider: Proveravanje veze sa provajderom repozitorijuma...
+        disconnect_from_provider: Prekidanje veze sa %{provider}
+        start_sync: Započeti sinhronizaciju
+        tabs:
+          settings:
+            choose_from_list: Izabrati repozitorijum
+            title: Podešavanja
+          watch_patterns:
+            title: Obrasci pregledanja
+        title: Provajderi repozitorijuma
+        to:
+          p_html: Ovaj projekat je povezan sa repozitorijumom <a href='%{connection_url}'><strong>%{connection_info}</strong></a> koristeći nalog "<a href='%{user_url}'>%{user}</a>".
+          title: Povezivanje sa %{provider}
+        view_all_files: Pregledati sve uvozne datoteke
+      final_btn: Podešavanje veze
+      flash:
+        bitbucket:
+          general: Postoje problemi u vezi sa spajanjem sa bitbucket-om. Molimo te da kontaktiraš našu podršku.
+          not_available: Sačuvan repozitorijum nije više dostupan. Molimo te da izabereš drugi ili da konktaktiraš vlasnika bitbucket repozitorijuma.
+          remove_hook_error: Prethodna Bitbucket veza nije mogla biti uklonjena.
+        error: Podešavanja repozitorijuma nisu mogla biti ažurirana
+        github:
+          general: Problemi prilikom konekcije sa Github-om. Molimo te da kontaktiraš našu podršku.
+          not_available: Sačuvan repozitorijum više nije dostupan. Molimo te da izabereš drugi ili da kontaktiraš vlasnika Github repozitorijuma.
+          remove_hook_error: Prethodna Github veza ne može biti uklonjena.
+        not_accessible: Nemoguće pristupiti Repozitorijumu
+        success: Podešavanja repozitorijuma su uspešno ažurirana
+      hints:
+        safe_data:
+          hint:
+            text_html: Lingohub stiče pristup tvom repozitorijumu, što znači i svim datotekama smeštenim tamo. Po pravilu, Lingohub ima pristup tvom izvornom kodu, ali samo sadržaj datoteka koje izabereš će biti vidljive sistemu. Sve ostale datoteke će biti ignorisane i nikada im nećemo pristupiti.
+            title: Da li je moj izvorni kod siguran?
+        safe_login:
+          hint:
+            text_html: Lingohub koristi OAuth protokol da bi se povezao na tvoj Github nalog. To znači da nikada neće biti potrebe da daš svoje podatke za prijavljivanje, umesto toga daješ Lingohub-u dozvolu da privremeno pristupi repozitorijumu. Uvek možeš opozvati ovu dozvolu.
+            title: Da li su moji podaci za prijavljivanje sigurni?
+        setup_hook:
+          hint:
+            text_html: Lingohub ti daje opciju da reaguješ na izvršenja, ukoliko nas tvoj Menadžment Kontrole Izvora (Source Control Management) ovlasti da dobijamo notifikacije nakon što se prijaviš na svoj repozitorijum. Automatski ćemo uvesti sve datoteke koje se podudaraju sa tvojim "obrascem gledanja". <br/> Ovo je odličan način da uvek držiš svoje izvorne datoteke u sinhronizaciji sa Lingohub-om. <br/> Kada se prijave, tvoji saradnici će uvek moći da vide poslednje prevode koji treba da budu prevedeni.
+            title: Podešavanje Automatske Sinhronizacije Repozitorijuma
+        watch_patterns:
+          hint:
+            regexs:
+              text_html: Koristimo Rubi regularne izraze. Možeš testirati svoje regularne izraze sa %{test_service_link}.
+            text_html: Obrasci Pregledanja definišu koje datoteke bi trebalo biti sinhronizovane sa Lingohub-om. Možeš koristiti bilo koji validni izraz (regular expression) kako bi sprečio sinhronizaciju određenih datoteka. <br />Mi smo već definisali Obrasce Pregledanja za programske jezike/okvire između kojih možeš da biraš.
+            title: Šta su "Obrasci Pregledanja" (watch patterns)?
+      information: Ovaj projekat je konektovan na repozitorijum '%{repository_name}' koristeći nalog '%{user_name}'
+      merge_strategy:
+        inplace_hints: Strategija otpremanja definiše kako Lingohub tretira nove i nedostajuće prevode kada je izvorna datoteka otpremljena ili sinhronizovana. Strategija "glavnog jezika" radi u standardnim slučajevima i podrazumevana je.
+        master_locale_structure: Glavni jezik
+        more_strategies: '... ili ti je potrebna druga strategija uvoza?'
+        override: File-first
+        # internally known as merge strategy
+        title: 'Standardna strategija uvoza:'
+        update_and_create: Platform-first
+      missing_repository_name: Uspešno si se konektovao na %{provider_name}. Molimo te da sada upišeš ime repozitorijuma koji želiš da sinhronizuješ.
+      no_repo_text: 'Počni tako što ćeš spojiti svoj Lingohub projekat sa jednim od
+        provajdera ispod:'
+      not_connected:
+        connect_to_provider: Povezivanje sa %{provider}
+      p1: Lingohub trenutno podržava konektovanje na Github. Jednom kada je konekcija uspostavljena, Lingohub ima pristup tvom repozitorijumu i njegovim izvornim dadotekama. Možeš izabrati između manuelne i automatske sinhronizacije.
+      page_title: Podešavanja Repozitorijuma - %{project_title}
+      repository_name:
+        label: 'Repozitorijum:'
+        # lh-check { placeholders: false, terms: rails/rails }
+        placeholder: rails/rails
+      select_btn: Izabrati
+      setup_hook:
+        action: Automatska sinhronizacija repozitorijuma
+        bitbucket:
+          # lh-check { terms: Bitbucket }
+          administrative_rights_needed: 'Potrebna su ti administrativna prava za Bitbucket
+            projekat kako bi omogućio automatsku singornizaciju. '
+        flash:
+          success:
+            install: Omogućena automatska sinhronizacija repozitorijuma
+            uninstall: Onemogućena automatska sinhronizacija repozitorijuma
+        github:
+          # lh-check { terms: Github }
+          administrative_rights_needed: Potrebna su ti administrativna prava za Github projekat kako bi omogućio automatsku sinhornizaciju.
+        inplace_hints:
+          heading: Podešavanje automatske sinhronizacije repozitorijuma
+          p1: Lingohub ti daje opciju da reaguješ na izvršenja, ukoliko nas tvoj Menadžment Kontrole Izvora (Source Control Management) ovlasti da dobijamo notifikacije nakon što se prijaviš na svoj repozitorijum. Automatski ćemo uvesti sve datoteke koje se podudaraju sa tvojim "obrascem pregledanja".
+          p2: Ovo je odličan način da tvoje izvorne datoteke u Lingohub-u uvek budu sinhornizovane.
+          p3: Ukoliko je štriklirano, tvoji saradnici će u svakom trenutku moći da vide poslednje fraze koje treba da budu prevedene.
+        title: Podešavanja Automatske Sinhronizacije Repozitorijuma
+      starting_sync:
+        flash:
+          success: Sinhronizacija sa repozitorijumom je počela
+      steps:
+        completed: Završio si!
+        description: 'Izaberi repozitorijum i poveži se sa njim u 3 jednostavna koraka:'
+        step1:
+          no_repositories: Izabrani nalog nema slobodnih repozitorijuma za %{provider}.
+          progress_label: 1. Izaberi repozitorijum
+          text: Izaberi ime repozitorijuma za dalju sinhronizaciju lokalnih datoteka.
+        step2:
+          no_branches: Nema slobodnih grupa za ovaj repozitorijum.
+          progress_label: 2. Izaberi grupu
+          select_branch: Izaberi grupu
+          text: Izaberi grupu za sinhronizaciju svojih izvornih datoteka.
+        step3: 3. Obrasci pregledanja
+      submit: Ažuriranje Podešavanja
+      title: Podešavanja Repozitorijuma
+      title_connect: Spajanje sa repozitorijumom
+      watch_patterns:
+        hint:
+          only_master_locale_html: Molimo te da imaš na umu da je kreiranje obrazaca pregledanja za <b>glavni jezik</b>tvog projekta nešto što ti želiš. Kako će nove verzije drugih izvornih datoteka nastati na Lingohub-u (izmenjeni od strane tvojih prevodioca), ne bi trebalo biti opterećeni starom verzijom sa repozitorijuma.
+        inplace_hints:
+        - Obrazac pregledanja definiše koje datoteke treba da budu sinhronizovane sa Lingohub-om. Možeš koristiti bilo koji važeći regularni izraz kako bi sprečio sinhronizaciju određenih datoteka.
+        - Možeš izabrati neke od unepred definisanih Obrazaca pregledanja za određene programske jezike / okvire.
+        new:
+          submit: Dodati
+        no_defined: Nema definisanih obrazaca pregledanja.
+        predefined:
+          suggestion:
+            text: Kontaktiraj nas i reci nam šta bi trebalo da dodamo. %{support_link}
+            title: Nešto fali?
+          title: Unapred definisani Obrasci Pregledanja
+        title: Obrasci Pregledanja
+    wizard:
+      title: Povezivanje sa tvojim %{provider} repozitorijumom
+  resource_imports:
+    commit_details:
+      author: Autor
+      identifier: Izvršenje
+      message: Poruka Izvršenja
+    status:
+      error: Greška
+      force_locale: Jezik potreban
+      merge_error: Greška spajanja
+      new: Novi
+      no_project_locale: Nema projektnog jezika
+      pending: Prevedeno
+      running: Obrada
+      success: Uspeh
+    table:
+      action:
+        error: 'Izgleda da je otpremljena datoteka nevažeća i da ne može biti raščlanjena.
+          Ukoliko misliš da je ovo greška, molimo te da kontaktiraš naš %{support_link}. '
+        merge_error: Struktura datoteke ne radi uz trenutnu strategiju otpremanja. Problem bi mogao biti rešen izborom druge strategije.
+        reload_info: Molimo te da ponovo učitaš stranicu kako bi video trenutan status.
+        restart_import: Restartovati Uvoz
+        scheduled_info: Uvoz je dodat na listu izvršavanja!
+      empty: Nema spiska uvoza za ovaj projekat.
+      misc:
+        by_who: uvezeno od strane
+        created: Kreiran
+        deleted: Deaktiviran
+        descriptions_updated: Opisi
+        download_file: Preuzmi podatke
+        lingochecks_errors: greške
+        lingochecks_imported: LingoProvere uvezene
+        lingochecks_processed: obrađeno
+        on_date: '%{date}'
+        reactivated: Reaktiviran
+        show_lingochecks_errors: Prikazati greške LingoProvere
+        translations_imported: Uvezeni Prevodi
+        updated: Ažuriran
+      th:
+        action: Akcija
+        status: Status
+        type: Tip
+    type:
+      automatic_repository_import: Automatski Uvoz Repozitorijuma
+      file_upload: Otpremiti datoteku
+      manual_repository_import: Manuelni Uvoz Repozitorijuma
+  resources:
+    all_zip:
+      flash:
+        success: Zip dadoteka, koja sadrži sve informacije o projektu, se trenutno generiše i biće odmah poslata na %{email} .
+    create:
+      download:
+        lingochecks_not_ok_tooltip: '%{count} ne prolazi'
+        lingochecks_ok_tooltip: Svi prošli
+      flash:
+        error:
+          blank_file_name: Datoteka nema ime.
+          file_too_large: Datoteka je prevelika.
+          invalid_file_extension: Ekstenzija datoteke nije podržana.
+          missing_locale: Žao nam je, jezik nije validan. Da li je ovaj jezik već dodat projektu?
+          upload_error: Datoteka nije ispravno otpremljena.
+        info: Lingohub nije uspeo da identifikuje jezik. Molimo te da ga podesiš ručno i proveriš da li je ispravno dodat projektu.
+        success: Otpremanje je bilo uspešno. Raščlanjivanje datoteke može potrajati koji momenat.
+      hint:
+        text: 'Mogući tipovi i formati datoteke:'
+        text2: Lingohub će analizirati i otkriti kom jeziku pripada datoteka koju si otpremio. Ali, ukoliko želiš da preskočiš ovaj proces, možeš izabrati jezik koji hoćeš da Lingohub koristi.
+        title: Otpremanje datoteke
+      upload:
+        force_locale: Namestiti jezik na
+        h2: Otpremi novu datoteku sa prevodima
+        inplace_hints:
+        - Informacije o otpremanju datoteke
+        merge_strategy:
+          master_locale_structure: Samo izvorni glavni jezik kreira ili briše prevode.
+          override: Deaktiviraćemo prevode na Lingohub-u koji nisu u ovoj datoteci.
+          title: Otpremanje Strategije
+          update_and_create: Zadržaćemo prevode na Lingohub-u koji nisu u ovoj datoteci.
+        submit: Otpremiti datoteku
+        title: Otpremanje datoteke
+    exports:
+      download_file:
+        title: Preuzimanje datoteke
+      page_title: Izvoz %{project_title}
+      push_to_repository:
+        all:
+          flash:
+            success: Početak prebacivanja svih datoteka u repozitorijum u pozadini.
+          select_branch: premesti sve datoteke
+        single:
+          flash:
+            error: 'Nastao je problem prilikom premeštanja u repozitorijum: "%{message}"'
+            success: '"%{filename}" je premešten u repozitorijum. Izvršenje: "%{commit_identifier}"'
+          select_branch: izabrati grupu
+        title: Premesti datoteku u...
+      repository:
+        connection:
+          flash:
+            error: Nastao je problem prilikom povezivanja sa repozitorijumom. Molimo te da pokušaš da osvežiš stranicu za par minuta.
+      title: Izvozi
+    global:
+      navigation:
+        all_files: Sve datoteke
+        exports: Izvozi
+        imports: Uvozi
+        integrations: Integracije
+    index:
+      export_settings:
+        empty_phrase_handling:
+          blank: Zadržati fraze sa praznim sadržajem u izvozu
+          master_locale: Koristiti sadržaj izvornog jezika umesto praznog sadržaja
+          skip: Preskočiti fraze sa praznim sadržajem
+          title: Rukovanje praznim sadržajem
+        encoding:
+          title: Dekodiranje izvoza
+          with_escaping: sa konverzijom karaktera (escaping)
+        flash:
+          success: Projekat izvoza podešavanja uspešno ažuriran
+        submit: Sačuvati podešavanja
+        title: Izvoz podešavanja
+      resource_files:
+        archive:
+          confirm: Arhiviranje izvorne datoteke će arhivirati sve prevode u toj datoteci. Da li želiš da nastaviš?
+          link: Arhiva
+        no_files:
+          link: Uvoz datoteka
+          text: Projekat nema još nijednu datoteku. Možeš kreirati datoteke otpremanjem istih ili sinhronizacijom sa svojim repozitorijumom.
+        reactivate:
+          confirm: Ponovno aktiviranje izvorne datoteke će ponovo aktivirati sve prevode u toj datoteci. Da li želiš da nastaviš?
+          link: Ponovo aktiviraj
+        title: Izvorne datoteke
+      sync:
+        connected:
+          connected_to: Spajanje sa %{provider}
+          p1_html: Ovaj projekat je konektovan na skladište %{connection_info} koristeći profil "%{user}".
+          submit: Početi sinhronizaciju
+          title: Sinhronizuj sa svojim repozitorijumom
+        not_connected:
+          bitbucket:
+            create_link: Spajanje sa repozitorijumom
+            p1: Lingohub podržava spajanje sa Bitbucket-om. Kada se veza uspostavi, Lingohub će imati pristup tvom repozitorijumu i njegovim izvornim datotekama. Možeš izabrati između ručne sinhronizacije i korišćenja veb veze za automatsku sinhronizaciju.
+            # lh-check { terms: Bitbucket }
+            title: Spajanje sa tvojim Bitbucket repozitorijumom
+          github:
+            create_link: Spajanje sa repozitorijumom
+            p1: Lingohub podržava spajanje sa Github-om. Kada se veza uspostavi, Lingohub će imati pristup tvom repozitorijumu i njegovim izvornim datotekama. Možeš izabrati između ručne sinhronizacije i korišćenja veb veze za automatsku sinhronizaciju.
+            # lh-check { terms: Github }
+            title: Spajanje sa tvojim Github repozitorijumom
+      title: Datoteke - %{project_title}
+    repository_setting:
+      title: Podešavanja repozitorijuma
+  simple_form:
+    labels:
+      lingochecks:
+        check_for_characters: Provera za karaktere
+        check_linebreaks: Proveriti prelamanje redova
+        check_max_chars: max.
+        check_min_chars: min.
+        check_placeholders: Provera za plejsholdere
+        hint:
+          linebreaks_html: <b>Prelamanje redova:</b> Kada je aktivirano, proverava da li je broj redova originalnog jednak broju redova prevedenog teksta. Po standardu je neaktiviran.
+          min_max_html: '<b>Min/Max:</b> Definiše limite karaktera za prevedene tekstove.
+            Može biti fleksibilna ili fiksna granica. <i>Primer</i>: Procenat fleksibilnost
+            "10%" omogućava 10% više karaktera od originalnog teksta, Fiksna fleksibilnost
+            "+20" dozvoljava 20 karaktera više nego u originalnom tekstu ili fiksni
+            limit "45" dozvoljava maksimum 45 karaktera. Fleksibilne granice se primenjuju
+            samo na prevedene tekstove, fiksne granice se primenjuju na sve tekstove,
+            uključujući i originale.'
+          placeholders_html: <b>Plejsholder:</b> Kada su aktivirani, proveravaju da li su plejsholderi korišćeni u originalnom tekstu takođe prisutni i u prevedenim tekstovima. Po standardu, aktivirani su od samog početka.
+          terms_html: '<b>Termini:</b> Definišu termine koji bi trebalo biti korišćeni
+            u prevedenom tekstu u istom obliku kao što se koriste u originalnom tekstu.
+            Primer: originalni tekst je "Welcome to Lingohub!", definišući "Lingohub"
+            kao termin, osigurava se njegovo nepromenjeno korišćenje u prevedenom
+            tekstu. Provere su osetljive na veličinu slova.'
+          title: LingoProvere objašnjene
+        project_default:
+          label: 'projektni standard:'
+        terms: Provera za termine
+        translation_saving_setting:
+          confirmation: potrebna potvrda
+          label: Ponašanje prevodilačkog skladišta
+          no_check: nema provere
+          strict: čuvanje nije dozvoljeno
+        use_project_setting: Koristiti podešavanja projekta
+      project:
+        title: Naziv
+      user:
+        company_name: Kompanija
+        first_name: Ime
+        last_name: Prezime
+        locale: Jezik
+        login: e-mail / korisničko ime
+        name: Ime
+        time_zone: Vremenska zona
+  subscriptions:
+    edit:
+      title: Izmena tvoje Pretplate
+    flash:
+      quota_just_reached: <span id='hide_quota_flash' data-url="%{session_variables_path}"> Dostigao si limit svog plana pretplate na Lingohub-u  - <a href="%{subscription_href}">klikni ovde</a> da nadogradiš ili da se informišeš</span>
+      quota_nearing: <span id='hide_quota_flash' data-url="%{session_variables_path}"> Dostigao si 90% kvote svog naloga. <a href="%{subscription_href}">Klikni ovde</a> da nadogradiš, ukoliko je to potrebno</span>
+      quota_reached_time_ago: <span id='hide_quota_flash' data-url="%{session_variables_path}">Poslednje nedelje si dostigao limit svog plana pretplate na Lingohub-u  - <a href="%{subscription_href}">klikni ovde</a> da bi nadogradio sada</span>
+    index:
+      choose: Izabrati
+    not_accessible:
+      collaborator:
+        h: Ovaj projekat je trenutno deaktiviran
+        p: Molimo te da kontaktiraš vlasnika projekta. Primićeš obaveštenje u vezi sa ponovnim aktiviranjem.
+      project_owner:
+        h: Tvoj projekat je trenutno deaktiviran
+        p_html: Kvota tvog Lingohub naloga je dostignuta pre više od 10 dana. <br />Možeš ponovo aktivirati svoj projekat tako što ćeš nadograditi odgovarajući Lingohub plan pretplate <a href="%{subscription_href}">klikom ovde</a>.
+    show:
+      change: Promeni svoj Plan Pretplate
+      characters: karakteri
+      collaborators: saradnici
+      current_plan_html: Tvoj trenutni plan pretplate je <b>%{plan_title}</b>.
+      faq:
+        info: Za više informacija o našim planovima pretplate poseti %{faq_link}.
+        title: Imaš pitanja?
+      free_plan_html: Prebacili smo tvoju Pretplatu na naš <b>besplatni plan</b>!
+      over_limit: Preko limita
+      page_title: tvoja pretplata
+      projects:
+        few: projekti
+        many: projekata
+        one: projekat
+        other: projekti
+      quota_left: levo
+      quota_over: preko
+      title: Pregledaj ili promeni svoj plan pretplate
+      translator_account_info: Tvoj trenutan plan je besplatan nalog prevodioca.
+      translator_account_link: Prebaci se na besplatan nalog prevodioca
+      translators:
+        title: Besplatno za prevodioce
+      trial_period:
+        ended_html: 'Tvoj <b>probni</b> period je završio: <b>%{date}</b>.'
+        ends_html: 'Tvoj <b>probni</b> period završava: <b>%{date}</b>.'
+      your_plan: Tvoj plan
+    update:
+      flash:
+        error:
+          over_limit: 'Tvoj nalog je preko kvote za izabran plan pretplate: <b>%{plan_title}</b>.
+            Molimo te da izabereš drugi plan.'
+        success: Tvoj plan pretplate je promenjen u "<b>%{plan_title}</b>".
+  translation_phrases:
+    checks:
+      linebreaks: prelamanje redova OK
+      linebreaks_invalid: prelamanje redova nije OK
+      max: max ispod
+      max_invalid: max iznad
+      min: min iznad
+      min_invalid: min ispod
+      overall: sve provere OK
+      overall_invalid: nisu sve provere OK
+      placeholders: plejsholderi ok
+      placeholders_invalid: plejsholderi nisu ok
+      terms: termini ok
+      terms_invalid: termini nisu OK
+    multiple_update:
+      flash:
+        error:
+          not_allowed: Nisi ovlašćen da ažuriraš prevod teksta za jezik '%{locale_name}'
+        success: Prevodi tekstova su ažurirani.
+    status:
+      all: Sve
+      draft: Skica
+      machine_translated: Prevedeno od strane mašine
+      not_translated: Nije prevedeno
+      reviewed: Pregledan
+      translated: Prevedeno
+  users:
+    edit:
+      avatar:
+        drop_or_select_html: Premesti ili %{link} novu sliku profila
+        select_link: izabrati
+      profile_picture:
+        crop_preview:
+          title: Pregled
+        title: Slika Profila
+      sidebar:
+        account:
+          link: Podešavanja Naloga
+      title: Podešavanja
+    global:
+      navigation:
+        billing_infos: Informacije o plaćanju
+        subscription: Pretplata
+    invitations:
+      accept: Prihvatiti
+      decline: Odbiti
+      h2: Tvoje Pozivnice
+      p: 'Imaš %{invitations_count} pozivnica za projekte:'
+    update:
+      flash:
+        confirmation_success: Uspešno si ažurirao svoj nalog, ali treba da potvrdimo tvoju novu e-mail adresu. Molimo te da proveriš svoj e-mail i da klikneš na link za potvrdu kako bi okončao proces potvrđivanja svoje nove e-mail adrese.
+        success: Izmene sačuvane.
+  views:
+    copyright_html: '&copy;2013 lingohub d.o.o. Sva prava zadržana.'
+    user_info:
+      first_name: Ime
+      first_native_language: 1. maternji jezik
+      help: Pomoć
+      last_name: Prezime
+      my_account: Moj Nalog
+      name: Ime
+      settings: Podešavanja
+      sign_out: Odjavljivanje
+      support_center: Centar za Podršku
+      title: Kreiraj svoj besplatni profil
+      username:
+        label: Korisničko ime
+        p: Ovo je deo tvog URL-a, npr. "lingohub.com/profiles/markomarkovic", koristi svoje puno ime zbog boljeg rangiranja pretraživanja na internetu
+    welcome:
+      developers:
+        create_a_project:
+          p: Tvoji proizvodi i usluge koji se prevode se zovu "Projekti". Podržavamo širok spektar tipova datoteka i formata kao što su .yml, .properties, .po, .ini, .xml, .strings, .resx, .resw, .resjson, itd.
+          title: Kreiranje projekta
+        new_project:
+          add_more_languages: Dodati više jezika
+          btn: Kreirati projekat
+          in_locale: u
+          invite_collaborators: Pozvati saradnike
+          list_of_formats_html: Pogledaj celu listu <a href='%{url}' data-toggle='modal'> podržanih formata</a>
+          project_name_label: Koje je ime tvom super projektu?
+          project_name_placeholder: Ime projekta
+          title: Napravi svoj prvi projekat
+          upload_translations: Otpremanje prevoda
+        or: ili
+        sample_project:
+          btn: Probaj Demo!
+          flash:
+            exists: Uzorak projekta već postoji.
+            info: Kreirali smo uzorak projekat za tebe. Uvoz resursa može da potraje koji momenat. Molimo te da baciš pogled na odeljak "Datoteke" kako bi video progres.
+          new_project_link: Kreiranje uzorka projekta
+          p: Ukoliko želiš da istražiš šta sve Lingohub može da uradi za tebe, kreiraj uzorak projekta da bi dobio sliku kako veliki projekti mogu biti prevedeni uz pomoć Lingohub-a.
+          prepare: Priprema uzorka projekta
+          project_type:
+            android_xml:
+              description: '**Lingohub** je kreirao ovaj uzorak Android projekta za
+                tebe!'
+              title: Uzorak Android projekta
+              website: www.lingohub.com
+            ini:
+              description: '**Lingohub** je kreirao ovaj uzorak PHP projekta za tebe!'
+              title: Uzorak PHP projekta
+              website: www.lingohub.com
+            ios_strings:
+              description: '**Lingohub** je kreirao ovaj uzorak iOS projekta za tebe!'
+              title: Uzorak iOS projekta
+              website: www.lingohub.com
+            properties:
+              description: '**Lingohub** je kreirao ovaj uzorak Java projekta za tebe!'
+              title: Uzorak Java projekta
+              website: www.lingohub.com
+            resx_xml:
+              description: '**Lingohub** je kreirao ovaj uzorak .NET projekta za tebe!'
+              title: Uzorak .NET projekta
+              website: www.lingohub.com
+            yml:
+              description: '**Lingohub** je kreirao ovaj uzorak projekta za tebe!
+                Radi se o prilagođenoj verziji projekta [rails/i18n](https://github.com/svenfuchs/rails-i18n).
+                Uživaj u testiranju i proveri kako Lingohub čini jednostavnim prevođenje
+                tvojih projekata.'
+              title: Uzorak Rubi projekta
+              # lh-check { placeholders: false, terms: https://github.com/svenfuchs/rails-i18n }
+              website: https://github.com/svenfuchs/rails-i18n
+          title: Počni odmah sa uzorkom projekta
+        title: Hajde da počnemo...
+      links:
+        developers: Lingohub za developere
+        hide: sakriti
+        translators: Lingohub za prevodioce
+      translators:
+        invited:
+          members:
+            developers: Developeri
+            role:
+              developer: developer
+              owner: vlasnik
+              project_admin: admin projekta
+              reviewer: recezent
+              translator: prevodilac
+            title: Da ti predstavimo članove našeg tima...
+            translators: Prevodioci
+          p: Pozvan si od strane %{inviter} kako bi pomogao u lokalizaciji %{project} projekta.
+          start_translating: Početak prevođenja
+          title: Čestitamo na novom angažovanju!
+          welcome_title: Dobrodošao u tim, %{name}!
+        new_user:
+          demo:
+            btn: Isprobaj Demo!
+            p1: Jedva čekaš da vidiš kako teče proces prevođenja na Lingohub-u?
+            p2: Slobodno se igraj sa našim UZORAK projektom. Tvoj fidbek nam mnogo znači! Ne zaboravi da nam pošalješ preporuke ili zahteve za novim funkcionalnostima.
+            title: Početak prevođenja...
+  will_paginate:
+    next_label: Sledeći <i class='fa fa-chevron-right'></i>
+    page_gap: '&hellip;'
+    # to test our github integration
+    previous_label: <i class='fa fa-chevron-left'></i> Prethodni

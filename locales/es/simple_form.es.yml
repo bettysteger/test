@@ -1,0 +1,11 @@
+---
+es:
+  simple_form:
+    error_notification:
+      default_message: |
+        Algunos errores fueron encontrados, por favor revise:
+    'no': 'No'
+    required:
+      mark: '*'
+      text: Requerido
+    'yes': Si

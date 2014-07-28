@@ -1,0 +1,127 @@
+---
+bg:
+  date:
+    abbr_day_names:
+    - Неделя
+    - Понделеник
+    - Вторник
+    - Сряда
+    - Четвъртък
+    - Петък
+    - Събота
+    abbr_month_names:
+    -
+    - Януари
+    - Февруари
+    - Март
+    - Апр
+    - Май
+    - Юни
+    - Юли
+    - Август
+    - Септември
+    - Октомври
+    - Ноември
+    - Декември
+    day_names:
+    - Неделя
+    - Понеделник
+    - Вторник
+    - Сряда
+    - Четвъртък
+    - Петък
+    - Събота
+    formats:
+      birth: '%d.%m.'
+      default: '%Y-%m-%d'
+      long: '%B %d, %Y'
+      month_and_year: '%b %Y'
+      short: '%b %d'
+    month_names:
+    -
+    - Януари
+    - Февруари
+    - Март
+    - Април
+    - Май
+    - Юни
+    - Юли
+    - Август
+    - Септември
+    - Октомври
+    - Ноември
+    - Декември
+    order:
+    - година
+    - месец
+    - ден
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        few: около %{count} часа
+        many: около %{count} часа
+        one: около 1 час
+        other: около %{count} часа
+      about_x_months:
+        few: около %{count} месеца
+        many: около %{count} месеца
+        one: около 1 месец
+        other: около %{count} месеца
+      about_x_years:
+        few: около %{count} години
+        many: около %{count} години
+        one: около 1 година
+        other: около %{count} години
+      almost_x_years:
+        few: почти %{count} години
+        many: почти %{count} години
+        one: почти 1 година
+        other: почти %{count} години
+      half_a_minute: половин минута
+      less_than_x_minutes:
+        few: по-малко от %{count} минути
+        many: по-малко от %{count} минути
+        one: по-малко от минута
+        other: по-малко от %{count} минути
+      less_than_x_seconds:
+        few: по-малко от %{count} секунди
+        many: по-малко от %{count} секунди
+        one: по-малко от секунда
+        other: по-малко от %{count} секунди
+      over_x_years:
+        few: около %{count} години
+        many: около %{count} години
+        one: около 1 година
+        other: около %{count} години
+      x_days:
+        few: '%{count} дни'
+        many: '%{count} дни'
+        one: 1 ден
+        other: '%{count} дни'
+      x_minutes:
+        few: '%{count} минути'
+        many: '%{count} минути'
+        one: 1 минута
+        other: '%{count} минути'
+      x_months:
+        few: '%{count} месеца'
+        many: '%{count} месеца'
+        one: 1 месец
+        other: '%{count} месеца'
+      x_seconds:
+        few: '%{count} секунди'
+        many: '%{count} секунди'
+        one: 1 секунда
+        other: '%{count} секунди'
+      x_years:
+        few: '%{count} години'
+        many: '%{count} години'
+        one: 1 година
+        other: '%{count} години'
+    prompts:
+      day: Ден
+      hour: Час
+      minute: Минута
+      month: Месец
+      second: Секунди
+      year: Година

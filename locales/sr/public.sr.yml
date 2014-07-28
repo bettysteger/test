@@ -1,0 +1,653 @@
+---
+sr:
+  api:
+    authentication:
+      http_authentication: HTTP Autentikacija
+      http_authentication_title: Osnovni pristup autentikacije
+      http_title: Hyper-Text Transfer Protokol
+      https_title: HTTP Osiguran
+      page_title: API Autentikacija
+      ssl_title: Transportovati Sigurnost Slojeva
+      text1: Oba od ovih pristupa autentifikaciji su jednako podržana. Možeš promeniti svoje autentikacione akreditive (korisničko ime, e-mail, lozinku, token) na stranici za podešavanje svog naloga.
+      text2_html: Radi kontrole pristupa stranama i drugim resursima, %{http} podržava korišćenje nekoliko mehanizama za autentifikaciju. Svi ovi mehanizmi se baziraju na korišćenju statusnog koda 401 i WWW-Authenticate zaglavlja u odgovoru. Klijent šalje korisničko ime i lozinku kao nekriptovan, base64-enkodiran tekst. Pošto lozinka nije kriptovana, obavezno je treba slati preko %{https}, pošto slanje preko HTTP nije bezbedno. <br/> Srećom, Lingohub enkriptuje svu komunikaciju sa %{ssl} (vidi %{http_authentication}).
+      text3_html: Umesto toga, zahtevu je moguće dodati URL parametar <i>'auth_token'</i>. Vrednost ličnog tokena se može naći na strani za 'Autentifikaciju'.
+      text_html: Lingohub nudi dva različita načina za autentikaciju sa našim API&#58;
+      token_authentication: Token autentikacija
+    devs_should_know:
+      link1: Kodovi HTTP odgovora
+      link1_title: Spisak kodova HTTP statusa
+      # to test a github push
+      link2: RESTuoni
+      link2_title: Prenos Reprezentacionog Stanja
+      link_title: Aplikacioni programski interfejs (API)
+      page_title: Stvari koje bi svaki developer trebalo da zna
+      text1_html: U metodima koji učitavaju podatke preko Lingohub API-ja potrebano je koristiti GET zahtev. U metodima koji šalju, menjaju ili brišu podatke, koristi se POST/PUT. DELETE zahtev takođe može da se koristi za brisanje podataka. API metodi kojima je potreban određeni HTTP metod vratiće grešku ukoliko odgovarajući metod nije korišćen. %{link} imaju svoja standardna značenja.
+      text2_html: 'Izuzimajući Streaming API, Lingohub API teži da ispunjava principe
+        REST (Representational State Transfer) dizajna. Za dobijanje rezultata u željenom
+        formatu, dovoljno je promeniti format ekstenzije zahteva. U dokumentaciji
+        je navedeno koji su formati podržani za svaki metod. API trenutno podržava
+        sledeće formate: %{link} i %{link1}'
+      text3_html: 'Neke API metode zahtevaju opcione ili neophodne parametre. Dve
+        stvari koje bi trebalo imati na umu kada se prave zahtevi sa parametrima:'
+      text4_html: Vrednosti parametara treba da budu konvertovane u %{link} i URL-kodirane. <br /> Stranica parametara počinje sa 1, ne sa 0.
+      text5: Zajednica je kreirala mnogobrojne Lingohub API biblioteke. Ukoliko znaš za ostale koje nismo naveli, javi nam.
+      text_html: Upotreba %{link} je ograničena "poštenom upotrebom" sa ciljem da zaštiti Lingohub od zloupotreba.
+      title: Postoje limiti koliko poziva i promena možeš da uradiš u jednom danu.
+      title1: API je u potpunosti baziran na HTTP-u.
+      title2_html: API je %{link} sredstvo
+      title3: Parametri imaju određena očekivanja.
+      title4: Postoje Lingohub API biblioteke za gotovo sve jezike.
+    guidelines:
+      item: Poštuj naše korisnike
+      item1: Poštuj sadržaj naših korisnika
+      link: ovde
+      link_title: Uslovi Korišćenja
+      page_title: Smernice i Uslovi
+      subtitle: Imenovanje tvoje aplikacije
+      subtitle1: Logo tvoje aplikacije
+      subtitle2: Marketing tvoje aplikacije
+      text: Hvala na kreiranju aplikacije/servisa koji radi sa našim. Napravili smo ovu stranicu da bismo ti pomogli u brendiranju tvoje aplikacije, kako ljudi ne bi pomešali tvoj proizvod sa jednim od naših.
+      text1: Daj svojoj aplikaciji jedinstveno ime i objasni svojim korisnicima da je tvoja aplikacija/servis napravljena da bi radila sa Lingohub-om. Nemoj koristiti ime koje se može pomešati sa Lingohub-om.
+      text2: Sigurni smo da ti se sviđa naš “la lengua” logo. Proveli smo dosta vremena razmišljajući, a kasnije i radeći na brendiranju Lingohub-a. Molimo te da kreiraš svoj atraktivni i jedinstveni logo kojim ćeš se diferencirati.
+      text3: Raširi vest da radiš sa Lingohub-om i našim servisom. Možeš preuzeti zvanične Lingohub logoe i linkove do našeg vebsajta. Međutim, vodi računa o tome da tvoji potrošači znaju da tvoja aplikacija/servis nije zvaničan proizvod Lingohub-a.
+      text4_html: Naš cilj je da te, kao našem ekosistem partneru, snabdemo politikom, koja je jasna i transparentna, kako da monetizuješ svoj Servis. Sa tim u vezi, imamo dva važna principa&#58;
+      text5: Ne radi ništa neočekivano i koristi samo tražene informacije.
+      text6_html: Možeš pročitati naše Uslove Korišćenja %{link}.
+      title: Smernice
+      title1: Komercijalna upotreba
+      title2: Uslovi korišćenja
+    http_responses:
+      200_html: <strong>200 OK&#58;</strong> Uspešno!
+      304_html: <strong>304 Nepromenjen&#58;</strong> Nije bilo podataka za povraćaj.
+      400_html: <strong>400 Pogrešan zahtev&#58;</strong> Zahtev je pogrešan. Prateća poruka o grešci će objasniti zašto. Ovo je kod statusa; biće vraćen za vreme limitiranja stope.
+      401_html: <strong>401 Neovlašćen&#58;</strong> Autentifikacioni akreditivi nedostaju ili su pogrešni.
+      403_html: <strong>403 Zabranjen&#58;</strong>  Zahtev je shvaćen, ali je odbijen. Prateća poruka o grešci će objasniti zašto. Ovaj kod je korišćen kada su zahtevi odbijeni zbog limita ažuriranja.
+      404_html: <strong>404 Nije pronađen&#58;</strong> Zahtevani URL je pogrešan ili zahtevano sredstvo, kao što je korisnik, ne postoji.
+      406_html: <strong>406 Neprihvaćen&#58;</strong> Vraćeno od strane API Pretrage u slučaju navođenja pogrešnog formata u zahtevu.
+      500_html: <strong>500 Internal Server Error&#58;</strong> Nešto je oštećeno. Molimo te da informišeš Podršku, Lingohub tim će istražiti.
+      errors: Poruke o greškama
+      page_title: Kodovi HTTP odgovora i greške
+      text: Lingohub API pokušava da vrati odgovarajuće kodove HTTP statusa za svaki zahtev. Moguće je zabraniti kodove odgovora za REST API.
+      text1_html: Kada Lingohub API vrati poruke o greškama, on to radi na tvom zahtevanom formatu. Na primer, greška od JSON metode može izgledati ovako&#58;
+      title: Kodovi HTTP statusa
+    overview:
+      authentication: Autentifikacija
+      collaborators: Saradnici
+      invitations: Pozivnice
+      phrase: Fraze
+      projects: Projekti
+      quicknav_html: Quicknav&#58;
+      resources: Sredstva
+      translations: Prevodi
+    rate_limit:
+      page_title: Ograničenje učestalosti zahteva
+      text: Trenutno ni jedna akcija nema ograničenje učestalosti poziva, ali su podložne ograničenjima fer korišćenja.
+      title: Ograničenje učestalosti zahteva REST API
+  api_v1:
+    delete_collaborator:
+      description: Izbriši određenog saradnika.
+    delete_invitation:
+      description: Izbriši određenu pozivnicu.
+    delete_project:
+      description: Deaktivira određeni projekat uključujući i sve zavisne resurse, npr. prevode. Jednom deaktiviran se neće uračunati u limit tvog plana pretplate. Možeš ponovo aktivirati svoj projekat pozivajući njegovu <i>aktivaraj</i> akciju.
+    delete_translation:
+      description: Deaktivira prevod.
+    get_collaborator:
+      description: Prikazuje informacije o saradnicima.
+    get_collaborators:
+      description: Prikazuje saradnike na određenom projektu.
+    get_file:
+      description: Preuzima sadržaj u vidu datoteke generisan od strane određenog resursa.
+      parameters:
+        iso2_code: Prisilna ekstrakcija fraza samo za odabran jezik
+    get_invitation:
+      description: Prikazuje informacije o datoj pozivnici.
+    get_invitations:
+      description: Prikazuje sve pozivnice za određeni projekat.
+    get_phrase:
+      description: Prikazati određenu frazu prevoda.
+    get_project:
+      description: Prikazati određeni projekat uključujući linkove do svih povezanih resursa (npr. prevoda, izvornih datoteka, saradnika) i linkove do daljih akcija koje mogu biti preduzete.
+    get_projects:
+      description: Izlistati sve tvoje projekte, uključujući <ul><li>projekte koje poseduješ</li><li>projekte na kojima sarađuješ</li><li>tvoje deaktivirane projekte</li> </ul>
+    get_resources:
+      description: Prikazuje resurse određenog projekta.
+    get_search:
+      description: Traganje za prevodiocima.
+    get_translation:
+      description: Prikazuje određeni prevod sa svojim frazama i linkovima do izvorne datoteke kojoj pripada.
+    get_translations:
+      description: Prikazuje prevode određenog projekta. Rezultati su paginirani. Možeš da pratiš <i>rel="dalje"</i> link da bi pretražio sve rezultate.
+      parameters:
+        page: stranica u okviru paginiranog rezultata
+        page_size: veličina stranice paginiranog rezultata
+        query: upit sa sintaksom kao što je u front-end verziji
+    get_user:
+      description: Informacije o korisniku i potvrda identiteta.
+    global:
+      breadcrumbs_title: Ti si ovde
+      example_title: Primer
+      http_method_title: HTTP metod
+      parameters_title: Parametri
+      path_parameters:
+        account: ime naloga nosioca projekta
+        collaborator: e-mail saradnika u URL-kodiranom formatu
+        filename: ime datoteke izvorne datoteke kao što je sačuvana u Lingohub aplikaciji
+        invitation: e-mail zvanice
+        # lh-check { placeholders: false, terms: ISO2 }
+        locale: ISO2 kod jezika
+        project: ime projekta
+        translation: javni ID prevoda
+      path_parameters_title: Parametri staze
+      requires_authentication_title: Zahteva potvrdu identiteta?
+      response_formats_title: Formati odgovora
+      url_title: URL
+    post_invitations:
+      description: Šalje pozivnicu na datu e-mail adresu.
+      parameters:
+        email: ovaj e-mail će primiti pozivnicu
+    post_projects:
+      description: Kreira novi Lingohub projekat sa ovlašćenim korisnicima i vraća informacije o skorijim projektima.
+      parameters:
+        description: tekst za dalji opis
+        opensource: ukazuje da li bi ovaj projekat trebalo da bude kreiran kao projekat otvorenog koda
+        title: Jedinstveni naziv projekta (obavezno)
+        website: URL vebsajta projekta
+    post_resource:
+      description: Otpremi izvornu datoteku i unesi njen sadržaj u Lingohub projekat
+      parameters:
+        file: sadržaj izvorne datoteke
+        iso2_code: Dodeli ovaj jezik uvezenim frazama (obavezno ukoliko nedostaje informacija o jeziku u otpremljenoj datoteci)
+        strategy: strategija uvoza da bude korišćena. Opcije su 'update_and_create', 'override' ili 'master_locale_structure'
+    post_sessions:
+      description: Potvrđuje verodostojnost korisničkih akreditiva i vraća token za autentifikaciju.
+    put_phrase:
+      description: Ažurira trenutnu frazu.
+      parameters:
+        content: novi sadržaj fraze
+        status: status ove fraze
+    put_project:
+      description: Ažurira određeni projekat.
+      parameters:
+        description: tekst za dalji opis
+        opensource: ukazuje da li bi ovaj projekat trebalo da bude kreiran kao projekat otvorenog koda
+        title: jedinstveni naziv projekta (obavezno)
+        website: URL vebsajta projekta
+    put_project_activate:
+      description: Ponovo aktivira neaktivne projekte.
+    put_translation:
+      description: Ažurira određeni prevod.
+      parameters:
+        description: opis prevoda
+        title: naziv prevoda
+    put_translation_activate:
+      description: Ponovo aktivira neaktivne prevode.
+  developers:
+    index:
+      api_blog: API Blog Objave
+      api_overview: API prikaz
+      api_support: API Podrška
+      authentication: Autentifikacija
+      developers: Developeri
+      ecosystem: Ekosistem
+      errors: HTTP Odgovori i Greške
+      http_authentication: HTTP autentikacija
+      p: Upoznavanje sa Lingohub API-jem je jednostavno. Počni sa izvornom dokumentacijom ili pročitaj neku od dodatne literature navedene ispod.
+      p1: Lingohub je još mlad i u beta fazi. To znači da će se trenutni API verovatno menjati za vreme prelaska platforme u njeno završno stanje. Cenimo tvoj fidbek.
+      rest_api_html: REST API &amp; Uopšteno
+      ruby_library: Ruby/Rails biblioteka
+      token_authentication: Token autentikacija
+  faq:
+    general:
+      browsers:
+        body_html: Lingohub je veb aplikacija koja radi na svim glavnim pretraživačima. Planirane su mobilne verzije interfejsa aplikacije. Ukoliko se susretneš sa problemima na retkim pretraživačima ili na veoma starim verzijama, molimo te da kontaktiraš našu podršku.
+        title_html: Koje pretraživače podržava Lingohub?
+      lingohub:
+        body_html: Nudimo jednu platformu za vlasnike proizvoda (ili softver developere) i za prevodioce, kako bi radili zajedno širom sveta. Lingohub omogućava <strong> integraciju lokalizacije i razvoja softvera</strong>, dok služi kao tržište prevodilaca i platforma za plaćanje. Kao prevodilac, sve o čemu treba da brineš je prevođenje u lakom i intuitivnom, kontekstom bogatom interfejsu. Ništa više. Kao softver developer, treba da otpremiš ili da konektuješ svoja sredstva i pustiš Lingohub da se pobrine oko ostalog. U pitanju je jedan proces bez stresa, za sve. Lingohub će se pobrinuti oko verzija, datoteka i promena, skladištenja, plaćanja i praćenja projekta.
+        title_html: Kako Lingohub funkcioniše?
+      payment:
+        body_html: Trenutno podržavamo Visa, Mastercard i American Express. Možeš ih uneti na stranici podešavanja plaćanja, nakon što se prijaviš. Treba samo da uneseš informacije plaćanja za naše planove koji nisu besplatni. Obrati pažnju da postoji besplatan 30-dnevni probni period, nakon kojeg bi trebalo da uneseš informacije o plaćanju ili da budeš prebačen na individualni plan za saradnike, recezente ili prevodioce.
+        title_html: Koje opcije plaćanja su dostupne?
+      questions:
+        body_html: Najlakši način da nas kontaktiraš je direktnim putem, a mi ćemo već shvatiti kako da ti pomognemo. Kako gradimo Lingohub, gradimo i stranicu naše Podrške.
+        title_html: Ukoliko imam dodatna pitanja, kako mogu da vas kontaktiram?
+      title: Uopštena Pitanja
+    localizing:
+      functionalities:
+        body_html: Lingohub je mlađi od godinu dana. Razvijamo <strong>nove karakteristike</strong> skoro svake nedelje. Ukoliko ti trebaju nove funkcije, javi nam i poradićemo na <strong>rešenjima koja ti najbolje odgovaraju</strong>. Što se pre priključiš Lingohub-u, imaćeš veći uticaj na njegove performanse!
+        title_html: Zašto neke funkcije nisu uključene?
+      lingohub:
+        body_html: Lingohub je jedina platforma koja povezuje prevodioce <strong>i</strong> softver developere. Eliminišemo sve nepotrebne i iritantne stvari i omogućavamo svima da se fokusiraju na njihov glavni posao. <strong>Kvalitetna integracija je ogroman win-win za sve</strong> . Klikni ovde da pročitaš više o prednostima.
+        title_html: Zašto bih koristio Lingohub, a ne neki drugi alat?
+      technologies:
+        body_html: 'Ukratko: <strong>svi česti tipovi datoteka, platformi i tehnologija</strong>.
+          Klikni ovde da pročitaš više o svim tipovima datoteka i specifikacijama.
+          Specijalni vlasnički formati ili stariji/retki formati mogu biti implementirani
+          na tvoj zahtev. Lingohub radi za <strong>tebe</strong>, bez pogovora!'
+        title_html: Koje tehnologije su podržane?
+      title: Lokalizuj svoje projekte na Lingohub-u
+      translations:
+        body_html: Lingohub ne određuje cenu. Jednom kada se registruješ i kreiraš projekat, nudiš ga kao potencijalni posao prevodiocu koji nudi najbolju ekspertizu po ceni koju sami ugovorite. Kada platiš prevođenje, Lingohub će zadržati malu proviziju. Lingohub je generalno besplatan za prevodioce, recezente i saradnike.
+        title_html: Koliko košta prevođenje na Lingohub-u?
+    pricing_plan_html: Klikni ovde za najčešće postavljana pitanja u vezi sa cenama i planovima
+    title_html: Najčešće postavljana pitanja
+    translating:
+      catch:
+        body_html: 'Nema je. Jednom kada izgradimo naše tržište, zadržaćemo malu proviziju
+          od iznosa koje kreatori softvera plaćaju prevodiocima - na osnovu cene koju
+          sami ugovorite. Vrlo je jednostavno: možeš napraviti odličan profil kao
+          profesionalac na Lingohub-u, uživati u radnom okruženju bez stresa i biti
+          plaćen za to od prve reči koju prevedeš ili pregledaš.'
+        title_html: U čemu je kvaka?
+      costs:
+        body_html: Ništa. <strong> Za prevodioce, Lingohub će uvek biti besplatan<strong>. Sve što želimo jeste da se koncentrišeš na svoju profesionalnu uslugu, koju možeš ponuditi mušterijama širom sveta. Za besplatan nalog je potrebno samo da se registruješ.
+        title_html: Koliko Lingohub košta za prevodioce?
+      how:
+        body_html: Ukoliko si pozvan i odobren da se priključiš projektu lokalizacije kao prevodilac, biće ti omogućeno da pristupiš okruženju za preradu (sve je u brauzeru) i počneš da prevodiš. Imaćeš pomoćne alate na raspolaganju (kao što su slike, nivo progresa, komentari) i pokazatelje statusa prevedenog teksta (npr. "otvoreno"), ili možeš dobiti poruku da je tekst promenjen (možda je deo teksta dodat). Klikni ovde da pročitaš još prednosti prevođenja na Lingohub-u.
+        title_html: Kako funkcioniše?
+      lingohub:
+        body_html: 'Po našem mišljenju, policajci treba da se bore protiv kriminala,
+          trkači da voze kola, slikari da slikaju - i prevodioci da prevode. Zašto
+          se mučiti sa radnim procesima svojih mušterija, komplikovanim tehnikalijama
+          i formatima koji se menjaju brže nego vreme, plaćanjima i ugovornim cenkanjima?
+          U Lingohub-u se možeš koncentrisati na ono što voliš i u čemu si dobar:
+          prevođenje. Verujemo da <strong>prevođenje nije posao, nego profesija </strong>.
+          Delimo tvoju strast za jezicima i detaljima, zato smo i izgradili okruženje
+          lako za korišćenje, koje te lišava svih tehničkih problema i ostalih stvari
+          o kojima mi brinemo. Možeš prevoditi u interfejsu sa objašnjenim kontekstom
+          i dobiti trenutni fidbek na svoj rad. Ništa jednostavnije.'
+        title_html: Zašto Lingohub?
+      title: Prevođenje na Lingohub-u
+  global:
+    'no': ne
+    none: nijedan
+    page_title: jednostavno prevođenje softvera
+    public_navigation:
+      about: O nama
+      # lh-check { terms: API }
+      api: Lingohub API
+      blog: Blog
+      contact: Kontakt
+      customers: Korisnici
+      developer_features: Karakteristike developera
+      developers: Developeri
+      documentation: Dokumentacija
+      facebook: Facebook
+      faq: Najčešće postavljana pitanja
+      features: Karakteristike
+      google_plus: Google+
+      home: Početna
+      investors: Odnosi sa investitorima
+      jobs: Poslovi
+      language_choosing: Pričamo tvojim jezikom
+      linkedin: Linkedin
+      media_kit: Novinarska mapa
+      plans: Planovi & cene
+      press: Mediji
+      privacy: Politika Privatnosti
+      signin: Prijavljivanje
+      signup: Registracija
+      social: Prati nas na
+      support: Podrška
+      team: Tim
+      terms: Uslovi korišćenja
+      translator_features: Karakteristike prevodioca
+      translators: Prevodioci
+      translators_free: Besplatno za prevodioce
+      twitter: Twitter
+      xing: Xing
+    'yes': da
+  investor_relations:
+    download:
+      text: Preuzmi jednostrani pregled Lingohub-a
+    h1: Odnosi sa investitorima
+    h2: Pregled
+    text1: Lingohub je nedavno dodao novu razvojnu kancelariju, podršku za korisnički interfejs kao i za razvojni proces i na putu je da izbaci niz novih unapređenja. Spremni smo da pređemo na naredni nivo, i sprovedemo revoluciju u lokalizaciji softvera i aplikacija. Ubeđeni smo da će naš pristup pružiti ogromne pogodnosti kako programerima tako i prevodiocima. Upitajte nas kako planiramo da "protresemo" poslovanje i osetićete i podeliti naše ubuđenje.
+    text2: Radujemo se razgovoru sa tobom o investicionim mogućnostima. Želimo da Lingohub raste brzo, dopre do developera i prevodioca u mnogim drugim državama i ponudi širok spektar funkcionalnosti koje developeri i prevodioci nikada više ne bi smeli da propuste.
+    text3: ukoliko imaš bilo kakvih pitanja. <br/>Prati Lingohub na
+  lingohub:
+    about:
+      list:
+        cloud_based: smešten u pretraživaču & oblaku
+        connecting: povezuje developere i prevode
+        cutting_overhead: smanjuje operativne troškove i kreira pravu poslovnu vrednost
+        for_apps_websites: za softvere, mobilne aplikacije, vebsajtove i više
+        hassle_free_integration: bezbrižna integracija i kompatibilnost
+        powered_by_people: od ljudi zaljubljenika u kvalitet
+        push_button_delivery: dostava na pritisak dugmeta, plaćanje uključeno
+      meta_info:
+        description: O lingohub GmbH-u
+        keywords: Lingohub
+        title: o
+      subtitle1: Podaci o kompaniji
+      subtitle2: Vizija Lingohub-a
+      summary_link: Preuzmi pregled Lingohub-a (PDF)
+      team:
+        h1: Lingohub tim
+        h2:
+          developers: Razvojni Tim
+          founders: Osnivači
+          marketing: Marketing, Prodaja & Poslovni Razvoj
+        helmut:
+          text: Izvršni direktor, studirao biznis i kompjuterske nauke na JKU-u u Lincu i Arizona State Univerzitetu. Bio je jedan od prvih zaposlenih u Jumio-u i radio je kao konsultant u Runtastics-u. Nosi mnogo godina iskustva u timskom menadžmentu, kao glavni softverski developer, kao i iskustvo u oblasti finansija. Voli start-up scenu i njene vibracije.
+        marcus:
+          text: Tehnički direktor, studirao razvoj softvera na HTL-u u Leondingu, trenutno sa 14 godina iskustva u ovoj oblasti. Njegova pozadina je izuzetno kompleksna zbog rada na velikim softverskim projektima (kao što su Siemens VAI, DAK) i njihovoj arhitekturi i menadžmentu.
+        text: 'Lingohub je vođen od strane ljudi zaljubljenih u razbijanje jezičkih
+          barijera. U našem timu se priča više od pet jezika i radi u četiri zemlje.
+          Lingohuberi vole višejezički internet i želimo da ponudimo servis koji će
+          napraviti preokret u lokalizaciji softvera. Ovo je naš trenutni tim:'
+      text1: Lingohub su osnovali 2012. Helmut Juskewycz (Izvršni direktor) i Markus Merzinger (Tehnički direktor) u Lincu, Austrija. Kompanija razvija veb aplikaciju za developere i prevodioce kako bi sarađivali u pravljenju proizvoda spremnog za globalno tržište. Integrišući sistem plaćanja, kao i tržište prevodilaca, Lingohub nastoji da smanji troškove prevoda i približi ponudu i tražnju.  Lingohub nudi fleksibilna rešenja lokalizacije proizvoda za obe strane - softver developere, kao i za prevodioce koji su udruženi na platformi radi jednostavnosti, skalabilnosti i adaptivnosti.
+      text2: 'Težimo trenutnoj lokalizaciji proizvoda za globalno tržište bez operativnih
+        troškova, za sve, koristeći odgovarajuću platformu. '
+      title: O Lingohub-u
+    contact:
+      address:
+        text: Adresa
+      contact:
+        larger_map: Pogledati Veću Mapu
+        text: Budi u toku sa Lingohub-om i temama u vezi sa lokalizacijom, prati nas na
+        title: Kontakt
+      h1: Kontakt
+      support:
+        text: Ukoliko imaš pitanja u vezi sa internacionalizacijom, životom uopšte ili možda Lingohub-om, pošalji nam e-mail %{email_link} ili poseti %{support_link}. Prijavi se na %{blog_link} za tutorijale i uvide.
+        title: Podrška
+    customers:
+      h1: Korisnici
+      quote:
+        nordeus: Oduševljeni smo kako je sa Lingohub-om proces lokalizacije postao udoban. Integracija i API ga čine veoma jednostavnim za korišćenje. Uspelo nam je da praktično eliminišemo operativne troškove prevoda, unapredimo proces prevođenja i proširimo bazu korisnika podržavajući višejezičnu igru.
+        runtastic: Korisničko usvajanje proizvoda i efikasnost su u srcu enterprise poslovanja, te nam je trabala alatka koja bi nadopunila našu strategiju isporučivanja naših servisa korisnicima na njihovom jeziku bez zastoja, a po minimalnoj ceni. Lingohub pruža savršeno integrisano rešenje upravljanja lokalizacijom koje je prevazišlo sva naša očekivanja.
+        solvistas: Funkcionalnost i efikasnost su srž poslovanja kompanija, zbog toga nam je bio potreban alat kojim bismo naš servis ponudili na jeziku korisnika po niskoj ceni. Lingohub isporučuje integrisano rešenje lokalizacije koje je prevazišlo naša očekivanja.
+        sourcefabric: U Sourcefabric-u verujemo da korisnički interfejs naših softvera treba da bude dostupan na što više jezika... Tako smo počeli da tražimo sistem koji bi mogao da nam pomogne u lokalizaciji. Dvoumili smo se između izgradnje sopstvenog sistema i onih već ponuđenih u oblaku, i opcija koja nam se najviše svidela je bio Lingohub. Otkrili smo da ima karakteristike koje su nam potrebne za istovremeni i kolaborativni rad na .po izvornim datotekama koje naši softveri koriste.
+      text: Lingohub je tvoj partner za lokalizaciju bilo kog globalnog proizvoda, kojem možeš verovati. Pročitaj šta odabrani premium korisnici imaju da kažu o svom iskustvu sa Lingohub-om.
+  press:
+    index:
+      in_the_press:
+        article_in_html: Članak u <strong>%{name}</strong>
+        h2: U medijima
+        interview_with_html: Intervju sa %{person} u <strong>%{name}</strong>
+      media_contact:
+        mail: E-mail
+        text1:
+          location: Linc, Austrija
+          name: Helmut Juskewycz
+          phone: +43 650 326 66 69
+          position: Izvršni direktor & Suosnivač
+        text2:
+          location: Berlin, Nemačka
+          name: Sebastian Haselbeck
+          position: Menadžer Poslovnog Razvoja
+        title: Kontakt
+      media_kit:
+        about_us:
+          text: Više o kompaniji na našoj %{link} stranici
+          title: O nama
+        description_html: Naći ćeš slike, snimke, logoe i preuzimanja na našoj %{link} stranici.
+        title: Novinarska Mapa
+      other_resources:
+        title: Ostali izvori
+      social_media:
+        description_html: 'Slobodno nas prati na jednom od mnogobrojnih kanala:'
+        title: Socijalni Mediji
+      title: Lingohub za medije
+      tweets:
+        title: Tvitovi od
+    media_kit:
+      fontfamily_description_html: '<strong>Open Sans</strong>: Naslov, zaglavlje,
+        pasusi i tekst samo u regularnom stilu.'
+      founder_title: 'Slike: Osnivači Lingohub-a'
+      helmut_subs: Osnivač i Glavni Izvršni Direktor
+      logo_black: Logo (Crni)
+      logo_slogan: Logo & slogan
+      logo_slogan_white: Logo & Slogan (belo)
+      logo_title: Zvanični Logo & Slike
+      logo_vertical: Vertikalni logo
+      logo_vertical_white: Vertikalni logo (belo)
+      logo_white: Logo (Beli)
+      markus_subs: Suosnivač i Tehnički Direktor
+      miscellaneous_title: Ostalo
+      # lh-check { placeholders: false, terms: zoe fotografie }
+      photo_license_html: 'Slike su dostupne pod %{creative_link} dozvolom. Izvor:
+        "lingohub.com (slike od zoe fotografie)"'
+      pms_description: 'Sledeće boje se koriste za štampane materijale:'
+      pms_title: PMS Boje (Štampa)
+      rgb_description: 'Sledeće boje su korišćene za vebsajtove i druge digitalne
+        medije:'
+      rgb_title: RGB Boje (Digitalno)
+      t_shirt_subs: Zvanična brendirana majica
+      title: Lingohub za Medije
+      tongue_black: Motiv jezika (crno)
+      tongue_white: Motiv jezika (belo)
+      typefaces_description: 'Tipovi fontova koje koristimo:'
+      typefaces_title: Fontovi
+    more: pročitati više
+  registrations:
+    new:
+      page_title: Prijavite se i testirajte veoma lako Lingohubove veb i mobilne aplikacije za lokalizaciju platformi
+  security:
+    billing:
+      body_html: Sve transakcije kreditnih kartica su obrađene koristeći sigurnosnu enkripciju - istog nivoa kao one korišćene od strane vodećih banaka. Informacije o kartici su emitovane, skladištene i obrađene na PCI-kompatibilnoj mreži.
+      title_html: Štitimo tvoje informacije o plaćanju.
+    concern:
+      body_html: Da li si primetio zloupotrebu ili doživeo incident na svom nalogu? Molimo te da posetiš stranicu naše podrške i kontaktiraš nas.
+      title_html: Zabrinut si? Želiš da prijaviš incident?
+    data:
+      body_html: 'Svi podaci se trenutno zapisuju na više diskova, dnevno su podržani
+        i sačuvani na više lokacija. Datoteke koje naši korisnici otpremaju su smeštene
+        na serverima koji koriste moderne tehnologije koje uklanjaju sva uska grla
+        i tačke neuspeha. '
+      title_html: Štitimo tvoje podatke.
+    infrastructure:
+      body_html: Erozija infrastrukture i softvera su ozbiljan problem u softverskoj industriji. S jedne strane sistem mora da bude stabilan i zreo, a sa druge bezbednost i performanse zahtevaju unapređenja softvera i hardvera. Za hosting mi koristimo Engine Yard. To nam omogućuje da koristimo veoma zrelo i stabilno okruženje sa vrhunskom bezbednošću. Za više informacija, videti <a href="http://engineyard.com" rel="nofollow" target="_blank">EngineYard-ovu dokumentaciju.</a>
+      title_html: Redovno ažuriranje infrastrukture.
+    more:
+      body_html: Ukoliko imaš drugih sigurnosnih pitanja, pošalji nam zahtev za podršku, a mi ćemo ti se brzo javiti.
+      title_html: Da li bi želeo da znaš više?
+    redundancy:
+      body_html: Naši serveri - od napajanja preko internet konekcije do sistema za prečišćavanje vazduha - rade pri potpunoj redundanciji. Naši sistemi su projektovani da nastave da funkcionišu čak i ako više servera 'padne'. Mi koristimo EnineYard-ovu infrastrukturu sa našim 'dodacima'.
+      title_html: Puna redundantnost svih velikih sistema.
+    title_html: Pregled Lingohub Sigurnosti
+  sessions:
+    new:
+      page_title: Prijavite se na svoj projekat lokalizacije na Lingohub-u 
+  support_and_contact:
+    contact:
+      commercial_register: Komercijalna Registracija
+      country: Austrija
+      court_of_jurisdiction: Nadležni Sud i Mesto Izvršenja
+      email: E-mail
+      phone: Telefon
+      text_html: Lingohub se nalazi u prelepom gradu %{link_city}, %{link_country}
+      title: Kontaktiraj Lingohub
+      vat: PDV
+    support:
+      text_html: Da li imaš pitanja u vezi sa internacionalizacijom, životom, svemirom, ili Lingohub-om? Ili nam pošalji e-mail %{mail}, ili poseti naš Centar za podršku na %{link}
+      title: Podrška
+  translators:
+    public:
+      about: O meni
+      bio_expertise: 'Oblasti ekspertize:'
+      certificates: 'Sertifikovan sam od strane:'
+      date_birth: 'Datum rođenja:'
+      expertise: Ekspertiza
+      from: od
+      i_am_from: 'Ja sam iz:'
+      i_have_expertise_in: 'Imam ekspertizu u:'
+      i_live_in: 'Trenutno živim u:'
+      in: u
+      into: '... na %{language}'
+      language_pairs: 'Moji jezički parovi su:'
+      languages: 'Prevodim sa:'
+      less: Prikazati manje
+      link:
+        bio: Biografija
+        certificates: Sertifikati
+        education: Obrazovanje
+        experience: Iskustvo
+        projects: Projekti
+      loading_text: Učitavanje prevodilaca
+      meta_description: '%{full_name} nudi honorarni prevod za %{expertises} softver
+        ili mobilne aplikacije na lingohub.com, veb platformi za developere i prevodioce'
+      more: Pogledati više
+      native_language: Moj maternji jezik je
+      native_languages: Moji maternji jezici su
+      no_more_translators: Nema više prevodilaca za učitavanje
+      profile_image_tooltip: Poseti %{name} profil
+      project: projekat...
+      quote: Zatražiti ponudu
+      residence:
+        current_html: Trenutno živim u <strong>%{location}</strong>.
+        location: '%{city}, %{country}'
+        origin_html: Poreklom sam iz %{location}.
+        previous_html: Nekada sam živeo u %{location_list}.
+      sample_translation: primer prevoda sa %{language} na
+      to_html: <i class="to"><span>&rarr;</span></i>
+      website: 'Moj blog/vebsajt:'
+      words: Prevedene reči
+    search:
+      all:
+        page_title: Svi Prevodioci
+      call_to_action: Registruj se & budi izlistan besplatno
+      countries:
+        page_title: Sve Države
+        text: Pretraži naše prevodioce koji imaju LingoProfile po zemljama i oblastima kako bi pronašao partnera za lokalizaciju na tim tržištima.
+      expertises:
+        page_title: Sve Ekspertize
+        text: Prevodioci na Lingohub-u mogu dodati do pet oblasti ekspertize na svojim LingoProfilima. Iskoristi ovu stranicu da bi pretražio po ekspertizi.
+      index:
+        section:
+          countries:
+            show_all: pretraživanje po državi
+            title: Najpopularnije Države
+            tooltip: pretraživanje po državi
+          expertises:
+            show_all: pretraživanje po ekspertizi
+            title: Najpopularnije Ekspertize
+            tooltip: pretraživanje po ekspertizi
+          languages:
+            show_all: pretraživanje po jezičkom paru
+            title: Najpopularniji jezički parovi
+            tooltip: pretraživanje po jezičkim parovima
+          translators:
+            show_all: pretraživanje svih prevodilaca
+            title: Najpopularniji Prevodioci
+            tooltip: prikaži sve prevodioce
+      languages:
+        from: Od
+        page_title: Svi Jezici
+        prompt: Bilo koji
+        to: do
+      navigation:
+        all: Svi Prevodioci
+        countries: Sve Države
+        expertises: Sve Ekspertize
+        languages: Svi Jezici
+        translators: Top Lista
+      results:
+        count: prevodioci pronađeni.
+        page_title: Rezultati pretraživanja
+        text: Spisak svih prevodilaca sa LingoProfilima, nasumično izlistanih.
+      top_list:
+        page_subtitle_html: Pretraživanje svih prevodilaca
+        page_title: Top Lista
+        text: Dobrodošao na Lingohub-ovu mrežu jezičkih profesionalaca. Pronađi prevodioca za svoj projekat lokalizacije tražeći ili pretraživajući.
+  welcome:
+    benefits:
+      link1: Onlajn editor prevoda interfejsa 
+      link2: Kolaborativni onlajn prevod 
+      link3: Github integracija i sinhronizacija
+      link4: Prevod konteksta i provera kvaliteta 
+      link5: Upravljanje lokalizacijom projektne table 
+      link6: Otpremanje dadoteka i sinhronizacija skladišta resursa dadoteka  
+      preview_app: pregled lokalizacije aplikacije sa Lingohub-om
+      t1: |
+        Bez dodatnih poslova zbog oblikovanja
+      t2: Projekti su završeni brže
+      t3: Nema potrebe da promenite svoje tokove posla
+      t4: Povećaj kvalitet i smanji komunikaciju
+      t5: Kompletan pregled vašeg projekta
+      t6: Uživajte u ogromnom podsticaju produktivnosti 
+      text1: Sa onlajn interfejsom, prevodioci nemaju potrebu da menjaju dadoteke resursa, a ni Vi takodje.
+      text2: TIm prevodilaca može da ostvari bržu saradnju, radeći istovremeno na istom tekstu, tako da možete pokrenuti brže.
+      text3: Lingohub se integriše u vaše postojeće okruženje, mala adaptacija je potrebna da biste koristili postojeće alate. Možete koristiti postojeće alate kao što je Github ili naš CLI klijent.
+      text4: Puno kontekstualnih informacija povećava kvalitet teksta i smanjuje potrebu za komuniciranjem i pojašnjavanjem stvari. Dodajte komentare ili fotografije.
+      text5: Uvek možete videti vapš trenutni napredak i dobijate obaveštenja o promenama i komentarima, kao i redovne izveštaje o napretku. Na taj način, vi rukovodite prevodom vaše aplikacije, a ne ona vama.
+      text6: Uz mogućnost brzog rukovanja dadotekama, brzo rasporedi višejezične aplikacije, izvezi ili sinhronizuj rezultate. Lokalizujte vaše aplikacije bez poteškoća, sačuvajte novac i dostavite visoko kvalitetne izveštaje.
+      title: Evo kako Vam Lingohub pomaže da izbacite aplikacije na mnogim jezicima uz male troškove
+    call_to_action: Prijavite se odmah 
+    complicated:
+      list:
+        item1:
+          text: Pišeš mejlove kako bi objasnio UI tekst umesto da radiš na svom proizvodu. Sve ove nazad i dalje komunikacije usporavaju vas i koštaju mnogo.
+          title: Loši tokovi posla
+        item2:
+          text: Gubiš svoj um iznad isporučenih Excel ili Word priloga. Zašto moraš da ih spajaš sa svojim fajlovima, u svakom jeziku, sa svakom promenom?
+          title: Loši formati
+        item3:
+          text: Izmenjeni čuvari zadržavaju razbijanje tvojih aplikacija grešaka koje dosađuju svojim korisnicima. Vaše izdanje zadržava dobijeno odlaganje bez ikakavog razloga - kakvo frustrirajuće iskustvo.
+          title: Loši rezultati
+      t1: Zašto gnjaviti sa tradicionalanim lokalizatorskim haosom...
+      t2_html: Umesto slanja i primanja tekstualnih fajlova ili popravljanja problema oblikovanja, radije bi potrošili vaše dragoceno vreme <jak> ustvari da razvijete vaše proizvode </jak>, zar ne? Došli ste na pravo mesto!
+    graphic:
+      code: Vaš kod
+      simple:
+        lingohub:
+          alt: lokalizacija tokova posla sa Lingohub-om
+          t1: Onlajn editor za prevod
+          t2: Jednostavna saradnja
+          t3: Provere kvaliteta
+          t4: Menadžment tim
+          t5: Github i Bitbucket sinhornizacija
+          t6: REST API podrška
+    heading: Bolja softver lokalizacija za manje vremena.
+    index:
+      meta_info:
+        keywords: локализација, превод, гитхуб, гитхуб интеграција, л10н, и18н, г11н, глобализација, развој софтвера, интернационализација, Битбуцкет, Битбуцкет интеграција, РЕСТ АПИ, ЦЛИ клијент, спремиште, синхронизација, софтвер за превођење, превод апликација, апликација локализација, апликација превод
+      page_title: Jednostavan prevod veb i mobilnih aplikacija sa Lingohubom - Probaj besplatno 
+    signup:
+      opensource: Upravljaj javnim "open source" projektima na Lingohub-u besplatno! 
+      title: Isprobajte Lingohub- besplatno je narednih 14 dana 
+      using: ili koristeći 
+    signup_now: Registruj se sada
+    simple:
+      list:
+        item1:
+          text: Svi radovi se dešavaju na Lingohubu, sa opcijom API, Githubom ili komandnom linijom integracija. Urednik na mreži čini prevod povetarcem.
+          title: Aerodinamični tokovi posla
+        item2:
+          text: Nijedan fajl se ne prenosi email-om, Lingohub upravlja svim formatima. Jednostavno uvezeš, izvezeš ili sinhronizuješ, bez otvaranja dadoteke.
+          title: Kompatibilnost i integracija.
+        item3:
+          text: Primi rezultate brže i isporuči ih bez problema, informacija o kontekstu i ugrađenih provera za povećanje kvaliteta.
+          title: Kvalitet kroz kontekst
+      t1: '...kada možete uživati u slabom prevodilačkom upravljanju?'
+      t2_html: Kontinuirano prevodilačko upravljanje sa Lingohubom eliminiše nepotrebne datoteke rukovanja, nestrukturirane komunikacije i probleme oblikovanja. To je savršena integrisana, pa prevodđenje aplikacija postaje glatak na zahtev proces. <jak>Lako izbaciti višejezične aplikacije. Sa manje posla. >/jak>
+    subheading: Lako upravljanje internetom i prevodom mobilnih aplikacija na mreži.
+    support:
+      subtitle: Ovo su samo neki od platformi i okvira koje mi podržavamo
+      title: |
+        Koje platforme i okviri su podržani na Lingohub-u?
+    testimonials:
+      ikarus:
+        quote: Imali smo naše rešenje, ali iskreno, Lingohub je lakše koristiti nego bilo šta što smo videli. REST API nam posebno omogućava njegovo integrisanje u naše tokove posla. 
+      nordeus:
+        quote: Github integracija je postavljena u minutima i auto-sinhornizacija je fantastična! Mi konačno ne šaljemo dadoteke okolo -  naš proces prevođenja je radikalno poboljšan.
+      title: Zašto su odabrali Lingohub?
+      tractive:
+        quote: Bili smo umorni od dosadnih "nazad-i-dalje" poslova. Svi ti emal-ovi! Pokretanje naše aplikacije na više jezika je mnogo brže na Lingohub-u, ona dosta oslobađa, tj. smanjuje posao našem timu. 
+    with_lingohub:
+      contact: Pišite nam
+      more: Prikaži više
+      other_questions: Pitanja? Nedoumice? %{link} odmah i mi ćemo vas ubediti lično!
+      q1: Lako integrišite Lingohub sa vašim Github ili Bitbucket repozirorijumima
+      q10: Upravljajte lokalizacijom javnih projekata, otvorenog koda, besplatno 
+      q11: Dodaj više članova tima i prevodilaca za velike projekte
+      q12: Dobijte redovna ažuriranja o napretku putem e-maila 
+      q2: Izvezi pravilno formatirane resurs fajlove u bilo koje vreme 
+      q3: Otkrij automatski tipove dadoteka, lokalitete i komentare 
+      q4: Pristupite svim funkcionalnostima lokalizacije preko REST API-ja
+      q5: Upravljanje svim projektima preko komandne linije interfejsa (CLI) klijenta 
+      q6: Lokalizuj iOS, Windows Phone ili Android aplikacije 
+      q7: Dodaj skrinšot da obezbediš kontekst za prevod 
+      q8: Dodeli različite uloge članovima tima, npr. ulogu recezenta 
+      q9: Omogućavanje provera za dužinu teksta i ispravne čuvare mesta 
+      title: Šta Lingohub može da uradi za mene?

@@ -1,0 +1,12 @@
+---
+es:
+  regions:
+    antartica: Antártida
+    east_asia_and_pacific: Asia Oriental y Pacífico
+    europe_and_central_asia: Europa y Asia Central
+    latin_america_and_caribbean: Latinoamerica y el Caribe
+    middle_east_and_north_africa: Oriente Medio y África del Norte
+    north_america: Norteamerica
+    south_asia: |
+      Asia del Sur
+    sub-saharan_africa: África subsahariana

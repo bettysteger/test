@@ -1,0 +1,11 @@
+---
+bg:
+  regions:
+    antartica: Антарктида
+    east_asia_and_pacific: Източна Азия и Тихоокеанския басейн
+    europe_and_central_asia: Европа и Централна Азия
+    latin_america_and_caribbean: Латинска Америка и Карибите
+    middle_east_and_north_africa: Близкия изток и Северна Африка
+    north_america: Северна Америка
+    south_asia: Южна Азия
+    sub-saharan_africa: Субсахарска Африка
