@@ -38,7 +38,7 @@ en:
           content: The translator has no administrative rights but can be assigned to one or more languages and edit them.
           title: Translator
       developer: Developer
-      h2: Collaborators
+      h2: changed text
       hint:
         content: You can add translators or developers to use Lingohub by adding their email addresses. We will send them an email with quick steps on how to use Lingohub and after they accepted your invitation, the easy software translation can start.
         title: Who works with me?
