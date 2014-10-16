@@ -1,11 +1,11 @@
 ---
 de:
   # to trigger automatic import into lingohub
-  add: Hinzufügen
+  add: hinzugefügt geändert
   api:
     index:
       # this must not be translated keep it as it is.
-      # lh-check { placeholders: false, terms: REST API }
+      # lh-check { terms: REST API }
       title: REST API
   cancel: Abbrechen
   close: Schließen

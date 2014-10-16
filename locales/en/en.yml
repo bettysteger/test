@@ -5,7 +5,7 @@ en:
   api:
     index:
       # this must not be translated keep it as it is.
-      # lh-check { placeholders: false, terms: REST API }
+      # lh-check { terms: REST API }
       title: REST API
   cancel: Cancel
   close: Close
@@ -20,12 +20,7 @@ en:
         confirm: Do you really want to remove the collaborator from the project?
     index:
       # lh-check { min: -20, max: +20, placeholders: false }
-      content: 'You can invite new project collaborators (translators or developers)
-        to work with you on the project. Assigning a user to a role defines the user''s
-        permissions. This helps the collaborator to focus only on what is relevant
-        and protects your project against unwanted access. <i>For example</i>, a Spanish
-        translator sees only the master language and Spanish in the translation editor
-        and cannot see or edit project settings. The four roles are:'
+      content: changed text
       description:
         developer:
           content: The developer is responsible for managing the translation. Hence, the developer can add/remove translation phrases.
