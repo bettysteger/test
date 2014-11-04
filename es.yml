@@ -1,0 +1,160 @@
+es:
+  date:
+    abbr_day_names:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    abbr_month_names:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    prompts:
+      day: ''
+      hour: ''
+      minute: ''
+      month: ''
+      second: ''
+      year: ''
+    day_names:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    formats:
+      default: ''
+      long: ''
+      short: ''
+    month_names:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - <strong>wooowasdow</strong>und noch ein gleich salto de línea
+    order:
+    - ''
+    - ''
+    - ''
+  messages:
+    format: ''
+    notifications:
+      accepted: ''
+      blank: ''
+      confirmation: ''
+      empty: ''
+      equal_to: ''
+      even: ''
+      exclusion: ''
+      greater_than: ''
+      greater_than_or_equal_to: ''
+      inclusion: ''
+      invalid: ''
+      less_than: ''
+      less_than_or_equal_to: ''
+      not_a_number: ''
+      not_an_integer: ''
+      odd: ''
+      record_invalid: ''
+      taken: ''
+      too_long:
+        one: ''
+        other: ''
+      too_short:
+        one: ''
+        other: ''
+      wrong_length:
+        one: ''
+        other: ''
+    template:
+      body: ''
+      header:
+        one: ''
+        other: ''
+  devise:
+    confirmations:
+      confirmed: ''
+      send_instructions: ''
+      send_paranoid_instructions: ''
+    failure:
+      already_authenticated: ''
+      inactive: ''
+      invalid: ''
+      invalid_token: ''
+      locked: ''
+      timeout: ''
+      unauthenticated: ''
+      unconfirmed: ''
+    passwords:
+      send_instructions: ''
+      updated: ''
+    unlocks:
+      send_instructions: ''
+      send_paranoid_instructions: ''
+      unlocked: ''
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: ''
+        other: ''
+      about_x_months:
+        one: ''
+        other: ''
+      about_x_years:
+        one: ''
+        other: ''
+      almost_x_years:
+        one: ''
+        other: ''
+      half_a_minute: ''
+      less_than_x_minutes:
+        one: ''
+        other: ''
+      less_than_x_seconds:
+        one: ''
+        other: ''
+      over_x_years:
+        one: ''
+        other: ''
+      x_days:
+        one: ''
+        other: ''
+      x_minutes:
+        one: ''
+        other: ''
+      x_months:
+        one: ''
+        other: ''
+      x_seconds:
+        one: ''
+        other: ''
+    prompts:
+      day: ''
+      hour: ''
+      minute: ''
+      month: ''
+      second: ''
+      year: ''
