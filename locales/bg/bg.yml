@@ -1,11 +1,9 @@
----
 bg:
   # to trigger automatic import into lingohub
   add: Добави
   api:
     index:
       # this must not be translated keep it as it is.
-      # lh-check { placeholders: false, terms: REST API }
       title: REST API
   cancel: Откажи
   close: Затвори
@@ -16,10 +14,8 @@ bg:
       tooltip: Изтрий участник
     edit:
       destroy:
-        # lh-check { min: -5, max: +5, placeholders: false }
         confirm: Наистина ли искате да спрете достъпа на участника от проекта?
     index:
-      # lh-check { min: -20, max: +20, placeholders: false }
       content: 'Във всеки проект може да поканите участници - преводачи или дивелопъри.
         Ролята на участника опредля и неговите отговорности. По този начин всеки участник
         в проекта се фокусира само върху своите задачи, а също така Вие се застраховете
@@ -87,7 +83,6 @@ bg:
     routing_public:
       back_link: върни се отново на Lingohub.com
       email_link: Изпратете ни имейл и ние ще се опитаме да Ви помогнем
-      # lh-check { placeholders: false, terms: 404 }
       h1: 404 - Страницата не беше намерена
       item1: Документация на Lingohub
       item2: блогът на Lingohub
@@ -103,7 +98,6 @@ bg:
       provider:
         bitbucket: Bitbucket
         facebook: Facebook
-        # lh-check { placeholders: false, terms: Github }
         github: Github
         google_oauth2: Google
         linkedin: LinkedIn
@@ -639,20 +633,17 @@ bg:
       page_title: Настройки на хранилището - %{project_title}
       repository_name:
         label: 'Хранилище:'
-        # lh-check { placeholders: false, terms: rails/rails }
         placeholder: rails/rails
       select_btn: Избери
       setup_hook:
         action: Автоматична синхронизация на хранилището
         bitbucket:
-          # lh-check { terms: Bitbucket }
           administrative_rights_needed: За да бъде позволена автоматичната синхронизация, трябва да имате административни права за Bitbucket проекта.
         flash:
           success:
             install: Автоматичната синхронизация на хранилището е включена
             uninstall: Автоматичната синхронизация на хранилището е изключена
         github:
-          # lh-check { terms: Github }
           administrative_rights_needed: За да бъде позволена автоматичната синхронизация, трябва да имате административни права за Github проекта.
         inplace_hints:
           heading: Настройте автоматична синхронизация с хранлището
@@ -817,6 +808,21 @@ bg:
           success: Прехвърлянето на настройките е успешно
         submit: Запази настройките
         title: Прехвърли настройките
+      sync:
+        connected:
+          connected_to: Свързан с %{provider}
+          p1_html: Този проект е свързан с <strong>%{connection_info}</strong> като се използва профила на "%{user}".
+          submit: Започни синхронизация
+          title: Синхронизирай с хранилището
+        not_connected:
+          bitbucket:
+            create_link: Свързване с хранилището
+            p1: Lingohub поддържа понастоящем свързването с Bitbucket. След като веднъж връзката е установена, Lingohub има достъп до хранилището Ви и ресурсните файлове в него. Може да изберете между ръчна синхронизация или автоматична, използвайки уеб кука.
+            title: Свържете Вашето Bitbucket хранилище
+          github:
+            create_link: Свързване с хранилището
+            p1: Lingohub поддържа понастоящем свързването с Github. След като веднъж връзката бъде установена, Lingohub има достъп до хранилището Ви и ресурсните файлове в него. Може да изберете между ръчна синхронизация или автоматична, използвайки уеб кука.
+            title: Свържете Вашето Github хранилище
       resource_files:
         archive:
           confirm: Архивирането на ресурсните файлове ще архивира и всички преводи в файла. Искате ли да продължите?
@@ -828,23 +834,6 @@ bg:
           confirm: Чрез повторното активиране на ресурсния файл ще се активират отново всички преводи. Искате ли да продължите?
           link: Повторно активиране
         title: Всички файлове
-      sync:
-        connected:
-          connected_to: Свързан с %{provider}
-          p1_html: Този проект е свързан с <strong>%{connection_info}</strong> като се използва профила на "%{user}".
-          submit: Започни синхронизация
-          title: Синхронизирай с хранилището
-        not_connected:
-          bitbucket:
-            create_link: Свързване с хранилището
-            p1: Lingohub поддържа понастоящем свързването с Bitbucket. След като веднъж връзката е установена, Lingohub има достъп до хранилището Ви и ресурсните файлове в него. Може да изберете между ръчна синхронизация или автоматична, използвайки уеб кука.
-            # lh-check { terms: Bitbucket }
-            title: Свържете Вашето Bitbucket хранилище
-          github:
-            create_link: Свързване с хранилището
-            p1: Lingohub поддържа понастоящем свързването с Github. След като веднъж връзката бъде установена, Lingohub има достъп до хранилището Ви и ресурсните файлове в него. Може да изберете между ръчна синхронизация или автоматична, използвайки уеб кука.
-            # lh-check { terms: Github }
-            title: Свържете Вашето Github хранилище
       title: Файлове - %{project_title}
     repository_setting:
       title: Настройване на хранилището
@@ -1063,7 +1052,6 @@ bg:
                 Приятно тестване.  Убедете сами колко лесен може да бъде преводът
                 на софтуер с Lingohub.'
               title: Примерен проект на Ruby
-              # lh-check { placeholders: false, terms: https://github.com/svenfuchs/rails-i18n }
               website: https://github.com/svenfuchs/rails-i18n
           title: Започнете веднага с един примерен проект
         title: Нека да започваме...

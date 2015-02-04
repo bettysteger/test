@@ -1,7 +1,7 @@
-de:
+en:
   devise:
     confirmations:
-      confirmed: Your account was successfully confirmed. You are now signed in.
+      confirmed: Your update was successfully confirmed. You are now signed in.
       resend_instructions:
         title: Resend confirmation instructions
       send_instructions: You will receive an email with instructions about how to confirm your account in a few minutes.
@@ -31,7 +31,7 @@ de:
         p1: Enter your email address below and we'll send you password reset instructions.
         p2: A note about spam filters:<br /> If you don't get an email from us within a few minutes please be sure to check your spam/junk folder. The email will be coming from "notifications@lingohub.com".
         submit: Reset my password
-      send_instructions: Wir haben eine E-Mail an Sie eine temporäre URL, mit dem Sie Ihr Passwort innerhalb der nächsten 24 Stunden zurückgesetzt werden, die gesendet werden. Bitte überprüfen Sie Ihren Spam-Ordner, wenn die E-Mail nicht innerhalb von ein paar Minuten.
+      send_instructions: We've sent an email to you containing a temporary URL that will allow you to reset your password within the next 24 hours. Please check your spam folder if the email does not appear within a few minutes.
       updated: Your password was changed successfully. You are now signed in.
     registration:
       new:

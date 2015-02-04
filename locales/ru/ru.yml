@@ -1,11 +1,9 @@
----
 ru:
   # to trigger automatic import into lingohub
   add: Добавить
   api:
     index:
       # this must not be translated keep it as it is.
-      # lh-check { placeholders: false, terms: REST API }
       title: REST API
   cancel: Отменить
   close: Закрыть
@@ -16,10 +14,8 @@ ru:
       tooltip: Удалить сотрудника
     edit:
       destroy:
-        # lh-check { min: -5, max: +5, placeholders: false }
         confirm: Вы действительно хотите удалить сотрудника из данного проекта?
     index:
-      # lh-check { min: -20, max: +20, placeholders: false }
       content: |
         Вы можете приглашать новых сотрудников проекта (переводчиков или разработчиков) для сотрудничества с вами над проектом. Назначение пользователя в какой-либо роли определяет его полномочия. Это помогает сотруднику сосредоточить свою работу только на том, что относится к нему, и защищает ваш проект от нежеланного доступа. <i>Например</i>, переводчик испанского языка видит только язык оригинала, а также испанский перевод в редакционном блоке, но он не может видеть или редактировать настройки проекта. 4 правила  таковы:
       description:
@@ -76,7 +72,6 @@ ru:
     routing_public:
       back_link: перейти обратно на Lingohub.com
       email_link: Пришлите нам email если мы можем помочь вам чем-то 
-      # lh-check { placeholders: false, terms: 404 }
       h1: 404 - Сложности Перевода
       item1: Документация Lingohub
       item2: Блог Lingohub
@@ -92,7 +87,6 @@ ru:
       provider:
         bitbucket: Битоприемник
         facebook: Facebook
-        # lh-check { placeholders: false, terms: Github }
         github: Github
         google_oauth2: Google
         linkedin: LinkedIn
@@ -561,20 +555,17 @@ ru:
       page_title: Настройки Репозитория - %{project_title}
       repository_name:
         label: 'Репозиторий:'
-        # lh-check { placeholders: false, terms: rails/rails }
         placeholder: rails/rails
       select_btn: Выбрать
       setup_hook:
         action: Автоматическая синхронизация репозитория
         bitbucket:
-          # lh-check { terms: Bitbucket }
           administrative_rights_needed: Вам нужны административные права на проект Bitbucket, для того чтобы подключить автоматическую синхронизацию.
         flash:
           success:
             install: Включена автоматическая синхронизация репозитория
             uninstall: Автоматическая синхронизация репозитория отключена
         github:
-          # lh-check { terms: Github }
           administrative_rights_needed: Вам нужны административные права на проект Github, для того чтобы подключить автоматическую синхронизацию.
         inplace_hints:
           heading: Установить автоматическую синхронизацию репозитория. 
@@ -735,6 +726,21 @@ ru:
           success: Настройки экспорта проекта успешно обновлены
         submit: Сохранить настройки
         title: Настройки экспорта
+      sync:
+        connected:
+          connected_to: Связан с %{provider}
+          p1_html: Проект соединен к репозиторию <strong>%{connection_info}, </strong>, с использованием аккаунта "%{user}".
+          submit: Начать синхронизацию
+          title: Синхронизировать с вшим репозиторием
+        not_connected:
+          bitbucket:
+            create_link: Подключиться к репозиторию
+            p1: В настоящее время Lingohub поддерживает подключение к Bitbucket. Сразу после установления подключения, Lingohub получит доступ к вашему репозиторию и к его файлам ресурса. У вас есть выбор между ручной синхронизацией или использованием веб-зацепки для автоматической синхронизации.
+            title: Подключить ваш Bitbucket репозиторий 
+          github:
+            create_link: Связаться с репозиторием
+            p1: В настоящее время Lingohub поддерживает подключение к Github. Сразу после установления подключения Lingohub получит доступ к вашему репозиторию и к его файлам ресурса. Вы можете выбрать ручную или автоматическую синхронизацию с помощью веб-зацепки.
+            title: Подключиться к Github репозиторию
       resource_files:
         archive:
           confirm: Архивация файла ресура приведет к архивации всех переводов в данном файле. Продолжить?
@@ -746,23 +752,6 @@ ru:
           confirm: Возобновление файла ресурса возобновит также все переводы в данном файле. Вы ходите продолжить?
           link: Возобновить
         title: Все Файлы
-      sync:
-        connected:
-          connected_to: Связан с %{provider}
-          p1_html: Проект соединен к репозиторию <strong>%{connection_info}, </strong>, с использованием аккаунта "%{user}".
-          submit: Начать синхронизацию
-          title: Синхронизировать с вшим репозиторием
-        not_connected:
-          bitbucket:
-            create_link: Подключиться к репозиторию
-            p1: В настоящее время Lingohub поддерживает подключение к Bitbucket. Сразу после установления подключения, Lingohub получит доступ к вашему репозиторию и к его файлам ресурса. У вас есть выбор между ручной синхронизацией или использованием веб-зацепки для автоматической синхронизации.
-            # lh-check { terms: Bitbucket }
-            title: Подключить ваш Bitbucket репозиторий 
-          github:
-            create_link: Связаться с репозиторием
-            p1: В настоящее время Lingohub поддерживает подключение к Github. Сразу после установления подключения Lingohub получит доступ к вашему репозиторию и к его файлам ресурса. Вы можете выбрать ручную или автоматическую синхронизацию с помощью веб-зацепки.
-            # lh-check { terms: Github }
-            title: Подключиться к Github репозиторию
       title: Файлы - %{project_title}
     repository_setting:
       title: Настройки репозитория
@@ -982,7 +971,6 @@ ru:
                 Воспользуйтесь возможностью протестировать и испытать то, как Lingohub
                 сделает перевод вашей программы легкой, как ветер. '
               title: Образец Ruby проекта
-              # lh-check { placeholders: false, terms: https://github.com/svenfuchs/rails-i18n }
               website: https://github.com/svenfuchs/rails-i18n
           title: Начние сейчас же с образца прокта-образца
         title: Начнем работу...

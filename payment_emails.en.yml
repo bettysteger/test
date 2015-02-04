@@ -1,0 +1,49 @@
+en:
+  invoice_notifier:
+    invoice_mail:
+      already_paid: Depending on your preferred payment method, the total amount has already been correctly paid upon receipt of this email. No further action is required.
+      contact_with_questions: Please contact us with any questions you might have.
+      introduction: thank you for using LingoHub! With this email you receive the latest invoice for your records.
+      invoice_amount: <strong>Amount:</strong> EUR %{amount}
+      invoice_number: <strong>Invoice number:</strong> %{invoice_number}
+      subject: Your LingoHub payment invoice for your records
+    settlement_failure_mail:
+      action_request: Please make sure your credit card has not expired, and you double check all the information, then try again.
+      contact_request: Contact us if you are certain your details are correct and you are unsure how to resolve it.
+      first:
+        subject: 'Important: Your LingoHub payment failed - read how to resolve it
+          now'
+      last:
+        action_1_html: log into <a href="http://lingohub.com">http://lingohub.com</a>
+        action_2_html: update your payment information
+        action_3_html: then re-activate your projects
+        action_4_html: or contact <a href="%{support_href}">customer support</a>
+        action_request: You can now
+        last_note_1_html: Please let us know if there is a problem that we can solve together. We want to provide a great experience for software localization, payment issues arise, it's no big deal.
+        last_note_2_html: Our product is still young, contact us and we can surely resolve all problems or clear your doubts.
+        note_payment_failed_html: Your localization projects on <a href='http://www.lingohub.com'>lingohub.com</a> have been deactivated, because of unresolved payment failure. <strong>Don't worry, your files are not lost</strong>.
+        subject: Your LingoHub projects are deactivated due to persisting payment failure
+      note_inactivity: Please note that your account will become inactive if payment fails permanently.
+      note_payment_failed_html: please note that your LingoHub payment failed. <strong>No need to panic</strong>. Please visit your account page now and check your payment information.
+      second:
+        note_payment_failed_html: please note that your LingoHub payment failed. <strong>No need to panic</strong>. Please note that your account will become inactive if payment fails permanently, so visit your account page now and check your payment information.
+        subject: 'Reminder: Your LingoHub payment failed and is still pending - read
+          how to  resolve it now'
+      third:
+        final_reminder_note: This is the final reminder, the system will deactivate your projects if payment cannot be made.
+        subject: 'Final reminder: Please read how to resolve your LingoHub payment
+          complication'
+      update_billing_info_action_html: <a href="%{billing_info_href}">Click here</a> to check and update your payment information.
+  link_not_working_html: 'If the above link does not work, please copy the following
+    URL in its entirety and paste it into the address bar of your webbrowser: %{link}'
+  user_notifier:
+    credit_card_about_to_expire_email:
+      p1_html: the credit card you have provided as payment method for your account on LingoHub is about to expire.
+      p2_html: Please update your credit card information in your LingoHub account now and speak with your bank or credit card company if necessary.
+      p3_html: You should update this information immediately so your bank can provide a new credit card well before the current one expires.
+      p4_html: Please let us know if we can be of assistance.
+      subject: Credit card about to expire
+    credit_card_info_changed_email:
+      p1_html: your credit card information on LingoHub has been successfully updated. We hope your projects are coming along fine. Let us know if there is anything else we can help you with.
+      p2_html: <em>If you receive this email even though you did not change your credit card information on <a href="https://www.lingohub.com">lingohub.com</a>, please contact us immediately!</em>
+      subject: LingoHub credit card information successfully updated
