@@ -1,18 +1,2 @@
-de:
-  date:
-    day_names:
-    - Sonntag
-    - Mittwoch
-    - Freitag
-    - Samstag
-    prompts:
-      day: Tag
-      hour: Stunde
-      minute: Minute
-      month: MONAT
-  messages:
-    format: '%{attribute} asdfd'
-    notifications:
-      equal_to: muss gleich sein wie %{count}
-      greater_than: muss größer sein als %{count}
-      less_than: dd
+de: {
+  }
