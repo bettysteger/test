@@ -1,0 +1,124 @@
+fr:
+  date:
+    abbr_day_names:
+    - Dim
+    - Lun
+    - Mar
+    - Mercr.
+    - Jeu.
+    - Ven.
+    - Sam
+    abbr_month_names:
+    - Janv.
+    - Févr.
+    - Mars
+    - Avr.
+    - Mai
+    - Juin
+    - Juill.
+    - Août
+    - Sept.
+    - Oct.
+    - Nov.
+    - Déc.
+    day_names:
+    - Dimanche
+    - Lundi
+    - Mardi
+    - Mercredi
+    - Jeudi
+    - Vendredi
+    - Samedi
+    formats:
+      birth: '%d.%m.'
+      default: '%d %m %Y'
+      long: '%B %d, %Y'
+      month_and_year: '%b %Y'
+      short: '%b %d'
+    month_names:
+    - Janvier
+    - Février
+    - Mars
+    - Avril
+    - Mai
+    - Juin
+    - Juillet
+    - Août
+    - Septembre
+    - Octobre
+    - Novembre
+    - Décembre
+    order:
+    - année
+    - mois
+    - jour
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        few: about %{count} hours
+        many: about %{count} hours
+        one: environ 1 heure
+        other: environ %{count} heures
+      about_x_months:
+        few: about %{count} months
+        many: about %{count} months
+        one: environ 1 mois
+        other: environ %{count} mois
+      about_x_years:
+        few: about %{count} years
+        many: about %{count} years
+        one: environ 1 an
+        other: environ %{count} ans
+      almost_x_years:
+        few: almost %{count} years
+        many: almost %{count} years
+        one: presque 1 an
+        other: presque %{count} ans
+      half_a_minute: 30 secondes
+      less_than_x_minutes:
+        few: less than %{count} minutes
+        many: less than %{count} minutes
+        one: moins d'une minute
+        other: moins de %{count} minutes
+      less_than_x_seconds:
+        few: less than %{count} seconds
+        many: less than %{count} seconds
+        one: moins de 1 seconde
+        other: moins de %{count} secondes
+      over_x_years:
+        few: over %{count} years
+        many: over %{count} years
+        one: sur 1 an
+        other: over %{count} years
+      x_days:
+        few: '%{count} days'
+        many: '%{count} days'
+        one: 1 jour
+        other: '%{count} days'
+      x_minutes:
+        few: '%{count} minutes'
+        many: '%{count} minutes'
+        one: 1 minute
+        other: '%{count} minutes'
+      x_months:
+        few: '%{count} months'
+        many: '%{count} months'
+        one: 1 mois
+        other: '%{count} mois'
+      x_seconds:
+        few: '%{count} seconds'
+        many: '%{count} seconds'
+        one: 1 seconde
+        other: '%{count} seconds'
+      x_years:
+        few: '%{count} years'
+        many: '%{count} years'
+        one: 1 year
+        other: '%{count} years'
+    prompts:
+      day: Day
+      hour: Heure
+      minute: Minute
+      month: Mois
+      second: Secondes
+      year: Année

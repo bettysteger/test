@@ -1,0 +1,53 @@
+fr:
+  activerecord:
+    attributes:
+      translation_comment:
+        content: Commentaire
+      user:
+        email: Your Email Address
+        password: Your Password
+    errors:
+      format: '%{attribute} %{message}'
+      full_messages:
+        format: '%{message}'
+      messages:
+        accepted: doit être accepté
+        blank: ne peut être vide
+        confirmation: ne correspond pas à la confirmation
+        date_greater_than: must be greater than %{date_from}
+        empty: ne peut pas être vide
+        equal_to: doit être égale à %{count}
+        even: must be even
+        exclusion: est réservé
+        greater_than: doit être supérieure à %{count}
+        greater_than_or_equal_to: doit être supérieure ou égale à %{count}
+        inclusion: n'est pas inclus dans la liste
+        invalid: est invalide
+        invalid_regex: invalid regular expression
+        invalid_url: must be a valid URL
+        less_than: doit être inférieure à %{count}
+        less_than_or_equal_to: doit être inférieure ou égale à %{count}
+        not_a_number: n'est pas un nombre
+        not_an_integer: doit être un entier
+        odd: doit être impair
+        record_invalid: 'Echec de la validation : %{errors}'
+        single_current_residence: only one residence can be current residence
+        single_origin_residence: only one residence can be origin
+        taken: a déjà été pris
+        too_long: est trop long (le maximum est de %{count} caractères)
+        too_short: est trop court (le minimum est de %{count} caractères)
+        user:
+          attributes:
+            old_password:
+              invalid: not correct
+        wrong_length: est de la mauvaise longueur (devrait être de %{count} caractères)
+      models:
+        project_user_setting:
+          attributes:
+            user:
+              no_collaborator: is not a collaborator of the project
+      template:
+        body: 'Il y a eu des problèmes avec les champs suivants :'
+        header:
+          one: 1 erreur interdit cet %{model} d'être enregistré
+          other: '%{count} erreurs interdisent cet %{model} d''être enregistré'

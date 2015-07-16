@@ -1,0 +1,79 @@
+fr:
+  custom_devise_notifier:
+    confirmation_instructions:
+      link: Confirm your account
+      p1: Welcome to LingoHub!
+      p2: 'Thank you for registering. One last thing before you can start: Please
+        confirm your email address by clicking this link:'
+      p3: Ready to localize! Please contact us should you have any questions. After confirmation you will receive an email with first steps.
+      subject: Confirmation instructions
+    reset_password_instructions:
+      hello: Hello
+      link: Change my password
+      p2: Someone has requested a link to change your password. You can change it through the link below.
+      p3: If you didn't request this, please ignore this email.
+      p4: Your password won't change until you access the link and create a new one.
+      subject: Password reset instructions
+    unlock_instructions:
+      hello: Hello
+      link: Unlock my account
+      p2: Your account has been locked due to an excessive amount of unsuccessful sign-in attempts.
+      p3: 'Click the link below to unlock your account:'
+      subject: Unlock Instructions
+  invitation_notifier:
+    invitation_mail:
+      head:
+        msg_from_inviter: 'Personal message from %{display_name}:'
+        p1: you have been invited by %{inviter} to join the localization team for Project %{project} as %{role}.
+      hello: Hello
+      links:
+        accept: Accept invitation
+        decline: decline
+      p4: If you didn't request or expect this invitation, please just ignore this email or %{decline}.
+      subject: Invitation to LingoHub
+      subtitle: Start translating "%{project}" now
+  link_not_working: 'If the above link does not work, please copy the following URL
+    in its entirety and paste it into the address bar of your webbrowser: %{link}'
+  new_workload_notifier:
+    new_workload_mail:
+      ending: The project owner will be notified automatically once the project is completed. Have fun translating!
+      greeting: Hi %{display_name},
+      link_text: Start translating
+      new_segments: were recently changed or added in %{language}
+      p1: there are new texts waiting to be translated in the LingoHub projects you are assigned to.
+      segments: segments
+      subject: New texts are waiting for you to be translated
+  notifier:
+    global:
+      footer:
+        p1_html: This email was sent by %{link} to assist you in your localization workflow.
+      new_slogan: Better software localization in less time.
+      slogan: Be Global, Go Local!
+      social: follow us on
+      thank_you: Thank you for reading, and please feel free to send your feedback or contact us with questions.
+      unsubscribe: If you want to unsubscribe from this list, please go to your %{link} and edit your subscriptions.
+      unsubscribe_link: user settings
+      welcome:
+        with_name: Hello %{display_name},
+        without_name: Welcome,
+  weekly_summary_notifier:
+    weekly_summary_mail:
+      admin:
+        languages_collaborators: '%{languages} langues (%{source} en tant que source),
+          %{collaborators} collaborateurs'
+        p1: 'you and your team did a great job on LingoHub last week. See how many
+          words have been translated by your team:'
+        translator: Translator
+      ending: Have a successful start into the new week. And don't forget, Be Global, Go Local!
+      greeting: Hi %{display_name},
+      subject: Weekly Summary
+      translator:
+        as_translator: as %{language} Translator
+        p1: 'you did a great job on LingoHub last week. Here is what you achieved:'
+      words:
+        one: word
+        other: words
+  zip_file_notifier:
+    zip_file_mail:
+      p1: Zip file containing all resource files for the project "%{project_tile}" is attached to this email.
+      subject: 'Archive containing all resource files for project: %{project_title}'

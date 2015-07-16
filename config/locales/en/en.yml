@@ -1,0 +1,107 @@
+en:
+  # to trigger automatic import into lingohub
+  add: Add
+  api:
+    index:
+      # this must not be translated keep it as it is.
+      title: REST API
+  cancel: Cancel
+  close: Close
+  edit: Edit
+  errors:
+    messages:
+      size_too_big: is too big (should be at most %{file_size})
+      size_too_small: is too small (should be at least %{file_size})
+      wrong_size: is the wrong size (should be %{file_size})
+    routing_public:
+      back_link: Go back to LingoHub.com
+      email_link: Send us an email if you would like our help
+      h1: 404 - Lost in Translation
+      item1: LingoHub documentation
+      item2: The LingoHub blog
+      item3: Our Twitter feed
+      p1: 'Sorry, we could not find a page under this address. Don''t panic, have
+        a look at these links:'
+      p3: or %{link}
+      p4: You are in good hands with us for all of your localization needs. Log in first to access your projects. %{link}!
+  global:
+    and: and
+    authentication:
+      omni_auth_failure: We are sorry, but you could not be logged in. Please sign up with your email and password.
+      provider:
+        bitbucket: Bitbucket
+        facebook: Facebook
+        github: GitHub
+        google_oauth2: Google
+        linkedin: LinkedIn
+        twitter: Twitter
+    authorization:
+      not_authorized: You are not authorized to access this page.
+    colors:
+      black: Black
+      grey: Grey
+      red: Red
+      white: White
+    confirmation_needed: Please confirm your email address. If you haven't received the email, check your spam folder or click to %{resend_link} the email.
+    create: Create
+    email:
+      signature:
+        helmut:
+          l1: Greetings,
+          l2: Helmut, CEO
+        lingohub:
+          l1: Best regards,
+          l2: Your LingoHub Team.
+    filename: Filename
+    locale: Locale
+    myself: You
+    or: or
+    phrase: Phrase
+    privacy_policy: Privacy Policy
+    project: Project
+    reload: Reload
+    resend: Resend
+    sign_in: Sign in
+    sign_up: Sign up
+    submit: Submit
+    terms_of_service: Terms of Service
+    translations: Translations
+  models:
+    file_labels:
+      title:
+        default: no filename
+    project:
+      owner: Project Owner
+    resource_file:
+      generic_locale: -locale-
+    user_labels:
+      title:
+        starred: Starred
+        unstarred: Not Starred
+  remove: Remove
+  repository_setting:
+    show:
+      flash:
+        bitbucket:
+          general: Problems connecting to Bitbucket. Please contact our support.
+          not_available: Saved repository no longer available. Please choose a different repository or contact the Bitbucket repository owner.
+          remove_hook_error: Previous Bitbucket hook could not be removed.
+        error: Repository settings could not be updated.
+        github:
+          general: Problems connecting to GitHub. Please contact our support.
+          not_available: The saved repository is no longer available. Please choose a different repository or contact the GitHub repository owner.
+          remove_hook_error: Previous GitHub hook could not be removed.
+        not_accessible: Repository not accessible
+        success: Repository settings updated.
+  resources:
+    exports:
+      push_to_repository:
+        single:
+          flash:
+            error: 'There was a problem pushing to the repository: "%{message}"'
+  users:
+    update:
+      flash:
+        confirmation_success: You have updated your account successfully, but we need to verify your new email address. Please check your email and click on the confirmation link to finalize confirming your new email address.
+  views:
+    copyright: All rights reserved.

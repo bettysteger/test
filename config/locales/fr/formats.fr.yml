@@ -1,0 +1,64 @@
+fr:
+  number:
+    currency:
+      format:
+        delimiter:  
+        format: '%u %n'
+        precision: 2
+        separator: ','
+        significant: faux
+        strip_insignificant_zeros: faux
+        unit: USD
+    format:
+      delimiter:  
+      precision: 3
+      separator:  
+      significant: faux
+      strip_insignificant_zeros: faux
+    human:
+      decimal_units:
+        format: '%n %u'
+        units:
+          billion:
+            one: Milliard
+            other: Milliard
+          million:
+            one: Million
+            other: Million
+          quadrillion:
+            one: Quadrillion
+            other: Quadrillion
+          thousand:
+            one: Mille
+            other: Mille
+          trillion:
+            one: Trillion
+            other: Trillion
+      format:
+        precision: 3
+        significant: vrai
+        strip_insignificant_zeros: vrai
+      storage_units:
+        format: '%n %u'
+        units:
+          byte:
+            one: Octet
+            other: Octets
+          gb: GB
+          kb: Ko
+          mb: Mo
+          tb: To
+  support:
+    array:
+      last_word_connector: ', et'
+      select:
+        prompt: Merci de sélectionner
+      two_words_connector:  et
+      words_connector: ','
+  time:
+    am: AM
+    formats:
+      default: '%a, %d %b %Y %H:%M:%S %z'
+      long: '%B %d, %Y %H:%M'
+      short: '%d %b %H:%M'
+    pm: p.m.

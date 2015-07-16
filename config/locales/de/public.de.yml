@@ -1,0 +1,621 @@
+de:
+  api:
+    authentication:
+      http_authentication: HTTP Authentication
+      http_authentication_title: Basis Zugangs-Authentifizierung
+      http_title: Hypertext Transfer Protocol
+      https_title: HTTP Secure
+      page_title: API-Authentifizierung
+      ssl_title: Transport Layer Security
+      text1: Beide Authentifizierung-Methoden werden gleichermaßen unterstützt. Du kannst Deine Anmeldeinformationen (Benutzername, E-Mail, Passwort, Token) in den Benutzereinstellungen ändern.
+      text2_html: '%{http} unterstützt mehrerer Authentifizierungsmethoden für den
+        Zugang zu Seiten und Ressourcen. Diese Methoden nutzen alle den Statuscode
+        401 und die WWW-Authenifizierungs Antwort-Header. Der Client sendet den Benutzernamen
+        und das Kennwort als unverschlüsselten base64-codierten Text. Weil es unverschlüsselt
+        ist, sollte es nur mit %{https} verwendet werden, da das Passwort auspioniert
+        werden kann.<br />Daher verschlüsselt LingoHub die gesamte Kommunikation standardmäßig
+        per %{ssl} (Siehe %{http_authentication}).'
+      text3_html: Stattdessen kannst Du den URL-Parameter <i>'auth_token'</i> zu der HTTP Anfrage hinzuzufügen. Deinen persönlichen Authentifizierungs-Token findest Du auf der 'Authentifizierungs-Seite'.
+      text_html: 'LingoHub bietet zwei unterschiedliche Methoden um sich mit unserer
+        API zu authentizieren:'
+      token_authentication: Token-Authentifizierung
+    devs_should_know:
+      link1: HTTP Response Codes
+      link1_title: Liste der HTTP Status Codes
+      # to test a github push
+      link2: RESTful
+      link2_title: Representational State Transfer
+      link_title: Application Programming Interface (API)
+      page_title: Was alle Entwickler wissen sollten
+      text1_html: Um Daten von der LingoHub API zu empfangen, wird eine GET-Methode verwendet. Um Daten zu ändern oder zu löschen, wird eine POST bzw. PUT Methode verwendet. Eine DELETE Methode wird für das Löschen von Daten ebenfalls akzeptiert. API-Methoden, die eine bestimmte HTTP-Methode erfordern, liefern einen Fehler zurück, wenn die falsche verwendet wird. %{link} entsprechen ihrer Bedeutung.
+      text2_html: 'Mit der Ausnahme der Streaming-API versucht die LingoHub API sich
+        den Richtlinien des "Representational State Transfer" (REST) anzupassen. Ändere
+        einfach das Format der Anfrage um ein Ergebnis im Format Deiner Wahl zu bekommen.
+        Die Dokumentierung der Formate ist für jede Methode verfügbar. Die API unterstützt
+        die folgenden Formate: %{link} und %{link1}'
+      text3_html: 'Einige API-Methoden nehmen optionale oder erforderliche Parameter.
+        Zwei Dinge sind zu beachten, wenn Du Parameter verwendest:'
+      text4_html: Parameter-Werte sollten auf %{link} umgewandelt werden und URL-kodiert sein. <br />Der Seiten-Parameter beginnt bei 1, nicht 0.
+      text5: Die Community hat zahlreiche LingoHub API-Bibliotheken erstellt. Wenn Du andere kennst die wir noch nicht auflisten, sag uns bescheid.
+      text_html: Die %{link} -Nutzung ist limitiert, mit einem zusätzlichen "fair use"-Kontingent, um LingoHub vor Missbrauch zu schützen.
+      title: Es gibt Einschränkungen, wieviele Aufrufe und Änderungen Du pro Tag machen kannst.
+      title1: Die API basiert vollständig auf HTTP.
+      title2_html: Die API ist eine %{link} Ressource.
+      title3: Parameter haben bestimmte Erwartungen.
+      title4: Es gibt LingoHub API-Bibliotheken für beinahe jede Sprache.
+    guidelines:
+      item: Respekt LingoHub Benutzer
+      item1: Respektiere die Inhalte unserer Nutzer.
+      link: hier
+      link_title: Nutzungsbedingungen
+      page_title: Richtlinien und Bedingungen
+      subtitle: Benennen Ihrer Applikation
+      subtitle1: Logo Ihrer Applikation
+      subtitle2: Vermarktung Ihrer Applikation
+      text: 'Vielen Dank, dass Du eine Applikation/einen Dienst erstellst, die/der
+        mit LingoHub zusammenarbeitet. Wir haben diese Seite erstellt, um Deiner Applikation
+        eine eigene Kennzeichnung zu geben, damit niemand Dein Produkt mit einem unserer
+        Produkte verwechselt. '
+      text1: Gib Deiner Applikation einen individuellen Namen und erkläre Deinen Kunden, dass sie so entwickelt wurde, dass sie mit LingoHub zusammenarbeitet. Benutze keinen Namen der mit LingoHub verwechselt werden kann.
+      text2: Wir sind sicher dass Dir unser "la lengua"-Logo gefällt. Wir haben viel Überlegung und Zeit hinein gesteckt um LingoHub zu einer Marke zu machen. Bitte erstelle ein eigenes attraktives und einzigartiges Logo um Dich abzusetzen.
+      text3: Gerne kannst Du weitersagen, dass Du mit LingoHub arbeitest. Du kannst offizielle LingoHub Logos herunterladen und uns verlinken. Stelle aber sicher, dass Deine Nutzer verstehen, dass die Applikation oder Service kein offizielles LingoHub-Produkt ist.
+      text4_html: Es ist unser Ziel Dir als Partner Richtlinien zur Verfügung zu stellen, die klar und transparent darüber sind, wie Du Dein Angebot zu Geld machen kannst. In diesem Sinne haben wir zwei sehr wichtige Grundsätze &#58;
+      text5: Tue nichts unvorhersehbares und nutze nur so viel Information wie notwendig.
+      text6_html: Unsere Nutzungsbedingungen kannst Du %{link} einsehen.
+      title: Richtlinien
+      title1: Kommerzielle Nutzung
+      title2: Nutzungsbedingungen
+    http_responses:
+      200_html: <strong>200 OK&#58;</strong> Erfolg!
+      304_html: <strong>304 Unverändert&#58;</strong> Es gab keine neuen Daten zu senden.
+      400_html: <strong>400 Ungültige Anforderung&#58;</strong> Die Anfrage war ungültig. Eine begleitende Fehlermeldung wird erklären warum. Dies ist der Status-Code; er wird während der Raten-Limitierung wiedergegeben.
+      401_html: <strong>401 Nicht authorisiert&#58;</strong> Authentifizierungsdetails fehlen oder waren fehlerhaft.
+      403_html: <strong>403 Verboten&#58;</strong> Die Anfrage wurde verstanden aber abgelehnt. Eine begleitende Fehlermeldung erklärt, warum. Dieser Code wird verwendet, wenn Anfragen aufgrund Update Limitierungen abgelehnt werden.
+      404_html: <strong>404 Nicht gefunden&#58;</strong> Die angefragte URI ist ungültig, oder die Quelle, zum Beispiel ein Nutzer, existiert nicht.
+      406_html: <strong>406 Inakzeptabel&#58;</strong> Wird von Such-API wiedergegeben, wenn ein ungültiges Format in der Suche spezifiziert wurde.
+      500_html: <strong>500 Internal Server Error:</strong> Etwas ist kaputt. Bitte kontaktiere den Support, damit das LingoHub-Team recherchieren kann.
+      errors: Fehlermeldungen
+      page_title: HTTP Response Codes und Fehler
+      text: Die LingoHub-API versucht für jede Anfrage den passenden HTTP-Statuscode wiederzugeben. Es ist möglich die Antwort-Codes für die REST API zu unterdrücken.
+      text1_html: 'Wenn die LingoHub-API Fehlermeldungen wiedergibt, wird das in Ihrem
+        angefragten Format sein. Zum Beispiel könnte ein Fehler einer JSON-Methode  so
+        aussehen:'
+      title: HTTP Status Codes
+    overview:
+      authentication: Authentifizierung
+      collaborators: Mitarbeiter
+      invitations: Einladungen
+      phrase: Satz
+      projects: Projekte
+      quicknav_html: Schnellnavi&#58;
+      resources: Quellen
+      translations: Übersetzungen
+    rate_limit:
+      page_title: Ratenlimitierung
+      text: Derzeit haben keine Aktionen eine Limitierung, sondern unterliegen der fair-use Regel.
+      title: REST API Ratenlimitierung
+  api_v1:
+    delete_translation:
+      description: Deaktiviert die Übersetzung.
+    get_file:
+      description: Lädt den Inhalt der angegebenen Ressource als Datei herunter.
+      parameters:
+        iso2_code: |
+          Erzwingt  das Auslesen der Übersetzungen nur in der angegebenen Sprache
+    get_phrase:
+      description: Zeigt die angegebene Übersetzung.
+    get_project:
+      description: Zeigt das angegebene Projekt inklusive Links zu Übersetzungen und Mitarbeitern, sowie Links zu zusätzlichen Aktionen.
+    get_projects:
+      description: Listet all Deine Projekte, inklusive<ul><li>Projekte die Dir gehören</li><li>Projekte an denen Du mitarbeitest</li><li>Deine deaktivierten Projekte</li>
+    get_resources:
+      description: Zeigt die Ressourcen des angegebenen Projekts.
+    get_search:
+      description: Suche nach Übersetzungen.
+    get_translation:
+      description: Zeigt die angegebene Übersetzung mit Ihren Phrasen und einem Link zu der Ressource Datei.
+    get_translations:
+      description: Zeigt Übersetzungen des angegebenen Projekts seitenweise an. Du kannst mit dem <i>rel="next"</i> Link durch die Resultate navigieren.
+      parameters:
+        page: die Seite innerhalb des paginierten Ergebnisses.
+        page_size: die Seitengröße des paginierten Ergebnisses.
+        query: ein "query string" wie in der LingoHub Front-End beschrieben.
+    global:
+      breadcrumbs_title: Du befindest Dich hier
+      example_title: Beispiel
+      http_method_title: HTTP Methode
+      parameters_title: Parameter
+      path_parameters:
+        account: Benutzerkonto-Name des Projekt Besitzers
+        collaborator: die Email des Mitarbeiters in "URL-encoded" Format
+        filename: der Dateiname einer Resource Datei wie in LingoHub gespeichert
+        invitation: die E-Mail des Eingeladenen
+        locale: der ISO2 Code einer Sprache
+        project: der Name des Projekts
+        translation: '"public ID" einer Übersetzung'
+      path_parameters_title: Pfad Parameter
+      requires_authentication_title: Benötigt Authentifizierung?
+      response_formats_title: Antwort-Formate
+      url_title: URL
+    post_resource:
+      description: Hochladen und importieren der Datei in das LingoHub Projekt.
+      parameters:
+        file: der Inhalt der Quelldatei
+        iso2_code: Weist den importierten Texten diese Sprache zu (erforderlich, wenn die Locale-Information in der hochgeladenen Datei fehlt)
+        strategy: die zu verwendende Import-Strategie. Möglich sind "update_and_create", "override" oder "master_locale_structure"
+    post_sessions:
+      description: Authentifiziert mit den Benutzerberechtigungen und zeigt dann ein Authentifizierungs-Token an.
+    put_phrase:
+      description: Aktualisiert den aktuellen Satz.
+      parameters:
+        content: der neue Text für diesen Satz
+        status: der Status des Satzes
+    put_translation:
+      description: Aktualisiert die angegebene Übersetzung.
+      parameters:
+        description: die Beschreibung der Übersetzung
+        title: der Titel der Übersetzung
+    put_translation_activate:
+      description: Reaktiviert eine inaktive Übersetzung
+  developers:
+    index:
+      api_blog: Blogeinträge zum Thema API
+      api_overview: API-Übersicht
+      api_support: API-Unterstützung
+      authentication: |
+        Authentifizierung
+      developers: Entwickler
+      ecosystem: Ökosystem
+      errors: HTTP-Rückmeldungen und Fehler
+      http_authentication: HTTP-Authentifizierung
+      p: Mit der LingoHub API zu beginnen ist einfach. Starte gleich mit der Quelldokumentation oder lies einige der weiterführenden Links unten.
+      p1: LingoHub ist noch neu, das heißt, dass sich die aktuelle API im Prozess der Entwicklung noch weiter verändern kann. Wir freuen uns auf Verbesserungsvorschläge.
+      rest_api_html: REST API &amp; Allgemein
+      ruby_library: Ruby/Rails Programmierbibliothek
+      token_authentication: Token-Authentifizierung
+  faq:
+    general:
+      browsers:
+        body_html: LingoHub ist eine Web-Anwendung, die auf allen gängigen Browsern funktioniert. Künftige mobile Versionen sind geplant. Wenn Du Probleme auf seltenen Browsern oder mit sehr alten Versionen hast, wende Dich bitte an unseren Support.
+        title_html: Welche Browser unterstützt LingoHub?
+      lingohub:
+        body_html: Wir bieten eine Plattform sowohl für Produktmanager (oder Software-Entwickler) als auch für Übersetzer zur weltweiten Zusammenarbeit. LingoHub ermöglicht die <strong>Integration von Lokalisierung in die Software-Entwicklung</strong> und ist gleichzeitig ein Marktplatz für Übersetzer, inklusive kompletter Zahlungsabwicklung. Als Übersetzer brauchst Du Dich nur auf das Übersetzen konzentrieren, mit einem einfachen und kontext-sensitiven Arbeitsumgebung. Nichts anderes. Als Software-Entwickler lädst Du einfach Deine Ressource Dateien hoch und lässt LingoHub den Rest erledigen. Es ist ein stressfreien Prozess für alle. LingoHub erledigt Versionierung, Dateien und Änderungen, sichere Speicherung, Bezahlung und Fortschrittskontrolle.
+        title_html: Wie funktioniert LingoHub?
+      payment:
+        body_html: Momentan unterstützen wir Visa, Mastercard und American Express. Du kannst diese auf der Zahlungsseite nach der Anmeldung eingeben. Du brauchst die Zahlungsinformationen nur für kostenpflichtige Pakete angeben. Beachte die kostenlose 14-tägige Testphase, erst nach dieser musst Du Zahlungsinformation angeben, oder wechsle in das kostenlose Benutzerkonto für Übersetzer und Projektmitarbeiter.
+        title_html: Welche Zahlungsmöglichkeiten gibt es?
+      questions:
+        body_html: Der einfachste Weg ist uns direkt zu kontaktieren, und wir helfen umgehend. Mit dem Ausbau von LingoHub, werden auch unsere Hilfe-Seiten kontinuierlich erweitert.
+        title_html: Ich habe weitere Fragen, wie kann ich Unterstützung bekommen?
+      title: Allgemeine Fragen
+    localizing:
+      lingohub:
+        body_html: LingoHub ist die einzige Plattform, die Übersetzer <strong>und</strong> Software-Entwickler zusammen bringt. Wir kümmern uns um alle lästigen und mühsamen Dinge und Du kannst Dich auf Deine Hauptaufgabe konzentrieren. Die <strong>nahtlose Integration</strong> ist eine Win-Win-Situation für alle.  Klicke  hier, um mehr über die Vorteile zu lesen.
+        title_html: Warum sollte ich LingoHub nutzen und nicht Tool XY?
+      technologies:
+        body_html: 'Kurz gesagt: <strong>alle gängigen Dateitypen, Plattformen und
+          Technologien.</strong> Klicke hier, um mehr über alle Dateitypen und Spezifikationen
+          zu erfahren. Besondere proprietäre Formate oder ältere/seltene Formate können
+          zügig auf Anfrage implementiert werden. LingoHub arbeit für <strong>Dich</strong,
+          keine Ausnahmen!'
+        title_html: Welche Technologien werden unterstützt?
+      title: Lokalisierung Ihrer Projekte auf LingoHub
+      translations:
+        body_html: LingoHub legt selbst keinen Preis fest. Einmal angemeldet, kannst Du ein Projekt erstellen und einen Auftrag ausschreiben, um den geeigneten Übersetzer zu Deinen Preisvorstellungen zu finden. Wenn Du für die Übersetzungsleistung zahlst, behält LingoHub eine kleine Provision ein. LingoHub is gratis für Übersetzer, Lektoren und Mitarbeiter.
+        title_html: Wie viel kosten Übersetzungen auf LingoHub?
+    pricing:
+      title: Pakete und Preise
+    title_html: Häufig gestellte Fragen
+    translating:
+      catch:
+        body_html: 'Es gibt keinen. Sobald wir unseren Marktplatz fertig haben, behalten
+          wir eine kleine Kommission ein von der Zahlung die Softwareentwickler an
+          beauftragte Übersetzer tätigen - basierend auf dem von Dir ausgehandelten
+          Preis. Es ist sehr einfach: Du kannst ein prima Profil als Professioneller
+          Übersetzer auf LingoHub aufbauen, Du genießt ein stressfreies Arbeitsumfeld,
+          und wirst vom ersten Wort an dafür bezahlt zu übersetzen oder Qualität zu
+          prüfen.'
+        title_html: Wo ist der Haken?
+      costs:
+        body_html: Nichts. <strong>Für Übersetzer wird LingoHub immer kostenlos sein,</strong> denn wir wollen, dass Du Dich darauf konzentrieren kannst, Deine großartige Dienste weltweit Kunden anzubieten. Melde Dich einfach kostenlos an.
+        title_html: Wie viel kostet LingoHub für Übersetzer?
+      how:
+        body_html: Wenn Du eingeladen wirst und die Einladung bestätigst, bist Du einem Projekt als Übersetzer zugeteilt und kannst die Editor-Umgebung (im Browser) nutzen, und einfach mit dem Übersetzen starten. Die Umgebung hat integrierte Werkzeuge (Bilder, Fortschrittsanzeige, Kommentare) und einen Status als Indikator für den Übersetzungstext (z.B. "offen"). Bei Textänderungen erhältst Du eine Nachricht. Klicke hier, wenn Du mehr über die Vorteile des Übersetzens auf LingoHub lesen willst.
+        title_html: Wie funktioniert es?
+      lingohub:
+        body_html: |-
+          Unserer Meinung nach sollten Polizisten Verbrecher jagen, Rennfahrer Autos fahren, Maler malen - und Übersetzer übersetzen. Warum sich mit unterschiedlichen Arbeitsprozessen verschiedener Kunden herumschlagen, technischen Details kennen und Formate bearbeiten die sich schneller ändern als das Wetter? Und dann diese Zahlungsprozesse und Vertragsverhandlungen? Bei LingoHub kannst Du Dich auf den Job konzentrieren den Du liebst und worin Du gut bist: Übersetzung.
+          Wir glauben dass <strong>Übersetzung ist kein Job ist, sondern ein Beruf</strong>. Wir teilen Deine Leidenschaft für Sprache und Nuancen, und deshalb haben wir eine Umgebung gebaut die einfach zu benutzen ist und die Dir die technischen Dinge abnimmt. Du kannst auf einer kontextreichen Umgebung übersetzen, und Werkzeuge benutzen die Dich bei der Arbeit unterstützen, und dann umittelbar Feedback erhalten. So einfach ist das.
+        title_html: Warum LingoHub?
+      title: Übersetzen auf LingoHub
+  global:
+    'no': nein
+    none: kein/e
+    page_title: LingoHub - Einfache Web und Mobile App-Lokalisierung
+    public_navigation:
+      about: Über uns
+      api: LingoHub API
+      blog: Blog
+      contact: Kontakt
+      customers: Kunden
+      developer_features: Funktionen für Entwickler
+      developers: Entwickler
+      documentation: Dokumentation
+      faq: Fragen & Antworten
+      features: Features
+      home: Startseite
+      investors: Investor Relations
+      jobs: Stellenangebote
+      language_choosing: Wir sprechen Deine Sprache
+      media_kit: Pressekit
+      more: Mehr
+      plans: Abos & Preise
+      press: Presse
+      privacy: Datenschutz-Bestimmungen
+      signin: Einloggen
+      signup: Anmelden
+      social: Folge uns auf
+      support: Kontakt & Hilfe
+      team: Team
+      terms: Allgemeine Geschäftsbedingungen
+      translator_features: Funktionen für Übersetzer
+      translators: Übersetzer
+      translators_free: Für  Übersetzer kostenlos
+      why_lingohub: Warum LingoHub?
+    'yes': ja
+  investor_relations:
+    download:
+      text: 'Download: LingoHub auf einen Blick'
+    h2: Übersicht
+    text1: LingoHub hat vor kurzem ein Entwicklerbüro aufgemacht und UX/UI sowie Business Development Expertise an Bord geholt. Wir arbeiten derzeit laufend an neuen Features und sind bereit, den nächsten Schritt zu machen um Software- und App-Lokalisierung zu revolutionieren. Wir sind überzeugt dass unser Ansatz enormen Mehrwert für Entwickler und Übersetzer bietet. Sprich mit uns darüber wie wir den Markt auf den Kopf stellen möchten, Du wirst genauso begeister sein wie wir es sind.
+    text2: Wir sprechen gerne mit Ihnen über Investitionsmöglichkeiten. Wir wollen mit LingoHub schnell wachsen, Entwickler und Übersetzer in mehr Ländern erreichern und eine größere Funktionspalette anbieten um die On-Demand Erfahrung zu komplementieren die Entwickler und Übersetzer schon jetzt nicht mehr missen werden möchten.
+    text3: wenn du Fragen hast.<br />Folge  LingoHub auf
+  lingohub:
+    about:
+      hiring:
+        title: Werde Lingohubber
+        text: Haben Sie eine Leidenschaft für <br>Sprachen und Stand der Technik Software-Anwendungsentwicklung %{link} haben! ? Sind Sie der vermissten Person, dass unser Team auf der Suche nach?
+        link: Sende uns Deine Bewerbung
+      meta_info:
+        description: Erfahre mehr über LingoHub, die Geschichte der Firma und unsere Zukunftsvision.
+        keywords: LingoHub
+        title: über
+      page_title: Über uns
+      subtitle1: Firmeninfo
+      subtitle2: LingoHubs Vision
+      summary_link: LingoHub Produktzusammenfassung (PDF)
+      team:
+        betty:
+          text: Bettina kümmert sich um die Front-End Entwicklung bei LingoHub (speziell AngularJS). Vorher war sie Rails Entwicklerin bei betterplace.org und studierte Multi-Media Technologie an der FH Salzburg.
+        christian:
+          text: Christian ist als SW-Architekt bei Siemens VAI arbeitete. Seine internationale Erfahrung auf großen Projekte der industriellen Automatisierung und Fähigkeiten mit der Entwicklung Koordination mit agilen Methoden fügt eine weitere Dimension für unser Team.
+        h1: Das LingoHub Team
+        type:
+          front_end: Front-End Entwicklung
+          back_end: Back-End Entwicklung
+          founder: Gründer
+          marketing: Marketing, Vertrieb & Geschäftsentwicklung
+        helmut:
+          text: CEO, studierte Wirtschaftsinformatik an der JKU Linz und der Arizona State University. Er war einer der ersten Angestellten bei Jumio und arbeitete als Berater bei Runtastics. Er bringt viele Jahre  Erfahrung im Bankensektor, der Teamleitung und als Chefentwickler mit. Er liebt die Startup-Welt und ihre spezielle Energie.
+        marcus:
+          text: CTO, studierte Softwareentwicklung an der HTL Leonding und blickt auf über 14 Jahre Erfahrung als Entwickler zurück. Sein Hintergrund liegt vor allem in komplexen und großangelegten Projekten (wie bei Siemens VAI, DAK) und deren Architektur und Verwaltung.
+        text: 'LingoHub wird von Menschen vorangetrieben die mit Herz und Hand gerne
+          Sprachbarrieren einreißen. Wir sprechen im Team mehr als fünf Sprachen und
+          arbeiten über vier Länder verteilt. Lingohubber lieben das mehrsprachige
+          Internet und wir wollen einen Dienst anbieten, der Softwarelokalisierung
+          revolutioniert. So sieht momentan unser Team aus:'
+        find_on: Finde %{name} auf
+        sebastian:
+          text: Sebastian adds his experience as a community builder and his background in political science, management and linguistics into our mix. As a community builder he managed the former Google project, the Berlin-based Collaboratory.
+        send_him: oder schreibe ihm eine Email
+        send_her: oder sende ihr eine Email
+      text1: LingoHub wurde Mitte 2012 von Helmut und Markus in Linz gegründet. Wir haben die Firma ins Leben gerufen um Softwarelokalisierung zu revolutionieren, sowohl für Hersteller und Entwickler als auch für Übersetzer. Wir wollen Lokalisierung wieder zu einem Glanzstück im Entwicklungsprozess machen und Übersetzern eine Platform bieten auf der sie mit ihren Kenntnissen glänzen können. Unser Ziel ist es, Softwarelokalisierung zu einer hochwertigen on-demand Dienstleistung auszubauen die auf Vertrauen und Simplistik basiert.
+      text2: Wir stellen uns Lokalisierung als On-Demand Dienst vor für Produkte auf einem globalen Markt, ohne Overhead-Kosten auf einer bequemen Plattform.
+    about_team:
+      page_title: Das Team dahinter
+      meta_info:
+        description: Meet the people behind LingoHub, the startup founders, developers and associates. As a team we endeavor to deliver the best localization experience possible.
+    contact:
+      address:
+        text: Anschrift
+      contact:
+        larger_map: Größere Karte öffnen
+        text: Bleibe au fdem Laufenden und folge LingoHub auf
+        title: Kontakt
+      h1: Kontakt
+      page_title: Kontakt
+      meta_info:
+        description: Do you want to learn more about using LingoHub? Do you need more information about web and mobile app localization? Our support team is at your service.
+      support:
+        text: Solltest Du Fragen zu Internationalisierung, dem Leben im Allgemeinen oder vielleicht LingoHub haben, schicke uns eine E-Mail %{email_link} oder besuche unsere Hilfeseiten unter %{support_link} oder den Blog auf %{blog_link} für Tutorials und Hintergründe.
+        title: Hilfe
+    customers:
+      heading: Our customers' success defines ours.
+      page_title: Kunden
+      meta_info:
+        description: Lesen Sie, wie unsere aktuellen Kunden ihre Produkte weltweit durch Lokalisierung mit LingoHub erfolgreich war.
+      subheading: Wir würden uns freuen, Ihnen helfen, Ihr eigenes erfolgreiches Globalisierung Geschichte zu schreiben. Spricht folgende Sprachen Ihrer Kunden ist ein wesentlicher Teil dieser Geschichte.
+      quote:
+        ikarus: Wir hatten unsere eigene Lösung, aber um ehrlich zu sein, LingoHub ist einfacher zu bedienen als alles was wir sonst gesehen haben. Vor allem die REST API ermöglicht uns es nahtlos in unsere Arbeitsweise einzubinden.
+        nordeus: Wir sind erstaunt wie bequem unser Lokalisierungsprozess mit LingoHub geworden ist, die Integration und API machen die Nutzung reibungslos. Wir konnten Zusatzkosten und extra Zeitaufwand quasi eliminieren, haben den Übersetzungsprozess verbessert und unterstützen nun sofortigen mehrsprachigen Roll-Out unserer Spiele, womit wir mehr Kunden erreichen.
+        runtastic: Als Macher der populärsten Fitness Apps hat Runtastic überall auf der Welt Kunden, die regelmäßig Updates und eine intuitive Oberfläche in ihrer Sprache erwarten. Runtastic bietet über 30 Apps für alle Plattformen, in über 15 Sprachen. Kosten beim Lokalisierungsprozess niedrig zu halten ist daher von höchster Wichtigkeit. LingoHub integriert sich leicht in den Produktzyklus des Runtastic Teams und hilft durch seine einfache Bedienung und Verlässlichkeit.
+        solvistas: Nutzerakzeptanz und Effizienz sind der Kern des Enterprisegeschäfts, also brauchten wir ein Werkzeug, das unsere Strategie ergänzt, unsere Dienstleistungen ohne Verzögerung zu minimalen Kosten in der Kundensprache verfügbar zu machen. LingoHub liefert eine perfekt integrierte Lösung zur Lokalisierungsverwaltung die unsere Erwartungen übertroffen hat.
+        ticketswap: LingoHub ist die beste der vielen Übersetzungstools wir erforscht. Wir können einfach synchronisieren unsere Symfony2 Übersetzungen über die Ruby-Client.
+        tractive: Wir hatten die umständlichen hin und her Arbeitsabläufe satt. All diese E-Mails! Die Veröffentlichung unserer Apps in mehreren Sprachen ist so viel einfacher mit LingoHub. Es befreit unser Team enorm!
+      case_study: Klicke hier um die Fallstudie zu lesen
+    faq:
+      page_title: Fragen und Antworten
+      meta_info:
+        description: Häufig gestellte Fragen und Antworten zu LingoHub, Softwarelokalisierung, technischen Aspekten, Preisen und Übersetzer Zusammenarbeit.
+    investor_relations:
+      page_title: Investor Relations
+      meta_info:
+        description: Unterstützen Sie die nächste Generation von Lokalisierungstechnologie und tragen zu einer mehrsprachigen Welt durch Clinchen die Möglichkeit, in LingoHub investieren,
+    jobs:
+      page_title: Stellenangebote
+      meta_info:
+        description: Would you like to join the LingoHub team? Check our latest career opportunities or send us a spontaneous application as a web developer, localization specialist or sales professional.
+    terms:
+      page_title: Service Terms
+      meta_info:
+        description: By using LingoHub for your web and mobile app localization needs you automatically accept these Terms of Service, which cover the platform and third-party services.
+    privacy:
+      page_title: Datenschutz-Bestimmungen
+      meta_info:
+        description: We respect your privacy at LingoHub. Read how we handle your data, and which information we process when using LingoHub's platform for app localization
+  plans_and_prices:
+    index:
+      faqs:
+        collaborator:
+          answer: Hierbei handelt es sich um die Anzahl an LingoHub Nutzern die Du zu Deinen privaten Projekten mit Schreibzugang einladen kannst. Dabei zählt jeder Nutzer nur einmal, egal zu wie vielen Projekten er zugeordnet wurde.
+          question: Was bedeutet der Begriff "Mitarbeiter"?
+        data:
+          answer: Sicherheit und Datenschutz Deiner persönlichen, Zahlungs- und Projektinformationen sind uns sehr wichtig. LingoHub arbeitet in einem SAS70-zertifizierten Datenzentrum auf Enterprise-Niveau, und wir setzen Industrie-übliche Werkzeuge zur Datensicherung ein. Alle Pakete auf LingoHub sind SSL-verschlüsselt.
+          question: Sind meine Daten sicher?
+        decide:
+          answer: Ja, Du kannst jetzt mit einem Paket einsteigen welches Dir zum Start ausreicht, und später upgraden. Wenn Du ein Paketabonnement abgeschlossen hast und zu einem höherwertigen Paket upgraden willst, wird Dir nur die Differenz in Rechnung gestellt. Nicht vergessen, es gibt eine 30-tägige Testphase um LingoHub kennen zu lernen - und für Übersetzer ist LingoHub immer kostenlos.
+          question: Ich bin mir nicht sicher, welches Paket ich benötige, kann ich mich später entscheiden?
+        downgrade:
+          answer: Du kannst jederzeit Dein Paket wechseln oder kündigen zum Monatsende. Wir erstatten kein Geld zurück bei schon geleisteten Zahlungen, daher empfehlen wir mit einem kleineren Paket zu starten und erst bei Bedarf zu einem größeren zu Wechseln wenn sich Deine Anforderungen ändern.
+          question: Was passiert wenn Ich auf ein kleineres Paket wechsle?
+        free:
+          answer: Ja, LingoHub kann als kostenloses Übersetzungswerkzeug genutzt werden. Der kostenlose Benutzerzugang beinhaltet den Übersetzungseditor ohne Einschränkungen. Wenn Du Übersetzer bist, ist LingoHub für Dich immer kostenlos. Nur das Abwickeln kommerzieller Projekte setzt ein Bezahlpaket voraus.
+          question: Kann ich LingoHub kostenlos nutzen?
+        more:
+          answer: Besuche unsere Hilfeseiten oder kontaktiere uns direkt. Das Kleingedruckte findest Du unter <a href='https://lingohub.com/terms'>Nutzungsbedingungen</a>.
+          question: Du hast weitere Fragen?
+        title: Häufig gestellte Fragen
+        trial:
+          answer: Wenn Du Dich bei LingoHub anmeldest, bist Du automatisch in der 30-tägigen Testphase (alle Funktionen, unbegrenzte Projekte und Mitarbeiter). Du kannst Dich jederzeit für eines der Pakete entscheiden, auch vor Ende der Testphase. Ansonsten wirst Du automatisch am Ende auf das kostenlose Paket für Übersetzer und Mitarbeiter umgestellt. Alle Funktionen bleiben nutzbar und Du kannst an anderen Projekten mitarbeiten, selbst aber keine erstellen oder verwalten. Wenn Dein Benutzerkonto die Limits erreicht hat, werden zusätzliche Projekte vorerst deaktiviert (nichts geht verloren). Eine Kreditkarte ist während der Testphase nicht notwendig. Du kannst die Testphase immer nutzen, zu dem Zeitpunkt ist es nicht relevant ob Du später nur übersetzen oder eigene Projekte erstellen möchtest.
+          question: Wie funktioniert die 14-tägige Testphase?
+      meta_info:
+        description: LingoHub Leistungspakete, Preise und Sonderangebote
+      p1: Bei LingoHub kennen wir die Anforderungen für Softwarelokalisation. Wenn Dein Projekt skaliert, skalieren wir mit  - immer mit allen Leistungen die Du brauchst.
+      p2: Du kannst Pakete jederzeit wechseln - und Du genießt eine kostenlose 30-täge Testphase!
+      page_title: Preisoptionen - Einfache Web und Mobile App Lokalisierung mit LingoHub
+      plan:
+        month: Monat
+        year: Jahr
+        most_popular: am beliebtesten
+        get_started: Loslegen
+      title: Pakete und Preise
+      projects: Projekte
+      collaborators: Mitarbeiter
+      segments: Segmente
+      unlimited: Unbegrenzt
+      buttons:
+        annual: Jährliche Abrechnung
+        monthly: Monatliche Abrechnung
+        save: Spare 2Mo
+      enterprise:
+        subtitle: Du brauchst mehr? Sprich mit unserem Team über spezielle SLAs und Support mit Priorität.
+        title: LingoHub Enterprise Pakete
+        link: Kontaktiere unser Vertriebsteam
+      free:
+        title: Kostenlos für kleine Teams, Open Source oder Bildungsprojekte
+        subtitle: Wenn Du an einem Open-Source oder Bildungsprojekt arbeitest, verwendest Du LingoHub kostenlos mit bis zu 100 Mitarbeiter. LingoHub ist immer kostenlos für kleine Teams bis 3 Mitarbeiter.
+        link: Melde Dich für unser kostenloses Paket an
+      more:
+        title: Alle Pakete enthalten auch
+        benefit1:
+          title: Eine kostenlose 30 Tage Testphase
+          text: Jetzt übersetzen. Teste LingoHub 30 Tage lang risikofrei. Keine Kreditkarte notwendig!
+        benefit2:
+          title: LingoHub Übersetzungsdienst
+          text: Wenn Dir Übersetzer fehlen, übernimmt LingoHub die Übersetzungen. Bestelle Übersetzung in über 40 Sprachen.
+        benefit3:
+          title: Nahtlose Integration
+          text: LingoHub integriert sich mit den besten Entwicklertools. Integration in Git, Github, Bitbucket... ist nur einen Klick weg.
+        benefit4:
+          title: Maschinelle Übersetzung
+          text: Beginne nie von Null. Unsere integrierte maschinelle Übersetzung hilft schnell große Textmengen zu übersetzen.
+        benefit5:
+          title: Entwicklerfreundliche API
+          text: Wir bieten bereits viele Integrationen standardmäßig. Wenn Du mehr brauchst, kannst Du eine eigene Integration mittels unserer REST API konfigurieren.
+        benefit6:
+          title: Smart Translation Memory
+          text: Verliere nie einen übersetzten Text und halte Deine Texte konsistent. Unser Smart Translation Memory schlägt automatisch Texte vorheriger Übersetzungen vor.
+  press:
+    index:
+      in_the_press:
+        article_in_html: Artikel in <strong>%{name}</strong>
+        h2: Pressestimmen
+        interview_with_html: Interview mit %{person} in <strong>%{name}</strong>
+      media_contact:
+        mail: Email
+        text1:
+          name: Helmut Juskewycz
+          position: CEO & Mitgründer
+        text2:
+          name: Sebastian Haselbeck
+          position: Business Development Manager
+        title: Pressekontakt
+      media_kit:
+        about_us:
+          text: Mehr über Linghub auf der %{link} Seite.
+          title: Über uns
+        description_html: Bilder, Videos, Logos und Downloads findest Du auf unserer %{link} -Seite.
+        title: Pressekit
+      other_resources:
+        title: Andere Ressourcen
+      page_title: Pressematerialien und Kontakt
+      meta_info:
+        description: Read LingoHub press releases or contact our spokesperson about our latest company news. Includes a selection of press snippets.
+      social_media:
+        description_html: 'LingoHub in sozialen Netzwerken:'
+        title: Soziale Netzwerke
+      title: LingoHub Presse-Informationen
+      tweets:
+        title: Tweets von
+    media_kit:
+      fontfamily_description_html: '<strong>Open Sans</strong>: Titel, Kopfzeilen,
+        Absätze und Body-Text nur in normaler Schrift.'
+      founder_title: 'Fotos: LingoHub Gründer'
+      helmut_subs: Gründer und Geschäftsführer
+      logo_black: Logo (Schwarz)
+      logo_slogan: Logo & Slogan
+      logo_slogan_white: Logo & Slogan (weiß)
+      logo_title: Offizielles Bildmaterial
+      logo_vertical: Vertikales Logo
+      logo_vertical_white: Vertikales Logo (weiß)
+      logo_white: Logo (Weiß)
+      markus_subs: Mitgründer und Technischer Leiter
+      miscellaneous_title: Sonstiges
+      page_title: Mediadaten und Bilder
+      meta_info:
+        description: Marketing-Vertreter und Journalisten können unsere Werbemöglichkeiten mit Bildern der LingoHub Teams und Unternehmensinformationen Downloads verwenden.
+      photo_license_html: 'Fotos unter %{creative_link} Lizenz verwendbar. Quelle:
+        ''lingohub.com (photos by zoe fotografie)'''
+      pms_description: 'Die folgenden Farben werden für Druckmaterial verwendet:'
+      pms_title: PMS-Farben (Druck)
+      rgb_description: 'Die folgenden Farben werden für Internetseiten und andere
+        digitale Medien verwendet:'
+      rgb_title: RGB-Farben (Digital)
+      t_shirt_subs: Offizielles LingoHub T-Shirt
+      title: LingoHub Pressekit
+      tongue_black: Motiv Zunge (Schwarz)
+      tongue_white: Motiv Zunge (Weiß)
+      typefaces_description: 'Wir nutzen diese Schriftarten:'
+      typefaces_title: Schriftarten
+    more: weiterlesen
+  registrations:
+    new:
+      page_title: Melde Dich an und teste LingoHubs einfache Plattform für Web und Mobile App Lokalisierung.
+  sessions:
+    new:
+      page_title: Melde Dich zu einem Lokalisierungsprojekt auf LingoHub an
+  support_and_contact:
+    contact:
+      commercial_register: Handelsregister
+      country: Österreich
+      court_of_jurisdiction: Gerichtsstand und Erfüllungsort
+      email: E-Mail
+      phone: Telefon
+      text_html: LingoHub hat seinen Sitz in der wunderschönen Stadt %{link_city} in %{link_country}
+      title: Kontakt zu LingoHub
+      vat: USt.
+    support:
+      text_html: Hast Du Fragen zu Internationalisierung, das Leben, dem Universum oder LingoHub? Schicke uns auf jeden Fall eine Email %{mail} oder besuche unse Hilfeseiten unter %{link}
+      title: Hilfe
+  welcome:
+    screenshots:
+      t1: E-Mails, Excel-Tabellen und fehlende Texte gehören der Vergangenheit an. <br />Ihre Übersetzungen sind immer am letzten Stand dank LingoHub.
+      t2: Online-Übersetzungstool mit vollem Funktionsumfang
+      text2: The whole localization process takes place in the browser. Why translate your texts twice when you can use a translation memory?
+      t3: Erledige Deine Projekte schneller
+      text3: Localize your app on time and launch faster by inviting as many collaborators as you need to work on translating your texts simultaneously.
+      t4: In Deinen persönlichen Workflow integriert
+      text4: LingoHub integrates into your environment so that you and your team can continue to work as normal and you can use existing tools such as Github or Bitbucket.
+      t5: Erhöhe die Qualität Deiner Übersetzung mit <br />Kommentaren und Screenshots
+      text5: The quality of the text and clarification increases and the need to communicate decreases with substantial contextual information.<br><br>Comments or screenshots can be easily added to individual parts of your project.
+      t6: Komplette Übersicht Deines Projekts
+      text6: Manage your apps translation, don't let it manage you. With regular progress reports<br><br> you have up to the minute progress reports and receive change and comment notifications.
+    boost:
+      title: Genieße einen massiven Produktivitätsschub!
+      text: Das Dateimanagement wird für dich erledigt, somit kannst Du schnell eine App in viele Sprachen übersetzen. <br>Exportiere oder synchronisiere dann die Ergebnisse. <br><br>Du bekommst Deine Applikation ohne Kopfschmerzen lokalisiert, Du sparst Geld und lieferst höherwertige Releases ab.
+    call_to_action: Melde Dich jetzt an
+    complicated:
+      list:
+        item1:
+          text: Du schreibst E-Mails um UI Text zu erklären anstatt an deinem Produkt zu arbeiten. Dieses ganze hin und her bremst deine Produktivität - und kostet Geld.
+          title: Schlechte Arbeitsabläufe
+        item2:
+          text: Excel oder Word Anhänge machen Dich verrückt. Warum musst Du Dich jedes mal damit quälen diese mit deinen Dateien zusammenzufügen. Und das in jeder Sprache und mit jeder Änderung?
+          title: Schlechte Formate
+        item3:
+          text: Geänderte Platzhalter zerstören Dein App immer wieder und Rechtschreibfehler nerven die Nutzer. Dein Release wird immer wieder verzögert, und das ohne guten Grund - eine frustrierende Erfahrung.
+          title: Schlechte Ergebnisse
+      t1: Warum sich mit dem Chaos traditioneller Lokalisierung ärgern...
+      t2_html: Anstatt Textdateien hin- und herzuschicken oder Formatierungen anzupassen möchtest Du Deine wertvolle Zeit lieber damit verbringen <strong>Dein Produkt zu entwickeln </strong>, oder? Da bist Du hier genau richtig!
+    heading: Bessere Softwarelokalisierung<br>in kürzerer Zeit
+    index:
+      meta_info:
+        description: Genieße bessere Softwarelokalisierung in weniger Zeit. Verwalte Web und Mobile App Übersetzung einfach online, synchronisiere mit Github, erhöhe die Qualität und lade Übersetzer ein
+        keywords: Lokalisierung, Übersetzung, Github, Github Integration, L10n, i18n, Globalisierung, Softwareentwicklung, Internationalisierung, Bitbucket, Bitbucket Integration, REST API, CLI Client, Repository, Sync, Softwareübersetzung, App Übersetzung, App Lokalisierung, App Übersetzung
+    signup:
+      title: Probiere LingoHub aus - 30 Tage kostenlos
+      using: oder verwende
+    simple:
+      list:
+        item1:
+          text: Die ganze Arbeit passiert auf LingoHub. Mit optionaler API, Github oder Kommendozeilenintegration. Der Onlineeditor macht Übersetzungen super einfach.
+          title: Abgestimmte Arbeitsabläufe
+        item2:
+          text: Es werden keine Dateien per E-Mail versandt und LingoHub kümmert sich um die Formatierungen. Einfach importieren, exportieren oder synchronisieren. Du musst keine Datei mehr anfassen.
+          title: Kompatibilität und Integration
+        item3:
+          text: Erhalte Ergebnisse schneller und ohne Probleme. Kontextabhängige Informationen und eingebaute Checks schrauben die Qualität nach oben.
+          title: Qualität durch Kontext
+      t1: '...wenn Du schlankes Übersetzungsmanagement genießen kannst?'
+      t2_html: Kontinuierliches Übersetzungsmanagement mit LingoHub eliminiert unnötige Dateibearbeitungen, unstrukturierte Kommunikation und Formatierungsprobleme. Es ist perfekt integriert, so daß das Übersetzen Deiner Apps geschmeidig und wie gewollt von statten geht. <strong>Einfach multilinguale Apps veröffentlichen. Schnell. Mit weniger Aufwand.</strong>
+    special:
+      heading: Bessere Softwarelokalisierung <br>für Ihre %{type} Applikationen
+      heading_files: Bessere Softwarelokalisierung <br>von %{type} Dateien
+      page_title: Einfache %{type} Lokalisierung mit LingoHub
+      meta_info:
+        description: Entwickler können aus einer voll kompatibel %{type} Lokalisierungsplattform profitieren. Synchronisieren GitHub mit %{extension} Dateien und Lokalisierung zu verwalten. Kostenlos für kleine Teams.
+        description_developers: '%{language} Entwickler können aus einer voll kompatibel
+          %{type} Lokalisierungsplattform profitieren. Synchronisieren GitHub mit
+          %{extension} Dateien und Lokalisierung zu verwalten. Kostenlos für kleine
+          Teams'
+      reasons:
+        title: 'Drei einfache Gründe, LingoHub zu versuchen:'
+        text1: Problemlose %{type} Lokalisierung aus dem Browser, mit allen erforderlichen Funktionen und volle Plattformunterstützung.
+        text2: Entweder mit GitHub, Bitbucket, API oder Kommandozeile müssen Sie die nahtlose Integration in die bestehende App-Entwicklungsumgebungen.
+        text3: Es ist nicht notwendig Dateien zu verwalten, Sie können ÜbersetzerInnen einladen und arbeiten mit ihnen online, einfach und schnell. Kostenlos für kleine Teams, pädagogische oder Open-Source-Projekte.
+      subheading: Einfache Online Verwaltung von %{type} Lokalisierung .
+      subheading_format: Wir unterstützen verschiedene Frameworks. <br>Egal, was Sie verwenden, genießen Sie die volle Kompatibilität mit %{extension} und andere Ressourcendateien.
+      signup:
+        btn: Jetzt anmelden
+        more: mehr erfahren
+        text: Eine kostenlose 30-Tage-Testversion und schnelle Installation.
+      trusted_by: 'Unternehmen aus der ganzen Welt vertrauen auf uns:'
+    subheading: Gewinnen Sie mehr Kundenzufriedenheit durch die Automatisierung und Verwaltung von Übersetzungen. Erstellen Sie Software in der Muttersprache Ihrer Kunden.
+    support:
+      subtitle: Dies sind nur einige der Plattformen und Frameworks die wir unterstützen...
+      title: Welche Plattformen und Frameworks werden von LingoHub unterstützt?
+    testimonials:
+      ikarus:
+        quote: Wir hatten unsere eigene Lösung, aber um ehrlich zu sein, LingoHub ist einfacher zu bedienen als alles was wir sonst gesehen haben. Vor allem die REST API ermöglicht uns es nahtlos in unsere Arbeitsweise einzubinden.
+      nordeus:
+        quote: Die Integration von Github war in ein paar Minuten eingerichtet und das Auto-sync ist fantastisch! Endlich senden wir keine Dateien mehr herum - unser Übersetzungsablauf hat sich radikal verbessert.
+      title: Warum haben sie LingoHub gewählt?
+      tractive:
+        quote: Wir hatten die umständlichen hin und her Arbeitsabläufe satt. All diese E-Mails! Die Veröffentlichung unserer Apps in mehreren Sprachen ist so viel einfacher mit LingoHub. Es befreit unser Team enorm!
+    with_lingohub:
+      contact: Kontaktiere uns
+      more: Zeige mir mehr
+      other_questions: Fragen? Zweifel? %{link} jetzt und wir werden Dich persönlich überzeugen!
+      q1: Einfache Integration von LingoHub mit deinem Github oder Bitbucket Repository
+      q10: Verwalte die Lokalisierung von einem öffentlichen Open Source Projekt kostenlos
+      q11: Füge mehr Teammitglieder und Übersetzer zu großen Projekten hinzu
+      q12: Erhalte regelmäßige Fortschrittsupdates per E-Mail
+      q2: Exportiere korrekt formatierte Resourcedateien jederzeit
+      q3: Dateitypen, Regionen und Kommentare werden automatisch beim Importieren erkannt
+      q4: Zugang zur kompletten Lokalisierungsfunktionalität durch die REST API
+      q5: Verwalte komplette Projekte über das Kommandozeilenprogramm (CLI)
+      q6: Lokalisiere iOS, Windows Phone oder Android Apps
+      q7: Füge Screenshots hinzu um Kontext für den Übersetzer bereitzustellen
+      q8: Teile Teammitgliedern unterschiedliche Rollen zu, wie Reviewer
+      q9: Aktiviere Checks für Textlänge und korrekte Platzhalter
+      title: Was kann LingoHub für mich tun?

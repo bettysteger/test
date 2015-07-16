@@ -1,0 +1,15 @@
+en:
+  simple_form:
+    labels:
+      defaults:
+        countries: Preferred Nationalities of International
+        locales: Languages spoken
+        vat_number: VAT Number
+        avatar: Photo
+      employer:
+        name: Exact Company Name
+        avatar: Company Logo
+      buddy:
+        address: Place of Residence
+      international:
+        address: Place of Residence

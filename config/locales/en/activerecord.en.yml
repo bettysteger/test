@@ -1,0 +1,53 @@
+en:
+  activerecord:
+    attributes:
+      translation_comment:
+        content: Comment
+      user:
+        email: Your Email Address
+        password: Your Password
+    errors:
+      format: '%{attribute} %{message}'
+      full_messages:
+        format: '%{message}'
+      messages:
+        accepted: must be accepted
+        blank: can't be blank
+        confirmation: doesn't match confirmation
+        date_greater_than: must be greater than %{date_from}
+        empty: can't be empty
+        equal_to: must be equal to %{count}
+        even: must be even
+        exclusion: is reserved
+        greater_than: must be greater than %{count}
+        greater_than_or_equal_to: must be greater than or equal to %{count}
+        inclusion: is not included in the list
+        invalid: is invalid
+        invalid_regex: invalid regular expression
+        invalid_url: must be a valid URL
+        less_than: must be less than %{count}
+        less_than_or_equal_to: must be less than or equal to %{count}
+        not_a_number: is not a number
+        not_an_integer: must be an integer
+        odd: must be odd
+        record_invalid: 'Validation failed: %{errors}'
+        single_current_residence: only one residence can be current residence
+        single_origin_residence: only one residence can be origin
+        taken: has already been taken
+        too_long: is too long (maximum is %{count} characters)
+        too_short: is too short (minimum is %{count} characters)
+        user:
+          attributes:
+            old_password:
+              invalid: not correct
+        wrong_length: is the wrong length (should be %{count} characters)
+      models:
+        project_user_setting:
+          attributes:
+            user:
+              no_collaborator: is not a collaborator of the project
+      template:
+        body: 'There were problems with the following fields:'
+        header:
+          one: 1 error prohibited this %{model} from being saved
+          other: '%{count} errors prohibited this %{model} from being saved'

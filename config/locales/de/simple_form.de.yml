@@ -1,0 +1,14 @@
+de:
+  simple_form:
+    error_notification:
+      default_message: 'Einige Fehler wurden gefunden, bitte prüfe:'
+    'no': Nein
+    required:
+      mark: '*'
+      text: erforderlich
+    'yes': Ja
+    labels:
+      user:
+        first_name: Vorname
+        last_name: Nachname
+        login: Email / Benutzername

@@ -1,0 +1,108 @@
+de:
+  # to trigger automatic import into lingohub
+  add: Hinzufügen
+  api:
+    index:
+      # this must not be translated keep it as it is.
+      title: REST API
+  cancel: Abbrechen
+  close: Schließen
+  edit: Bearbeiten
+  errors:
+    messages:
+      size_too_big: ist zu groß (sollte höchstens %{file_size} sein)
+      size_too_small: ist zu klein (sollte mindestens %{file_size} sein)
+      wrong_size: hat die falsche Größe (sollte %{file_size} sein)
+    routing_public:
+      back_link: zurück zu LingoHub.com
+      email_link: Schreibe uns eine Email wenn wir helfen können
+      h1: 404 - Seite nicht gefunden
+      item1: LingoHub Produktdokumentation
+      item2: der LingoHub Blog
+      item3: unser Twitter Kanal
+      p1: 'Leider konnten wir unter dieser Adresse keine Seite finden. Keine Sorge,
+        vielleicht helfen diese Links weiter:'
+      p3: oder %{link}
+      p4: Du bist für alle Lokalisierungsbedürfnisse bei uns in guten Händen. Melde Dich an um auf Deine Projekte zuzugreifen.  %{link}!
+  global:
+    and: und
+    authentication:
+      omni_auth_failure: So leid es uns tut, aber Sie konnten nicht eingeloggt werden. Bitte melden Sie sich mit Ihrer E-Mail-Adresse und Ihrem Passwort an.
+      provider:
+        bitbucket: Bitbucket
+        facebook: Facebook
+        github: Github
+        google_oauth2: Google
+        linkedin: LinkedIn
+        twitter: Twitter
+    authorization:
+      not_authorized: Du hast keine Berechtigung die Seite zu sehen.
+    colors:
+      black: schwarz
+      grey: Grau
+      red: rot
+      white: Weiß
+    confirmation_needed: Bitte bestätige Deine Email Adresse. Falls Du die Email nicht erhalten hast, sieh bitte in den "Spam" Ordner oder fordere die Bestätigung hier  %{resend_link}  erneut an.
+    create: Erstellen
+    email:
+      signature:
+        helmut:
+          l1: Grüße,
+          l2: Helmut, CEO
+        lingohub:
+          l1: Beste Grüße,
+          l2: Dein LingoHub Team.
+    filename: Dateiname
+    locale: Sprache
+    myself: Du
+    or: oder
+    phrase: Übersetzung
+    privacy_policy: Datenschutz-Bestimmungen
+    project: Projekt
+    reload: Neu laden
+    resend: erneut senden
+    sign_in: Einloggen
+    sign_up: Registrieren
+    submit: Abschicken
+    terms_of_service: Nutzungsbedingungen
+    translations: Übersetzungen
+  models:
+    file_labels:
+      title:
+        default: kein Dateiname
+    project:
+      owner: Projektinhaber
+    resource_file:
+      generic_locale: -Sprachcode-
+    user_labels:
+      title:
+        starred: Lesezeichen
+        unstarred: Nicht markiert
+  remove: Entfernen
+  repository_setting:
+    show:
+      flash:
+        bitbucket:
+          general: Es sind Probleme mit der Verbindung zu Bitbucket aufgetreten. Bitte kontaktiere unseren Support.
+          not_available: Das gespeicherte Repository ist nicht mehr verfügbar. Bitte wähle ein anderes Repository aus oder kontaktiere einen Bitbucket Repository Besitzer.
+          remove_hook_error: Der vorherige Bitbucket Hook konnte nicht entfernt werden.
+        error: Repository Einstellungen konnten nicht aktualisiert werden
+        github:
+          general: Problem beim Verbinden mit Github. Bitte kontaktiere unseren Support.
+          not_available: Das gespeicherte Repository ist nicht mehr verfügbar. Bitte wähle ein anderes oder kontaktiere den Github Repository Inhaber.
+          remove_hook_error: Der vorangegangene Github Hook konnte nicht entfernt werden.
+        not_accessible: Repository nicht erreichbar
+        success: 'Repository Einstellungen aktualisiert '
+  resources:
+    exports:
+      push_to_repository:
+        single:
+          flash:
+            error: 'Es ist ein Problem beim Verschieben in das Repository aufgetreten:
+              "%{message}"'
+  users:
+    update:
+      flash:
+        confirmation_success: Du hast Dein Benutzerkonto erfolgreich aktualisiert, aber wir müssen Deine neue E-Mailadresse verifizieren. Bitte klicke auf den Verifizierungslink in der Bestätigungsemail um den Prozess abzuschließen.
+  views:
+    copyright: Alle Rechte vorbehalten.
