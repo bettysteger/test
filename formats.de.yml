@@ -1,0 +1,9 @@
+de:
+  number:
+    human:
+      decimal_units:
+        units:
+          thousand:
+            other: Tausend
+          trillion:
+            one: Billion

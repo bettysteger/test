@@ -1,42 +1,123 @@
 de:
-  date:
-    prompts:
-      day: Tag
-      hour: Stunden
-      minute: Minuten
-      month: Monat
-      second: Sekunden
-      year: Jahr
-  messages:
-    format: '%{attribute} %{message}'
-    notifications:
-      accepted: muss akzeptiert werden
-      blank: muss ausgefüllt werden
-      confirmation: stimmt nicht mit der Bestätigung überein
-      empty: muss ausgefüllt werden
-      equal_to: muss genau %{count} sein
-      even: muss gerade sein
-      exclusion: ist nicht verfügbar
-      greater_than: muss größer als %{count} sein
-      inclusion: ist kein gültiger Wert
-      invalid: ist nicht gültig
-      less_than: muss kleiner als %{count} sein
-      less_than_or_equal_to: muss kleiner oder gleich %{count} sein
-      not_a_number: ist keine Zahl
-      not_an_integer: muss ganzzahlig sein
-      odd: muss ungerade sein
-      record_invalid: 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
-      too_long:
-        one: ist zu lang (nicht mehr als %{count} Zeichen)
-        other: ist zu lang (nicht mehr als %{count} Zeichen)
-      too_short:
-        one: ist zu kurz (nicht weniger als %{count} Zeichen)
-        other: ist zu kurz (nicht weniger als %{count} Zeichen)
-      wrong_length:
-        one: hat die falsche Länge (muss genau %{count} Zeichen haben)
-        other: hat die falsche Länge (muss genau %{count} Zeichen haben)
-    template:
-      body: 'Bitte überprüfen Sie die folgenden Felder:'
-      header:
-        one: 'Konnte %{model} nicht speichern: ein Fehler.'
-        other: 'Konnte %{model} nicht speichern: %{count} Fehler.'
+  # to trigger automatic import into lingohub
+  add: Hinzufügen
+  api:
+    index:
+      # this must not be translated keep it as it is.
+      # 
+      # lh-check { placeholders: false, terms: "REST" }
+      title: GSskL3/CsFQcFRoLP1YLES0zZzYvPBJ8YmsJDAgXGxcAFRdTCm4eDRlYBhUgGFsVEhIRLWcOFwwgCythHS8sTTduIz0WNnMWcTx9LggrIzVbfXUFP2E9DSktFVkQGjZ0fCsEOToUMWgGMAp9VBI6NR0mbB90FWVLNzEfHWMrOy4wPUYPMQRjJFcYCCQSNzA3LSoOKW0uFC4vJXwpAg15JBcPGC5EE38/aQI8JnBsOFN+ZBkwJV4jYSNgLGYAG2Ypfi4OPzxhDWcLFxAvEBNmMydxAiggOjBtbTAyKH54BToQBBY1LT0jWx1vGC8zLwEAGxl/YwUuant/HigXGCcTYCIYP0MeZgx9PEBtagIhJAw2HBoIazoJYmwSaT0VJx5eMTk5BxNzAx0gLXgwI20aYCcZEixtYQwDcn9mUA4fBQwHICYCIgReNQgcdXFSNCJyDwJoMxAIYCQHMTM7YVEpETQ3UXp/H2UOJiI3CTECDAgPKicmNAFlEyhMNiR6AnVvBzUBPn0YKGBpFChiBj4YaTZqbyAcQTscAhV1CCQ/MANeCAt+aGgcMjcWHVgEHRohPXYxPA==
+  cancel: Abbrechen
+  close: Schließen
+  edit: Bearbeiten
+  errors:
+    messages:
+      size_too_big: ist zu groß (sollte höchstens %{file_size} sein)
+      size_too_small: ist zu klein (sollte mindestens %{file_size} sein)
+      wrong_size: hat die falsche Größe (sollte %{file_size} sein)
+    routing_public:
+      back_link: zurück zu LingoHub.com
+      email_link: Schreibe uns eine Email wenn wir helfen können
+      # lh-check { placeholders: false }
+      h1: 404 - Seite nicht gefunden
+      item1: LingoHub Produktdokumentation
+      item2: der LingoHub Blog
+      item3: unser Twitter Kanal
+      p1: 'Leider konnten wir unter dieser Adresse keine Seite finden. Keine Sorge,
+        vielleicht helfen diese Links weiter:'
+      p3: oder %{link}
+      p4: Du bist für alle Lokalisierungsbedürfnisse bei uns in guten Händen. Melde Dich an um auf Deine Projekte zuzugreifen.  %{link}!
+  global:
+    and: und
+    authentication:
+      omni_auth_failure: So leid es uns tut, aber Sie konnten nicht eingeloggt werden. Bitte melden Sie sich mit Ihrer E-Mail-Adresse und Ihrem Passwort an.
+      provider:
+        bitbucket: Bitbucket
+        facebook: Facebook
+        # lh-check { placeholders: false, terms: "Github" }
+        github: Github
+        google_oauth2: Google
+        linkedin: LinkedIn
+        twitter: Twitter
+    authorization:
+      not_authorized: Du hast keine Berechtigung die Seite zu sehen.
+    colors:
+      black: schwarz
+      grey: Grau
+      red: rot
+      white: Weiß
+    confirmation_needed: Bitte bestätige Deine Email Adresse. Falls Du die Email nicht erhalten hast, sieh bitte in den "Spam" Ordner oder fordere die Bestätigung hier  %{resend_link}  erneut an.
+    create: Erstellen
+    email:
+      signature:
+        helmut:
+          l1: Grüße,
+          l2: Helmut, CEO
+        lingohub:
+          l1: Beste Grüße,
+          l2: Dein LingoHub Team.
+    filename: Dateiname
+    locale: Sprache
+    myself: Du
+    phrase: Übersetzung
+    privacy_policy: Datenschutz-Bestimmungen
+    project: Projekt
+    reload: Neu laden
+    resend: erneut senden
+    sign_in: Einloggen
+    sign_up: Registrieren
+    submit: Abschicken
+    terms_of_service: Nutzungsbedingungen
+    translations: Übersetzungen
+  landing:
+    developers:
+      index:
+        tabs:
+          or: oder
+  models:
+    file_labels:
+      title:
+        default: kein Dateiname
+    project:
+      owner: Projektinhaber
+    resource_file:
+      generic_locale: -Sprachcode-
+    user_labels:
+      title:
+        starred: Lesezeichen
+        unstarred: Nicht markiert
+  remove: Entfernen
+  repository_setting:
+    show:
+      flash:
+        bitbucket:
+          general: Es sind Probleme mit der Verbindung zu Bitbucket aufgetreten. Bitte kontaktiere unseren Support.
+          not_available: Das gespeicherte Repository ist nicht mehr verfügbar. Bitte wähle ein anderes Repository aus oder kontaktiere einen Bitbucket Repository Besitzer.
+          remove_hook_error: Der vorherige Bitbucket Hook konnte nicht entfernt werden.
+        error: Repository Einstellungen konnten nicht aktualisiert werden
+        github:
+          general: Problem beim Verbinden mit Github. Bitte kontaktiere unseren Support.
+          not_available: Das gespeicherte Repository ist nicht mehr verfügbar. Bitte wähle ein anderes oder kontaktiere den Github Repository Inhaber.
+          remove_hook_error: Der vorangegangene Github Hook konnte nicht entfernt werden.
+        not_accessible: Repository nicht erreichbar
+        success: 'Repository Einstellungen aktualisiert '
+  resources:
+    exports:
+      push_to_repository:
+        single:
+          flash:
+            error: 'Es ist ein Problem beim Verschieben in das Repository aufgetreten:
+              "%{message}"'
+  subscriptions:
+    show:
+      translator_account_info: Ihre aktuellen Plan ist eine freie Übersetzer Konto.
+  users:
+    update:
+      flash:
+        confirmation_success: Du hast Dein Benutzerkonto erfolgreich aktualisiert, aber wir müssen Deine neue E-Mailadresse verifizieren. Bitte klicke auf den Verifizierungslink in der Bestätigungsemail um den Prozess abzuschließen.
+  devise:
+    failure:
+      # wow nicht schlecht
+      already_authenticated: Sie sind bereits angemeldet. das ist ein langer text juhu
+      invalid: Ungültiges Passwort.
+      invalid_token: Ungültige Authentifizierungstoken.

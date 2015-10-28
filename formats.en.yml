@@ -1,0 +1,24 @@
+en:
+  number:
+    human:
+      decimal_units:
+        units:
+          billion:
+            one: Billion
+            other: Billion
+          million:
+            one: Million
+            other: Million
+          quadrillion:
+            one: Quadrillion
+            other: Quadrillion
+          thousand:
+            one: Thousand
+            other: Thousand
+          trillion:
+            one: Trillion
+            other: Trillion
+  support:
+    array:
+      select:
+        prompt: Please select

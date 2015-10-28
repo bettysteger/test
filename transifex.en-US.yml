@@ -1,0 +1,35 @@
+en-US:
+  block_literal: |
+    This is a line
+    with new lines
+  folded_literal: |
+    This is a folded line. This is the continuation
+  boolean: 'Yes'
+  int: 123
+  float: 3.14
+  fooé:
+    foo1: foo2
+    foo3: foo4
+  quote1: '"'
+  quote2: here's
+  quote3: ''''
+  quote4: '"'
+  foo:
+    plural_container:
+      plural:
+        one: one
+        other: other
+  not_plural_container:
+    not_plural:
+      one: foo1
+      many: foo2
+    not_plural1:
+      one: This is a really long string. Indeed, this is really really long...........................
+      other:
+        foo1: _foo1
+        foo2: _foo2
+  1:
+    'on':
+      words_connector: ', '
+      two_words_connector: ' and'
+      last_word_connector: ', and '
