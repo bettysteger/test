@@ -1,7 +1,6 @@
 de:
   devise:
     failure:
-      already_authenticated: Du bist schon eingeloggt.
       inactive: Dein Benutzerkonto wurde noch nicht aktiviert.
       invalid: Emailadresse oder Passwort ungültig.
       invalid_email: Ungültige(r) Email/Username
