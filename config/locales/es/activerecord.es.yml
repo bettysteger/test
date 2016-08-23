@@ -1,2 +1,53 @@
-es: {
-  }
+es:
+  activerecord:
+    attributes:
+      translation_comment:
+        content: Comentario
+      user:
+        email: Tu correo electrónico
+        password: Tu contraseña
+    errors:
+      format: '%{attribute} %{message}'
+      full_messages:
+        format: '%{message}'
+      messages:
+        accepted: que deberán ser aceptadas
+        blank: no puede estar en blanco
+        confirmation: no coincide con la confirmación
+        date_greater_than: debe ser mayor que
+        empty: no puede estar vacío
+        equal_to: debe ser igual a %{count} %{msg}%{count} automático %{mehr} %{hehe} %{lol}
+        even: debe ser aún
+        exclusion: Está reservado
+        greater_than: debe ser mayor que %{count}
+        greater_than_or_equal_to: debe ser mayor que o igual a %{count}
+        inclusion: no está incluido en la lista
+        invalid: es inválido
+        invalid_regex: expresión regular no válida
+        invalid_url: debe ser una dirección URL válida
+        less_than: debe ser inferior a %{count}
+        less_than_or_equal_to: debe ser menor que o igual a %{count}
+        not_a_number: no es un número
+        not_an_integer: debe ser un entero
+        odd: debe ser impar
+        record_invalid: 'Error en la validación: %{errors}'
+        single_current_residence: sólo una residencia puede ser residencia actual
+        single_origin_residence: sólo una residencia puede ser origen
+        taken: ya se ha tomado
+        too_long: es demasiado largo (el máximo es caracteres %{count})
+        too_short: es demasiado corto (el mínimo es %{count} caracteres)
+        user:
+          attributes:
+            old_password:
+              invalid: incorrecto
+        wrong_length: es la longitud incorrecta (debe ser personajes %{count})
+      models:
+        project_user_setting:
+          attributes:
+            user:
+              no_collaborator: No es un colaborador del proyecto
+      template:
+        body: 'Hubo problemas con los siguientes campos:'
+        header:
+          one: 1 error prohibido este %{model} se guarden
+          other: 'errores %{count} prohibido este %{model} se guarden'

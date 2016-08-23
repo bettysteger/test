@@ -4,7 +4,7 @@ de:
   api:
     index:
       # this must not be translated keep it as it is.
-      title: REST API
+      title: asdf
   cancel: Abbrechen
   close: Schließen
   edit: Bearbeiten

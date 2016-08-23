@@ -1,2 +1,16 @@
-es: {
-  }
+es:
+  devise:
+    failure:
+      already_authenticated: Ya has iniciado sesión.
+      inactive: Tu cuenta no ha sido activada todavía.
+      invalid: correo electrónico o contraseña no válidos.
+      invalid_email: No válida de correo electrónico / nombre de usuario.
+      invalid_password: Contraseña invalida.
+      invalid_token: token de autenticación válida.
+      locked: Tu cuenta esta bloqueada.
+      timeout: Su sesión ha finalizado, inicia sesión de nuevo para continuar.
+      unauthenticated: Es necesario iniciar sesión o registrarse antes de continuar.
+      unconfirmed: Usted tiene que confirmar su cuenta antes de poder continuar. <br><a href = "/ usuarios / confirmación / nueva" >Reenviar correo de confirmación</a>
+    omniauth_callbacks:
+      failure: No podría autorizar a partir %{kind} porque "%{reason}".
+      success: Éxito autorizado de la cuenta %{kind}.

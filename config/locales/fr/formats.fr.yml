@@ -2,7 +2,7 @@ fr:
   number:
     currency:
       format:
-        delimiter:  
+        delimiter: ' '
         format: '%u %n'
         precision: 2
         separator: ','
@@ -10,7 +10,7 @@ fr:
         strip_insignificant_zeros: faux
         unit: USD
     format:
-      delimiter:  
+      delimiter: ' '
       precision: 3
       separator:  
       significant: faux
@@ -53,7 +53,7 @@ fr:
       last_word_connector: ', et'
       select:
         prompt: Merci de sélectionner
-      two_words_connector:  et
+      two_words_connector: ' et'
       words_connector: ','
   time:
     am: AM

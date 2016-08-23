@@ -1,0 +1,128 @@
+ru:
+  date:
+    abbr_day_names:
+    - солнце
+    - понедельник
+    - вторник
+    - Мы б
+    - четверг
+    - пятница
+    - Сидел
+    abbr_month_names:
+    - январь
+    - февраль
+    - март
+    - апрель
+    - май
+    - июнь
+    - июль
+    - август
+    - сентябрь
+    - октябрь
+    - ноябрь
+    - декабрь
+    day_names:
+    - |-
+      Воскресенье с более чем
+      одна линия.
+      Есть еще
+      wuhuu !! (вечеринка)
+    - понедельник
+    - вторник
+    - среда
+    - четвергам
+    - пятница
+    - суббота
+    formats:
+      birth: '% D.% М.'
+      default: '% Y-% m-% d'
+      long: '% B% d,% Y'
+      month_and_year: '%от'
+      short: '% B% d'
+    month_names:
+    - январь
+    - февраль
+    - Март
+    - апрель
+    - май
+    - июнь
+    - июль
+    - август
+    - сентябрь
+    - октября
+    - ноябрь
+    - Декабрь
+    order:
+    - год
+    - месяц
+    - день
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        few: около %{count} часов
+        many: около %{count} часов
+        one: около 1 час
+        other: около %{count} часов
+      about_x_months:
+        few: около %{count} месяцев
+        many: около %{count} месяцев
+        one: около 1 месяца
+        other: около %{count} месяцев
+      about_x_years:
+        few: около %{count} лет
+        many: около %{count} лет
+        one: около 1 года
+        other: около %{count} лет
+      almost_x_years:
+        few: почти %{count} лет
+        many: почти %{count} лет
+        one: почти 1 год
+        other: почти %{count} лет
+      half_a_minute: полминуты
+      less_than_x_minutes:
+        few: менее %{count} минут
+        many: менее %{count} минут
+        one: меньше минуты
+        other: менее %{count} минут
+      less_than_x_seconds:
+        few: менее %{count} секунд
+        many: менее %{count} секунд
+        one: менее чем за 1 секунду
+        other: менее %{count} секунд
+      over_x_years:
+        few: более %{count} лет
+        many: более %{count} лет
+        one: более 1 года
+        other: более %{count} лет
+      x_days:
+        few: '%{count} дней'
+        many: '%{count} дней'
+        one: 1 день
+        other: '%{count} дней'
+      x_minutes:
+        few: '%{count} минут'
+        many: '%{count} минут'
+        one: 1 минута
+        other: '%{count} минут'
+      x_months:
+        few: '%{count} месяцев'
+        many: '%{count} месяцев'
+        one: 1 месяц
+        other: '%{count} месяцев'
+      x_seconds:
+        few: '%{count} секунд'
+        many: '%{count} секунд'
+        one: 1 секунда
+        other: '%{count} секунд'
+      x_years:
+        few: '%{count} лет'
+        many: '%{count} лет'
+        one: 1 год
+        other: '%{count} лет'
+    prompts:
+      day: День
+      hour: Час
+      minute: минут
+      month: Месяц
+      second: секунд
+      year: Год

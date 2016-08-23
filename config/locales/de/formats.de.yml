@@ -2,7 +2,7 @@ de:
   number:
     currency:
       format:
-        delimiter: .
+        delimiter: '.'
         format: '%n %u'
         precision: 2
         separator: ','
@@ -10,7 +10,7 @@ de:
         strip_insignificant_zeros: falsch
         unit: EUR
     format:
-      delimiter: .
+      delimiter: '.'
       precision: 3
       separator: ','
       significant: falsch

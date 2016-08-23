@@ -1,2 +1,478 @@
-es: {
-  }
+es:
+  languages:
+    iso_codes:
+      _no: noruego
+      aa: Lejos
+      ab: abjasia
+      af: africaans
+      af-ZA: Afrikaans (Sudáfrica)
+      ak: Akan
+      am: amárico
+      an: aragonés
+      ar: Arábica
+      ar-AE: Árabe (Emiratos Árabes Unidos)
+      ar-AR: Árabe (árabe)
+      ar-BH: Árabe (Bahrain)
+      ar-DJ: Árabe (Djibouti)
+      ar-DZ: Árabe (Argelia)
+      ar-EG: Árabe (Egipto)
+      ar-EH: Árabe (Sahara Occidental)
+      ar-ER: Árabe (Eritrea)
+      ar-IL: Árabe (Israel)
+      ar-IQ: Árabe (Irak)
+      ar-JO: Árabe (Jordania)
+      ar-KM: Árabe (Comoras)
+      ar-KW: Árabe (Kuwait)
+      ar-LB: Árabe (Líbano)
+      ar-LY: Árabe (Libia)
+      ar-MA: Árabe (Marruecos)
+      ar-MR: Árabe (Mauritania)
+      ar-OM: Árabe (Omán)
+      ar-PS: Árabe (Cisjordania y Gaza)
+      ar-QA: Árabe (Qatar)
+      ar-SA: Árabe (Arabia Saudí)
+      ar-SD: Árabe (Sudán)
+      ar-SO: Árabe (Somalia)
+      ar-SY: Árabe (Siria)
+      ar-TD: Árabe (Chad)
+      ar-TN: Árabe (Túnez)
+      ar-YE: Árabe (Yemen)
+      as: assamese
+      av: Avaric
+      ay: aimara
+      az: Azerbaiyán
+      az-AZ: Azerbaiyán (Azerbaiyán)
+      ba: Bashkir
+      be: Bielorruso
+      be-BY: Belarús (Bielorrusia)
+      bg: búlgaro
+      bg-BG: Bulgaria (Bulgaria)
+      bh: Bihari
+      bi: Bislama
+      bm: Bambara
+      bn: bengalí
+      bn-IN: Bengalí (India)
+      bo: tibetano
+      br: Bretón
+      bs: bosnio
+      bs-BA: Bosnia (Bosnia y Herzegovina)
+      ca: catalán
+      ca-AD: Catalán (Andorra)
+      ca-ES: Catalán (España)
+      ce: Chechenia
+      ch: Chamorro
+      co: corso
+      cr: Cree
+      cs: checo
+      cs-CZ: Checa (República Checa)
+      cs-SK: Checa (República Eslovaca)
+      cv: Chuvashia
+      cy: galés
+      cy-GB: Welsh (Reino Unido)
+      da: danés
+      da-DK: Danesa (Dinamarca)
+      da-FO: Dinamarca (Islas Feroe)
+      da-GL: Dinamarca (Groenlandia)
+      de: alemán
+      de-AT: Alemán (Austria)
+      de-BE: Alemán (Bélgica)
+      de-CH: Alemán (Suiza)
+      de-DE: Alemán Alemania)
+      de-LI: Alemán (Liechtenstein)
+      de-LU: Alemán (Luxemburgo)
+      de-NA: Alemán (Namibia)
+      dv: divehi
+      dz: Dzongkha
+      ee: Oveja
+      el: griego
+      el-CY: Griego (Chipre)
+      el-GR: Griego (Grecia)
+      en: Inglés
+      en-AG: Inglés (Antigua y Barbuda)
+      en-AI: Inglés (Anguilla)
+      en-AS: Inglés (Samoa Americana)
+      en-AU: Inglés (Australia)
+      en-BB: Inglés (Barbados)
+      en-BD: Inglés (Bangladesh)
+      en-BM: Inglés (Bermuda)
+      en-BS: Inglés (Bahamas)
+      en-BW: Inglés (Botswana)
+      en-BZ: Inglés (Belice)
+      en-CA: Inglés (Canadá)
+      en-CK: Inglés (Islas Cook)
+      en-CM: Inglés (Camerún)
+      en-CW: Inglés (Curaçao)
+      en-DM: Inglés (Dominica)
+      en-ER: Inglés (Eritrea)
+      en-FJ: Inglés (Fiji)
+      en-FK: Inglés (Islas Malvinas)
+      en-FM: Inglés (Micronesia)
+      en-GB: Inglés reino unido)
+      en-GD: Inglés (Granada)
+      en-GG: Inglés (Guernsey)
+      en-GH: Inglés (Ghana)
+      en-GI: Inglés (Gibraltar)
+      en-GM: Inglés (Gambia)
+      en-GU: Inglés (Guam)
+      en-GY: Inglés (Guyana)
+      en-HK: Inglés (Hong Kong)
+      en-IE: Inglés (Irlanda)
+      en-IM: Inglés (Isla de Man)
+      en-IN: Inglés (India)
+      en-JE: Inglés (Jersey)
+      en-JM: Inglés (Jamaica)
+      en-KE: Inglés (Kenya)
+      en-KI: Inglés (Kiribati)
+      en-KN: Inglés (St. Kitts y Nevis)
+      en-KY: Inglés (Islas Caimán)
+      en-LC: Inglés (Santa Lucía)
+      en-LK: Inglés (Sri Lanka)
+      en-LR: Inglés (Liberia)
+      en-LS: Inglés (Lesotho)
+      en-MH: Inglés (Islas Marshall)
+      en-MP: Inglés (Islas Marianas del Norte)
+      en-MS: Inglés (Montserrat)
+      en-MT: Inglés (Malta)
+      en-MU: Inglés (Mauricio)
+      en-MW: Inglés (Malawi)
+      en-MY: Inglés (Malasia)
+      en-NA: Inglés (Namibia)
+      en-NG: Inglés (Nigeria)
+      en-NR: Inglés (Nauru)
+      en-NU: Inglés (Niue)
+      en-NZ: Inglés (Nueva Zelanda)
+      en-PG: Inglés (Papúa Nueva Guinea)
+      en-PH: Inglés (Filipinas)
+      en-PI: Inglés (pirata)
+      en-PK: Inglés (Pakistán)
+      en-PN: Inglés (Islas Pitcairn)
+      en-PR: Inglés (Puerto Rico)
+      en-PW: Inglés (Palau)
+      en-RW: Inglés (Ruanda)
+      en-SB: Inglés (Islas Salomón)
+      en-SC: Inglés (Seychelles)
+      en-SD: Inglés (Sudán)
+      en-SG: Inglés (Singapur)
+      en-SH: Inglés (Santa Helena)
+      en-SL: Inglés (Sierra Leona)
+      en-SO: Inglés (Somalia)
+      en-SS: Inglés (Sudán del Sur)
+      en-SZ: Inglés (Swazilandia)
+      en-TC: Inglés (Turcas y Caicos)
+      en-TO: Inglés (Tonga)
+      en-TT: Inglés (Trinidad y Tobago)
+      en-TV: Inglés (Tuvalu)
+      en-TZ: Inglés (Tanzania)
+      en-UD: Inglés (al revés)
+      en-UG: Inglés (Uganda)
+      en-US: Inglés Estados Unidos)
+      en-VC: Inglés (San Vicente y las Granadinas)
+      en-VG: Inglés (Islas Vírgenes Británicas)
+      en-VI: Inglés (Islas Vírgenes)
+      en-VU: Inglés (Vanuatu)
+      en-WS: Inglés (Samoa)
+      en-ZA: Inglés (Sudáfrica)
+      en-ZM: Inglés (Zambia)
+      en-ZW: Inglés (Zimbabwe)
+      eo-EO: Esperanto (Esperanto)
+      es: Español
+      es-AR: Español (Argentina)
+      es-BO: Español (Bolivia)
+      es-CL: Español (Chile)
+      es-CO: Español (Colombia)
+      es-CR: Español (Costa Rica)
+      es-CU: Español (Cuba)
+      es-DO: Española (República Dominicana)
+      es-EC: Español (Ecuador)
+      es-ES: Español (España)
+      es-GI: Español (Gibraltar)
+      es-GQ: Español (Guinea Ecuatorial)
+      es-GT: Español (Guatemala)
+      es-HN: Español (Honduras)
+      es-LA: Español (Español)
+      es-MX: Español (México)
+      es-NI: Español (Nicaragua)
+      es-PA: Español (Panamá)
+      es-PE: Español (Perú)
+      es-PR: Español (Puerto Rico)
+      es-PY: Español (Paraguay)
+      es-SV: Español (El Salvador)
+      es-US: Español (Estados Unidos)
+      es-UY: Español (Uruguay)
+      es-VE: Español (Venezuela)
+      et: Estonia
+      et-EE: Estonia (Estonia)
+      eu: vasco
+      eu-ES: Vasco (España)
+      fa: persa
+      fa-IR: Persa (Irán)
+      fb-LT: leet Speak
+      ff: Fula
+      fi: finlandés
+      fi-FI: Finlandia (Finlandia)
+      fj: fiyiano
+      fo: Feroés
+      fo-FO: Feroés (Islas Feroe)
+      fr: francés
+      fr-BE: Francés (Bélgica)
+      fr-BF: Francés (Burkina Faso)
+      fr-BI: Francés (Burundi)
+      fr-BJ: Francés (Benin)
+      fr-CA: Francés (Canadá)
+      fr-CD: Francés (Rep. Dem. Congo)
+      fr-CF: Francés (República Centroafricana)
+      fr-CG: Francés (Congo)
+      fr-CH: Francés (Suiza)
+      fr-CI: Francés (Costa de Marfil)
+      fr-CM: Francés (Camerún)
+      fr-DJ: Francés (Djibouti)
+      fr-FR: Francés Francia)
+      fr-GA: Francés (Gabón)
+      fr-GD: Francés (Granada)
+      fr-GF: Francés (francés Guianna)
+      fr-GN: Francés (Guinea)
+      fr-GP: Francés (Guadalupe)
+      fr-GQ: Francés (Guinea Ecuatorial)
+      fr-HT: Francés (Haití)
+      fr-KM: Francés (Comoras)
+      fr-LC: Francés (Santa Lucía)
+      fr-LU: Francés (Luxemburgo)
+      fr-MC: Francés (Mónaco)
+      fr-MF: Francés (San Martín (parte francesa))
+      fr-MG: Francés (Madagascar)
+      fr-ML: Francés (Mali)
+      fr-MQ: Francés (Martinica)
+      fr-MU: Francés (Mauricio)
+      fr-NC: Francés (Nueva Caledonia)
+      fr-NE: Francés (Níger)
+      fr-PF: Francés (Polinesia Francesa)
+      fr-PM: Francés (San Pedro y Miquelón)
+      fr-RE: Francés (Reunión)
+      fr-RW: Francés (Ruanda)
+      fr-SC: Francés (Seychelles)
+      fr-SN: Francés (Senegal)
+      fr-TD: Francés (Chad)
+      fr-TG: Francés (Togo)
+      fr-VU: Francés (Vanuatu)
+      fr-WF: Francés (Wallis y Futuna)
+      fr-YT: Francés (Mayotte)
+      fy: frisón
+      fy-NL: Frisia (Países Bajos)
+      ga: irlandesa
+      ga-GB: Irlandés (Reino Unido)
+      ga-IE: Irlanda (Irlanda)
+      gd: gaélico escocés
+      gl: gallego
+      gl-ES: Galicia (España)
+      gn: Guaraní
+      gu: gujarati
+      gv: de la isla de Man
+      ha: Hausa
+      he: hebreo
+      he-IL: Hebrea (Israel)
+      hi: hindi
+      hi-FJ: Hindi (Fiji)
+      hi-IN: Hindi (India)
+      hi-PK: Hindi (Pakistán)
+      ho: Hiri motu
+      hr: croata
+      hr-BA: Croata (Bosnia y Herzegovina)
+      hr-HR: Croacia (Croacia)
+      ht: haitiano
+      hu: húngaro
+      hu-HU: Húngaro (Hungría)
+      hy: armenio
+      hy-AM: Armenia (Armenia)
+      hz: herero
+      id: indonesio
+      id-ID: Indonesia (Indonesia)
+      ig: Igbo
+      ii: Nuosu
+      ik: Inupiak
+      io: Hago
+      is: islandés
+      is-IS: Islandia (Islandia)
+      it: italiano
+      it-CH: Italiano (Suiza)
+      it-IT: Italiano (Italia)
+      it-SM: Italiano (San Marino)
+      it-VA: Italiano (Ciudad del Vaticano)
+      iu: inuktitut
+      ja: japonés
+      ja-JP: Japonés (Japón)
+      ja-PW: Japonés (Palau)
+      jv: javanés
+      ka: georgiano
+      ka-GE: De Georgia (Georgia)
+      kg: Kongo
+      ki: Kikuyu
+      kj: Kwanyama
+      kk: kazajo
+      kl: Groenlandés
+      km: Khmer
+      km-KH: Khmer (Camboya)
+      kn: kannada
+      ko: coreano
+      ko-KP: Corea (RPDC)
+      ko-KR: Corea (Corea del Sur)
+      kr: kanuri
+      ks: Cachemira
+      ku: kurdo
+      ku-TR: Kurdo (Turquía)
+      kv: Komi
+      kw: de Cornualles
+      ky: kyrgyz
+      la-VA: América (Ciudad del Vaticano)
+      lb: luxemburgués
+      lg: Ganda
+      li: limburgués
+      ln: lingala
+      lo: Lao
+      lt: lituano
+      lt-LT: Lituania (Lituania)
+      lu: Luba-Katanga
+      lv: letón
+      lv-LV: Letonia (Letonia)
+      mg: madagascarí
+      mh: marshallese
+      mi: Maorí
+      mk: macedónio
+      mk-MK: Macedonia (Macedonia)
+      ml: malayalam
+      ml-IN: Malayalam (India)
+      mn: mongol
+      mr: marathi
+      ms: malayo
+      ms-BN: Malayo (Brunei)
+      ms-ID: Malayo (Indonesia)
+      ms-MY: Malayo (Malasia)
+      ms-SG: Malayo (Singapur)
+      mt: maltés
+      mt-MT: Malta (Malta)
+      my: birmano
+      na: Nauru
+      nb: Noruego
+      nb-NO: Noruego (Noruega)
+      nd: Ndebele del Norte
+      ne: nepalí
+      ne-NP: Nepalí (Nepal)
+      ng: Ndonga
+      nl: holandés
+      nl-AN: Holandés (Antillas Holandesas)
+      nl-AW: Holandés (Aruba)
+      nl-BE: Holandés (Bélgica)
+      nl-CW: Holandés (Curaçao)
+      nl-NL: Holandés (Países Bajos)
+      nl-SR: Holandesa (Surinam)
+      nl-SX: Holandés (Sint Maarten (parte neerlandesa))
+      nn: nynorsk
+      nn-NO: Nynorsk (Noruega)
+      no-NO: Noruego (Noruega)
+      nr: Ndebele del sur
+      nv: Navajo
+      ny: chichewa
+      oc: occitano
+      oj: Ojibwe
+      om: Oromo
+      or: Oriya
+      os: Osetia
+      pa: Panyabí
+      pa-IN: Punjabi (India)
+      pl: polaco
+      pl-PL: Polaco (Polonia)
+      ps: Pashto
+      ps-AF: Pashto (Afganistán)
+      pt: portugués
+      pt-AO: Portuguesa (Angola)
+      pt-BR: Portugués (Brasil)
+      pt-CV: Portugués (Cabo Verde)
+      pt-GQ: Portuguesa (Guinea Ecuatorial)
+      pt-GW: Portuguesa (Guinea Bissau)
+      pt-MO: Portugués (Macao)
+      pt-MZ: Portugués (Mozambique)
+      pt-PT: Portugués (Portugal)
+      pt-ST: Portugués (Santo Tomé y Príncipe)
+      pt-TL: Portugués (Timor-Leste)
+      qu: quechua
+      rm: romanche
+      rn: kirundi
+      ro: rumano
+      ro-MD: Rumania (Moldavia)
+      ro-RO: Rumano (Rumania)
+      ru: ruso
+      ru-BY: Rusa (Bielorrusia)
+      ru-KG: Rusia (República Kirguisa)
+      ru-KZ: Rusia (Kazajstán)
+      ru-RU: Rusia (Rusia)
+      ru-TJ: Rusia (Tayikistán)
+      rw: kinyarwanda
+      sa: sánscrito
+      sc: sardo
+      sd: sindhi
+      se: Sami septentrional
+      sg: Sango
+      si: cingalés
+      sk: eslovaco
+      sk-CZ: Eslovaquia (República Checa)
+      sk-SK: Eslovaquia (Eslovaquia)
+      sl: esloveno
+      sl-SI: Eslovenia (Eslovenia)
+      sm: Samoano
+      sn: Shona
+      so: somalí
+      sq: albanés
+      sq-AL: Albania (Albania)
+      sq-KS: Albania (Kosovo)
+      sr: serbio
+      sr-BA: Serbio (Bosnia y Herzegovina)
+      sr-ME: Serbio (Montenegro)
+      sr-RS: Serbio (Serbia)
+      ss: Swati
+      st: sesotho meridional
+      su: sundanese
+      sv: sueco
+      sv-FI: Sueco (Finlandia)
+      sv-SE: Sueco (Suecia)
+      sw: swahili
+      sw-KE: Swahili (Kenya)
+      ta: Tamil
+      ta-IN: Tamil (India)
+      te: telugu
+      te-IN: Telugu (India)
+      tg: Tayiko
+      th: tailandés
+      th-TH: Thai (Tailandia)
+      ti: Tigrinia
+      tk: Turcomano
+      tl: Tagalo
+      tl-PH: Filipino (Filipinas)
+      tn: tsuana
+      to: Tonga
+      tr: turco
+      tr-CY: Turquía (Chipre)
+      tr-TR: Turco (Turquía)
+      ts: Tsonga
+      tt: Tártaro
+      tw: Twi
+      ty: Tahitian
+      ug: uigur
+      uk: ucranio
+      uk-UA: Ucrania (Ucrania)
+      ur: Urdu
+      uz: uzbeko
+      ve: Venda
+      vi: vietnamita
+      vi-VN: Vietnamita (Vietnam)
+      wa: Valonia
+      wo: wolof
+      xh: Xhosa
+      yi: yídish
+      yo: Yoruba
+      za: Zhuang
+      zh: chino
+      zh-CN: Chino (China)
+      zh-HK: Chino (Hong Kong)
+      zh-MO: China (Macao)
+      zh-SG: Chino (Singapur)
+      zh-TW: China (Taiwán)
+      zu: zulú

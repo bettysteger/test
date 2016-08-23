@@ -1,0 +1,64 @@
+ru:
+  number:
+    currency:
+      format:
+        delimiter: ','
+        format: '% U% п'
+        precision: 2
+        separator: ','
+        significant: ложный
+        strip_insignificant_zeros: ложный
+        unit: Доллар США
+    format:
+      delimiter: ','
+      precision: 3
+      separator: ','
+      significant: ложный
+      strip_insignificant_zeros: ложный
+    human:
+      decimal_units:
+        format: '% N% U'
+        units:
+          billion:
+            one: миллиард
+            other: миллиард
+          million:
+            one: миллиона
+            other: миллиона
+          quadrillion:
+            one: квадрильон
+            other: квадрильон
+          thousand:
+            one: Тысяча
+            other: Тысяча
+          trillion:
+            one: триллион
+            other: триллион
+      format:
+        precision: 3
+        significant: правда
+        strip_insignificant_zeros: правда
+      storage_units:
+        format: '% N% U'
+        units:
+          byte:
+            one: Байт
+            other: Б
+          gb: гигабайт
+          kb: KB
+          mb: мегабайт
+          tb: ТБ
+  support:
+    array:
+      last_word_connector: ', а также'
+      select:
+        prompt: Пожалуйста выберите
+      two_words_connector: ' а также'
+      words_connector: ','
+  time:
+    am: в утренние часы
+    formats:
+      default: '% А,% d% B% Y% H:% M:% S% г'
+      long: '% B% d,% Y% H:% M'
+      short: '% D% B% H:% M'
+    pm: вечера.

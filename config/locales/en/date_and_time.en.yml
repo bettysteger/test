@@ -22,11 +22,11 @@ en:
     - Nov
     - Dec
     day_names:
-    - Sunday
+    - "Sunday with more than \none line.\nThere are even more\nwuhuu!! (party)"
     - Monday
     - Tuesday
     - Wednesday
-    - Thursday
+    - Thursdays
     - Friday
     - Saturday
     formats:

@@ -1,0 +1,81 @@
+de-AT:
+  custom_devise_notifier:
+    confirmation_instructions:
+      link: Bestätigen Sie ihr Konto
+      p1: Willkommen bei LingoHub!
+      p2: 'Danke für die Registrierung. Eine letzte Sache, bevor Sie beginnen können:
+        Bitte bestätigen Sie Ihre E-Mail-Adresse, die durch den folgenden Link:'
+      p3: Bereit zu lokalisieren! Bitte kontaktieren Sie uns, wenn Sie Fragen haben. Nach der Bestätigung erhalten Sie eine E-Mail mit ersten Schritten erhalten.
+      subject: Bestätigung Anweisungen
+    reset_password_instructions:
+      hello: Hallo
+      link: Ändere mein Passwort
+      p2: Jemand hat eine Verbindung angefordert, Ihr Passwort zu ändern. Sie können es über untenstehenden Link ändern.
+      p3: Wenn Sie dies nicht angefordert haben, ignorieren Sie diese E-Mail.
+      p4: Ihr Passwort wird sich nicht ändern, bis Sie den Link zu gelangen und eine neue erstellen.
+      subject: Passwort-Reset Anweisungen
+    unlock_instructions:
+      hello: Hallo
+      link: Setzen Sie mein Konto
+      p2: Ihr Konto wurde aufgrund einer übermäßigen Menge von erfolglosen Anmeldeversuchen gesperrt.
+      p3: 'Klicken Sie auf den Link unten, Ihr Konto zu entsperren:'
+      subject: Schalte Anleitung
+  invitation_notifier:
+    invitation_mail:
+      head:
+        msg_from_inviter: 'Persönliche Nachricht von %{display_name}:'
+        p1: Sie wurden von %{inviter} eingeladen worden, um die Lokalisierungsteam für Projekt %{project} als %{role} beizutreten.
+      hello: Hallo
+      links:
+        accept: Die Einladung annehmen
+        decline: Ablehnen
+      p4: Wenn Sie nicht angefordert haben oder diese Einladung erwarten, ignorieren Sie einfach diese E-Mail oder %{decline}.
+      subject: Einladung zur LingoHub
+      subtitle: Starten Sie übersetzen "%{project}" jetzt
+  link_not_working: 'Wenn die obige Link nicht funktioniert, kopieren Sie bitte die
+    folgende URL in seiner Gesamtheit und in die Adresszeile Ihres Web-Browsers einfügen:
+    %{link}'
+  new_workload_notifier:
+    new_workload_mail:
+      ending: Der Projektträger wird automatisch benachrichtigt, sobald das Projekt abgeschlossen ist. Viel Spaß beim Übersetzen!
+      greeting: Hallo %{display_name},
+      link_text: Starten Sie übersetzen
+      new_segments: wurden vor kurzem in %{language} geändert oder hinzugefügt
+      p1: gibt es neue Texte in den LingoHub Projekte übersetzt werden Warten Sie zugeordnet sind.
+      segments: Segmente
+      subject: Neue Texte warten auf Sie übersetzt werden
+  notifier:
+    global:
+      footer:
+        p1_html: Diese E-Mail wurde von %{link} gesendet Sie in Ihrer Lokalisierung Workflow zu unterstützen.
+      new_slogan: Bessere Software-Lokalisierung in kürzerer Zeit.
+      slogan: Seien Sie Global, Go Local!
+      social: Folge uns auf
+      thank_you: Vielen Dank für das Lesen, und wenden Sie sich bitte mit Ihrem Feedback zu senden oder kontaktieren Sie uns mit Fragen.
+      unsubscribe: Wenn Sie aus dieser Liste abmelden möchten, gehen Sie bitte auf Ihre %{link} und Abonnements bearbeiten.
+      unsubscribe_link: Benutzereinstellungen
+      welcome:
+        with_name: Hallo %{display_name},
+        without_name: Herzlich willkommen,
+  weekly_summary_notifier:
+    weekly_summary_mail:
+      admin:
+        languages_collaborators: '%{languages} Sprachen (%{source} als Quelle), %{collaborators}
+          Mitarbeiter'
+        p1: 'Sie und Ihr Team hat einen tollen Job auf LingoHub letzte Woche. Sehen
+          Sie, wie viele Wörter haben von Ihrem Team übersetzt:'
+        translator: Übersetzer
+      ending: Haben Sie einen erfolgreichen Start in die neue Woche. Und vergessen Sie nicht, sein Global, Go Local!
+      greeting: Hallo %{display_name},
+      subject: Wöchentliche Zusammenfassung
+      translator:
+        as_translator: als %{language} Übersetzer
+        p1: 'Sie hat einen tollen Job auf LingoHub letzte Woche. Hier ist, was Sie
+          erreicht:'
+      words:
+        one: Wort
+        other: Wörter
+  zip_file_notifier:
+    zip_file_mail:
+      p1: Zip-Datei alle Ressourcendateien für das Projekt "%{project_tile}" enthält, wird auf diese E-Mail angehängt.
+      subject: 'Archiv mit allen Ressourcen-Dateien für das Projekt: %{project_title}'

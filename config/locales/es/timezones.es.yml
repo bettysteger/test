@@ -1,2 +1,144 @@
-es: {
-  }
+es:
+  timezones:
+    abu-dhabi: Abu Dhabi
+    adelaide: Adelaide
+    alaska: Alaska
+    almaty: Almaty
+    amsterdam: Ámsterdam
+    arizona: Arizona
+    astana: Astana
+    athens: Atenas
+    atlantic-time-canada: Hora del Atlántico (Canadá)
+    auckland: Auckland
+    azores: Azores
+    baghdad: Bagdad
+    baku: Bakú
+    bangkok: Bangkok
+    beijing: Beijing
+    belgrade: Belgrado
+    berlin: Berlina
+    bern: Berna
+    bogota: Bogotá
+    brasilia: Brasilia
+    bratislava: Bratislava
+    brisbane: Brisbane
+    brussels: Bruselas
+    bucharest: Bucarest
+    budapest: Budapest
+    buenos-aires: Buenos Aires
+    cairo: El Cairo
+    canberra: Canberra
+    cape-verde-is: Cabo Verde
+    caracas: Caracas
+    casablanca: Casablanca
+    central-america: Centroamérica
+    central-time-us-and-canada: Hora del Centro (Estados Unidos & Canadá)
+    chennai: Chennai
+    chihuahua: Chihuahua
+    chongqing: Chongqing
+    copenhagen: Copenhague
+    darwin: Darwin
+    dhaka: Dacca
+    dublin: Dublín
+    eastern-time-us-and-canada: Hora del este (EE.UU. y Canadá)
+    edinburgh: Edimburgo
+    ekaterinburg: Ekaterinburg
+    fiji: Fiji
+    georgetown: Georgetown
+    greenland: Tierra Verde
+    guadalajara: Guadalajara
+    guam: Guam
+    hanoi: Hanoi
+    harare: Harare
+    hawaii: Hawai
+    helsinki: Helsinki
+    hobart: Hobart
+    hong-kong: Hong Kong
+    indiana-east: Indiana (este)
+    international-date-line-west: Fecha Internacional línea del oeste
+    irkutsk: Irkutsk
+    islamabad: Islamabad
+    istanbul: Estanbul
+    jakarta: Jacarta
+    jerusalem: Jerusalén
+    kabul: Kabul
+    kamchatka: Kamchatka
+    karachi: Karachi
+    kathmandu: Katmandú
+    kolkata: Calcuta
+    krasnoyarsk: Krasnoyarsk
+    kuala-lumpur: Kuala Lumpur
+    kuwait: Kuwait
+    kyiv: Kiev
+    la-paz: La Paz
+    lima: Lima
+    lisbon: Lisboa
+    ljubljana: Ljubljana
+    london: Londres
+    madrid: Madrid
+    magadan: Magadan
+    marshall-is: Islas Marshall
+    mazatlan: Mazatlán
+    melbourne: Melbourne
+    mexico-city: Ciudad de México
+    mid-atlantic: Mid-Atlantic
+    midway-island: Islas Midway
+    minsk: Minsk
+    monrovia: Monrovia
+    monterrey: Monterrey
+    moscow: Moscú
+    mountain-time-us-and-canada: Tiempo de montaña (EE.UU. y Canadá)
+    mumbai: Mumbai
+    muscat: Moscatel
+    nairobi: Nairobi
+    new-caledonia: Nueva Caledonia
+    new-delhi: Nueva Delhi
+    newfoundland: Terranova
+    novosibirsk: Novosibirsk
+    nukualofa: "Nuku'alofa"
+    osaka: Osaka
+    pacific-time-us-and-canada: Hora del Pacífico (EE.UU. y Canadá)
+    paris: París
+    perth: Perth
+    port-moresby: Port Moresby
+    prague: Praga
+    pretoria: Pretoria
+    quito: Quito
+    rangoon: Rangún
+    riga: Riga
+    riyadh: Riad
+    rome: Roma
+    samoa: Samoa
+    santiago: Santiago
+    sapporo: Sapporo
+    sarajevo: Sarajevo
+    saskatchewan: Saskatchewan
+    seoul: Seúl
+    singapore: Singapur
+    skopje: Skopje
+    sofia: Sofía
+    solomon-is: Islas Salomón
+    sri-jayawardenepura: Sri Jayawardenapura
+    st-petersburg: San Petersburgo
+    stockholm: Estocolmo
+    sydney: Sydney
+    taipei: Taipei
+    tallinn: Tallin
+    tashkent: Tashkent
+    tbilisi: Tbilisi
+    tehran: Teherán
+    tijuana: Tijuana
+    tokyo: Tokio
+    ulaan-bataar: Ulaanbaatar
+    urumqi: Urumqi
+    utc: UTC
+    vienna: Viena
+    vilnius: Vilnius
+    vladivostok: Vladivostok
+    volgograd: Volgogrado
+    warsaw: Varsovia
+    wellington: Wellington
+    west-central-africa: África Central y Occidental
+    yakutsk: Yakutsk
+    yerevan: Ereván
+    zagreb: Zagreb

@@ -1,0 +1,14 @@
+de-AT:
+  simple_form:
+    error_notification:
+      default_message: 'Einige Fehler wurden gefunden, haben Sie bitte einen Blick:'
+    'no': 'Nein'
+    required:
+      mark: '*'
+      text: erforderlich
+    'yes': 'ja'
+    labels:
+      user:
+        first_name: Vorname
+        last_name: Familienname, Nachname
+        login: Ihre E-Mail / Benutzername

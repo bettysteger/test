@@ -1,0 +1,107 @@
+ru:
+  # to trigger automatic import into lingohub
+  add: Добавить
+  api:
+    index:
+      # this must not be translated keep it as it is.
+      title: REST API
+  cancel: Отменить
+  close: Закрыть
+  edit: Редактировать
+  errors:
+    messages:
+      size_too_big: слишком большой  (должен быть по крайней мере %{file_size})
+      size_too_small: слишком маленький (должен быть по крайней мере %{file_size})
+      wrong_size: неправильного размера (должно быть %{file_size})
+    routing_public:
+      back_link: Вернуться к LingoHub.com
+      email_link: Пришлите нам по электронной почте, если вы хотели бы наша помощь
+      h1: 404 - Трудности перевода
+      item1: LingoHub документация
+      item2: Блог LingoHub
+      item3: Наш канал Twitter
+      p1: 'Извините, мы не смогли найти страницу по данному адресу. Не беспокойтесь,
+        взгляните на следующие ссылки:'
+      p3: или %{link}
+      p4: Вы находитесь в хороших руках с нами для всех ваших потребностей локализации. Войти сначала получить доступ к вашим проектам. %{link}!
+  global:
+    and: и
+    authentication:
+      omni_auth_failure: Извините, но вы не могли войти в систему. Пожалуйста, войдите на сайт с вашей электронной почты и пароль.
+      provider:
+        bitbucket: Битоприемник
+        facebook: Facebook
+        github: GitHub
+        google_oauth2: Google
+        linkedin: LinkedIn
+        twitter: Twitter
+    authorization:
+      not_authorized: У вас нет авторизации для доступа к данной странице.
+    colors:
+      black: черный
+      grey: Серый
+      red: красный
+      white: Белый
+    confirmation_needed: Пожалуйста, подтвердите ваш адрес электронной почты. Если вы не получили письмо, проверьте папку со спамом или нажмите, чтобы %{resend_link} электронную почту.
+    create: Создайте
+    email:
+      signature:
+        helmut:
+          l1: С наилучшими пожеланиями, 
+          l2: Хельмут, Генеральный Директор
+        lingohub:
+          l1: С уважением, 
+          l2: Ваш LingoHub Team.
+    filename: Название папки
+    locale: Место действия
+    myself: Вы
+    or: или
+    phrase: Фраза
+    privacy_policy: Политика Конфиденциальности
+    project: Проект
+    reload: перезагружать
+    resend: Отправить
+    sign_in: Войти
+    sign_up: Зарегистрироваться
+    submit: Представить
+    terms_of_service: Условия Пользования
+    translations: Переводы
+  models:
+    file_labels:
+      title:
+        default: нет названия папки
+    project:
+      owner: Владелец Проекта
+    resource_file:
+      generic_locale: -локаль-
+    user_labels:
+      title:
+        starred: Отмеченные звездочкой
+        unstarred: Не утмечено Звездочками
+  remove: Удалить
+  repository_setting:
+    show:
+      flash:
+        bitbucket:
+          general: Проблемы с подключением к Bitbucket. Пожалуйста, обратитесь в нашу службу поддержки. 
+          not_available: не Сохраненный хранилище больше недоступна. Пожалуйста, выберите другое хранилище или связаться с владельцем репозитория Bitbucket.
+          remove_hook_error: Предыдущую Bitbucket  зацепку не удалось удалить.
+        error: Repository параметры не могут быть обновлены.
+        github:
+          general: Проблемы при подключении к GitHub. Пожалуйста, свяжитесь с нашей поддержкой.
+          not_available: не Сохраненный хранилище больше недоступна. Пожалуйста, выберите другое хранилище или связаться с владельцем репозитория GitHub.
+          remove_hook_error: Предыдущая GitHub крюк не может быть удалена.
+        not_accessible: Доступ к репозиторию закрыт
+        success: Repository настройки обновлены.
+  resources:
+    exports:
+      push_to_repository:
+        single:
+          flash:
+            error: 'Возникла проблема при помещении файла в репозиторий: "%{message}"'
+  users:
+    update:
+      flash:
+        confirmation_success: Вы обновили свой аккаунт успешно, но нам нужно подтвердить свой новый адрес электронной почты. Пожалуйста, проверьте свою электронную почту и нажмите на ссылку для подтверждения, чтобы завершить подтвердив свой новый адрес электронной почты.
+  views:
+    copyright: Все права защищены.
