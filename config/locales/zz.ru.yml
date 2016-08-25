@@ -1,0 +1,3 @@
+ru:
+  test: "это <a HREF = \"https://lingohub.com/\" >связь с HREF</a>"
+  testthisfuck: "Это некоторый <a HREF = 'linkUrl'>Текст ссылки</a>"

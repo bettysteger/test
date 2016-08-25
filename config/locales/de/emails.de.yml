@@ -23,7 +23,7 @@ de:
   invitation_notifier:
     invitation_mail:
       head:
-        msg_from_inviter: Persönliche Nachricht von %{display_name}
+        msg_from_inviter: 'Persönliche Nachricht von %{display_name}'
         p1: Du wurdest von %{inviter} eingeladen dem Lokalisierungsteam für das Projekt %{project} als %{role} beizutreten.
       hello: Hallo
       links:

@@ -1,2 +1,81 @@
-es: {
-  }
+es:
+  custom_devise_notifier:
+    confirmation_instructions:
+      link: Confirme su cuenta
+      p1: Bienvenido a LingoHub!
+      p2: 'Gracias por registrarte. Una última cosa antes de empezar: Por favor confirme
+        su dirección de correo electrónico haciendo clic en este enlace:'
+      p3: Listo para localizar! Por favor, póngase en contacto con nosotros si tiene alguna pregunta. Después de la confirmación, recibirá un correo electrónico con los primeros pasos.
+      subject: Instrucciones de confirmación
+    reset_password_instructions:
+      hello: Hola
+      link: Cambiar contraseña
+      p2: Alguien ha pedido un enlace para cambiar su contraseña. Puede cambiarlo a través del siguiente enlace.
+      p3: Si usted no ha solicitado este, por favor, ignora este mensaje.
+      p4: Su contraseña no cambiará hasta que acceda al enlace y crear una nueva.
+      subject: instrucciones para restablecer la contraseña
+    unlock_instructions:
+      hello: Hola
+      link: Desbloquear mi cuenta
+      p2: Su cuenta ha sido bloqueada debido a una cantidad excesiva de intentos de inicio de sesión fallidos.
+      p3: 'Haga clic en el enlace de abajo para desbloquear su cuenta:'
+      subject: Instrucciones de Desbloqueo
+  invitation_notifier:
+    invitation_mail:
+      head:
+        msg_from_inviter: 'mensaje personal de %{display_name}:'
+        p1: usted ha sido invitado por %{inviter} para unirse al equipo de localización para el Proyecto %{project} como %{role}.
+      hello: Hola
+      links:
+        accept: Aceptar la invitacion
+        decline: disminución
+      p4: Si usted no solicitó o espera esta invitación, por favor, simplemente ignorar este correo electrónico o %{decline}.
+      subject: Invitación a LingoHub
+      subtitle: Empieza a traducir "%{project}" ahora
+  link_not_working: 'Si el enlace anterior no funciona, copia la siguiente URL en
+    su totalidad y pegarlo en la barra de direcciones de su navegador: %{link}'
+  new_workload_notifier:
+    new_workload_mail:
+      ending: El propietario del proyecto se notificará automáticamente una vez que se complete el proyecto. Divertirse traducción!
+      greeting: Hola %{display_name},
+      link_text: Empieza a traducir
+      new_segments: se cambiaron recientemente o añadido en %{language}
+      p1: hay nuevos textos en espera de ser traducida en los proyectos LingoHub que se le asigne.
+      segments: segmentos
+      subject: Nuevos textos están esperando para ser traducido
+  notifier:
+    global:
+      footer:
+        p1_html: Este correo electrónico fue enviado por %{link} para ayudarle en su flujo de trabajo de localización.
+      new_slogan: Mejor localización de software en menos tiempo.
+      slogan: Ser global, Go Local!
+      social: siga con nosotros
+      thank_you: Gracias por leer, y no dude en enviar sus comentarios o ponerse en contacto con nosotros con preguntas.
+      unsubscribe: Si desea darse de baja de esta lista, por favor vaya a su %{link} y editar sus suscripciones.
+      unsubscribe_link: ajustes de usuario
+      welcome:
+        with_name: Hola %{display_name},
+        without_name: Bienvenido,
+  weekly_summary_notifier:
+    weekly_summary_mail:
+      admin:
+        languages_collaborators: '%{languages} idiomas (%{source} como fuente), colaboradores
+          %{collaborators}'
+        p1: 'usted y su equipo ha hecho un gran trabajo en LingoHub la semana pasada.
+          Ver cuántas palabras se han traducido por su equipo:'
+        translator: Traductor
+      ending: Tener un comienzo exitoso en la nueva semana. Y no se olvide, ser global, Go Local!
+      greeting: Hola %{display_name},
+      subject: Resumen semanal
+      translator:
+        as_translator: como %{language} Traductor
+        p1: 'que hizo un gran trabajo en LingoHub la semana pasada. Esto es lo que
+          se consiguen:'
+      words:
+        one: palabra
+        other: palabras
+  zip_file_notifier:
+    zip_file_mail:
+      p1: archivo zip que contiene todos los archivos de recursos para el proyecto "%{project_tile}" se adjunta a este correo electrónico.
+      subject: 'Archivo que contiene todos los archivos de recursos para el proyecto:
+        %{project_title}'

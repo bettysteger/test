@@ -1,0 +1,53 @@
+ru:
+  activerecord:
+    attributes:
+      translation_comment:
+        content: Комментарий
+      user:
+        email: Ваш адрес электронной почты
+        password: Ваш пароль
+    errors:
+      format: '%{attribute} %{message}'
+      full_messages:
+        format: '%{message}'
+      messages:
+        accepted: должны быть приняты
+        blank: не может быть пустым
+        confirmation: не соответствует подтверждение
+        date_greater_than: должно быть больше
+        empty: не может быть пустым
+        equal_to: должна быть равна %{count} %{msg}%{count} авто %{mehr} %{hehe} %{lol}
+        even: должен быть еще
+        exclusion: зарезервирован
+        greater_than: должна быть больше, чем %{count}
+        greater_than_or_equal_to: должна быть больше или равна %{count}
+        inclusion: не входит в список
+        invalid: является недействительным
+        invalid_regex: недействительным регулярное выражение
+        invalid_url: должен быть действительным URL
+        less_than: должно быть меньше, чем %{count}
+        less_than_or_equal_to: должна быть меньше или равна %{count}
+        not_a_number: не является числом
+        not_an_integer: должно быть целым числом
+        odd: должно быть нечетным
+        record_invalid: 'Не удалось выполнить проверку: %{errors}'
+        single_current_residence: только одно место жительства может быть текущее место жительства
+        single_origin_residence: только одно место жительства может быть происхождение
+        taken: уже был взят
+        too_long: слишком длинный (максимум %{count} символов)
+        too_short: слишком короткий (минимум %{count} символов)
+        user:
+          attributes:
+            old_password:
+              invalid: не верно
+        wrong_length: имеет неправильную длину (должно быть %{count} символов)
+      models:
+        project_user_setting:
+          attributes:
+            user:
+              no_collaborator: не является соавтором проекта
+      template:
+        body: 'Были проблемы со следующими полями:'
+        header:
+          one: 1 ошибка запрещено это %{model} быть не сохранены
+          other: '%{count} ошибки запрещено этот %{model} быть не сохранены'

@@ -11,8 +11,8 @@ en:
       hello: Hello
       link: Change my password
       p2: Someone has requested a link to change your password. You can change it through the link below.
-      p3: If you didn't request this, please ignore this email.
-      p4: Your password won't change until you access the link and create a new one.
+      p3: "If you didn't request this, please ignore this email."
+      p4: "Your password won't change until you access the link and create a new one."
       subject: Password reset instructions
     unlock_instructions:
       hello: Hello
@@ -29,7 +29,8 @@ en:
       links:
         accept: Accept invitation
         decline: decline
-      p4: If you didn't request or expect this invitation, please just ignore this email or %{decline}.
+      p4: "If you didn't request or expect this invitation, please just ignore this\
+        \ email or %{decline}."
       subject: Invitation to LingoHub
       subtitle: Start translating "%{project}" now
   link_not_working: 'If the above link does not work, please copy the following URL
@@ -64,7 +65,8 @@ en:
         p1: 'you and your team did a great job on LingoHub last week. See how many
           words have been translated by your team:'
         translator: Translator
-      ending: Have a successful start into the new week. And don't forget, Be Global, Go Local!
+      ending: "Have a successful start into the new week. And don't forget, Be Global,\
+        \ Go Local!"
       greeting: Hi %{display_name},
       subject: Weekly Summary
       translator:

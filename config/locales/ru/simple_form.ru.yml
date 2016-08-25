@@ -1,0 +1,14 @@
+ru:
+  simple_form:
+    error_notification:
+      default_message: 'были обнаружены некоторые ошибки, пожалуйста, смотрите:'
+    'no': 'Нет'
+    required:
+      mark: '*'
+      text: обязательный
+    'yes': 'Да'
+    labels:
+      user:
+        first_name: Имя
+        last_name: Фамилия
+        login: Ваш адрес электронной почты / Имя пользователя

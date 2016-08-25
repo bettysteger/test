@@ -24,7 +24,7 @@ fr:
     day_names:
     - Dimanche
     - Lundi
-    - Mardi
+    - Mardi xxx
     - Mercredi
     - Jeudi
     - Vendredi
@@ -78,7 +78,7 @@ fr:
       less_than_x_minutes:
         few: less than %{count} minutes
         many: less than %{count} minutes
-        one: moins d'une minute
+        one: "moins d'une minute"
         other: moins de %{count} minutes
       less_than_x_seconds:
         few: less than %{count} seconds

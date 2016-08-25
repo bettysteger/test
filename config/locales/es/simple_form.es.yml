@@ -1,2 +1,14 @@
-es: {
-  }
+es:
+  simple_form:
+    error_notification:
+      default_message: 'Algunos errores se han encontrado, por favor, eche un vistazo:'
+    'no': 'No'
+    required:
+      mark: '*'
+      text: necesario
+    'yes': 'Sí'
+    labels:
+      user:
+        first_name: Nombre de pila
+        last_name: Apellido
+        login: Su dirección de correo electrónico / nombre de usuario

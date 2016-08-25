@@ -1,7 +1,7 @@
 de:
   languages:
     iso_codes:
-      _no: Norwegisch
+      _no: Norwegische
       aa: Fern
       ab: Abchasisch
       af: Afrikaans
@@ -223,7 +223,7 @@ de:
       fr-CF: Französisch (Zentralafrikanische Republik)
       fr-CG: Französisch (Kongo)
       fr-CH: Französisch (Schweiz)
-      fr-CI: Französisch (Côte d'Ivoire)
+      fr-CI: "Französisch (Côte d'Ivoire)"
       fr-CM: Französisch (Kamerun)
       fr-DJ: Französisch (Djibouti)
       fr-FR: Französisch (Frankreich)

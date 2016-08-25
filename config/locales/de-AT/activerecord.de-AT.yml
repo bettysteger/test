@@ -1,0 +1,53 @@
+de-AT:
+  activerecord:
+    attributes:
+      translation_comment:
+        content: Kommentar
+      user:
+        email: Deine Emailadresse
+        password: Ihr Passwort
+    errors:
+      format: '%{attribute} %{message}'
+      full_messages:
+        format: '%{message}'
+      messages:
+        accepted: muss akzeptiert werden
+        blank: darf nicht leer sein
+        confirmation: keine Bestätigung überein
+        date_greater_than: muss größer sein als
+        empty: darf nicht leer sein
+        equal_to: muss %{count} %{msg}%{count} Auto %{mehr} %{hehe} %{lol} gleich sein
+        even: muss auch
+        exclusion: ist reserviert
+        greater_than: muss größer sein als %{count}
+        greater_than_or_equal_to: muss größer als oder gleich %{count}
+        inclusion: ist nicht in der Liste enthalten
+        invalid: ist ungültig
+        invalid_regex: ungültigen regulären Ausdruck
+        invalid_url: muss eine gültige URL sein
+        less_than: sein muss weniger als %{count}
+        less_than_or_equal_to: muss %{count} kleiner oder gleich sein,
+        not_a_number: keine Zahl
+        not_an_integer: muss eine ganze Zahl sein,
+        odd: muss ungerade sein
+        record_invalid: 'Validierung fehlgeschlagen: %{errors}'
+        single_current_residence: nur ein Wohnsitz kann aktuellen Wohnsitz sein
+        single_origin_residence: nur ein Wohnsitz kann Ursprungs sein
+        taken: bereits aufgenommen wurde
+        too_long: ist zu lang (maximal %{count} Zeichen)
+        too_short: ist zu kurz (Minimum ist %{count} Zeichen)
+        user:
+          attributes:
+            old_password:
+              invalid: nicht richtig
+        wrong_length: die falsche Länge ist (sollte %{count} Zeichen lang sein)
+      models:
+        project_user_setting:
+          attributes:
+            user:
+              no_collaborator: kein Mitarbeiter des Projekts ist
+      template:
+        body: 'Es gab Probleme mit den folgenden Bereichen:'
+        header:
+          one: 1 Fehler verboten diese %{model} nicht gespeichert
+          other: '%{count} Fehler dieses %{model} untersagt werden gespeichert'

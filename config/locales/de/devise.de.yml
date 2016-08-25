@@ -1,6 +1,7 @@
 de:
   devise:
     failure:
+      already_authenticated: Du bist schon eingeloggt.
       inactive: Dein Benutzerkonto wurde noch nicht aktiviert.
       invalid: Emailadresse oder Passwort ungültig.
       invalid_email: Ungültige(r) Email/Username
@@ -9,7 +10,7 @@ de:
       locked: Dein Benutzerkonto ist gesperrt.
       timeout: Deine Sitzung ist abgelaufen, bitte logge Dich erneut ein um fortzufahren.
       unauthenticated: Du musst Dich anmelden oder registrieren um fortzufahren.
-      unconfirmed: Du musst Dein Benutzerkonto bestätigen um fortfahren zu können.<br><a href="/users/confirmation/new">Sende Bestätigungsemail erneut</a>
+      unconfirmed: Du musst Dein <a href="/users/confirmation/new"></a> bestätigen um fortfahren zu können.
     omniauth_callbacks:
       failure: Autorisierung von %{kind} Konto nicht erfolgreich weil "%{reason}".
       success: Erfolgreich autorisiert durch %{kind} Konto.

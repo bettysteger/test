@@ -1,0 +1,6 @@
+en:
+  test: "this is a <a href=\"https://lingohub.com\" title=\"LingoHub Website\" target=\"\
+    _blank\" xyz=\"gegge\">link with href and target</a> and there is also a <img\
+    \ src=\"https://lingohub.com/wp-content/uploads/2016/07/LingoHub-project-dashboard-thumb.png\"\
+    >\_tag wuhu oh <br>\_hallo "
+  testthisfuck: This is some <a href="http://lingohub.com">link</a> text

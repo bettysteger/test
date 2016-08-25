@@ -1,2 +1,64 @@
-es: {
-  }
+es:
+  number:
+    currency:
+      format:
+        delimiter: ','
+        format: '% U% n'
+        precision: 2
+        separator: .
+        significant: falso
+        strip_insignificant_zeros: falso
+        unit: Dólar estadounidense
+    format:
+      delimiter: ','
+      precision: 3
+      separator: .
+      significant: falso
+      strip_insignificant_zeros: falso
+    human:
+      decimal_units:
+        format: '% N% u'
+        units:
+          billion:
+            one: mil millones
+            other: mil millones
+          million:
+            one: Millón
+            other: Millón
+          quadrillion:
+            one: Cuatrillón
+            other: Cuatrillón
+          thousand:
+            one: Mil
+            other: Mil
+          trillion:
+            one: billones
+            other: billones
+      format:
+        precision: 3
+        significant: cierto
+        strip_insignificant_zeros: cierto
+      storage_units:
+        format: '% N% u'
+        units:
+          byte:
+            one: Byte
+            other: bytes
+          gb: GB
+          kb: KB
+          mb: MEGABYTE
+          tb: tuberculosis
+  support:
+    array:
+      last_word_connector: 'y'
+      select:
+        prompt: Por favor, seleccione
+      two_words_connector: ' y'
+      words_connector: ','
+  time:
+    am: a.m.
+    formats:
+      default: '% A,% d% b% Y% H:% M:% S% z'
+      long: '% B% d,% Y% H:% M'
+      short: '% D% b% H:% M'
+    pm: pm.

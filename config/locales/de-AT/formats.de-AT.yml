@@ -1,0 +1,64 @@
+de-AT:
+  number:
+    currency:
+      format:
+        delimiter: '.'
+        format: '% U% n'
+        precision: 2
+        separator: .
+        significant: falsch
+        strip_insignificant_zeros: falsch
+        unit: US Dollar
+    format:
+      delimiter: '.'
+      precision: 3
+      separator: .
+      significant: falsch
+      strip_insignificant_zeros: falsch
+    human:
+      decimal_units:
+        format: '% N% u'
+        units:
+          billion:
+            one: Milliarde
+            other: Milliarde
+          million:
+            one: Million
+            other: Million
+          quadrillion:
+            one: quadrillion
+            other: quadrillion
+          thousand:
+            one: Tausend
+            other: Tausend
+          trillion:
+            one: Billion
+            other: Billion
+      format:
+        precision: 3
+        significant: wahr
+        strip_insignificant_zeros: wahr
+      storage_units:
+        format: '% N% u'
+        units:
+          byte:
+            one: Byte
+            other: bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+  support:
+    array:
+      last_word_connector: ', und'
+      select:
+        prompt: Bitte auswählen
+      two_words_connector: ' und'
+      words_connector: '.'
+  time:
+    am: vormittags
+    formats:
+      default: '% A,% d% b% Y% H:% M:% S% z'
+      long: '% B% d,% Y% H:% M'
+      short: '% D% b% H:% M'
+    pm: nachmittags

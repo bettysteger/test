@@ -1,6 +1,8 @@
 en:
   # to trigger automatic import into lingohub
-  add: Add
+  add: |-
+    Add
+    with linebreak
   api:
     index:
       # this must not be translated keep it as it is.
@@ -42,7 +44,8 @@ en:
       grey: Grey
       red: Red
       white: White
-    confirmation_needed: Please confirm your email address. If you haven't received the email, check your spam folder or click to %{resend_link} the email.
+    confirmation_needed: "Please confirm your email address. If you haven't received\
+      \ the email, check your spam folder or click to %{resend_link} the email."
     create: Create
     email:
       signature:

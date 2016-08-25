@@ -21,13 +21,13 @@ fr:
         exclusion: est réservé
         greater_than: doit être supérieure à %{count}
         greater_than_or_equal_to: doit être supérieure ou égale à %{count}
-        inclusion: n'est pas inclus dans la liste
+        inclusion: "n'est pas inclus dans la liste"
         invalid: est invalide
         invalid_regex: invalid regular expression
         invalid_url: must be a valid URL
         less_than: doit être inférieure à %{count}
         less_than_or_equal_to: doit être inférieure ou égale à %{count}
-        not_a_number: n'est pas un nombre
+        not_a_number: "n'est pas un nombre"
         not_an_integer: doit être un entier
         odd: doit être impair
         record_invalid: 'Echec de la validation : %{errors}'
@@ -49,5 +49,5 @@ fr:
       template:
         body: 'Il y a eu des problèmes avec les champs suivants :'
         header:
-          one: 1 erreur interdit cet %{model} d'être enregistré
+          one: "1 erreur interdit cet %{model} d'être enregistré"
           other: '%{count} erreurs interdisent cet %{model} d''être enregistré'

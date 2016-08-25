@@ -15,7 +15,8 @@ en:
         text. Because it is unencrypted, it should only be used with %{https}, as
         the password can be easily captured and reused over HTTP.<br />Luckily, LingoHub
         encrypts all communication with %{ssl} (see %{http_authentication}).'
-      text3_html: You can add the URL parameter <i>'auth_token'</i> to your request instead. Your personal token value is on your 'Authentication' page.
+      text3_html: "You can add the URL parameter <i>'auth_token'</i> to your request\
+        \ instead. Your personal token value is on your 'Authentication' page."
       text_html: 'LingoHub offers two authentication methods with our API:'
       token_authentication: Token Authentication
     devs_should_know:
@@ -45,20 +46,26 @@ en:
       title4: We have LingoHub API libraries in almost every language.
     guidelines:
       item: Respect LingoHub users
-      item1: Respect other's content
+      item1: "Respect other's content"
       link: here
       link_title: Terms of Use
       page_title: Terms and Guidelines
-      subtitle: Your application's name
-      subtitle1: Your application's logo
-      subtitle2: Your application's marketing
+      subtitle: "Your application's name"
+      subtitle1: "Your application's logo"
+      subtitle2: "Your application's marketing"
       text: Thank you for deciding to create an application/service that works with LingoHub. This page is designed to help you brand your application to avoid confusion with any of ours.
-      text1: Your application should have a unique name that can't be confused with LingoHub, select one carefully. Tell your customers that your app is built to work with LingoHub.
+      text1: "Your application should have a unique name that can't be confused with\
+        \ LingoHub, select one carefully. Tell your customers that your app is built\
+        \ to work with LingoHub."
       text2: We hope you love our logo, “la lengua”. A lot of thought and time was put into branding LingoHub. Distinguish yourself by creating your own unique, attractive logo.
-      text3: Feel free to download official LingoHub logos and link to our website. You can use these to tell the world that you are working with us. Don't forget to make it clear to your customers that your application/service is not an official LingoHub product.
+      text3: "Feel free to download official LingoHub logos and link to our website.\
+        \ You can use these to tell the world that you are working with us. Don't\
+        \ forget to make it clear to your customers that your application/service\
+        \ is not an official LingoHub product."
       text4_html: As our ecosystem partner you need a clear and transparent policy about the possibilities to monetize your Service. It is our goal to provide you with that and to that end we have two vital principles&#58;.
-      text5: Do not use information that you don't need and always act within reasonably predictable limits.
-      text6_html: See our Terms of Use %{link}.
+      text5: "Do not use information that you don't need and always act within reasonably\
+        \ predictable limits."
+      text6_html: 'See our Terms of Use '
       title: Guidelines
       title1: Commercial use
       title2: Terms of Use
@@ -95,7 +102,7 @@ en:
     delete_translation:
       description: Translation deactivation.
     get_file:
-      description: Download a file for the specified resources' generated content.
+      description: "Download a file for the specified resources' generated content."
       parameters:
         iso2_code: Only extract phrases from the locale selected.
     get_phrase:
@@ -114,7 +121,7 @@ en:
       description: Displays translations of the project specified. The results are paginated. To browse all result follow the <i>rel="next"</i> link.
       parameters:
         page: the page within the paginated result
-        page_size: the paginated result's page size
+        page_size: "the paginated result's page size"
         query: a query string in the syntax as recognised from the front-end
     global:
       breadcrumbs_title: You are here
@@ -122,13 +129,13 @@ en:
       http_method_title: HTTP method
       parameters_title: Parameters
       path_parameters:
-        account: the project owner's account name
-        collaborator: the collaborator's email in URL-encoded format
-        filename: a resource file's filename as stored in LingoHub
-        invitation: the invitee's email
-        locale: a locale's ISO2 code
-        project: the project's name
-        translation: a translation's public ID
+        account: "the project owner's account name"
+        collaborator: "the collaborator's email in URL-encoded format"
+        filename: "a resource file's filename as stored in LingoHub"
+        invitation: "the invitee's email"
+        locale: "a locale's ISO2 code"
+        project: "the project's name"
+        translation: "a translation's public ID"
       path_parameters_title: Path Parameters
       requires_authentication_title: Does this requires authentication?
       response_formats_title: Response Formats
@@ -144,13 +151,13 @@ en:
     put_phrase:
       description: Current phrase update.
       parameters:
-        content: this phase's new content
-        status: this phase's status
+        content: "this phase's new content"
+        status: "this phase's status"
     put_translation:
       description: Updates the translation specified.
       parameters:
-        description: the translation's description
-        title: the translation's title
+        description: "the translation's description"
+        title: "the translation's title"
     put_translation_activate:
       description: Inactive translation reactivation.
   developers:
@@ -180,7 +187,8 @@ en:
         body_html: We accept Visa, Mastercard and AMEX which you can enter on the payment settings page after signing up. <b>There is always a free trial period</b>, payment information is only required after this period, unless you select the free plan for contributors, reviewers or translators.
         title_html: Can you tell me about payment options?
       questions:
-        body_html: The application has a built-in support system which is the easiest way to contact us directly, or you can simply send an <a href='mailto:support@lingohub.com'>email</a>.
+        body_html: "The application has a built-in support system which is the easiest\
+          \ way to contact us directly, or you can simply send an <a href='mailto:support@lingohub.com'>email</a>."
         title_html: How can I get answers to more questions?
       title: General Questions
     localizing:
@@ -191,7 +199,7 @@ en:
           throughout your products''s evolution. Use API access, or two-way GitHub
           sync for a slick translation process, and receive weekly email reports.
           Coming soon: Integrated on-demand translation purchases.'
-        title_html: What does LingoHub give me that tool XYZ doesn't?
+        title_html: "What does LingoHub give me that tool XYZ doesn't?"
       technologies:
         body_html: 'In a nutshell: all common file types, platforms and technologies,
           including. iOS files, Android files, FirefoxOS, Java, PHP, Ruby/Rails YAML
@@ -201,14 +209,20 @@ en:
         title_html: Which technologies are supported?
       title: Localizing your projects on LingoHub
       translations:
-        body_html: No prices are set for LingoHub.  From the moment you sign up you'll be able to create projects inviting your employed or contracted translators. LingoHub is free to use for translators, reviewers or collaborators. We will soon offer fixed rate translation purchases on-demand. Stay tuned.
+        body_html: "No prices are set for LingoHub.  From the moment you sign up you'll\
+          \ be able to create projects inviting your employed or contracted translators.\
+          \ LingoHub is free to use for translators, reviewers or collaborators. We\
+          \ will soon offer fixed rate translation purchases on-demand. Stay tuned."
         title_html: What is the pricing for LingoHub translations?
     pricing:
       title: Plans and Pricing
     title_html: Frequently Asked Questions
     translating:
       catch:
-        body_html: There are none. Enjoy LingoHub's hassle-free translation environment working on software localization projects that employ or contract you as a translator. <a href="https://lingo.io">LingoIO</a>, will be launched soon offering even more tools and career opportunities.
+        body_html: "There are none. Enjoy LingoHub's hassle-free translation environment\
+          \ working on software localization projects that employ or contract you\
+          \ as a translator. <a href=\"https://lingo.io\">LingoIO</a>, will be launched\
+          \ soon offering even more tools and career opportunities."
         title_html: What’s the catch?
       costs:
         body_html: Nothing. <strong> LingoHub will always be free for translators</strong>. Check out the new online office project just for translators at <a href="https://lingo.io">LingoIO</a>.
@@ -229,7 +243,7 @@ en:
       api: API
       blog: Blog
       contact: Contact
-      customers: Customer's experiences
+      customers: "Customer's experiences"
       developer_features: Developer Features
       developers: Developers
       documentation: Documentation
@@ -257,7 +271,7 @@ en:
     'yes': 'yes'
   investor_relations:
     download:
-      text: Download LingoHub's one-page overview
+      text: "Download LingoHub's one-page overview"
     h2: Overview
     text1: Our streamlined localization process already meets the needs of many different sized companies. Our plans to inject new vitality into the translation market started with the launch of LongoIO in late 2014. We want to take it even further and totally revolutionize software and app localization. Come and talk to us about our exciting new approach, which will provide enormous benefits to the world of digital content. The buzz and enthusiasm at LingoHub is contagious. Join us in creating a human translations interface that is intelligent, universal and works for any type of digital content.
     text2: Developers and translators all over the globe are missing out on LingoHub’s on-demand functionality. We want to reach out and offer them the experience that their counterparts enjoy by growing the business. If you are looking for an excellent investment opportunity our doors are open to you.
@@ -269,12 +283,13 @@ en:
         text: Do you have a passion for<br> languages and state of the art software application development %{link}! ? Are you the missing person that our team is searching for?
         link: tell us about yourself and why we should meet you.
       meta_info:
-        description: Learn more about LingoHub, our founders, the company's history, our app localization platform and our long and short term projects.
+        description: "Learn more about LingoHub, our founders, the company's history,\
+          \ our app localization platform and our long and short term projects."
         keywords: LingoHub
         title: about
       page_title: About
       subtitle1: Company Info
-      subtitle2: LingoHub's Vision
+      subtitle2: "LingoHub's Vision"
       summary_link: Download a summary of LingoHub (PDF)
       team:
         betty:
@@ -298,7 +313,7 @@ en:
         send_him: or send him an email
         send_her: or send her an email
       text1: Helmut Juskewycz (CEO) and Markus Merzinger founded the company in 2012, based in Linz, Austria. LingoHub uses sophisticated cloud and integration technology with integrated payment and interfaces to develop applications for digital product translation. These flexible solutions correlate supply and demand by cutting translation management overheads. Created for simplicity, scalability and adaptable to the development side of the localization business and enhanced by the addition in 2014 by the development of an online office for translators, LinoIO, Lingohub is heading towards a human-powered translation interface.
-      text2: In order to create a multilingual digital world with no language barriers that is <b> both simple and affordable </b> so that communication can <b> reach everyone in their native language </b> we need <b>universally available human translation </b> for all digital content. It is our vision to accomplish this using <b>cloud-based translation solutions</b> and interfaces. Liberating and empowering translators by supporting them with seamless integration services will <i>reduce the costs</i> of multilingualism and make <b>costly translation a thing of the past</b>.
+      text2: In order to create a multilingual digital world with no language barriers that is <b> both simple and affordable </b> so that communication can <b> reach everyone in their native language </b> we need <b>universally available human translation </b> for all digital content. It is our vision to accomplish this using <b>cloud-based translation solutions</b> and interfaces. Liberating and empowering translators by supporting them with seamless integration services will <i>reduce the costs</i> of multilingualism and make <b>costly translation a thing of the past</b>.
     about_team:
       page_title: The Team Behind
       meta_info:
@@ -318,16 +333,21 @@ en:
         text: Should you have any questions about internationalization, LingoHub or even life in general, you can email us %{email_link} or visit our %{support_link}. Subscribe to %{blog_link} for tutorials and insights.
         title: Support
     customers:
-      heading: Our customers' success defines ours.
+      heading: "Our customers' success defines ours."
       page_title: Customers and Endorsements
       meta_info:
         description: Read how our current customers successfully took their products global by localizing with LingoHub.
-      subheading: We would love to help you write your own successful globalization story. Speaking your customers' languages is an essential part of that story.
+      subheading: "We would love to help you write your own successful globalization\
+        \ story. Speaking your customers' languages is an essential part of that story."
       quote:
         ikarus: LingoHub is significantly easier to use than anything we have tried, even our own solution. In particular we love the seamless integration into our workflow using the REST API
         nordeus: Our translation process has radically improved with the swift setup on the Github integration. Due to the superb auto-sync function we no longer have to distribute files...
         runtastic: Runtastic, one of the most popular fitness app vendors, has over 30 apps, in over 15 languages for all major platforms.  LingoHub integrates neatly into their product cycle satisfying worldwide customers who expect regular updates and an intuitive interface in their language. Ease of use and reliability helps the team and assists in keeping overheads down in the localization process which is very important.
-        solvistas: LingoHub delivers a perfectly integrated localization management solution that complements our strategy of making our services available in the customer's language without delay, at minimum cost.  They also deliver a perfectly integrated localization management solution that exceeded our expectations.
+        solvistas: "LingoHub delivers a perfectly integrated localization management\
+          \ solution that complements our strategy of making our services available\
+          \ in the customer's language without delay, at minimum cost.  They also\
+          \ deliver a perfectly integrated localization management solution that exceeded\
+          \ our expectations."
         ticketswap: LingoHub is the best of the many translation tools we explored. We can easily synchronize our Symfony2 translations via the Ruby client.
         tractive: Launching our apps on LingoHub, liberates our team enormously, we can do it faster and in more languages. We are relieved of all the emails and the tedious back and forth workflows.
       case_study: Click here to read our case study
@@ -350,7 +370,9 @@ en:
     privacy:
       page_title: Privacy Policy
       meta_info:
-        description: We respect your privacy at LingoHub. Read how we handle your data, and which information we process when using LingoHub's platform for app localization
+        description: "We respect your privacy at LingoHub. Read how we handle your\
+          \ data, and which information we process when using LingoHub's platform\
+          \ for app localization"
   plans_and_prices:
     index:
       faqs:
@@ -370,16 +392,20 @@ en:
           answer: Yes, you can use LingoHub as a free tool. The free plan has no restriction on  our translation editor. Translators can always use LingoHub for free.
           question: Can LingoHub be used for free?
         more:
-          answer: Please contact our Support page, or email us directly. Small print is available under <a href='https://lingohub.com/terms'>Terms of Service</a>.
+          answer: "Please contact our Support page, or email us directly. Small print\
+            \ is available under <a href='https://lingohub.com/terms'>Terms of Service</a>."
           question: Have more questions?
         title: Frequently Asked Questions
         trial:
           answer: Your account willautomatically benefit from the free 30-day trial with unlimited features, projects and team members as soon as you sign up for LingoHub.  You do not need a credit card for the free 30-day trial. At the end of your trial you will be automatically switched to the free plan, restrictions apply (no data is lost). If you wish to select a paid plan then you need to do this before the free trial expires.
           question: How does the free 30-day Trial work?
       meta_info:
-        description: There is a free 30 day trial and an entirely free plan for small teams! Take advantage of the free trail to compare LingoHub's plans and prices and pick the one that suits you best.
+        description: "There is a free 30 day trial and an entirely free plan for small\
+          \ teams! Take advantage of the free trail to compare LingoHub's plans and\
+          \ prices and pick the one that suits you best."
       p1: We have a range of subscription plans to suit your varying project needs. They are scalable so that we can give you  all the features you need as your team grows.
-      p2: You don't need a credit card to test LingoHub risk free for 30 days and to start translating immediately!
+      p2: "You don't need a credit card to test LingoHub risk free for 30 days and\
+        \ to start translating immediately!"
       page_title: Plans and Prices
       plan:
         month: month
@@ -410,7 +436,8 @@ en:
           text: You can choose between monthly and yearly payments. You can cancel anytime, however we do not offer partial refunds. All prices are excluding VAT. <small>If you are a business customer within the EU (except Austria) with a valid VAT number, no VAT will be charged.</small>
         benefit2:
           title: LingoHub Translation Service
-          text: Don't panic if you don't have a translator, LingoHub can do your translations in over 40 languages.
+          text: "Don't panic if you don't have a translator, LingoHub can do your\
+            \ translations in over 40 languages."
         benefit3:
           title: Smooth Integration
           text: The integration of LingoHub to Git, Github, Bitbucket and other top developer tools is only a few clicks away.
@@ -487,7 +514,8 @@ en:
     more: read more
   registrations:
     new:
-      page_title: Test LingoHub's easy web and mobile app localization platform by signing up.
+      page_title: "Test LingoHub's easy web and mobile app localization platform by\
+        \ signing up."
   sessions:
     new:
       page_title: Log into your LingoHub localization project.
@@ -515,8 +543,10 @@ en:
       text4: LingoHub integrates into your environment so that you and your team can continue to work as normal and you can use existing tools such as Github or Bitbucket.
       t5: Increase your translation quality with<br>comments and screenshots
       text5: The quality of the text and clarification increases and the need to communicate decreases with substantial contextual information.<br><br>Comments or screenshots can be easily added to individual parts of your project.
-      t6: Your project's complete overview
-      text6: Manage your apps translation, don't let it manage you. With regular progress reports<br><br> you have up to the minute progress reports and receive change and comment notifications.
+      t6: "Your project's complete overview"
+      text6: "Manage your apps translation, don't let it manage you. With regular\
+        \ progress reports<br><br> you have up to the minute progress reports and\
+        \ receive change and comment notifications."
     boost:
       title: Enjoy a massive productivity boost!
       text: With all file handling dealt with you can quickly deploy a<br>multilingual app, export or sync the results.<br><br>Painlessly save money and deliver high quality releases.
@@ -524,15 +554,18 @@ en:
     complicated:
       list:
         item1:
-          text: Don't write emails to explain UI text, work on your product instead. Tedious back-and-forth communication slows you down and costs money.
+          text: "Don't write emails to explain UI text, work on your product instead.\
+            \ Tedious back-and-forth communication slows you down and costs money."
           title: Bad workflows
         item2:
           text: Why go through mindlessly merging Excel or Word attachments with your files, in each language, with each change once they are delivered?
           title: Bad formats
         item3:
-          text: Do changing placeholders keep breaking your app or misspellings annoy its users? Does your release keep getting delayed for no good reason? You don't need to suffer these frustrations.
+          text: "Do changing placeholders keep breaking your app or misspellings annoy\
+            \ its users? Does your release keep getting delayed for no good reason?\
+            \ You don't need to suffer these frustrations."
           title: Bad results
-      t1: Don't be plagued with the classical localization chaos...
+      t1: "Don't be plagued with the classical localization chaos..."
       t2_html: You have come to the right place if you would rather spend your valuable time <strong>actually developing your product</strong> rather than sending text files back and forth or fixing formatting problems.
     heading: Continuous translation<br>made simple
     index:
@@ -548,15 +581,20 @@ en:
           text: Translation is a breeze with the online editor. LingoHub does all the work with optional API, Github or command line integrations.
           title: Streamlined workflows
         item2:
-          text: LingoHub deals with all the formatting. You simply import, export or synchronize, you don't even touch a file let alone email multiple copies.
+          text: "LingoHub deals with all the formatting. You simply import, export\
+            \ or synchronize, you don't even touch a file let alone email multiple\
+            \ copies."
           title: Compatibility and Integration
         item3:
           text: Results are delivered faster and with no problems, rapidly increase quality with contextual information and built-in checks.
           title: Quality through context
       t1: '...when you can relish streamlined translation management?'
-      t2_html: Eliminate unnecessary file-handling, unstructured communication and formatting problems with LingoHub's continuous translation management. Perfectly integrated to give a seamless on-demand app translation process. <strong>Roll out multilingual apps quickly, easily and with less effort. </strong>
+      t2_html: "Eliminate unnecessary file-handling, unstructured communication and\
+        \ formatting problems with LingoHub's continuous translation management. Perfectly\
+        \ integrated to give a seamless on-demand app translation process. <strong>Roll\
+        \ out multilingual apps quickly, easily and with less effort. </strong>"
     special:
-      heading: <br>For your %{type} apps you'll have improved software localization
+      heading: "<br>For your %{type} apps you'll have improved software localization"
       heading_files: Improved software localization<br>of %{type} files
       page_title: Easy %{type} localization with LingoHub
       meta_info:
@@ -591,7 +629,8 @@ en:
     with_lingohub:
       contact: Email us
       more: Show me more
-      other_questions: Do you still have questions or doubts? %{link} immediately and we'll personally convince you!
+      other_questions: "Do you still have questions or doubts? %{link} immediately\
+        \ and we'll personally convince you!"
       q1: Easily integrate LingoHub with your Github or Bitbucket repositories
       q10: Manage localizing a public open source project at no cost
       q11: Add further team members and translators to growing projects

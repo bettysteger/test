@@ -1,0 +1,16 @@
+de-AT:
+  devise:
+    failure:
+      already_authenticated: Sie sind bereits angemeldet.
+      inactive: Ihr Konto wurde noch nicht aktiviert.
+      invalid: Ungültige E-Mail oder Passwort.
+      invalid_email: Ungültige E-Mail / Benutzername.
+      invalid_password: Ungültiges Passwort.
+      invalid_token: Ungültige Authentifizierungstoken.
+      locked: Ihr Konto ist gesperrt.
+      timeout: Ihre Sitzung ist abgelaufen, bitte melden Sie sich erneut, um fortzufahren.
+      unauthenticated: Sie müssen sich anmelden oder registrieren, bevor Sie fortfahren.
+      unconfirmed: Sie haben Ihr Konto zu bestätigen, bevor Sie fortfahren können. <br><a href = "/ Benutzer / Bestätigung / new" >Erneut senden Bestätigungsmail</a>
+    omniauth_callbacks:
+      failure: Könnten Sie nicht von %{kind} weil "%{reason}" genehmigen.
+      success: Erfolgreich autorisiert von %{kind} Konto.

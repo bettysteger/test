@@ -1,0 +1,3 @@
+de-AT:
+  test: "Dies ist ein <a href = \"https://lingohub.com/\" >Link mit href</a>"
+  testthisfuck: "Dies ist einige <a href = 'linkUrl'>link</a>Text"

@@ -1,0 +1,3 @@
+fr:
+  test: "ceci est un <a href=\"https://lingohub.fr/\">lien avec href</a>"
+  testthisfuck: "Ceci est un <a href = 'linkUrl'>lien</a>Texte"

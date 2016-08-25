@@ -1,0 +1,107 @@
+de-AT:
+  # to trigger automatic import into lingohub
+  add: Hinzufügen
+  api:
+    index:
+      # this must not be translated keep it as it is.
+      title: REST-API
+  cancel: Stornieren
+  close: Schließen
+  edit: Bearbeiten
+  errors:
+    messages:
+      size_too_big: zu groß ist (sollte %{file_size} höchstens sein)
+      size_too_small: zu klein ist (mindestens %{file_size} sein)
+      wrong_size: ist die falsche Größe (sollte %{file_size})
+    routing_public:
+      back_link: Zurück zum LingoHub.com
+      email_link: Senden Sie uns eine E-Mail, wenn Sie unsere Hilfe möchten
+      h1: 404 - Lost in Translation
+      item1: LingoHub Dokumentation
+      item2: Der LingoHub Blog
+      item3: Unser Twitter-Feed
+      p1: 'Es wurden keine Seite unter dieser Adresse finden. Keine Panik, haben einen
+        Blick auf diese Links gilt:'
+      p3: oder %{link}
+      p4: Sie sind in guten Händen bei uns für alle Ihre Lokalisierungsanforderungen. Melden Sie sich an erster Ihre Projekte zugreifen zu können. %{link}!
+  global:
+    and: und
+    authentication:
+      omni_auth_failure: Es tut uns leid, aber man konnte nicht angemeldet werden. Bitte melden Sie sich mit Ihrer E-Mail und Passwort.
+      provider:
+        bitbucket: Bit Bucket
+        facebook: Facebook
+        github: GitHub
+        google_oauth2: Google
+        linkedin: LinkedIn
+        twitter: zwitschern
+    authorization:
+      not_authorized: Sie sind nicht autorisiert auf diese Seite zuzugreifen.
+    colors:
+      black: Schwarz
+      grey: Grau
+      red: Rot
+      white: Weiß
+    confirmation_needed: Bitte bestätigen Sie Ihre E-Mail-Adresse. Wenn Sie die E-Mail nicht erhalten haben, überprüfen Sie Ihren Spam-Ordner oder klicken Sie auf die E-Mail an %{resend_link}.
+    create: Erstellen
+    email:
+      signature:
+        helmut:
+          l1: Grüße,
+          l2: Helmut, CEO
+        lingohub:
+          l1: Freundliche Grüße,
+          l2: Ihr LingoHub-Team.
+    filename: Dateiname
+    locale: Schauplatz
+    myself: Sie
+    or: oder
+    phrase: Phrase
+    privacy_policy: Datenschutz-Bestimmungen
+    project: Projekt
+    reload: Neu laden
+    resend: Erneut senden
+    sign_in: Anmelden
+    sign_up: Anmelden
+    submit: einreichen
+    terms_of_service: Nutzungsbedingungen
+    translations: Übersetzungen
+  models:
+    file_labels:
+      title:
+        default: kein Dateiname
+    project:
+      owner: Projekteigentümer
+    resource_file:
+      generic_locale: -locale-
+    user_labels:
+      title:
+        starred: Favoriten
+        unstarred: Nicht Markiert
+  remove: Entfernen
+  repository_setting:
+    show:
+      flash:
+        bitbucket:
+          general: Probleme mit der Verbindung zu BitBucket. Bitte kontaktieren Sie unseren Support.
+          not_available: Gespeichert Repository nicht mehr verfügbar. Bitte wählen Sie ein anderes Repository oder kontaktieren Sie das Bitbucket Repository Eigentümer.
+          remove_hook_error: Zurück Bitbucket Haken nicht entfernt werden konnte.
+        error: Repository-Einstellungen konnten nicht aktualisiert werden.
+        github:
+          general: Probleme auf GitHub zu verbinden. Bitte kontaktieren Sie unseren Support.
+          not_available: Das gespeicherte Repository ist nicht mehr verfügbar. Bitte wählen Sie ein anderes Repository oder kontaktieren Sie das GitHub-Repository Eigentümer.
+          remove_hook_error: Zurück GitHub Haken konnte nicht entfernt werden.
+        not_accessible: Repository nicht zugänglich
+        success: Repository-Einstellungen aktualisiert.
+  resources:
+    exports:
+      push_to_repository:
+        single:
+          flash:
+            error: 'Es gab ein Problem mit dem Repository schieben: "%{message}"'
+  users:
+    update:
+      flash:
+        confirmation_success: Sie haben Ihr Konto erfolgreich aktualisiert, aber wir brauchen Ihre neue E-Mail-Adresse zu überprüfen. Bitte überprüfen Sie Ihre E-Mail ein und klicken Sie auf den Bestätigungslink zur Bestätigung Ihrer neuen E-Mail-Adresse zu bestätigen.
+  views:
+    copyright: Alle Rechte vorbehalten.
