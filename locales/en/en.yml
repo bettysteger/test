@@ -10,7 +10,7 @@ en:
   collaborators:
     delete:
       flash:
-        success: Collaborator '%{email}' deleted.
+        success: "Collaborator '%{email}' deleted."
       tooltip: Delete collaborator
     edit:
       destroy:
@@ -98,7 +98,8 @@ en:
       grey: Grey
       red: red
       white: White
-    confirmation_needed: Please confirm your email address. If you haven't received the email, check your spam folder or click to %{resend_link} it.
+    confirmation_needed: "Please confirm your email address. If you haven't received\
+      \ the email, check your spam folder or click to %{resend_link} it."
     create: create
     delete_link: Delete
     documentation_page: Documentation Page
@@ -111,7 +112,8 @@ en:
           l1: Best regards,
           l2: your Lingohub Team.
     error:
-      unexpected_error: We are sorry, but something went wrong. Don't worry, we logged everything and will fix the issue promptly.
+      unexpected_error: "We are sorry, but something went wrong. Don't worry, we logged\
+        \ everything and will fix the issue promptly."
     filename: Filename
     knowledge_base: Knowledge Base
     locale: Locale
@@ -394,7 +396,8 @@ en:
           answer: Yes, Lingohub can be used as a free translation tool. The free plan includes our translation editor without any restrictions. If you are a translator, you can use Lingohub for free - always. What requires paid plans is hosting your own commercial translations projects.
           question: Can I use Lingohub for free?
         more:
-          answer: Please visit our Support page, or contact us directly. Small print is available under <a href='https://lingohub.com/terms'>Terms of Service</a>.
+          answer: "Please visit our Support page, or contact us directly. Small print\
+            \ is available under <a href='https://lingohub.com/terms'>Terms of Service</a>."
           question: Need more information?
         public_projects:
           answer: By default, all projects in Lingohub are private, and accessible only to users you explicitly invite. Public projects are visible to anyone, and are intended for use in open source software development, or any initiative that does not require data privacy. Public projects do not count toward project or collaborator limits on any plan.
@@ -409,11 +412,19 @@ en:
       p2: You can always switch plans - and you benefit from a <strong>free 14-day trial period</strong>!
       page_title: Pricing - Easy web and mobile app localization with Lingohub
       plan:
-        basic: Maybe you’re pushing out an innovative new mobile app? If you need <strong>more collaborators and text volume</strong>, our three-project <span class='label'>Basic</span> plan will give you the tools you need to take your product global.
-        business: Our <span class='label'>Business</span> plan for larger endeavors offers the best value for agile projects and has lots of wiggle room for <strong>text-heavy applications or bigger websites.</strong>
-        mini: <strong>If you run a small project</strong>, our <span class='label'>Mini</span> plan is just the right option for you.
+        basic: "Maybe you’re pushing out an innovative new mobile app? If you need\
+          \ <strong>more collaborators and text volume</strong>, our three-project\
+          \ <span class='label'>Basic</span> plan will give you the tools you need\
+          \ to take your product global."
+        business: "Our <span class='label'>Business</span> plan for larger endeavors\
+          \ offers the best value for agile projects and has lots of wiggle room for\
+          \ <strong>text-heavy applications or bigger websites.</strong>"
+        mini: "<strong>If you run a small project</strong>, our <span class='label'>Mini</span>\
+          \ plan is just the right option for you."
         period: /mo
-        plus: <strong>Need more?</strong>Our <span class='label'>Plus</span> has got you covered. Up- or downgrade on a monthly basis as you need it, see the <a href='/plans-and-prices#faq'>F.A.Q.</a> below.
+        plus: "<strong>Need more?</strong>Our <span class='label'>Plus</span> has\
+          \ got you covered. Up- or downgrade on a monthly basis as you need it, see\
+          \ the <a href='/plans-and-prices#faq'>F.A.Q.</a> below."
       prompt: Sign up and choose your subscription plan!
       title: Plans and Prices
       translators:
@@ -436,7 +447,8 @@ en:
     global:
       deactivated:
         flash:
-          info: This project is deactivated and cannot be modified. If you want to use it again, click the 'Activate' button.
+          info: "This project is deactivated and cannot be modified. If you want to\
+            \ use it again, click the 'Activate' button."
       navigation:
         administration: Administration
         dashboard: Dashboard
@@ -468,7 +480,8 @@ en:
   repository_setting:
     complete_setup_wizard:
       invite_collaborators: Invite collaborators
-      p1_html: You're ready to go. The connection to your repository has been established and initial sync is running.
+      p1_html: "You're ready to go. The connection to your repository has been established\
+        \ and initial sync is running."
       p2_html: This project is connected to repository "%{repository}" using the account of "%{account}"
       p3_html: Find out the status and details on each of your resource files
       p4_html: Choose import strategy for your locales or set automatic repository sync
@@ -497,7 +510,8 @@ en:
             title: Watch Patterns
         title: Repository providers
         to:
-          p_html: This project is connected to repository <a href='%{connection_url}'><strong>%{connection_info}</strong></a> using the account of "<a href='%{user_url}'>%{user}</a>".
+          p_html: "This project is connected to repository <a href='%{connection_url}'><strong>%{connection_info}</strong></a>\
+            \ using the account of \"<a href='%{user_url}'>%{user}</a>\"."
           title: Connected to %{provider}.
         view_all_files: View all imported files
       final_btn: Setup connection
@@ -531,10 +545,13 @@ en:
             regexs:
               text_html: We use Ruby regular expressions. You can test your regular expressions with %{test_service_link}
             text_html: A watch pattern defines which files should be synchronized with Lingohub. You can use any valid regular expression to restrict file synchronization to particular files.<br />We already pre-defined Watch Patterns for specific programming languages and frameworks which you can choose from.
-            title: What are 'Watch Patterns'?
-      information: This project is connected to repository '%{repository_name}' using the account of '%{user_name}'
+            title: "What are 'Watch Patterns'?"
+      information: "This project is connected to repository '%{repository_name}' using\
+        \ the account of '%{user_name}'"
       merge_strategy:
-        inplace_hints: An upload strategy determines how Lingohub treats new and missing translations when a resource file is uploaded or synchronized. The 'Master locale' strategy works in standard cases and is the default.
+        inplace_hints: "An upload strategy determines how Lingohub treats new and\
+          \ missing translations when a resource file is uploaded or synchronized.\
+          \ The 'Master locale' strategy works in standard cases and is the default."
         master_locale_structure: Master locale
         more_strategies: '... or do you need another upload strategy?'
         override: File-first
@@ -564,7 +581,10 @@ en:
           administrative_rights_needed: You need administrative rights for the Github project to enable automatic synchronization.
         inplace_hints:
           heading: Set up automatic repository sync
-          p1: Lingohub will give you an option to react to commits, if your Source Control Management (SCM) allows us to get a notification after you checked in to your repository. We will automatically import all files that match your 'watch patterns'.
+          p1: "Lingohub will give you an option to react to commits, if your Source\
+            \ Control Management (SCM) allows us to get a notification after you checked\
+            \ in to your repository. We will automatically import all files that match\
+            \ your 'watch patterns'."
           p2: This is a great way to always keep your resource files in sync with Lingohub.
           p3: If checked, your collaborators will always get to see the latest translations that have to be translated.
         title: Automatic sync
@@ -756,9 +776,15 @@ en:
     edit:
       title: Change your Subscription
     flash:
-      quota_just_reached: <span id='hide_quota_flash' data-url="%{session_variables_path}">You have reached the limit of your Lingohub subscription plan - <a href="%{subscription_href}">click here</a> to upgrade or learn more</span>
-      quota_nearing: <span id='hide_quota_flash' data-url="%{session_variables_path}">You have reached 90% of your account quota. <a href="%{subscription_href}">Click here</a> to upgrade if necessary</span>
-      quota_reached_time_ago: <span id='hide_quota_flash' data-url="%{session_variables_path}">Last week you reached the limit of your Lingohub subscription plan - <a href="%{subscription_href}">click here</a> to upgrade now</span>
+      quota_just_reached: "<span id='hide_quota_flash' data-url=\"%{session_variables_path}\"\
+        >You have reached the limit of your Lingohub subscription plan - <a href=\"\
+        %{subscription_href}\">click here</a> to upgrade or learn more</span>"
+      quota_nearing: "<span id='hide_quota_flash' data-url=\"%{session_variables_path}\"\
+        >You have reached 90% of your account quota. <a href=\"%{subscription_href}\"\
+        >Click here</a> to upgrade if necessary</span>"
+      quota_reached_time_ago: "<span id='hide_quota_flash' data-url=\"%{session_variables_path}\"\
+        >Last week you reached the limit of your Lingohub subscription plan - <a href=\"\
+        %{subscription_href}\">click here</a> to upgrade now</span>"
     index:
       choose: Choose
     not_accessible:
@@ -800,7 +826,7 @@ en:
         error:
           over_limit: 'Your account is above the quotas for the selected subscription
             plan: <b>%{plan_title}</b>. Please choose different plan.'
-        success: Your subscription plan has been changed to '<b>%{plan_title}</b>'.
+        success: "Your subscription plan has been changed to '<b>%{plan_title}</b>'."
   translation_phrases:
     checks:
       linebreaks: line breaks ok
@@ -818,7 +844,8 @@ en:
     multiple_update:
       flash:
         error:
-          not_allowed: You are not allowed to update the translation text for locale '%{locale_name}'
+          not_allowed: "You are not allowed to update the translation text for locale\
+            \ '%{locale_name}'"
         success: Translation texts updated.
     status:
       all: All
@@ -868,9 +895,10 @@ en:
       title: Build your public profile
       username:
         label: Username
-        p: This is part of your URL, e.g. 'lingohub.com/profiles/michaelsmith', use your full name for best search engine ranking
+        p: "This is part of your URL, e.g. 'lingohub.com/profiles/michaelsmith', use\
+          \ your full name for best search engine ranking"
   will_paginate:
     next_label: 'Next <i class=''fa fa-chevron-right''></i> '
     page_gap: '&hellip;'
     # to test our github integration
-    previous_label: <i class='fa fa-chevron-left'></i> Previous
+    previous_label: "<i class='fa fa-chevron-left'></i> Previous"
